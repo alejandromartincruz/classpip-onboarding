@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+@include mat-core();
+
+@import './variables';
+
+// Create the theme object (a Sass map containing all of the palettes).
+// classpip theme
+$classpip-theme: mat-light-theme($classpip-primary, $classpip-accent, $classpip-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($classpip-theme);
+
+
+@import './mixins';
+
+html,
+body {
+  font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  min-height: 100%;
+}
+
+@include material-classpip-theme($classpip-theme);
