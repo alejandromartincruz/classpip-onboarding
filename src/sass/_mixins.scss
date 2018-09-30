@@ -1,5 +1,3 @@
-@import './variables';
-
 @mixin material-classpip-theme($theme) {
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);

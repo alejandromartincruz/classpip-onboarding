@@ -24,8 +24,90 @@ body {
   margin: 0;
 }
 
+@include material-classpip-theme($classpip-theme);
+
+
+.main-content {
+	min-height: calc(100% - 203px);
+	padding: 20px 35px;
+}
+
 .container {
   min-height: 100%;
 }
 
-@include material-classpip-theme($classpip-theme);
+.mat-toolbar.mat-primary {
+	z-index: 1;
+}
+
+.fill-space {
+	flex: 1 1 auto;
+}
+
+#userCaret,
+#devCaret {
+  transform: rotate(0deg);
+  transition: transform 0.25s linear;
+}
+
+#userCaret.open,
+#devCaret.open {
+  transform: rotate(180deg);
+  transition: transform 0.25s linear;
+}
+
+.home-card {
+	background-color:#4527a0;
+	margin: -20px -35px;
+	.left .mat-figure {
+		flex-direction: column;
+		color: #fff;
+		h3 {
+			text-align: justify;
+		}
+	}
+	.right .mat-figure {
+		height: 105%
+	}
+}
+
+.parallax { 
+	margin: -10px -35px;
+    
+    /* Set a specific height */
+    min-height: 479px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed!important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+}
+
+.home-parallax {
+	/* The image used */
+    background-image: url("../assets/img/students-connected.jpg");
+    position: relative;
+    .parallas-text {
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+    	width: 80%;
+    	text-align: center;
+    	background: rgba(0, 0, 0, 0.1);
+  		padding: 4px 8px;
+    	color: #fff;
+    }
+}
+
+.home-image {
+	width: 100%;
+	margin-bottom: -4px;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}

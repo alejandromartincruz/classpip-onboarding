@@ -1,0 +1,116 @@
+<section>
+	<h2>Protocolo para trabajo en  grupo en Git</h2>
+	<p>
+		La utilización de un programa de control de versiones, como git en este caso, supone un gran avance a la hora de realizar trabajo en equipo en cualquier software.
+	</p>
+	<p>
+		Creo conveniente marcar unas pautas de trabajo en equipo para facilitar la coordinación de grupos de trabajo en el mismo proyecto, agilizando de esta manera el trabajo de diversas características o módulos, y su posterior integración en el proyecto.
+	</p>
+	<p>
+		Partimos de la premisa de que actualmente hay dos ramas, la master y la dev. Teniendo esto en cuenta, añadiremos una rama Test que surgirá de la versión actual de master. El objetivo es tener las ramas master, dev y test sin diferencias entre ellas para poder comenzar a trabajar óptimamente. A partir de ahora ya podemos considerar:
+	</p>
+	<ul>
+		<li>La rama master como la rama de producción, es decir, la que se verá públicamente y utilizarán los usuarios.</li>
+		<li>La rama dev como la rama de preproducción, una rama que será idéntica a la de producción para probar los desarrollos antes de que sean publicados en producción.</li>
+		<li>La rama test como la rama de testeo, donde se podrán hacer pruebas diversas con los desarrollos antes de pasarlos a preproducción.</li>
+	</ul>
+	<p>
+		Además se tomarán en cuenta dos situaciones diferentes, el trabajo del equipo envuelto en el proyecto directamente, y el trabajo por parte de personas o equipos ajenos al proyecto pero que quieran participar.
+	</p>
+</section>
+<section>
+	<h2>Caso 1, trabajo en el equipo directamente relacionado con el proyecto:</h2>
+	<p>
+		Lo primero es fijar un tiempo de desarrollo o unas funcionalidades a desarrollar. Una vez pasado el tiempo fijado, se publicarán los desarrollos que se hayan realizado correctamente durante ese periodo de tiempo. O en el caso de haber fijado funcionalidades en lugar de tiempo, se publicarán las funcionalidades una vez acabadas. La elección de un método u otro deberá ser elegida por el equipo de trabajo.
+	</p>
+	<p>
+		Una vez que se tiene preparado el entorno de trabajo con las tres ramas en la misma situación, se podrá comenzar una metodología de trabajo en equipo que facilite la coordinación entre los miembros del equipo, que asegure el correcto testeo de los trabajos individuales de cada uno.
+	</p>
+	<p>
+		Para comenzar un nuevo desarrollo se deberá crear una nueva rama a partir de la rama master, que llamaremos a modo de ejemplo desarrollo_1. Con el comando “git checkout –b desarrollo_1” En este momento la rama desarrollo_1 es exactamente igual que la rama master, dev y test. Y aquí es donde se comienza a desarrollar la nueva funcionalidad que se quiera añadir al proyecto.
+	</p>
+	<p>
+		No se debería hacer ningún commit hasta que este nuevo desarrollo no este finalizado y funcionando. Si se realizan muchos commits, en el caso de tener que realizar una revisión del trabajo para encontrar un bug o para mejorar algo, habrá que revisar los cambios realizados en cada uno de los commits individualmente, lo que dificulta bastante la revisión. Tener todo el trabajo realizado en un solo commit facilitará la posterior revisión de los cambios realizados, al tenerlos todos juntos. 
+	</p>
+	<p>
+		Una vez finalizado el nuevo desarrollo, se realizará un merge contra la rama de test. Y se realizarán las pruebas sobre un servidor de test para comprobar el correcto funcionamiento del proyecto.
+	</p>
+	<p>
+		Para realizar el merge sobre test, se hará de la siguiente manera:
+	</p>
+	<ol>
+		<li>git checkout test</li>
+		<li>git pull origin test</li>
+		<li>merge --no-ff --no-commit desarrollo_1</li>
+		<li>git commit -m "[test] merge with desarrollo_1"</li>
+	</ol>
+	<p>
+		Cuando el desarrollo esta correctamente finalizado, y funciona bien en test, se realiza un merge sobre dev. El proceso de merge en dev es el mismo que en test:
+	</p>
+	<ol>
+		<li>git checkout dev</li>
+		<li>git pull origin dev</li>
+		<li>merge --no-ff --no-commit desarrollo_1</li>
+		<li>git commit -m "[dev] merge with desarrollo_1"</li>
+	</ol>
+	<p>
+		En caso de haber un conflicto entre los pasos 3 y 4, este no quedará commiteado gracias al flag “--no-commit”, entonces bastará con solucionar el conflicto, añadir los cambios con un “git add” y commitear según el paso 4.
+	</p>
+	<p>
+		El flag “--no-ff” se utiliza para evitar que se realice un fast-forward que nos hará perder información del histórico de ramas. En la siguiente imagen se puede apreciar la diferencia entre realizar un commit con el flag y sin el flag.
+		<img src="../../assets/img/git/gitmerge--no-ff.png" style="display:block;max-width:100%;margin: 15px auto 10px;">
+		<span style="display:block;text-align:center;">Ilustración 1: <a href="https://nvie.com/posts/a-successful-git-branching-model/" target="_blank">fuente</a></span>
+	</p>
+	<p>
+		Si todos los desarrollos mergeados en la rama dev funcionan correctamente, una vez finalizado el tiempo de desarrollo, o todos los desarrollos que se quieran publicar, se realiza un merge contra la rama master, arrastrando todos los cambios mergeados contra la rama dev a la rama master. Una vez realizado este merge se tiene una nueva versión funcional del proyecto, por lo que se procederá a etiquetar dicha versión según el procedimiento habitual.
+	</p>
+	<p>
+		El procedimiento habitual de etiquetado es:  <b>x.y.z</b>, donde:
+	</p>
+	<ul>
+		<li><b>X</b> es la versión mayor, se usa cuando hay un cambio importante en fucionalidad.</li>
+		<li><b>Y</b> es la versión menor, se usa para añadidos de funcionalidades que no suponen cambios muy grandes.</li>
+		<li><b>Z</b> se usa para pequeñas correcciones de errores.</li>
+	</ul>
+	<p>
+		Por lo que una primera versión podría considerarse como v0.1.0, y tras añadir una funcionalidad pasaría a ser la v0.2.0, después de hacer cambios importantes en la aplicación como para considerar que ya esta lista pasaríamos a denominarla con la etiqueta v1.0.0, y en el caso de que esta versión tuviera un bug que requiriera de un fix la nueva versión sería la v1.0.1. Poner un tag en la rama activa es tan fácil como usar el comando “git tag v0.1.0”.
+	</p>
+	<p>
+		Si algo funcionara mal en la nueva versión, sería muy fácil revertir los cambios a la versión anterior que fue etiquetada y que se sabe que funcionaba bien. Se puede revertir a un estado anterior usando los tags en lugar de los commits, el comando para realizar este cambio es “git checkout v0.1.0”.
+		<img src="../../assets/img/git/protocolo-git.png" style="display:block;max-width:100%;margin: 15px auto 10px;">
+		<span style="display:block;text-align:center;">Ilustración 2: ejemplo de linea de trabajo</span>
+	</p>
+</section>
+<section>
+	<h2>Caso 2, aportaciones de personas o equipos ajenos al proyecto</h2>
+	<p>
+		Es de sobras conocido que un proyecto open source acaba siendo tan potente como la comunidad de desarrolladores que tiene detrás. Siendo las colaboraciones de estos tan o más importantes como los del equipo de trabajo directamente implicado. Es por ello que cabe plantear un método de trabajo para publicar en el proyecto las aportaciones de terceros.
+	</p>
+	<p>
+		En este caso los desarrolladores necesitaran crear un fork del repositorio original, pasando a tener su propio repositorio y su propio remoto. La forma de trabajar debe ser similar a la del caso 1, con la excepción de que para publicar algo deberán hacer un pull request.
+	</p>
+	<p>
+		Para hacer el pull request hay que ir al repositorio original desde el que se realizó el fork, y presionar el botón “New pull request”.
+		<img src="../../assets/img/git/img1.png" style="display:block;max-width:100%;margin: 15px auto 10px;">
+	</p>
+	<p>
+		En este punto, se muestra una pagina con el titulo “Compare changes”, en esta pagina hay que pulsar sobre el enlace “compare across forks”.
+		<img src="../../assets/img/git/img2.png" style="display:block;max-width:100%;margin: 15px auto 10px;">
+	</p>
+	<p>
+		A continuación hay que seleccionar como “base fork” la rama dev del repositorio original, y como “head fork” la rama dev del repositorio del colaborador. Además habrá que escribir un titulo y una descripción para facilitar la comprensión de los cambios en el código a quien deba aprobar el pull request. Y ya se podrá presionar la solicitud de pull request.
+		<img src="../../assets/img/git/img3.png" style="display:block;max-width:100%;margin: 15px auto 10px;">
+	</p>
+	<p>
+		Ahora un miembro del equipo con acceso al repositorio original podrá aprobar, rechazar o solicitar una revisión en el pull request.
+	</p>
+	<p>
+		El miembro del equipo, con permisos de escritura en el repositorio, deberá ir a la pestaña “pull requests” que aparecerá ahora en el proyecto, seleccionar el pull request que se quiera integrar en el proyecto, y una vez revisado el código, para aceptarlo solo tendrá que seleccionar “aprove” y luego presionar el botón “Submit review”.
+	</p>
+	<p>
+		Las otras dos opciones que hay para seleccionar en un pull request son “Comment”, donde el revisor puede poner un comentario sobre el pull request sin tener que aprobarlo.
+	</p>
+	<p>
+		Y “Request changes”, donde se solicita que se realicen cambios en el código que se quiere mergear al repositorio.
+	</p>
+</section>
