@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import { HttpClientModule } from '@angular/common/http';
 
 import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -55,7 +57,9 @@ import { FaqComponent } from './pages/faq/faq.component';
     MatListModule,
     MatExpansionModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    DragDropModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
