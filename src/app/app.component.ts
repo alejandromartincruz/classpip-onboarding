@@ -2,6 +2,7 @@ import { Component, AfterViewInit } from '@angular/core';
 import { 
     Router, NavigationStart, NavigationCancel, NavigationEnd 
 } from '@angular/router';
+import { MatIconRegistry } from "@angular/material";
 
 @Component({
   selector: 'app-root',
@@ -13,8 +14,10 @@ export class AppComponent implements AfterViewInit {
   loading;
 
   constructor(
+    public matIconRegistry: MatIconRegistry,
     private router: Router
   ) {
+    matIconRegistry.registerFontClassAlias ('fas');
     this.loading = true;
   }
 

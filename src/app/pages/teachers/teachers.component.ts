@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 import { DataCard } from '../../class/dataCard';
-import { CARDS } from "../../data/teacher_videos"
+import { CARDS } from '../../data/teacher_videos';
 
 
 @Component({

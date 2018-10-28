@@ -18,15 +18,15 @@
         <span class="fill-space"></span>
         <mat-icon id="userCaret" class="material-icons">expand_more</mat-icon>
       </a>
-      <a *ngIf="usersShow" class="second-level" mat-list-item routerLink="/students" (click)="usersShow = openClose(usersShow, 'userCaret')">
+      <a *ngIf="usersShow" class="second-level" mat-list-item routerLink="/user/students" (click)="usersShow = openClose(usersShow, 'userCaret')">
         <mat-icon mat-list-icon>face</mat-icon>
         <span>Estudiantes</span>
       </a>
-      <a *ngIf="usersShow" class="second-level" mat-list-item routerLink="/teachers" (click)="usersShow = openClose(usersShow, 'userCaret')">
+      <a *ngIf="usersShow" class="second-level" mat-list-item routerLink="/user/teachers" (click)="usersShow = openClose(usersShow, 'userCaret')">
         <mat-icon mat-list-icon>school</mat-icon>
         <span>Profesores</span>
       </a>
-      <a *ngIf="usersShow" class="second-level" mat-list-item routerLink="/administrator" (click)="usersShow = openClose(usersShow, 'userCaret')">
+      <a *ngIf="usersShow" class="second-level" mat-list-item routerLink="/user/administrator" (click)="usersShow = openClose(usersShow, 'userCaret')">
         <mat-icon mat-list-icon>person</mat-icon>
         <span>Administradores</span>
       </a>
@@ -36,15 +36,19 @@
         <span class="fill-space"></span>
         <mat-icon id="devCaret" class="material-icons">expand_more</mat-icon>
       </a>
-      <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/git" (click)="devShow = openClose(devShow, 'devCaret')">
+      <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/git" (click)="devShow = openClose(devShow, 'devCaret')">
         <mat-icon mat-list-icon>extension</mat-icon>
         <span>Pautas git</span>
       </a>
-      <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/tutorial" (click)="devShow = openClose(devShow, 'devCaret')">
+      <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/tutorial" (click)="devShow = openClose(devShow, 'devCaret')">
         <mat-icon mat-list-icon>computer</mat-icon>
         <span>Tutorial</span>
       </a>
-      <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/faq" (click)="devShow = openClose(devShow, 'devCaret')">
+      <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/onboarding" (click)="devShow = openClose(devShow, 'devCaret')">
+        <mat-icon mat-list-icon>web</mat-icon>
+        <span>Onboarding</span>
+      </a>
+      <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/faq" (click)="devShow = openClose(devShow, 'devCaret')">
         <mat-icon mat-list-icon>report</mat-icon>
         <span>Problemas</span>
       </a>
