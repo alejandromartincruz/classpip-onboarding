@@ -1,0 +1,211 @@
+<section>
+	<h2>Añadir pagina a web de onboarding</h2>
+	<p>
+		Para añadir una página a la web de onboarding, primero habrá que crear el nuevo componente que alojará el texto, las imagenes y el resto de componentes de esa página. En este ejemplo se creará una nueva página de privacidad. Para crear un nuevo componente hay que usar el temrinal. Primero hay que ir a la carpeta del proyecto, y luego hay que usar el siguiente comando:
+	</p>
+	<pre>
+		<code class="language-markup">
+ng generate component shared/privacy
+		</code>
+	</pre>
+	<p>
+		Este comando, ha generado la carpeta privacy dentro de <i>app/shared</i>, y a su vez dentro de la carpeta <i>privacy</i> se generan 4 archivos:
+	</p>
+		<ul>
+			<li><b>privacy.component.html:</b> aquí es donde se escribe el código html con el contenido del componente (en este caso página).</li>
+			<li><b>privacy.component.scss:</b> aquí es donde se escribe el codigo css en formato sass especifico para este componente.</li>
+			<li><b>privacy.component.spec.ts:</b> en este archivo se escriben los test del código.</li>
+			<li><b>privacy.component.ts:</b> en este archivo se escriben las importaciones necesarias para el componente, el código que se iniciará al cargar la página, las variables que estarán disponibles en la página, etc.</li>
+		</ul>
+	<p>
+		Grácias a este comando, también se ha agregado el componente en app.module.ts, tanto la importación como la declaración.
+	</p>
+	<p>
+		Lo siguiente es generar la ruta para esta nueva pagina, para ello hay que ir al archivo 'app.routing.ts', importar el componente que se ha generado y añadirle la ruta.
+	</p>
+	<pre class="line-numbers">
+		<code class="language-typescript">{{"import { PrivacyComponent } from './shared/privacy/privacy.component';
+import { NotfoundComponent } from './pages/notfound/notfound.component';
+
+const routes: Routes = [
+  { path: 'terms/privacy', 	component: PrivacyComponent },
+  { path: '404', 			component: NotfoundComponent },
+  { path: '**', 			redirectTo: '/404' }
+];"}}</code>
+	</pre>
+	<p>
+		En este ejemplo se aprecia que se añade PrivacyComponent junto a la ruta de NotfoundComponent y una ruta por defecto que lleva cualquier ruta que no este declarada al componente de notfound. De esta manera queda claro como agregar rutas nuevas a las ya existentes.
+	</p>
+	<p>
+		Una vez que ya se tiene el componente y la ruta ya se pueden crear enlaces hacia esa ruta, o incluso escribirla directamente en el navegador. Ahora ya solo queda escribir el contenido en el archivo <i>privacy.component.html</i>.
+	</p>
+
+</section>
+<section>
+	<h2>Crear un nuevo servicio</h2>
+	<p>
+		Como ejemplo se va a crear el servicio que da estilo al formato de código que hay en las paginas de desarrollo de la web de onboarding. Para ello se va a usar el modulo de prismjs.
+
+		El primer paso es, desde terminal nos situamos en la carpeta del proyecto, y para instalar el módulo de pismjs se utiliza el siguiente comando:
+	</p>
+	<pre>
+		<code class="language-markup">
+$ npm install prismjs --save
+		</code>
+	</pre>
+	<p>
+		Ahora toca crear el nuevo servicio. Para generarlo, hay que escribir el siguiente comando del cli de angular:
+	</p>
+	<pre>
+		<code class="language-markup">
+$ ng generate service shared/services/highlight
+		</code>
+	</pre>
+	<p>
+		El servicio que se ha generado, podemos encontrarlo en la ruta <i>app/shared/services/highlight.service.ts</i>, y por el momento sólo tiene código genérico. El archivo debe ser algo como esto:
+	</p>
+	<pre class="line-numbers">
+		<code class="language-typescript">{{"import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class HighlightService {
+
+  constructor() { }
+}"}}</code>
+	</pre>
+	<p>
+		Se procede a escribir el código del servicio. En este caso, se escribe código para poder utilizar prismjs y que de formato de código, con colores para facilitar la lectura a los fragmentos de código que hay en la web de onboarding. Una vez escrito el código, el archivo de <i>highlight.services.ts</i> quedará así:
+	</p>
+	<pre class="line-numbers">
+		<code class="language-typescript">{{"import { , PLATFORM_ID, Inject } from '@angular/core';
+ 
+import 'clipboard';
+
+import 'prismjs';
+import 'prismjs/plugins/toolbar/prism-toolbar';
+import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard';
+import 'prismjs/components/prism-javascript';
+import 'prismjs/components/prism-markup';
+import 'prismjs/components/prism-typescript';
+import 'prismjs/components/prism-sass';
+import 'prismjs/components/prism-scss';
+
+declare var Prism: any;
+
+@Injectable({
+  providedIn: 'root'
+})
+export class HighlightService {
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
+
+  highlightAll() {
+    if (isPlatformBrowser(this.platformId)) {
+      Prism.highlightAll();
+    }
+  }
+}"}}</code>
+	</pre>
+	<p>
+		Una vez que se ha programado el servicio que se necesita, hay que utilizarlo en el componente donde se quiere insertar código formatado. Como ejemplo, se va a insertar el servicio de formatado de código en el componente de <i>onboarding</i>. En este caso concreto, además se va a utilizar <i>AfterViewChecked</i> que es un evento que se lanza cuando la vista ya se ha cargado completamente, y es cuando se iniciará el método de highlightAll(). También se ha añadido la variable booleana <i>highlighted</i> que se utiliza para evitar que el método <i>highlighted</i> se llame más de una vez. <br>
+		Por lo tanto, tras importar <i>AfterViewChecked</i> de Angular/core y el servicio <i>HighlightService</i>, hay que añadir <i>private highlightService: HighlightService</i> al constructor, y por último la función que se lanza en <i>ngAfterViewChecked</i>. Una vez hecho esto el código debe ser así:
+	</p>
+	<pre class="line-numbers">
+		<code class="language-typescript">{{"import { Component, OnInit, AfterViewChecked } from '@angular/core';
+
+import { HighlightService } from '../../shared/services/highlight.service';
+
+@Component({
+  selector: 'app-onboarding',
+  templateUrl: './onboarding.component.html',
+  styleUrls: ['./onboarding.component.scss']
+})
+export class OnboardingComponent implements OnInit, AfterViewChecked {
+
+  onboarding: OnboardingInterface;
+  highlighted: boolean = false;
+
+  constructor(private highlightService: HighlightService) { }
+
+  /**
+   * Highlight blog post when it's ready
+   */
+  ngAfterViewChecked() {
+    if (this.onboarding && !this.highlighted) {
+      this.highlightService.highlightAll();
+      this.highlighted = true;
+    }
+  }
+
+  ngOnInit() {
+  }
+
+}"}}</code>
+	</pre>
+	<p>
+		Y en este caso, para acabar aún queda un último paso. Hay que importar las hojas de estilos de prismjs en <i>src/sass/styles.scss</i>. Que en el caso de este proyecto son las que pertenecen al tema <i>coi</i>. Y, de ser necesario después se puede añadir alguna personalización al código para que se adapte al estilo de la web. La importación y personalización de estilos es la siguiente:
+	</p>
+	<pre class="line-numbers">
+		<code class="language-scss">{{'@import "~prismjs/plugins/toolbar/prism-toolbar.css";
+@import "~prismjs/themes/prism-coy";
+
+pre[class*="language-"] {
+  background-color: transparent;
+}
+
+pre[class*="language-"]:before, pre[class*="language-"]:after {
+  display: none;
+}'}}</code>
+	</pre>
+	<p>
+		El servicio ya esta añadido y funcionando. Ya se ha explicado como crear un nuevo servicio y como usarlo en los componentes. Ahora, como apunte, hay que señalar que para usar el formatado de texto del servicio de highlight, tan solo hay que añadir la clase <i>class="language-'lenguaje-usado'"</i> al tag <i>code</i>, por ejemplo para código en javascript hay que añadir <i>class="language-typescript"</i> al tag code.
+	</p>
+</section>
+<section>
+	<h2>Añadir o modificar datos en página de Profesores</h2>
+	<p>
+		Las páginas del proyecto de onboarding estan hechas con contenido estático, a excepción de la página con el tutorial de uso para profesores que tiene un archivo con el contenido que se llama y se lista desde el componente correspondiente a la pagina de profesores. 
+	</p>
+	<p>
+		Para este contenido se ha creado un objeto dataCard en <i>app/class/dataCard.ts</i> que se utiliza en el archivo <i>app/data/teacher_videos.ts</i>, donde se ha escrito un array de objetos dataCard.
+	</p>
+	<p>
+		Lo último que queda es importar el objeto dataCard y el array de objetos dataCard en el componente <i>app/pages/teachers/teachers.component.ts</i> y igualar el array a una variable que se pueda usar en la plantilla y utilizar para listar su contenido.
+	</p>
+	<p>
+		Hay que mencionar, que para que se puedan listar enlaces a webs provenientes de objetos, como lo son los enlaces de youtube, hay que "sanear" el contenido ya que si no se hace este queda bloqueado por seguridad. Para ello hay que importar <i>DomSanitizer</i> de <i>angular/platform-browser</i> e introducirlo en el constructor. Ahora que ya se pueden utilizar los métodos de <i>sanitizer</i>, alla donde se vaya a imprimir el contenido url hay que poner lo siguiente: <i>[src]='sanitizer.bypassSecurityTrustResourceUrl(url)'</i>.
+	</p>
+	<p>
+		El código del componente de <i>teachers.component.ts</i> es el siguiente:
+	</p>
+	<pre class="line-numbers">
+		<code  class="language-typescript">{{"import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
+import { DataCard } from '../../class/dataCard';
+import { CARDS } from '../../data/teacher_videos';
+
+
+@Component({
+  selector: 'app-teachers',
+  templateUrl: './teachers.component.html',
+  styleUrls: ['./teachers.component.scss']
+})
+
+export class TeachersComponent implements OnInit {
+
+  cards = CARDS;
+
+  constructor(public sanitizer: DomSanitizer) {}
+
+  ngOnInit() {}
+
+  drop(event: CdkDragDrop&lt;DataCard[]&gt;) {
+    moveItemInArray(this.cards, event.previousIndex, event.currentIndex);
+  }
+
+}"}}</code>
+	</pre>
+</section>

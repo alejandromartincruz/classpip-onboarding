@@ -27,6 +27,9 @@ import { AdministratorComponent } from './pages/administrator/administrator.comp
 import { GitComponent } from './pages/git/git.component';
 import { TutorialComponent } from './pages/tutorial/tutorial.component';
 import { FaqComponent } from './pages/faq/faq.component';
+import { OnboardingComponent } from './pages/onboarding/onboarding.component';
+import { PrivacyComponent } from './shared/privacy/privacy.component';
+import { LegalwarningComponent } from './shared/legalwarning/legalwarning.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import { FaqComponent } from './pages/faq/faq.component';
     AdministratorComponent,
     GitComponent,
     TutorialComponent,
-    FaqComponent
+    FaqComponent,
+    OnboardingComponent,
+    PrivacyComponent,
+    LegalwarningComponent
   ],
   imports: [
     BrowserModule,

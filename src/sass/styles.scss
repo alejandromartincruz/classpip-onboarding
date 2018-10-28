@@ -4,6 +4,12 @@
 @include mat-core();
 
 @import './variables';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+
+@import "~prismjs/plugins/toolbar/prism-toolbar.css";
+@import "~prismjs/plugins/line-numbers/prism-line-numbers.css";
+@import "~prismjs/themes/prism-coy";
+
 
 // Create the theme object (a Sass map containing all of the palettes).
 // classpip theme
@@ -71,11 +77,11 @@ body {
 	}
 }
 
-.parallax { 
+.parallax {
 	margin: -10px -35px;
-    
+
     /* Set a specific height */
-    min-height: 479px; 
+    min-height: 479px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed!important;
@@ -104,6 +110,21 @@ body {
 .home-image {
 	width: 100%;
 	margin-bottom: -4px;
+}
+
+section {
+  margin-bottom: 5em;
+  p i {
+    background-color: lightcyan;
+  }
+}
+
+pre[class*="language-"] {
+  background-color: transparent;
+}
+
+pre[class*="language-"]:before, pre[class*="language-"]:after {
+  display: none;
 }
 
 @media only screen and (max-device-width: 768px) {

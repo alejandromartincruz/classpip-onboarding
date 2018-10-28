@@ -42,8 +42,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_administrator_administrator_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/administrator/administrator.component */ "./src/app/pages/administrator/administrator.component.ts");
 /* harmony import */ var _pages_git_git_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/git/git.component */ "./src/app/pages/git/git.component.ts");
 /* harmony import */ var _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/tutorial/tutorial.component */ "./src/app/pages/tutorial/tutorial.component.ts");
-/* harmony import */ var _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/faq/faq.component */ "./src/app/pages/faq/faq.component.ts");
-/* harmony import */ var _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/notfound/notfound.component */ "./src/app/pages/notfound/notfound.component.ts");
+/* harmony import */ var _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/onboarding/onboarding.component */ "./src/app/pages/onboarding/onboarding.component.ts");
+/* harmony import */ var _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/faq/faq.component */ "./src/app/pages/faq/faq.component.ts");
+/* harmony import */ var _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./shared/privacy/privacy.component */ "./src/app/shared/privacy/privacy.component.ts");
+/* harmony import */ var _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./shared/legalwarning/legalwarning.component */ "./src/app/shared/legalwarning/legalwarning.component.ts");
+/* harmony import */ var _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/notfound/notfound.component */ "./src/app/pages/notfound/notfound.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -61,16 +64,22 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
-    { path: 'students', component: _pages_students_students_component__WEBPACK_IMPORTED_MODULE_4__["StudentsComponent"] },
-    { path: 'teachers', component: _pages_teachers_teachers_component__WEBPACK_IMPORTED_MODULE_5__["TeachersComponent"] },
-    { path: 'administrator', component: _pages_administrator_administrator_component__WEBPACK_IMPORTED_MODULE_6__["AdministratorComponent"] },
-    { path: 'git', component: _pages_git_git_component__WEBPACK_IMPORTED_MODULE_7__["GitComponent"] },
-    { path: 'tutorial', component: _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_8__["TutorialComponent"] },
-    { path: 'faq', component: _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_9__["FaqComponent"] },
-    { path: '404', component: _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_10__["NotfoundComponent"] },
+    { path: 'user/students', component: _pages_students_students_component__WEBPACK_IMPORTED_MODULE_4__["StudentsComponent"] },
+    { path: 'user/teachers', component: _pages_teachers_teachers_component__WEBPACK_IMPORTED_MODULE_5__["TeachersComponent"] },
+    { path: 'user/administrator', component: _pages_administrator_administrator_component__WEBPACK_IMPORTED_MODULE_6__["AdministratorComponent"] },
+    { path: 'developer/git', component: _pages_git_git_component__WEBPACK_IMPORTED_MODULE_7__["GitComponent"] },
+    { path: 'developer/tutorial', component: _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_8__["TutorialComponent"] },
+    { path: 'developer/onboarding', component: _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_9__["OnboardingComponent"] },
+    { path: 'developer/faq', component: _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_10__["FaqComponent"] },
+    { path: 'privacy', component: _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_11__["PrivacyComponent"] },
+    { path: 'legalwarning', component: _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_12__["LegalwarningComponent"] },
+    { path: '404', component: _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_13__["NotfoundComponent"] },
     { path: '**', redirectTo: '/404' }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -127,6 +136,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -138,10 +148,13 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var AppComponent = /** @class */ (function () {
-    function AppComponent(router) {
+    function AppComponent(matIconRegistry, router) {
+        this.matIconRegistry = matIconRegistry;
         this.router = router;
         this.title = 'classpip-onboarding';
+        matIconRegistry.registerFontClassAlias('fas');
         this.loading = true;
     }
     AppComponent.prototype.ngAfterViewInit = function () {
@@ -163,7 +176,8 @@ var AppComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
             styles: [__webpack_require__(/*! ./app.component.scss */ "./src/app/app.component.scss")]
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatIconRegistry"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -208,12 +222,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_git_git_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./pages/git/git.component */ "./src/app/pages/git/git.component.ts");
 /* harmony import */ var _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./pages/tutorial/tutorial.component */ "./src/app/pages/tutorial/tutorial.component.ts");
 /* harmony import */ var _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./pages/faq/faq.component */ "./src/app/pages/faq/faq.component.ts");
+/* harmony import */ var _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./pages/onboarding/onboarding.component */ "./src/app/pages/onboarding/onboarding.component.ts");
+/* harmony import */ var _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./shared/privacy/privacy.component */ "./src/app/shared/privacy/privacy.component.ts");
+/* harmony import */ var _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./shared/legalwarning/legalwarning.component */ "./src/app/shared/legalwarning/legalwarning.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -257,7 +277,10 @@ var AppModule = /** @class */ (function () {
                 _pages_administrator_administrator_component__WEBPACK_IMPORTED_MODULE_22__["AdministratorComponent"],
                 _pages_git_git_component__WEBPACK_IMPORTED_MODULE_23__["GitComponent"],
                 _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_24__["TutorialComponent"],
-                _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_25__["FaqComponent"]
+                _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_25__["FaqComponent"],
+                _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_26__["OnboardingComponent"],
+                _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_27__["PrivacyComponent"],
+                _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_28__["LegalwarningComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -644,6 +667,82 @@ var NotfoundComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/pages/onboarding/onboarding.component.html":
+/*!************************************************************!*\
+  !*** ./src/app/pages/onboarding/onboarding.component.html ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<section>\n\t<h2>Añadir pagina a web de onboarding</h2>\n\t<p>\n\t\tPara añadir una página a la web de onboarding, primero habrá que crear el nuevo componente que alojará el texto, las imagenes y el resto de componentes de esa página. En este ejemplo se creará una nueva página de privacidad. Para crear un nuevo componente hay que usar el temrinal. Primero hay que ir a la carpeta del proyecto, y luego hay que usar el siguiente comando:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">\nng generate component shared/privacy\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tEste comando, ha generado la carpeta privacy dentro de <i>app/shared</i>, y a su vez dentro de la carpeta <i>privacy</i> se generan 4 archivos:\n\t</p>\n\t\t<ul>\n\t\t\t<li><b>privacy.component.html:</b> aquí es donde se escribe el código html con el contenido del componente (en este caso página).</li>\n\t\t\t<li><b>privacy.component.scss:</b> aquí es donde se escribe el codigo css en formato sass especifico para este componente.</li>\n\t\t\t<li><b>privacy.component.spec.ts:</b> en este archivo se escriben los test del código.</li>\n\t\t\t<li><b>privacy.component.ts:</b> en este archivo se escriben las importaciones necesarias para el componente, el código que se iniciará al cargar la página, las variables que estarán disponibles en la página, etc.</li>\n\t\t</ul>\n\t<p>\n\t\tGrácias a este comando, también se ha agregado el componente en app.module.ts, tanto la importación como la declaración.\n\t</p>\n\t<p>\n\t\tLo siguiente es generar la ruta para esta nueva pagina, para ello hay que ir al archivo 'app.routing.ts', importar el componente que se ha generado y añadirle la ruta.\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-typescript\">{{\"import { PrivacyComponent } from './shared/privacy/privacy.component';\nimport { NotfoundComponent } from './pages/notfound/notfound.component';\n\nconst routes: Routes = [\n  { path: 'terms/privacy', \tcomponent: PrivacyComponent },\n  { path: '404', \t\t\tcomponent: NotfoundComponent },\n  { path: '**', \t\t\tredirectTo: '/404' }\n];\"}}</code>\n\t</pre>\n\t<p>\n\t\tEn este ejemplo se aprecia que se añade PrivacyComponent junto a la ruta de NotfoundComponent y una ruta por defecto que lleva cualquier ruta que no este declarada al componente de notfound. De esta manera queda claro como agregar rutas nuevas a las ya existentes.\n\t</p>\n\t<p>\n\t\tUna vez que ya se tiene el componente y la ruta ya se pueden crear enlaces hacia esa ruta, o incluso escribirla directamente en el navegador. Ahora ya solo queda escribir el contenido en el archivo <i>privacy.component.html</i>.\n\t</p>\n\n</section>\n<section>\n\t<h2>Crear un nuevo servicio</h2>\n\t<p>\n\t\tComo ejemplo se va a crear el servicio que da estilo al formato de código que hay en las paginas de desarrollo de la web de onboarding. Para ello se va a usar el modulo de prismjs.\n\n\t\tEl primer paso es, desde terminal nos situamos en la carpeta del proyecto, y para instalar el módulo de pismjs se utiliza el siguiente comando:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">\n$ npm install prismjs --save\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tAhora toca crear el nuevo servicio. Para generarlo, hay que escribir el siguiente comando del cli de angular:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">\n$ ng generate service shared/services/highlight\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tEl servicio que se ha generado, podemos encontrarlo en la ruta <i>app/shared/services/highlight.service.ts</i>, y por el momento sólo tiene código genérico. El archivo debe ser algo como esto:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-typescript\">{{\"import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class HighlightService {\n\n  constructor() { }\n}\"}}</code>\n\t</pre>\n\t<p>\n\t\tSe procede a escribir el código del servicio. En este caso, se escribe código para poder utilizar prismjs y que de formato de código, con colores para facilitar la lectura a los fragmentos de código que hay en la web de onboarding. Una vez escrito el código, el archivo de <i>highlight.services.ts</i> quedará así:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-typescript\">{{\"import { , PLATFORM_ID, Inject } from '@angular/core';\n \nimport 'clipboard';\n\nimport 'prismjs';\nimport 'prismjs/plugins/toolbar/prism-toolbar';\nimport 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard';\nimport 'prismjs/components/prism-javascript';\nimport 'prismjs/components/prism-markup';\nimport 'prismjs/components/prism-typescript';\nimport 'prismjs/components/prism-sass';\nimport 'prismjs/components/prism-scss';\n\ndeclare var Prism: any;\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class HighlightService {\n\n  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }\n\n  highlightAll() {\n    if (isPlatformBrowser(this.platformId)) {\n      Prism.highlightAll();\n    }\n  }\n}\"}}</code>\n\t</pre>\n\t<p>\n\t\tUna vez que se ha programado el servicio que se necesita, hay que utilizarlo en el componente donde se quiere insertar código formatado. Como ejemplo, se va a insertar el servicio de formatado de código en el componente de <i>onboarding</i>. En este caso concreto, además se va a utilizar <i>AfterViewChecked</i> que es un evento que se lanza cuando la vista ya se ha cargado completamente, y es cuando se iniciará el método de highlightAll(). También se ha añadido la variable booleana <i>highlighted</i> que se utiliza para evitar que el método <i>highlighted</i> se llame más de una vez. <br>\n\t\tPor lo tanto, tras importar <i>AfterViewChecked</i> de Angular/core y el servicio <i>HighlightService</i>, hay que añadir <i>private highlightService: HighlightService</i> al constructor, y por último la función que se lanza en <i>ngAfterViewChecked</i>. Una vez hecho esto el código debe ser así:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-typescript\">{{\"import { Component, OnInit, AfterViewChecked } from '@angular/core';\n\nimport { HighlightService } from '../../shared/services/highlight.service';\n\n@Component({\n  selector: 'app-onboarding',\n  templateUrl: './onboarding.component.html',\n  styleUrls: ['./onboarding.component.scss']\n})\nexport class OnboardingComponent implements OnInit, AfterViewChecked {\n\n  onboarding: OnboardingInterface;\n  highlighted: boolean = false;\n\n  constructor(private highlightService: HighlightService) { }\n\n  /**\n   * Highlight blog post when it's ready\n   */\n  ngAfterViewChecked() {\n    if (this.onboarding && !this.highlighted) {\n      this.highlightService.highlightAll();\n      this.highlighted = true;\n    }\n  }\n\n  ngOnInit() {\n  }\n\n}\"}}</code>\n\t</pre>\n\t<p>\n\t\tY en este caso, para acabar aún queda un último paso. Hay que importar las hojas de estilos de prismjs en <i>src/sass/styles.scss</i>. Que en el caso de este proyecto son las que pertenecen al tema <i>coi</i>. Y, de ser necesario después se puede añadir alguna personalización al código para que se adapte al estilo de la web. La importación y personalización de estilos es la siguiente:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-scss\">{{'@import \"~prismjs/plugins/toolbar/prism-toolbar.css\";\n@import \"~prismjs/themes/prism-coy\";\n\npre[class*=\"language-\"] {\n  background-color: transparent;\n}\n\npre[class*=\"language-\"]:before, pre[class*=\"language-\"]:after {\n  display: none;\n}'}}</code>\n\t</pre>\n\t<p>\n\t\tEl servicio ya esta añadido y funcionando. Ya se ha explicado como crear un nuevo servicio y como usarlo en los componentes. Ahora, como apunte, hay que señalar que para usar el formatado de texto del servicio de highlight, tan solo hay que añadir la clase <i>class=\"language-'lenguaje-usado'\"</i> al tag <i>code</i>, por ejemplo para código en javascript hay que añadir <i>class=\"language-typescript\"</i> al tag code.\n\t</p>\n</section>\n<section>\n\t<h2>Añadir o modificar datos en página de Profesores</h2>\n\t<p>\n\t\tLas páginas del proyecto de onboarding estan hechas con contenido estático, a excepción de la página con el tutorial de uso para profesores que tiene un archivo con el contenido que se llama y se lista desde el componente correspondiente a la pagina de profesores. \n\t</p>\n\t<p>\n\t\tPara este contenido se ha creado un objeto dataCard en <i>app/class/dataCard.ts</i> que se utiliza en el archivo <i>app/data/teacher_videos.ts</i>, donde se ha escrito un array de objetos dataCard.\n\t</p>\n\t<p>\n\t\tLo último que queda es importar el objeto dataCard y el array de objetos dataCard en el componente <i>app/pages/teachers/teachers.component.ts</i> y igualar el array a una variable que se pueda usar en la plantilla y utilizar para listar su contenido.\n\t</p>\n\t<p>\n\t\tHay que mencionar, que para que se puedan listar enlaces a webs provenientes de objetos, como lo son los enlaces de youtube, hay que \"sanear\" el contenido ya que si no se hace este queda bloqueado por seguridad. Para ello hay que importar <i>DomSanitizer</i> de <i>angular/platform-browser</i> e introducirlo en el constructor. Ahora que ya se pueden utilizar los métodos de <i>sanitizer</i>, alla donde se vaya a imprimir el contenido url hay que poner lo siguiente: <i>[src]='sanitizer.bypassSecurityTrustResourceUrl(url)'</i>.\n\t</p>\n\t<p>\n\t\tEl código del componente de <i>teachers.component.ts</i> es el siguiente:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code  class=\"language-typescript\">{{\"import { Component, OnInit } from '@angular/core';\nimport { DomSanitizer } from '@angular/platform-browser';\nimport {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';\nimport { DataCard } from '../../class/dataCard';\nimport { CARDS } from '../../data/teacher_videos';\n\n\n@Component({\n  selector: 'app-teachers',\n  templateUrl: './teachers.component.html',\n  styleUrls: ['./teachers.component.scss']\n})\n\nexport class TeachersComponent implements OnInit {\n\n  cards = CARDS;\n\n  constructor(public sanitizer: DomSanitizer) {}\n\n  ngOnInit() {}\n\n  drop(event: CdkDragDrop&lt;DataCard[]&gt;) {\n    moveItemInArray(this.cards, event.previousIndex, event.currentIndex);\n  }\n\n}\"}}</code>\n\t</pre>\n</section>"
+
+/***/ }),
+
+/***/ "./src/app/pages/onboarding/onboarding.component.scss":
+/*!************************************************************!*\
+  !*** ./src/app/pages/onboarding/onboarding.component.scss ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL29uYm9hcmRpbmcvb25ib2FyZGluZy5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/pages/onboarding/onboarding.component.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/pages/onboarding/onboarding.component.ts ***!
+  \**********************************************************/
+/*! exports provided: OnboardingComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OnboardingComponent", function() { return OnboardingComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../shared/services/highlight.service */ "./src/app/shared/services/highlight.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var OnboardingComponent = /** @class */ (function () {
+    function OnboardingComponent(highlightService) {
+        this.highlightService = highlightService;
+        this.highlighted = false;
+    }
+    /**
+     * Highlight blog post when it's ready
+     */
+    OnboardingComponent.prototype.ngAfterViewChecked = function () {
+        if (!this.highlighted) {
+            this.highlightService.highlightAll();
+            this.highlighted = true;
+        }
+    };
+    OnboardingComponent.prototype.ngOnInit = function () {
+    };
+    OnboardingComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-onboarding',
+            template: __webpack_require__(/*! ./onboarding.component.html */ "./src/app/pages/onboarding/onboarding.component.html"),
+            styles: [__webpack_require__(/*! ./onboarding.component.scss */ "./src/app/pages/onboarding/onboarding.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__["HighlightService"]])
+    ], OnboardingComponent);
+    return OnboardingComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/pages/students/students.component.html":
 /*!********************************************************!*\
   !*** ./src/app/pages/students/students.component.html ***!
@@ -850,7 +949,7 @@ var TutorialComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<footer class=\"docs-footer\">\n  <div class=\"docs-footer-list\">\n    <div class=\"docs-footer-links\">\n      <ul>\n        <li>\n        \t<a href=\"#\">aviso legal</a>\n          <!--<a routerLink=\"/aviso-legal\">{{ 'APP.LEGAL' | translate }}</a>-->\n        </li>\n        <li>\n          <span>|</span>\n        </li>\n        <li>\n        \t<a href=\"#\">privacidad</a>\n          <!--<a routerLink=\"/privacidad\">{{ 'APP.PRIVACY' | translate }}</a>-->\n        </li>\n      </ul>\n    </div>\n    <div class=\"docs-footer-copyright\">\n    \t<p>Classpip &copy;</p>\n      <!--<p>{{ 'APP.MARK' | translate }}</p>-->\n    </div>\n  </div>\n</footer>"
+module.exports = "<footer class=\"docs-footer\">\n  <div class=\"docs-footer-list\">\n    <div class=\"docs-footer-links\">\n      <ul>\n        <li>\n        \t<a href=\"legalwarning\">aviso legal</a>\n          <!--<a routerLink=\"/aviso-legal\">{{ 'APP.LEGAL' | translate }}</a>-->\n        </li>\n        <li>\n          <span>|</span>\n        </li>\n        <li>\n        \t<a href=\"privacy\">privacidad</a>\n          <!--<a routerLink=\"/privacidad\">{{ 'APP.PRIVACY' | translate }}</a>-->\n        </li>\n      </ul>\n    </div>\n    <div class=\"docs-footer-copyright\">\n    \t<p>Classpip &copy; 2016 - {{ actualYear }}</p>\n      <!--<p>{{ 'APP.MARK' | translate }}</p>-->\n    </div>\n  </div>\n</footer>"
 
 /***/ }),
 
@@ -888,6 +987,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var FooterComponent = /** @class */ (function () {
     function FooterComponent() {
+        this.actualYear = (new Date()).getFullYear();
     }
     FooterComponent.prototype.ngOnInit = function () {
     };
@@ -900,6 +1000,69 @@ var FooterComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], FooterComponent);
     return FooterComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/legalwarning/legalwarning.component.html":
+/*!*****************************************************************!*\
+  !*** ./src/app/shared/legalwarning/legalwarning.component.html ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h4 style=\"text-align: justify; color: sienna;\">DATOS GENERALES</h4>\n<p style=\"text-align: justify;\"><strong>De acuerdo con el artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico ponemos a su disposición los siguientes datos:</strong></p>\n<p style=\"text-align: justify;\"><span style=\"color: blue;\">Classpip</span> está domiciliada en la calle <span style=\"color: blue;\">(dirección fiscal de la empresa)</span>, con CIF <span style=\"color: blue;\">(número correspondiente)</span>. Inscrita en el Registro Mercantil de <span style=\"color: blue;\">(ciudad en la que se encuentre dicho registro)</span>, Vol. <span style=\"color: blue;\">(número correspondiente)</span>, Folio <span style=\"color: blue;\">(número correspondiente)</span>, Hoja <span style=\"color: blue;\">(número correspondiente)</span>, Inscripción&nbsp;<span style=\"color: blue;\">(número correspondiente)</span>.</p>\n<p style=\"text-align: justify;\">En la web <span style=\"color: blue;\">(página web de la empresa)</span> hay una serie de contenidos de carácter informativo sobre <span style=\"color: blue;\">(contenido de la web o explicación de su actividad)</span>.</p>\n<p style=\"text-align: justify;\"><strong>Su principal objetivo</strong> es facilitar a los clientes y al público en general, la información relativa a la empresa, a los productos y servicios que se ofrecen <span style=\"color: blue;\">(esto se puede modificar según la actividad a la que se dedique la empresa).</span></p>\n\n<p>* Esto es un texto de ejemplo para una página con finalidad educativa y no comercial *</p>"
+
+/***/ }),
+
+/***/ "./src/app/shared/legalwarning/legalwarning.component.scss":
+/*!*****************************************************************!*\
+  !*** ./src/app/shared/legalwarning/legalwarning.component.scss ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9sZWdhbHdhcm5pbmcvbGVnYWx3YXJuaW5nLmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/shared/legalwarning/legalwarning.component.ts":
+/*!***************************************************************!*\
+  !*** ./src/app/shared/legalwarning/legalwarning.component.ts ***!
+  \***************************************************************/
+/*! exports provided: LegalwarningComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LegalwarningComponent", function() { return LegalwarningComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var LegalwarningComponent = /** @class */ (function () {
+    function LegalwarningComponent() {
+    }
+    LegalwarningComponent.prototype.ngOnInit = function () {
+    };
+    LegalwarningComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-legalwarning',
+            template: __webpack_require__(/*! ./legalwarning.component.html */ "./src/app/shared/legalwarning/legalwarning.component.html"),
+            styles: [__webpack_require__(/*! ./legalwarning.component.scss */ "./src/app/shared/legalwarning/legalwarning.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], LegalwarningComponent);
+    return LegalwarningComponent;
 }());
 
 
@@ -984,7 +1147,7 @@ var LoadingComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container class=\"sidenav-container\">\n  <mat-sidenav\n    #drawer\n    class=\"sidenav\"\n    fixedInViewport=\"true\"\n    [attr.role]=\"(isHandset$ | async) ? 'dialog' : 'navigation'\"\n    [mode]=\"(isHandset$ | async) ? 'over' : 'side'\"\n    [opened]=\"!(isHandset$ | async)\">\n    <mat-toolbar color=\"primary\">Menu</mat-toolbar>\n    <mat-nav-list>\n      <a mat-list-item routerLink=\"/home\">\n        <mat-icon mat-list-icon>home</mat-icon>\n        <span>Home</span>\n      </a>      \n      <a mat-list-item (click)=\"usersShow = openClose(usersShow, 'userCaret')\">\n        <mat-icon mat-list-icon>people</mat-icon>\n        <span>Usuarios</span>\n        <span class=\"fill-space\"></span>\n        <mat-icon id=\"userCaret\" class=\"material-icons\">expand_more</mat-icon>\n      </a>\n      <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/students\" (click)=\"usersShow = openClose(usersShow, 'userCaret')\">\n        <mat-icon mat-list-icon>face</mat-icon>\n        <span>Estudiantes</span>\n      </a>\n      <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/teachers\" (click)=\"usersShow = openClose(usersShow, 'userCaret')\">\n        <mat-icon mat-list-icon>school</mat-icon>\n        <span>Profesores</span>\n      </a>\n      <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/administrator\" (click)=\"usersShow = openClose(usersShow, 'userCaret')\">\n        <mat-icon mat-list-icon>person</mat-icon>\n        <span>Administradores</span>\n      </a>\n      <a mat-list-item (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>developer_mode</mat-icon>\n        <span>Desarrolladores</span>\n        <span class=\"fill-space\"></span>\n        <mat-icon id=\"devCaret\" class=\"material-icons\">expand_more</mat-icon>\n      </a>\n      <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/git\" (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>extension</mat-icon>\n        <span>Pautas git</span>\n      </a>\n      <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/tutorial\" (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>computer</mat-icon>\n        <span>Tutorial</span>\n      </a>\n      <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/faq\" (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>report</mat-icon>\n        <span>Problemas</span>\n      </a>\n    </mat-nav-list>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"primary\">\n      <button\n        type=\"button\"\n        aria-label=\"Toggle sidenav\"\n        mat-icon-button\n        (click)=\"drawer.toggle()\"\n        *ngIf=\"isHandset$ | async\">\n        <mat-icon aria-label=\"Side nav toggle icon\">menu</mat-icon>\n      </button>\n      <a mat-button class=\"docs-button\" routerLink=\"/home\">\n        <img class=\"docs-classpip-logo\" src=\"../assets/img/classpip-icon.svg\" alt=\"angular\">\n        <span>Classpip</span>\n      </a>\n    </mat-toolbar>\n    <!-- Add Content Here -->\n    <div fxFlex=\"grow\" class=\"main-content\">\n      <div [hidden]=\"!loading\" class=\"loader\">\n        <h2>Loading...</h2>\n        <app-loading></app-loading>\n      </div>\n      <div [hidden]=\"loading\" class=\"router-output\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n    <app-footer></app-footer>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n"
+module.exports = "<mat-sidenav-container class=\"sidenav-container\">\n  <mat-sidenav\n    #drawer\n    class=\"sidenav\"\n    fixedInViewport=\"true\"\n    [attr.role]=\"(isHandset$ | async) ? 'dialog' : 'navigation'\"\n    [mode]=\"(isHandset$ | async) ? 'over' : 'side'\"\n    [opened]=\"!(isHandset$ | async)\">\n    <mat-toolbar color=\"primary\">Menu</mat-toolbar>\n    <mat-nav-list>\n      <a mat-list-item routerLink=\"/home\">\n        <mat-icon mat-list-icon>home</mat-icon>\n        <span>Home</span>\n      </a>      \n      <a mat-list-item (click)=\"usersShow = openClose(usersShow, 'userCaret')\">\n        <mat-icon mat-list-icon>people</mat-icon>\n        <span>Usuarios</span>\n        <span class=\"fill-space\"></span>\n        <mat-icon id=\"userCaret\" class=\"material-icons\">expand_more</mat-icon>\n      </a>\n      <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/students\" (click)=\"usersShow = openClose(usersShow, 'userCaret')\">\n        <mat-icon mat-list-icon>face</mat-icon>\n        <span>Estudiantes</span>\n      </a>\n      <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/teachers\" (click)=\"usersShow = openClose(usersShow, 'userCaret')\">\n        <mat-icon mat-list-icon>school</mat-icon>\n        <span>Profesores</span>\n      </a>\n      <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/administrator\" (click)=\"usersShow = openClose(usersShow, 'userCaret')\">\n        <mat-icon mat-list-icon>person</mat-icon>\n        <span>Administradores</span>\n      </a>\n      <a mat-list-item (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>developer_mode</mat-icon>\n        <span>Desarrolladores</span>\n        <span class=\"fill-space\"></span>\n        <mat-icon id=\"devCaret\" class=\"material-icons\">expand_more</mat-icon>\n      </a>\n      <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/git\" (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>extension</mat-icon>\n        <span>Pautas git</span>\n      </a>\n      <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/tutorial\" (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>computer</mat-icon>\n        <span>Tutorial</span>\n      </a>\n      <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/onboarding\" (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>web</mat-icon>\n        <span>Onboarding</span>\n      </a>\n      <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/faq\" (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>report</mat-icon>\n        <span>Problemas</span>\n      </a>\n    </mat-nav-list>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"primary\">\n      <button\n        type=\"button\"\n        aria-label=\"Toggle sidenav\"\n        mat-icon-button\n        (click)=\"drawer.toggle()\"\n        *ngIf=\"isHandset$ | async\">\n        <mat-icon aria-label=\"Side nav toggle icon\">menu</mat-icon>\n      </button>\n      <a mat-button class=\"docs-button\" routerLink=\"/home\">\n        <img class=\"docs-classpip-logo\" src=\"../assets/img/classpip-icon.svg\" alt=\"angular\">\n        <span>Classpip</span>\n      </a>\n    </mat-toolbar>\n    <!-- Add Content Here -->\n    <div fxFlex=\"grow\" class=\"main-content\">\n      <div [hidden]=\"!loading\" class=\"loader\">\n        <h2>Loading...</h2>\n        <app-loading></app-loading>\n      </div>\n      <div [hidden]=\"loading\" class=\"router-output\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n    <app-footer></app-footer>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n"
 
 /***/ }),
 
@@ -1051,6 +1214,151 @@ var NavigationComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_1__["BreakpointObserver"]])
     ], NavigationComponent);
     return NavigationComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/privacy/privacy.component.html":
+/*!*******************************************************!*\
+  !*** ./src/app/shared/privacy/privacy.component.html ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p><strong>POLÍTICA DE PRIVACIDAD</strong></p><p>&nbsp;</p><p>El presente Política de Privacidad establece los términos en que Classpip usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.</p><p><strong>Información que es recogida</strong></p><p>Nuestro sitio web podrá recoger información personal por ejemplo: Nombre,&nbsp; información de contacto como&nbsp; su dirección de correo electrónica e información demográfica. Así mismo cuando sea necesario podrá ser requerida información específica para procesar algún pedido o realizar una entrega o facturación.</p><p><strong>Uso de la información recogida</strong></p><p>Nuestro sitio web emplea la información con el fin de proporcionar el mejor servicio posible, particularmente para mantener un registro de usuarios, de pedidos en caso que aplique, y mejorar nuestros productos y servicios. &nbsp;Es posible que sean enviados correos electrónicos periódicamente a través de nuestro sitio con ofertas especiales, nuevos productos y otra información publicitaria que consideremos relevante para usted o que pueda brindarle algún beneficio, estos correos electrónicos serán enviados a la dirección que usted proporcione y podrán ser cancelados en cualquier momento.</p><p>Classpip está altamente comprometido para cumplir con el compromiso de mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista ningún acceso no autorizado.</p><p><strong>Cookies</strong></p><p>Una cookie se refiere a un fichero que es enviado con la finalidad de solicitar permiso para almacenarse en su ordenador, al aceptar dicho fichero se crea y la cookie sirve entonces para tener información respecto al tráfico web, y también facilita las futuras visitas a una web recurrente. Otra función que tienen las cookies es que con ellas las web pueden reconocerte individualmente y por tanto brindarte el mejor servicio personalizado de su web.</p><p>Nuestro sitio web emplea las cookies para poder identificar las páginas que son visitadas y su frecuencia. Esta información es empleada únicamente para análisis estadístico y después la información se elimina de forma permanente. Usted puede eliminar las cookies en cualquier momento desde su ordenador. Sin embargo las cookies ayudan a proporcionar un mejor servicio de los sitios web, estás no dan acceso a información de su ordenador ni de usted, a menos de que usted así lo quiera y la proporcione directamente, <a href=\"https://cupondedescuento.com.co/leonisa/\" target=\"_blank\">visitas a una web </a>. Usted puede aceptar o negar el uso de cookies, sin embargo la mayoría de navegadores aceptan cookies automáticamente pues sirve para tener un mejor servicio web. También usted puede cambiar la configuración de su ordenador para declinar las cookies. Si se declinan es posible que no pueda utilizar algunos de nuestros servicios.</p><p><strong>Enlaces a Terceros</strong></p><p>Este sitio web pudiera contener en laces a otros sitios que pudieran ser de su interés. Una vez que usted de clic en estos enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que es redirigido y por lo tanto no somos responsables de los términos o privacidad ni de la protección de sus datos en esos otros sitios terceros. Dichos sitios están sujetos a sus propias políticas de privacidad por lo cual es recomendable que los consulte para confirmar que usted está de acuerdo con estas.</p><p><strong>Control de su información personal</strong></p><p>En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es proporcionada a nuestro sitio web.&nbsp; Cada vez que se le solicite rellenar un formulario, como el de alta de usuario, puede marcar o desmarcar la opción de recibir información por correo electrónico. &nbsp;En caso de que haya marcado la opción de recibir nuestro boletín o publicidad usted puede cancelarla en cualquier momento.</p><p>Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su consentimiento, salvo que sea requerido por un juez con un orden judicial.</p><p>Classpip Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento.</p><p>Esta politica de privacidad se han generado en <a href=\"https://politicadeprivacidadplantilla.com/\" target=\"_blank\">politicadeprivacidadplantilla.com</a>.<br></p>"
+
+/***/ }),
+
+/***/ "./src/app/shared/privacy/privacy.component.scss":
+/*!*******************************************************!*\
+  !*** ./src/app/shared/privacy/privacy.component.scss ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9wcml2YWN5L3ByaXZhY3kuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/shared/privacy/privacy.component.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/shared/privacy/privacy.component.ts ***!
+  \*****************************************************/
+/*! exports provided: PrivacyComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PrivacyComponent", function() { return PrivacyComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PrivacyComponent = /** @class */ (function () {
+    function PrivacyComponent() {
+    }
+    PrivacyComponent.prototype.ngOnInit = function () {
+    };
+    PrivacyComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-privacy',
+            template: __webpack_require__(/*! ./privacy.component.html */ "./src/app/shared/privacy/privacy.component.html"),
+            styles: [__webpack_require__(/*! ./privacy.component.scss */ "./src/app/shared/privacy/privacy.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], PrivacyComponent);
+    return PrivacyComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/services/highlight.service.ts":
+/*!******************************************************!*\
+  !*** ./src/app/shared/services/highlight.service.ts ***!
+  \******************************************************/
+/*! exports provided: HighlightService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HighlightService", function() { return HighlightService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var clipboard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! clipboard */ "./node_modules/clipboard/dist/clipboard.js");
+/* harmony import */ var clipboard__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(clipboard__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prismjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prismjs */ "./node_modules/prismjs/prism.js");
+/* harmony import */ var prismjs__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prismjs__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var prismjs_plugins_toolbar_prism_toolbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prismjs/plugins/toolbar/prism-toolbar */ "./node_modules/prismjs/plugins/toolbar/prism-toolbar.js");
+/* harmony import */ var prismjs_plugins_toolbar_prism_toolbar__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prismjs_plugins_toolbar_prism_toolbar__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var prismjs_plugins_copy_to_clipboard_prism_copy_to_clipboard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard */ "./node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.js");
+/* harmony import */ var prismjs_plugins_copy_to_clipboard_prism_copy_to_clipboard__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(prismjs_plugins_copy_to_clipboard_prism_copy_to_clipboard__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var prismjs_plugins_line_numbers_prism_line_numbers__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prismjs/plugins/line-numbers/prism-line-numbers */ "./node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js");
+/* harmony import */ var prismjs_plugins_line_numbers_prism_line_numbers__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prismjs_plugins_line_numbers_prism_line_numbers__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var prismjs_components_prism_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prismjs/components/prism-css */ "./node_modules/prismjs/components/prism-css.js");
+/* harmony import */ var prismjs_components_prism_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var prismjs_components_prism_javascript__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prismjs/components/prism-javascript */ "./node_modules/prismjs/components/prism-javascript.js");
+/* harmony import */ var prismjs_components_prism_javascript__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_javascript__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var prismjs_components_prism_markup__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prismjs/components/prism-markup */ "./node_modules/prismjs/components/prism-markup.js");
+/* harmony import */ var prismjs_components_prism_markup__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_markup__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var prismjs_components_prism_typescript__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prismjs/components/prism-typescript */ "./node_modules/prismjs/components/prism-typescript.js");
+/* harmony import */ var prismjs_components_prism_typescript__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_typescript__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var prismjs_components_prism_sass__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! prismjs/components/prism-sass */ "./node_modules/prismjs/components/prism-sass.js");
+/* harmony import */ var prismjs_components_prism_sass__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_sass__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var prismjs_components_prism_scss__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! prismjs/components/prism-scss */ "./node_modules/prismjs/components/prism-scss.js");
+/* harmony import */ var prismjs_components_prism_scss__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_scss__WEBPACK_IMPORTED_MODULE_12__);
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (undefined && undefined.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+var HighlightService = /** @class */ (function () {
+    function HighlightService(platformId) {
+        this.platformId = platformId;
+    }
+    HighlightService.prototype.highlightAll = function () {
+        if (Object(_angular_common__WEBPACK_IMPORTED_MODULE_1__["isPlatformBrowser"])(this.platformId)) {
+            Prism.highlightAll();
+        }
+    };
+    HighlightService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __param(0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])(_angular_core__WEBPACK_IMPORTED_MODULE_0__["PLATFORM_ID"])),
+        __metadata("design:paramtypes", [Object])
+    ], HighlightService);
+    return HighlightService;
 }());
 
 
