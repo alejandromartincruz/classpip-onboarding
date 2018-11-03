@@ -1,18 +1,105 @@
 <section>
+	<h2>Introducción a Git</h2>
+	<p>
+		Git es un sistema de control de versiones distribuido. Git es multiplataforma, por lo que se puede usar sin restricciones en los sistemas operativos más comunes, como son Windows, Linux o MacOS.
+	</p>
+	<p>
+		Gracias a Git se van guardando los cambios que se realizan en los diversos archivos del proyecto, pudiendo ir atrás o adelante en ellos luego con unos simples comandos. Algunas de las funciones más útiles de Git son:
+	</p>
+	<ul>
+		<li>Poder comparar el código de un archivo con sus versiones anteriores, para ver los cambios realizados en este.</li>
+		<li>Restaurar versiones anteriores de un archivo.</li>
+		<li>Unir los cambios en un archivo con los cambios realizados por otra persona.</li>
+		<li>Dividir el proyecto en ramas, para que los cambios realizados en una de las ramas no afecte al resto.</li>
+		<li>Subir los cambios realizados a un repositorio remoto para que estén disponibles para el resto del equipo.</li>
+	</ul>
+	<p>
+		Para el proyecto de Classpip se ha utilizado Github, que es un servicio de alojamiento de repositorios gestionados con Git.
+	</p>
+	<p>
+		Si no se esta familiarizado con Git, hay varios recursos con los que aprender Git de forma fácil y practica:
+	</p>
+	<ul class="repositorios-list">
+		<li><a href="https://www.codecademy.com/learn/learn-git">Tutorial básico</a></li>
+		<li><a href="https://www.katacoda.com/courses/git">Tutorial intermedio</a></li>
+		<li><a href="https://learngitbranching.js.org">Tutorial para aprender a trabajar con ramas</a></li>
+	</ul>
+	<p>
+		Hay bastantes cosas que aprender en Git, pero para manejarse bien en el proyecto, es importante familiarizarse con los conceptos de:
+	</p>
+	<ul>
+		<li>Añadir y commitear cambios (git add y git commit).</li>
+		<li>Moverse entre versiones (git checkout).</li>
+		<li>El concepto de rama, poder verlas, crearlas y cambiar entre ellas (git branch, git checkout).</li>
+		<li>Fusionar los cambios realizados en una rama con otra (git merge).</li>
+	</ul>
+</section>
+<section>
+	<h2>Los repositorios de Classpip</h2>
+	<p>
+		Los repositorios de Classpip se encuentran en Github.com, sus enlaces son los siguientes:
+	</p>
+	<ul class="repositorios-list">
+		<li><a href="https://github.com/alejandromartincruz/classpip-services">Repositorio de Classpip services</a></li>
+		<li><a href="https://github.com/alejandromartincruz/classpip-dashboard">Repositorio de Classpip dashboard</a></li>
+		<li><a href="https://github.com/alejandromartincruz/classpip-mobile">Repositorio de Classpip mobile</a></li>
+		<li><a href="https://github.com/alejandromartincruz/classpip-onboarding">Repositorio de Classpip onboarding</a></li>
+	</ul>
+</section>
+<section>
+	<h2>Primeros pasos con reporitorio Classpip</h2>
+	<p>
+		Para comenzar a trabajar con uno de los proyectos, es suficiente con clonar el proyecto en nuestro equipo. Para ello bastará con abrir el terminal, ir a la carpeta donde se quieran tener los proyectos y utilizar el siguiente comando:
+	</p>
+	<pre>
+		<code class="language-markup">{{"
+git clone &lt;url-del-repositorio&gt;
+
+ejemplo: git clone https://github.com/alejandromartincruz/classpip-mobile.git"}}
+		</code>
+	</pre>
+	<p>
+		una vez que se ha clonado el proyecto en el equipo, se entra en su carpeta correspondiente, y desde allí se puede ver el estado (git status), las ramas del proyecto (git branch) y sus versiones (git tag). Al estar recién bajado el estado mostrará que no hay cambios, y solo mostrará la rama master.
+	</p>
+	<p>
+		Los repositorios tienen la rama master, la dev, la test y la tutorial. Para obtener una rama del repositorio es tan sencillo como utilizar los siguientes comandos:
+	</p>
+	<pre>
+		<code class="language-markup">{{"
+git fetch origin &lt;nombre-rama&gt;
+git checkout &lt;nombre-rama&gt;
+
+ejemplo: git fetch origin tutorial
+git checkout tutorial"}}
+	</code>
+	</pre>
+	<p>
+		Después de esto, todo el código del proyecto cambiará para mostrar el código que hay en la rama tutorial. Donde se verán los archivos añadidos en el tutorial de desarrollo para classpip.
+	</p>
+	<p>
+		Cuando se cambie de una versión a otra dentro del repositorio, es bastante probable que los módulos de node instalados hayan cambiado de versión, no se hayan instalado en esa versión, o se hayan instalado módulos nuevos que no estaban en la versión previa. Por ello, es recomendable borrar la carpeta node_modules y volver a realizar la instalación de módulos:
+	</p>
+	<pre>
+		<code class="language-markup">{{"
+rm –rf node_modules
+npm install"}}
+	</code>
+	</pre>	
+</section>
+<section>
 	<h2>Protocolo para trabajo en  grupo en Git</h2>
 	<p>
 		La utilización de un programa de control de versiones, como git en este caso, supone un gran avance a la hora de realizar trabajo en equipo en cualquier software.
 	</p>
-	<p>
-		Creo conveniente marcar unas pautas de trabajo en equipo para facilitar la coordinación de grupos de trabajo en el mismo proyecto, agilizando de esta manera el trabajo de diversas características o módulos, y su posterior integración en el proyecto.
+	<p>Es conveniente marcar unas pautas de trabajo en equipo para facilitar la coordinación de grupos de trabajo en el mismo proyecto, agilizando de esta manera el trabajo de diversas características o módulos, y su posterior integración en el proyecto.
 	</p>
 	<p>
-		Partimos de la premisa de que actualmente hay dos ramas, la master y la dev. Teniendo esto en cuenta, añadiremos una rama Test que surgirá de la versión actual de master. El objetivo es tener las ramas master, dev y test sin diferencias entre ellas para poder comenzar a trabajar óptimamente. A partir de ahora ya podemos considerar:
+		Se parte de la premisa de que actualmente hay dos ramas, la <b>master</b> y la <b>dev</b>. Teniendo esto en cuenta, cada proyecto nuevo comenzará con una nueva rama que surgirá de la versión actual de master. El objetivo es tener las ramas master y dev sin diferencias entre ellas para poder comenzar a trabajar óptimamente, y una rama donde se realizará el proyecto que será idéntica a master en el momento de comenzarlo. Cada proyecto tendrá un nombre único e identificativo para su rama. A partir de ahora ya se puede considerar:
 	</p>
 	<ul>
 		<li>La rama master como la rama de producción, es decir, la que se verá públicamente y utilizarán los usuarios.</li>
 		<li>La rama dev como la rama de preproducción, una rama que será idéntica a la de producción para probar los desarrollos antes de que sean publicados en producción.</li>
-		<li>La rama test como la rama de testeo, donde se podrán hacer pruebas diversas con los desarrollos antes de pasarlos a preproducción.</li>
+		<li>La rama propia de cada proyecto como la rama donde cada estudiante o grupo de estudiantes irá integrando los diversos desarrollos de su proyecto.</li>
 	</ul>
 	<p>
 		Además se tomarán en cuenta dos situaciones diferentes, el trabajo del equipo envuelto en el proyecto directamente, y el trabajo por parte de personas o equipos ajenos al proyecto pero que quieran participar.
@@ -21,41 +108,73 @@
 <section>
 	<h2>Caso 1, trabajo en el equipo directamente relacionado con el proyecto:</h2>
 	<p>
-		Lo primero es fijar un tiempo de desarrollo o unas funcionalidades a desarrollar. Una vez pasado el tiempo fijado, se publicarán los desarrollos que se hayan realizado correctamente durante ese periodo de tiempo. O en el caso de haber fijado funcionalidades en lugar de tiempo, se publicarán las funcionalidades una vez acabadas. La elección de un método u otro deberá ser elegida por el equipo de trabajo.
+		Lo primero es fijar un tiempo de desarrollo, unas funcionalidades a desarrollar o ambas cosas simultáneamente siguiendo una metodología scrum. Una vez pasado el tiempo fijado, se publicarán los desarrollos que se hayan realizado correctamente durante ese periodo de tiempo. O en el caso de haber fijado funcionalidades en lugar de tiempo, se publicarán las funcionalidades una vez acabadas. La elección de un método u otro deberá ser elegida por el equipo de trabajo.
 	</p>
+	<p>
+		El siguiente paso es clonar el proyecto, y prepararlo con las ramas <b>master</b> y <b>test</b>. Cuando ya están las dos ramas listas, tan solo falta crear una nueva rama para el proyecto. <u>Es importante estar situado en la rama master cuando se crea una rama nueva para que esta surja de master</u>. La creación de esta rama se hace mediante el comando:
+	</p>
+	<pre>
+		<code class="language-markup">{{"
+git checkout master
+git checkout –b &lt;nombre-nueva-rama&gt;"}}
+	</code>
+	</pre>
 	<p>
 		Una vez que se tiene preparado el entorno de trabajo con las tres ramas en la misma situación, se podrá comenzar una metodología de trabajo en equipo que facilite la coordinación entre los miembros del equipo, que asegure el correcto testeo de los trabajos individuales de cada uno.
 	</p>
 	<p>
-		Para comenzar un nuevo desarrollo se deberá crear una nueva rama a partir de la rama master, que llamaremos a modo de ejemplo desarrollo_1. Con el comando “git checkout –b desarrollo_1” En este momento la rama desarrollo_1 es exactamente igual que la rama master, dev y test. Y aquí es donde se comienza a desarrollar la nueva funcionalidad que se quiera añadir al proyecto.
+		Para comenzar un nuevo desarrollo se deberá crear una nueva rama a partir de la rama master, que llamaremos a modo de ejemplo desarrollo_1. Con el comando:
+	</p>
+	<pre>
+		<code class="language-markup">{{"
+git checkout master
+git checkout –b desarrollo_1"}}
+	</code>
+	</pre>
+	<p>
+		En este momento la rama desarrollo_1 es exactamente igual que la rama master, dev y la del proyecto. Y aquí es donde se comienza a desarrollar la nueva funcionalidad que se quiera añadir al proyecto.
 	</p>
 	<p>
 		No se debería hacer ningún commit hasta que este nuevo desarrollo no este finalizado y funcionando. Si se realizan muchos commits, en el caso de tener que realizar una revisión del trabajo para encontrar un bug o para mejorar algo, habrá que revisar los cambios realizados en cada uno de los commits individualmente, lo que dificulta bastante la revisión. Tener todo el trabajo realizado en un solo commit facilitará la posterior revisión de los cambios realizados, al tenerlos todos juntos. 
 	</p>
 	<p>
-		Una vez finalizado el nuevo desarrollo, se realizará un merge contra la rama de test. Y se realizarán las pruebas sobre un servidor de test para comprobar el correcto funcionamiento del proyecto.
+		Una vez finalizado el nuevo desarrollo, se realizará un merge contra la rama del proyecto. Y se realizarán las pruebas para comprobar el correcto funcionamiento del proyecto.
 	</p>
 	<p>
-		Para realizar el merge sobre test, se hará de la siguiente manera:
+		Para realizar el merge sobre la rama del proyecto (llamada a partir de ahora <b>proyecto</b> a modo de ejemplo), se hará de la siguiente manera:
 	</p>
-	<ol>
-		<li>git checkout test</li>
-		<li>git pull origin test</li>
-		<li>merge --no-ff --no-commit desarrollo_1</li>
-		<li>git commit -m "[test] merge with desarrollo_1"</li>
-	</ol>
+	<pre>
+		<code class="language-markup">{{"
+git checkout proyecto
+git pull origin proyecto
+merge --no-ff --no-commit desarrollo_1
+git commit -m “[proyecto] merge with desarrollo_1”"}}
+		</code>
+	</pre>
 	<p>
-		Cuando el desarrollo esta correctamente finalizado, y funciona bien en test, se realiza un merge sobre dev. El proceso de merge en dev es el mismo que en test:
+		Hay que destacar, que antes de realizar el merge, es importante hacer un pull como se indica en el paso 2, en el que se descargarían todos los posibles cambios a la rama realizados por otro miembro del grupo, y con lo que se realizaría el merge sobre una rama actualizada.
 	</p>
-	<ol>
-		<li>git checkout dev</li>
-		<li>git pull origin dev</li>
-		<li>merge --no-ff --no-commit desarrollo_1</li>
-		<li>git commit -m "[dev] merge with desarrollo_1"</li>
-	</ol>
 	<p>
-		En caso de haber un conflicto entre los pasos 3 y 4, este no quedará commiteado gracias al flag “--no-commit”, entonces bastará con solucionar el conflicto, añadir los cambios con un “git add” y commitear según el paso 4.
+		Cuando el desarrollo esta correctamente finalizado, y funciona bien en proyecto, se realiza un merge sobre dev. El proceso de merge en dev es el mismo que en proyecto:
 	</p>
+	<pre>
+		<code class="language-markup">{{"
+git checkout dev
+git pull origin dev
+merge --no-ff --no-commit desarrollo_1
+git commit -m “[dev] merge with desarrollo_1”"}}
+		</code>
+	</pre>
+	<p>
+		En caso de haber un conflicto entre los pasos 3 y 4, este no quedará commiteado gracias al flag “--no-commit”, entonces bastará con solucionar el conflicto, añadir los cambios con un “git add” y commitear según el paso 4:
+	</p>
+	<pre>
+		<code class="language-markup">{{"
+Solucionar conflicto
+git add –A
+git commit –m “[dev] merge with desarrollo_1”"}}
+		</code>
+	</pre>
 	<p>
 		El flag “--no-ff” se utiliza para evitar que se realice un fast-forward que nos hará perder información del histórico de ramas. En la siguiente imagen se puede apreciar la diferencia entre realizar un commit con el flag y sin el flag.
 		<img src="../../assets/img/git/gitmerge--no-ff.png" style="display:block;max-width:100%;margin: 15px auto 10px;">
@@ -65,7 +184,7 @@
 		Si todos los desarrollos mergeados en la rama dev funcionan correctamente, una vez finalizado el tiempo de desarrollo, o todos los desarrollos que se quieran publicar, se realiza un merge contra la rama master, arrastrando todos los cambios mergeados contra la rama dev a la rama master. Una vez realizado este merge se tiene una nueva versión funcional del proyecto, por lo que se procederá a etiquetar dicha versión según el procedimiento habitual.
 	</p>
 	<p>
-		El procedimiento habitual de etiquetado es:  <b>x.y.z</b>, donde:
+		El procedimiento habitual de etiquetado es: <b>x.y.z</b>, donde:
 	</p>
 	<ul>
 		<li><b>X</b> es la versión mayor, se usa cuando hay un cambio importante en fucionalidad.</li>
@@ -73,10 +192,23 @@
 		<li><b>Z</b> se usa para pequeñas correcciones de errores.</li>
 	</ul>
 	<p>
-		Por lo que una primera versión podría considerarse como v0.1.0, y tras añadir una funcionalidad pasaría a ser la v0.2.0, después de hacer cambios importantes en la aplicación como para considerar que ya esta lista pasaríamos a denominarla con la etiqueta v1.0.0, y en el caso de que esta versión tuviera un bug que requiriera de un fix la nueva versión sería la v1.0.1. Poner un tag en la rama activa es tan fácil como usar el comando “git tag v0.1.0”.
+		Por lo que una primera versión podría considerarse como v0.1.0, y tras añadir una funcionalidad pasaría a ser la v0.2.0, después de hacer cambios importantes en la aplicación como para considerar que ya esta lista pasaríamos a denominarla con la etiqueta v1.0.0, y en el caso de que esta versión tuviera un bug que requiriera de un fix la nueva versión sería la v1.0.1. Poner un tag en la rama activa es tan fácil como usar el comando:
 	</p>
+	<pre>
+		<code class="language-markup">{{"
+git tag v0.1.0"}}
+		</code>
+	</pre>
 	<p>
-		Si algo funcionara mal en la nueva versión, sería muy fácil revertir los cambios a la versión anterior que fue etiquetada y que se sabe que funcionaba bien. Se puede revertir a un estado anterior usando los tags en lugar de los commits, el comando para realizar este cambio es “git checkout v0.1.0”.
+		Si algo funcionara mal en la nueva versión, sería muy fácil revertir los cambios a la versión anterior que fue etiquetada y que se sabe que funcionaba bien. Se puede revertir a un estado anterior usando los tags en lugar de los commits, el comando para realizar este cambio:
+	</p>
+	<pre>
+		<code class="language-markup">{{"
+git checkout v0.1.0"}}
+		</code>
+	</pre>
+	<p>
+		Usando el comando “git tag” se muestra un listado de versiones por etiqueta, que si se ha seguido el protocolo de numeración correctamente será fácil determinar cual es la versión previa a la actual.
 		<img src="../../assets/img/git/protocolo-git.png" style="display:block;max-width:100%;margin: 15px auto 10px;">
 		<span style="display:block;text-align:center;">Ilustración 2: ejemplo de linea de trabajo</span>
 	</p>
@@ -112,5 +244,25 @@
 	</p>
 	<p>
 		Y “Request changes”, donde se solicita que se realicen cambios en el código que se quiere mergear al repositorio.
+	</p>
+</section>
+<section>
+	<h2>Consejo tutorial de desarrollo modulo de mesa</h2>
+	<p>
+		Para seguir el tutorial de desarrollo en el que se realiza un modulo de mesa de estudiante, es importante tener en cuenta que hay que situarse en el tag v0.1.0 antes de comenzar a intentar desarrollar el modulo del tutorial. Pues el código del tutorial parte de ese punto, y si se iniciara el desarrollo en otro punto el código seria diferente y podría inducir a errores o confusiones.
+	</p>
+	<p>
+		Si en algún momento se quiere comparar el código que se esta realizando con el código del tutorial, existen dos opciones. La primera es ir al repositorio de github del proyecto y una vez ahí situarse en la rama tutorial y buscar el archivo que se quiere comparar.
+	</p>
+	<p>
+		El segundo método se pude ejecutar directamente desde la línea de comandos, y como resultado mostrará las diferencias entre el archivo que se esta editando y el archivo del tutorial. De esta manera se puede ver claramente que es exactamente lo que falta para realizar los pasos indicados en el tutorial. Para ello, se debe utilizar el comando 'git diff' de la siguiente manera:
+	</p>
+	<pre>
+		<code class="language-markup">{{"
+git diff master..tutorial -- myfile.ts"}}
+		</code>
+	</pre>
+	<p>
+		Este comando supone que se esta realizando el tutorial desde la rama master, de estar realizándose desde una rama personalizada iniciada en master en el punto v0.1.0 habrá que usar el nombre de esa rama en lugar de master. En lugar de myfile.ts hay que poner el nombre del archivo que se quiere comparar.
 	</p>
 </section>

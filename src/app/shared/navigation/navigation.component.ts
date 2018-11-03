@@ -12,7 +12,7 @@ export class NavigationComponent {
 
   usersShow = false;
 
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe('(max-width: 768px)')
     .pipe(
       map(result => result.matches)
     );
