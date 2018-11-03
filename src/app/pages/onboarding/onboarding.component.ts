@@ -13,6 +13,9 @@ export class OnboardingComponent implements OnInit, AfterViewChecked {
 
   constructor(private highlightService: HighlightService) { }
 
+  ngOnInit() {
+  }
+
   /**
    * Highlight blog post when it's ready
    */
@@ -21,9 +24,6 @@ export class OnboardingComponent implements OnInit, AfterViewChecked {
       this.highlightService.highlightAll();
       this.highlighted = true;
     }
-  }
-
-  ngOnInit() {
   }
 
 }

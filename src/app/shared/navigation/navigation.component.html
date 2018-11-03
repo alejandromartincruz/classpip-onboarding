@@ -37,7 +37,7 @@
         <mat-icon id="devCaret" class="material-icons">expand_more</mat-icon>
       </a>
       <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/git" (click)="devShow = openClose(devShow, 'devCaret')">
-        <mat-icon mat-list-icon>extension</mat-icon>
+        <mat-icon mat-list-icon fontSet="fab" fontIcon="fa-github"></mat-icon>
         <span>Pautas git</span>
       </a>
       <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/tutorial" (click)="devShow = openClose(devShow, 'devCaret')">

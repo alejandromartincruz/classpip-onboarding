@@ -17,7 +17,7 @@ export class AppComponent implements AfterViewInit {
     public matIconRegistry: MatIconRegistry,
     private router: Router
   ) {
-    matIconRegistry.registerFontClassAlias ('fas');
+    matIconRegistry.registerFontClassAlias ('fab');
     this.loading = true;
   }
 

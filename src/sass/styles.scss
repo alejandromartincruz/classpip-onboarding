@@ -4,11 +4,11 @@
 @include mat-core();
 
 @import './variables';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/css/all.css';
 
-@import "~prismjs/plugins/toolbar/prism-toolbar.css";
-@import "~prismjs/plugins/line-numbers/prism-line-numbers.css";
-@import "~prismjs/themes/prism-coy";
+@import '~prismjs/plugins/toolbar/prism-toolbar.css';
+@import '~prismjs/plugins/line-numbers/prism-line-numbers.css';
+@import '~prismjs/themes/prism-coy';
 
 
 // Create the theme object (a Sass map containing all of the palettes).
@@ -79,15 +79,13 @@ body {
 
 .parallax {
 	margin: -10px -35px;
-
-    /* Set a specific height */
-    min-height: 479px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed!important;
-    /*background-position: center!important;*/
-    background-repeat: no-repeat!important;
-    background-size: cover!important;
+  /* Set a specific height */
+  min-height: 479px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed!important;
+  /*background-position: center!important;*/
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
 }
 
 .home-parallax {
@@ -127,8 +125,70 @@ pre[class*="language-"]:before, pre[class*="language-"]:after {
   display: none;
 }
 
-@media only screen and (max-device-width: 768px) {
-    .parallax {
-        background-attachment: scroll;
+.repositorios-list {
+  padding: 0;
+  font-size: 0;
+  :nth-child(1) a {
+    background-color: #562468;
+    border-bottom: 2px solid #fafafa;
+  }
+  :nth-child(2) a {
+    background-color: #6209cc;
+    border-bottom: 2px solid #fafafa;
+  }
+  :nth-child(3) a {
+    background-color: #7f267f;
+    border-bottom: 2px solid #fafafa;
+  }
+  :nth-child(4) a {
+    background-color: #682547;
+  }
+  li {
+    display: inline-block;
+    width: 100%;
+    font-size: 1rem;
+    a {
+      font-weight: bold;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      height: 100%;
+      &:hover {
+        color: #ec539f;
+      }
     }
+  }
 }
+
+a.second-level .mat-list-item-content {
+  padding-left: 35px !important;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .repositorios-list {
+    li {
+      width: 50%;
+    }
+    :nth-child(1) a {
+      border: 1px solid #fafafa;
+    }
+    :nth-child(2) a {
+      border: 1px solid #fafafa;
+    }
+    :nth-child(3) a {
+      border: 1px solid #fafafa;
+    }
+    :nth-child(4) a {
+      border: 1px solid #fafafa;
+    }
+  }
+} 
