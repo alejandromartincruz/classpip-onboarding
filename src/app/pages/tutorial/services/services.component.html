@@ -1,0 +1,264 @@
+<section>
+	<h2>Creació del model i les dades al repositori Services</h2>
+	<p>
+		L’API de l’aplicació es crea automàticament mitjançant la definició del model de dades i les relacions entre els seus objectes.
+	</p>
+	<p>
+		Per tal de crear el model de dades per enviar i rebre les peticions de la API, s’han de crear dos fitxers amb el mateix nom (en el nostre cas els anomenem “Mesa”), un amb format <b>js</b> (javascript) i l’altre en format <b>json</b> que es on estarà la definició de les dades, les relacions i el nivell d’accés que es podrà tenir a les dades.
+	</p>
+	<p>
+		Per simplificar, l’objecte “Mesa” no tindrà ninguna relació amb ningun altre objecte creat, serà l’estudiant que tingui una taula assignada.
+	</p>
+	<p>
+		El model, per seguir l’estructura del projecte, s’ha de crear a la carpeta common → models
+	</p>
+	<h3>Model “Mesa”</h3>
+	<p>
+		Es crea el fitxer en format js (Mesa.js) en la ruta common/models i simplement s’afegeixen les següents línies que serveixen per definir el nom de la funció:
+	</p>
+	<pre class="line-numbers">
+		<code class="language-javascript">{{"'use strict';
+
+/* eslint-disable */
+module.exports = function (Mesa) {};
+/* eslint-enable */"}}
+		</code>
+	</pre>
+	
+	<p>
+		A la mateixa ruta que Mesa.js, s'ha de crear un fitxer json, en aquest cas Mesa.json. En crear el fitxer en format json s’han d’afegir el nom i les propietats de l’objecte, les relacions i el nivell d’accés segons el rol:
+	</p>
+	<pre class="line-numbers">
+		<code class="language-json">{{'{
+  "name": "Mesa",
+  "plural": "mesas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombreAula": {
+      "type": "string",
+      "required": true
+    },
+    "numFila": {
+      "type": "number",
+      "required": true
+    },
+    "numColumna": {
+      "type": "number",
+      "required": true
+    },
+    "imageM": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+
+  },
+  "acls": [{
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "SYS-ADMIN",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}'}}
+		</code>
+	</pre>
+	<p>
+		L’Id no cal que s’especifiqui ja que no es una propietat en si de l’objecte, si no que es una propietat que serveix per relacionar objectes i que l’API ja dona per suposada.
+	</p>
+	<h3>Model “Student”</h3>
+	<p>
+		Per tal de lligar un estudiant amb la seva taula, a la mateixa ruta dels models, tenim el fitxer student.json, on s’ha d’afegir la relació en el model de dades de l’estudiant:
+	</p>
+	<pre class="line-numbers" data-start="41">
+		<code class="language-json">{{'"mesa": {
+    "type": "belongsTo",
+    "model": "Mesa",
+    "foreignKey": "mesaId"
+}'}}</code>
+	</pre>
+	<p>
+		La relació, en el nostre cas serà del tipus “BelongsTo”, és a dir, que cada estudiant té una sola taula assignada i utilitzarem com a clau primària “mesaId”.
+	</p>
+	<p>
+		Una vegada acabats els models s’ha d’afegir l’objecte al fitxer <b>server/model-config.json</b> i especificar la base de dades i si és un objecte públic o no:
+	</p>
+	<pre class="line-numbers" data-start="37">
+		<code class="language-json">{{'"Mesa": {
+    "dataSource": "db",
+    "public": true
+  },'}}</code>
+	</pre>
+</section>
+<section>
+	<h2>Visualització a la API</h2>
+	<p>
+		Una vegada completats els models i la definició del model, podem comprovar que s’ha creat correctament l’objecte a la API executant el mòdul i obrint la pàgina en el port especificat en la configuració:
+		<img src="../../../assets/img/tutorial/img8.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+	<p>
+		Com podem comprovar, s’ha creat l’objecte i si despleguem els mètodes podrem veure els que es creen automàticament per defecte ja que no hem assignat ninguna relació a l’objecte:
+		<img src="../../../assets/img/tutorial/img9.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+	<p>
+		En canvi, si despleguem l’objecte “Students” podrem trobar la definició de la url que correspon a la relació que hem afegit al model:
+		<img src="../../../assets/img/tutorial/img10.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+</section>
+<section>
+	<h2>Creació de les dades inicials</h2>
+	<p>
+		Ja que no executem el programa des del servidor de producció, no estem connectats a una base de dades que contingui dades per poder provar que funciona el que estem programant.
+	</p>
+	<p>
+		Per tant, per poder visualitzar dades a l’aplicació, hem de crear un fitxer 02-1-crea-Mesas.js a la carpeta server/boot amb informació amb la forma següent:
+	</p>
+	<pre class="line-numbers">
+		<code class="language-javascript">{{"'use strict';
+
+module.exports = function (app, cb) {
+
+  app.models.Mesa.create([{
+    nombreAula: 'Aula 1',
+    numFila: 1,
+    numColumna: 1,
+    imageM: 'assets/mesa1.png'
+  }, {
+    nombreAula: 'Aula 1',
+    numFila: 2,
+    numColumna: 4,
+    imageM: 'assets/mesa3.png'
+  }, {
+    nombreAula: 'Aula 2',
+    numFila: 1,
+    numColumna: 6,
+    imageM: 'assets/mesa2.png'
+  }], function (err) {
+
+    if (err) throw err;
+    process.nextTick(cb);
+  });
+};"}}
+		</code>
+	</pre>
+	<p>
+		Les imatges es poden declarar de dues maneres:
+	</p>
+	<ul>
+		<li>Definint la URL d’un lloc d’internet</li>
+		<li>Definint la ruta on està guardada la imatge. Aquest mètode només es pot considerar si la imatge ha sigut creada i no es troba a internet.</li>
+	</ul>
+	<p>
+		En el cas de les imatges de la taula, s’han guardat en la carpeta assets del repositori del Mobile:
+		<img src="../../../assets/img/tutorial/img12.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+	<p>
+		Així que, la ruta de les imatges que s’ha d’indicar en la creació de les dades es el nom de la carpeta + el nom de la imatge.
+	</p>
+	<p>
+		D’aquesta manera tindrem tres taules a visualitzar.
+	</p>
+	<p>
+		A part de crear les taules, les hem d’assignar als estudiants en el fitxer “06- create-students.js” mitjançant la clau especificada en les relacions del model Students: “mesaId”:
+	</p>
+	<pre class="line-numbers" data-start="3">
+		<code class="language-javascript">{{"module.exports = function (app, cb) {
+
+  app.models.Student.create([{
+    id: 10000,
+    username: 'student-1',
+    password: 'student-1',
+    name: 'Lorena',
+    surname: 'Diez',
+    email: 'student-1@classpip.com',
+    emailVerified: 1,
+    schoolId: 1,
+    avatarId: 6,
+    mesaId: 1
+  }, {
+    id: 10001,
+    username: 'student-2',
+    password: 'student-2',
+    name: 'Rosario',
+    surname: 'Arellano',
+    email: 'student-2@classpip.com',
+    emailVerified: 1,
+    schoolId: 1,
+    avatarId: 6,
+    mesaId: 2
+  }, {
+    id: 10002,
+    username: 'student-3',
+    password: 'student-3',
+    name: 'Gillermo',
+    surname: 'Macho',
+    email: 'student-3@classpip.com',
+    emailVerified: 1,
+    schoolId: 2,
+    avatarId: 7,
+    mesaId: 3
+  }, {"}}
+		</code>
+	</pre>
+	<p>
+		Una vegada completats tots els passos, es pot executar la part de Sevices i comprovar tant a la API com amb el Postman que es porti la informació correcta (explicació del funcionament més endavant).
+	</p>
+	<p>
+		Les imatges que es defineixen en les dades inicials s’han afegit als assets dels repositoris de Mobile i de Dashboard, però es poden utilitzar imatges d’internet indicant la url en l’atribut.
+	</p>
+</section>
+<section>
+	<h2>Verificació de les dades mitjançant Postman i l’API</h2>
+	<p>
+		Per tal de fer crides a la API mitjançant el programa Postman o la API en si, s’ha de tenir en compte la capçalera de la petició, que es correspon al token, que es una clau que es crea en autenticar-se amb un usuari introduint l’usuari i la contrasenya.
+	</p>
+	<p>
+		D’aquesta manera, si el programa es divideix en diversos servidors només caldrà que els usuaris i les contrasenyes estiguin guardats en un, i que s’accedeixi als altres mitjançant aquesta clau. Aquest fet incrementa molt la seguretat per el fet de que només s’ha de protegir les contrasenyes i noms d’usuari en un servidor només.
+	</p>
+</section>
+<section>
+	<h2>Com aconseguir el Token</h2>
+	<p>
+		Quan s’accedeix a l’aplicació introduint les credencials, es genera automàticament un token que es guarda en la variable currentUser.id del provider utils.services.ts. S’ha de tenir en compte de que cada vegada que es fa un login, es canvia el token, de manera que si canviem d’usuari, es generarà un de nou.
+	</p>
+	<p>
+		Una manera fàcil de aconseguir-ho es fent una petita modificació del codi perquè en alguna pàgina de l’aplicació mòbil o web es mostri i es pugui copiar.
+	</p>
+	<p>
+		En aquesta guia no s’explicarà com fer aquesta modificació, però sí que està feta als repositoris amb el codi de la guia, en l’aplicació mòbil, en la pàgina del perfil.
+		<img src="../../../assets/img/tutorial/img13.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+</section>
+<section>
+	<h2>Afegir el token al Postman</h2>
+	<p>
+		Per afegir el token, en la pestanya “Headers” s’ha d’afegir una línia d’autenticació copiant el token en la part de Values.
+		<img src="../../../assets/img/tutorial/img14.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+</section>
+<section>
+	<h2>Afegir el token a l’API</h2>
+	<p>
+		En l’API, simplement, s’ha de copiar a la part superior i pressionar el botó.
+		<img src="../../../assets/img/tutorial/img15.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+</section>

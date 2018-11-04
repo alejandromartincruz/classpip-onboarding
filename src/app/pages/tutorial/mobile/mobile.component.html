@@ -1,0 +1,384 @@
+<section>
+	<h2>Creació de les pàgines en el al repositori Mobile</h2>
+	<p>
+		<b>IMPORTANT:</b> quan es parla de un objecte seguit de “Page” es refereix a la pàgina dins de la carpeta corresponent dins del directori de “pages” <br>Exemple: MenuPage es la classe de la pàgina del menu:
+		<img src="../../../assets/img/tutorial/img16.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+	<p>
+		El primer pas és la creació del model per tal de poder rebre dades de la API i convertir-les en l’objecte “Mesa” en si. Per fer-ho, crearem una classe de typescrip dins de la carpeta src → models i especificarem els atributs de l’objecte, el constructor, el mètode (<b>toObject</b>) per passar a objecte “Mesa” l’objecte genèric que es rep i els corresponents gets i sets segons els atributs especificats:
+	</p>
+	<pre class="line-numbers">
+		<code class="language-typescript">{{"export class Mesa {
+
+  private _id: string;
+  private _nombreAula: string;
+  private _numFila: number;
+  private _numColumna: number;
+  private _imageM: string;
+
+
+  constructor(id?: string, nombreAula?: string, numFila?: number, numPatas?: number, imageM?: string) {
+    this._id = id;
+    this._nombreAula = nombreAula;
+    this._numFila = numFila;
+    this._numColumna = numPatas;
+    this._imageM = imageM;
+  }
+  /* tslint:disable */
+  static toObject(object: any): Mesa {
+    /* tslint:enable */
+    let result: Mesa = new Mesa();
+    if (object != null) {
+      result.id = object.id;
+      result.nombreAula = object.nombreAula;
+      result.numFila = object.numFila;
+      result.numColumna = object.numColumna;
+      result.imageM = object.imageM;
+
+    }
+    return result;
+  }
+
+  public get id(): string {
+    return this._id;
+  }
+
+  public set id(value: string) {
+    this._id = value;
+  }
+
+  public get nombreAula(): string {
+    return this._nombreAula;
+  }
+
+  public set nombreAula(value: string) {
+    this._nombreAula = value;
+  }
+
+  public get imageM(): string {
+    return this._imageM;
+  }
+
+  public set imageM(value: string) {
+    this._imageM = value;
+  }
+
+  public get numFila(): number {
+    return this._numFila;
+  }
+
+  public set numFila(value: number) {
+    this._numFila = value;
+  }
+
+  public get numColumna(): number {
+    return this._numColumna;
+  }
+
+  public set numColumna(value: number) {
+    this._numColumna = value;
+  }
+
+}"}}
+		</code>
+	</pre>
+	<p>
+		També cal afegir l’atribut “mesaId” al model “Student” per tal de que es tradueixi correctament i els corresponents get i set:<br>(veure linies 13, 23, 38)
+	</p>
+	<pre class="line-numbers" data-start="5">
+		<code class="language-typescript">{{"private _id: string;
+  private _name: string;
+  private _surname: string;
+  private _username: string;
+  private _email: string;
+  private _schoolId: number;
+  private _avatarId: number;
+  private _avatar: Avatar;
+  private _mesaId: number;
+
+  constructor(name?: string, surname?: string, username?: string,
+    email?: string, schoolId?: number, avatarId?: number, mesaId?: number) {
+    this._name = name;
+    this._surname = surname;
+    this._username = username;
+    this._email = email;
+    this._schoolId = schoolId;
+    this._avatarId = avatarId;
+    this._mesaId = mesaId;
+  }
+
+  /* tslint:disable */
+  static toObject(object: any): Student {
+    /* tslint:enable */
+    let result: Student = new Student();
+    if (object != null) {
+      result.id = object.id;
+      result.name = object.name;
+      result.surname = object.surname;
+      result.username = object.username;
+      result.email = object.email;
+      result.schoolId = object.schoolId;
+      result.avatarId = object.avatarId;
+      result.mesaId = object.mesaId;
+    }
+    return result;
+  }"}}</code>
+	</pre>
+	<p>
+		Una vegada creat el model, creem els mètodes que creen peticions a la API dins de la carpeta src/providers. En el nostre cas, crearem el fitxer mesaService.ts en el que només necessitarem un mètode que l’anomenarem “getMyMesa” que retornarà l’objecte sencer:
+	</p>
+	<pre class="line-numbers">
+		<code class="language-typescript">{{'import {Injectable} from "@angular/core";
+import {UtilsService} from "./utils.service";
+import {Headers, Http, RequestOptions, Response} from "@angular/http";
+import {Observable} from "rxjs/Observable";
+import {AppConfig} from "../app/app.config";
+import {School} from "../model/school";
+import {Mesa} from "../model/mesa";
+import {Avatar} from "../model/avatar";
+
+@Injectable()
+export class MesaService {
+
+  constructor(
+    public http: Http,
+    public utilsService: UtilsService) { }
+
+  public getMyMesa(): Observable&lt;Mesa&gt; {
+
+    let options: RequestOptions = new RequestOptions({
+      headers: this.utilsService.setAuthorizationHeader(new Headers(), this.utilsService.currentUser.id)
+    });
+
+    var url: string = this.utilsService.getMyUrl() + AppConfig.MYMESA_URL;
+
+    return this.http.get(url, options)
+      .map((response: Response, index: number) => Mesa.toObject(response.json()))
+      .catch((error: Response) => this.utilsService.handleAPIError(error));
+  }
+}'}}
+		</code>
+	</pre>
+	<p>
+		Les url de les peticions es fixen en un fitxer a part dins de la carpeta src/app amb el nom de app.config.ts.
+	</p>
+	<p>
+		Per saber quina url es necessita, simplement cal consultar els mètodes generats a la API i l’únic que ens interessa de moment es el de la figura ja que ens retorna la “Mesa” lligada a un estudiant.
+		<img src="../../../assets/img/tutorial/img17.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+	<p>
+		Per tant, només haurem d’afegir la part de “/mesa” ja que el mètode “getMyUrl” ja ens retorna la part de l’estudiant i els seu id.
+	</p>
+	<pre class="line-numbers" data-start="19">
+		<code class="language-typescript">{{"public static get MYMESA_URL(): string { return '/mesa'; }"}}</code>
+	</pre>
+	<p>
+		L’objecte “Mesa” s’inicialitzarà tant a la pàgina del menú com a la pàgina home ja que es podrà accedir per les dues pàgines.
+	</p>
+	<p>
+		Tan en la MenuPage com en la HomePage hi haurà un mètode “vesAlaMesa” on dins hi haurà la petició “getMyMesa()” que hem creat anteriorment en el mesaService.
+	</p>
+	<p>
+		Dins de la petició, si es rep la informació correctament sense errors, s’utilitza la classe navController per inicialitzar la pàgina MesaPage passant-li la variable “mesa” inicialitzada i amb informació.
+		<img src="../../../assets/img/tutorial/img18.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+	<p>
+		Per tant, per fer la crida des de la MenuPage, a l'arxiu src/pages/menu/menu.ts es defineixen les variables que s’utilitzen i s’inicialitza la MesaPage:<br>(veure linies 31, 42, 48)
+	</p>
+	<pre class="line-numbers" data-start="24">
+		<code class="language-typescript">{{"export class MenuPage {
+
+  @ViewChild(Nav) nav: Nav;
+
+  public rootPage: Component;
+  public homePage: Page;
+  public schoolPage: Page;
+  public mesaPage: Page;
+
+  public myRole: Role;
+  public role = Role;
+
+  constructor(
+    public navController: NavController,
+    public translateService: TranslateService,
+    public utilsService: UtilsService,
+    public ionicService: IonicService,
+    public schoolService: SchoolService,
+    public mesaService: MesaService,
+    private loginService: LoginService) {
+
+    this.rootPage = HomePage;
+    this.homePage = new Page(HomePage, this.translateService.instant('HOME.TITLE'));
+    this.schoolPage = new Page(SchoolPage, this.translateService.instant('SCHOOL.TITLE'));
+    this.mesaPage = new Page(MesaPage,this.translateService.instant('MESA.TITLE'));
+    this.myRole = this.utilsService.role;
+  }"}}</code>
+	</pre>
+	<p>
+		I després el mètode en si té una forma:
+	</p>
+	<pre class="line-numbers" data-start="92">
+		<code class="language-typescript">{{"public vesAlaMesa(): void {
+
+    this.ionicService.showLoading(this.translateService.instant('APP.WAIT'));
+
+    this.mesaService.getMyMesa().subscribe(
+      ((value: Mesa) => this.navController.push(MesaPage, { mesa: value })),
+      error => {
+        this.ionicService.showAlert(this.translateService.instant('APP.ERROR'), error);
+        this.ionicService.removeLoading();
+      });
+  }"}}</code>
+	</pre>
+	<p>
+		També s’ha de definir el botó a menu.html posant com a condició que el rol de l’usuari sigui el d’estudiant. Si no es un estudiant, no es mostrarà.
+	</p>
+	<pre class="line-numbers" data-start="18">
+		<code class="language-markup">&lt;button menuClose ion-item *ngIf="myRole == role.STUDENT" (click)="vesAlaMesa()"&gt;
+	{{'{'}}{{'{'}}mesaPage.title{{'}'}}{{'}'}}
+&lt;/button&gt;</code>
+	</pre>
+	<p>
+		La part de la HomePage es igual que la de MenuPage, l’única part que canvia és la que es mostra d’entrada a la HomePage:
+		<img src="../../../assets/img/tutorial/img19.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+	<p>
+		La informació del botó s’ha d’inicialitzar en el moment que s’inicialitza la pàgina, és a dir, dins del mètode “getHomeInfo()” i com que només serà visible per els estudiants, ha d’estar dins del If que correspongui als estudiants.
+	</p>
+	<pre class="line-numbers" data-start="112">
+		<code class="language-typescript">{{"this.schoolService.getMySchool().finally(() => {
+	refresher ? refresher.complete() : null;
+    this.ionicService.removeLoading();
+}).subscribe(
+    ((value: School) => {
+        this.school = value;
+
+        this.mesaService.getMyMesa().subscribe(
+            ((value: Mesa) => {
+            	this.mesa = value
+            }),
+            error => this.ionicService.showAlert(this.translateService.instant('APP.ERROR'), error));
+        }
+
+    ),
+    error => this.ionicService.showAlert(this.translateService.instant('APP.ERROR'), error));"}}</code>
+	</pre>
+	<p>
+		I el botó en el fitxer home.html tindrà la forma:
+	</p>
+	<pre class="line-numbers" data-start="31">
+		<code class="language-markup">&lt;ion-item *ngIf="mesa" (click)="vesAlaMesa()"&gt;
+    &lt;ion-thumbnail item-left&gt;
+    	&lt;img [src]="mesa.imageM"&gt;
+    &lt;/ion-thumbnail&gt;
+    &lt;h2&gt;{{'{'}}{{'{'}}mesa.nombreAula{{'}'}}{{'}'}}&lt;/h2&gt;
+    &lt;button ion-button clear item-right icon-only&gt;
+    	&lt;ion-icon name="ios-arrow-forward"&gt;&lt;/ion-icon&gt;
+    &lt;/button&gt;
+&lt;/ion-item&gt;</code>
+	</pre>
+	<p>
+		Una vegada creats els models, els mètodes que interaccionen amb la API i els mètodes que porten a la MesaPage, es procedeix a crear la pàgina “Mesa” dins de la carpeta src → pages, on, per seguir l’estructura del projecte, s’haurà de crear un directori i dins els tres fitxers corresponents:
+		<img src="../../../assets/img/tutorial/img20.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+</section>
+<section>
+	<h2>Mesa.ts</h2>
+	<p>
+		Aquest fitxer correspon a les funcions que fa la pàgina. Com que en el nostre cas només es tracta d’una pàgina que ensenya informació i l’objecte s’ha inicialitzat a les pàgines anteriors, només s’ha de recuperar la informació:
+	</p>
+	<pre class="line-numbers">
+		<code class="language-typescript">{{'import {Mesa} from "../../model/mesa";
+import {TranslateService} from "ng2-translate/ng2-translate";
+import {IonicService} from "../../providers/ionic.service";
+import {NavParams} from "ionic-angular";
+import {Component} from "@angular/core";
+
+@Component({
+  selector: "page-mesa",
+  templateUrl: "./mesa.html"
+})
+
+export class MesaPage {
+
+  public mesa: Mesa;
+
+  constructor(
+    public navParams: NavParams,
+    public translateService: TranslateService,
+    public ionicService: IonicService) {
+
+    this.mesa = this.navParams.data.mesa;
+  }
+  public ionViewDidEnter(): void {
+
+    this.ionicService.removeLoading();
+  }
+
+}'}}</code>
+	</pre>
+</section>
+<section>
+	<h2>Mesa.scss</h2>
+	<p>
+		En aquest es defineix l’estil dels elements de la pàgina:
+	</p>
+	<pre class="line-numbers">
+		<code class="language-scss">{{'page-mesa {
+	.logo-row {
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	ion-row {
+		align-items: center;
+		text-align: center;
+	}
+}'}}</code>
+	</pre>
+</section>
+<section>
+	<h2>Mesa.html</h2>
+	<p>
+		Finalment, en el fitxer html es defineix la posició i quins elements es mostren en la pàgina:
+	</p>
+	<pre class="line-numbers">
+		<code class="language-markup">&lt;ion-header&gt;
+  &lt;ion-navbar color="primary"&gt;
+    &lt;button ion-button menuToggle&gt;
+      &lt;ion-icon name="menu"&gt;&lt;/ion-icon&gt;
+    &lt;/button&gt;
+    &lt;ion-title>{{'{'}}{{'{'}}mesa.nombreAula{{'}'}}{{'}'}}&lt;/ion-title&gt;
+  &lt;/ion-navbar&gt;
+&lt;/ion-header&gt;
+&lt;ion-content&gt;
+  &lt;ion-row class="logo-row" *ngIf="mesa"&gt;
+    &lt;ion-col>&lt;/ion-col&gt;
+    &lt;ion-col width-67&gt;
+      &lt;img [src]="mesa.imageM" width="200px" height="200px" /&gt;
+    &lt;/ion-col&gt;
+    &lt;ion-col>&lt;/ion-col&gt;
+  &lt;/ion-row&gt;
+  &lt;ion-item&gt;
+    {{'{'}}{{'{'}} 'MESA.FILA' | translate {{'}'}}{{'}'}}
+    &lt;ion-note item-right&gt;{{'{'}}{{'{'}} mesa.numFila {{'}'}}{{'}'}} &lt;/ion-note&gt;
+  &lt;/ion-item&gt;
+  &lt;ion-item&gt;
+    {{'{'}}{{'{'}} 'MESA.COLUMNA' | translate {{'}'}}{{'}'}}
+    &lt;ion-note item-right&gt;{{'{'}}{{'{'}} mesa.numColumna {{'}'}}{{'}'}} &lt;/ion-note&gt;
+  &lt;/ion-item&gt;
+&lt;/ion-content&gt;</code>
+	</pre>
+	<p>
+		Per tal d’especificar les variables de “MESA.FILA” i “MESA.COLUMNA”, s’han d’afegir al fitxer <b>es.json</b> de la dins de la carpeta src/assets/i18n :
+	</p>
+	<pre class="line-numbers" data-start="40">
+		<code class="language-json">{{'"MESA": {
+    "TITLE": "Mi mesa",
+    "FILA": "Fila",
+    "COLUMNA": "Columna"
+  },'}}</code>
+	</pre>
+	<p>
+		Per últim, s’han de definir les pàgines creades en el fitxer <b>app.modules.ts</b> ubicat en els directori src/app. S’ha d’especificar la MesaPage dins de declarations i entryComponents i el servei de MesaService dins de providers.
+	</p>
+</section>
