@@ -1,117 +1,23 @@
-<section>
-	<h2>Objectiu i definició de l’objecte</h2>
-	<p>
-	  L’objectiu es crear un nou objecte “Mesa” que tindrà la informació de la taula a on estigui l’estudiant que utilitzi l’aplicació. Per tant, només podrà veure aquesta informació un usuari que tingui un rol d’estudiant.
-	</p>
-		<ul>
-			<li><b>Id:</b> per identificar el registre</li>
-			<li><b>nombreAula:</b> nom de l’aula on és la taula</li>
-			<li><b>numFila:</b> número de la fila de taules de l’aula</li>
-			<li><b>numColumna:</b> número de la columna de taules de l’aula</li>
-			<li><b>imageM:</b> imatge de la taula</li>
-		</ul>
-	<p>
-		En l’aplicació mòbil, es podrà accedir a la pàgina de “Mesa” mitjançant la pàgina “home”, on es mostrarà l’atribut de nombreAula i des del menú lateral de l’aplicació, on es mostrarà la variable TITLE de l’objecte.
+<mat-tab-group (selectedTabChange)="tabSelectionChanged($event)">
+  <mat-tab label="Introduccción">
+    <ng-template matTabContent>
+      <app-introduction></app-introduction>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Services">
+    <ng-template matTabContent>
+      <app-services></app-services>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Mobile">
+    <ng-template matTabContent>
+      <app-mobile></app-mobile>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Dashboard">
+    <ng-template matTabContent>
+      <app-dashboard></app-dashboard>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>
 
-		<img src="../../assets/img/tutorial/img1.png" style="max-width:100%;margin: 15px 0 10px;">
-	</p>
-	<p>
-		I la visualització de la pàgina serà:
-		<img src="../../assets/img/tutorial/img2.png" style="max-width:100%;margin: 15px 0 10px;">
-	</p>
-	<p>
-		En quant a la pàgina web, es podrà accedir mitjançant la barra de navegació superior, on hi haurà un botó que portarà a la pàgina que mostrarà la informació de “Mesa”:
-		<img src="../../assets/img/tutorial/img3.png" style="max-width:100%;margin: 15px 0 10px;">
-	</p>
-</section>
-<section>
-	<h2>Creació del model i les dades al repositori Services</h2>
-	<p>
-		L’API de l’aplicació es crea automàticament mitjançant la definició del model de dades i les relacions entre els seus objectes.
-	</p>
-	<p>
-		Per tal de crear el model de dades per enviar i rebre les peticions de la API, s’han de crear dos fitxers amb el mateix nom (en el nostre cas els anomenem “Mesa”), un amb format <b>js</b> (javascript) i l’altre en format <b>json</b> que es on estarà la definició de les dades, les relacions i el nivell d’accés que es podrà tenir a les dades.
-	</p>
-	<p>
-		Per simplificar, l’objecte “Mesa” no tindrà ninguna relació amb ningun altre objecte creat, serà l’estudiant que tingui una taula assignada.
-	</p>
-	<p>
-		El model, per seguir l’estructura del projecte, s’ha de crear a la carpeta common → models
-	</p>
-	<h3>Model “Mesa”</h3>
-	<p>
-		Es crea el fitxer en format js i simplement s’afegeixen les següents línies que serveixen per definir el nom de la funció:
-		<img src="../../assets/img/tutorial/img4.png" style="max-width:100%;margin: 15px 0 10px;">
-	</p>
-	<p>
-		En crear el fitxer en format json s’han d’afegir el nom i les propietats de l’objecte, les relacions i el nivell d’accés segons el rol:
-		<img src="../../assets/img/tutorial/img5.png" style="max-width:100%;margin: 15px 0 10px;">
-	</p>
-	<p>
-		L’Id no cal que s’especifiqui ja que no es una propietat en si de l’objecte, si no que es una propietat que serveix per relacionar objectes i que l’API ja dona per suposada.
-	</p>
-	<h3>Model “Student”</h3>
-	<p>
-		Per tal de lligar un estudiant amb la seva taula, s’ha d’afegir la relació en el model de dades de l’estudiant:
-		<img src="../../assets/img/tutorial/img6.png" style="max-width:100%;margin: 15px 0 10px;">
-	</p>
-	<p>
-		La relació, en el nostre cas serà del tipus “BelongsTo”, és a dir, que cada estudiant té una sola taula assignada i utilitzarem com a clau primària “mesaId”.
-	</p>
-	<p>
-		Una vegada acabats els models s’ha d’afegir l’objecte al fitxer <b>model-config.json</b> i especificar la base de dades i si és un objecte públic o no:
-		<img src="../../assets/img/tutorial/img7.png" style="max-width:100%;margin: 15px 0 10px;">
-	</p>
-</section>
-<section>
-	<h2>Visualització a la API</h2>
-	<p>
-		Una vegada completats els models i la definició del model, podem comprovar que s’ha creat correctament l’objecte a la API executant el mòdul i obrint la pàgina en el port especificat en la configuració:
-		<img src="../../assets/img/tutorial/img8.png" style="max-width:100%;margin: 15px 0 10px;">
-	</p>
-	<p>
-		Com podem comprovar, s’ha creat l’objecte i si despleguem els mètodes podrem veure els que es creen automàticament per defecte ja que no hem assignat ninguna relació a l’objecte:
-		<img src="../../assets/img/tutorial/img9.png" style="max-width:100%;margin: 15px 0 10px;">
-	</p>
-	<p>
-		En canvi, si despleguem l’objecte “Students” podrem trobar la definició de la url que correspon a la relació que hem afegit al model:
-		<img src="../../assets/img/tutorial/img10.png" style="max-width:100%;margin: 15px 0 10px;">
-	</p>
-</section>
-<section>
-	<h2>Creació de les dades inicials</h2>
-	<p>
-		Ja que no executem el programa des del servidor de producció, no estem connectats a una base de dades que contingui dades per poder provar que funciona el que estem programant.
-	</p>
-	<p>
-		Per tant, per poder visualitzar dades a l’aplicació, hem de crear un fitxer a la carpeta server→boot amb informació amb la forma següent:
-		<img src="../../assets/img/tutorial/img11.png" style="max-width:100%;margin: 15px 0 10px;">
-	</p>
-	<p>
-		Les imatges es poden declarar de dues maneres:
-	</p>
-	<ul>
-		<li>Definint la URL d’un lloc d’internet</li>
-		<li>Definint la ruta on està guardada la imatge. Aquest mètode només es pot considerar si la imatge ha sigut creada i no es troba a internet.</li>
-	</ul>
-	<p>
-		En el cas de les imatges de la taula, s’han guardat en la carpeta assets del repositori del Mobile:
-		<img src="../../assets/img/tutorial/img12.png" style="max-width:100%;margin: 15px 0 10px;">
-	</p>
-	<p>
-		Així que, la ruta de les imatges que s’ha d’indicar en la creació de les dades es el nom de la carpeta + el nom de la imatge.
-	</p>
-	<p>
-		D’aquesta manera tindrem tres taules a visualitzar.
-	</p>
-	<p>
-		A part de crear les taules, les hem d’assignar als estudiants en el fitxer “06- create-students.js” mitjançant la clau especificada en les relacions del model Students: “mesaId”:
-		<img src="../../assets/img/tutorial/img13.png" style="max-width:100%;margin: 15px 0 10px;">
-	</p>
-	<p>
-		Una vegada completats tots els passos, es pot executar la part de Sevices i comprovar tant a la API com amb el Postman que es porti la informació correcta (explicació del funcionament més endavant).
-	</p>
-	<p>
-		Les imatges que es defineixen en les dades inicials s’han afegit als assets dels repositoris de Mobile i de Dashboard, però es poden utilitzar imatges d’internet indicant la url en l’atribut.
-	</p>
-</section>

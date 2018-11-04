@@ -1,0 +1,52 @@
+<section>
+	<h2>Objectiu i definició de l’objecte</h2>
+	<p>
+	  L’objectiu es crear un nou objecte “Mesa” que tindrà la informació de la taula a on estigui l’estudiant que utilitzi l’aplicació. Per tant, només podrà veure aquesta informació un usuari que tingui un rol d’estudiant.
+	</p>
+	<p>
+	  Atributs de l’objecte:
+	</p>
+		<ul>
+			<li><b>Id:</b> per identificar el registre</li>
+			<li><b>nombreAula:</b> nom de l’aula on és la taula</li>
+			<li><b>numFila:</b> número de la fila de taules de l’aula</li>
+			<li><b>numColumna:</b> número de la columna de taules de l’aula</li>
+			<li><b>imageM:</b> imatge de la taula</li>
+		</ul>
+	<p>
+		En l’aplicació mòbil, es podrà accedir a la pàgina de “Mesa” mitjançant la pàgina “home”, on es mostrarà l’atribut de nombreAula i des del menú lateral de l’aplicació, on es mostrarà la variable TITLE de l’objecte.
+
+		<img src="../../../assets/img/tutorial/img1.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+	<p>
+		I la visualització de la pàgina serà:
+		<img src="../../../assets/img/tutorial/img2.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+	<p>
+		En quant a la pàgina web, es podrà accedir mitjançant la barra de navegació superior, on hi haurà un botó que portarà a la pàgina que mostrarà la informació de “Mesa”:
+		<img src="../../../assets/img/tutorial/img3.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+</section>
+<section>
+	<h2>Consejo tutorial de desarrollo modulo de mesa</h2>
+	<p>
+		Para seguir este tutorial de desarrollo en el que se realiza un modulo de mesa de estudiante, es importante tener en cuenta que hay que situarse en el tag v0.1.0 antes de comenzar a intentar desarrollar el modulo del tutorial. Pues el código del tutorial parte de ese punto, y si se iniciara el desarrollo en otro punto el código seria diferente y podría inducir a errores o confusiones.
+	</p>
+	<p>
+		Si en algún momento se quiere comparar el código que se esta realizando con el código del tutorial, existen dos opciones. La primera es ir al repositorio de github del proyecto y una vez ahí situarse en la rama tutorial y buscar el archivo que se quiere comparar.
+	</p>
+	<p>
+		El segundo método se pude ejecutar directamente desde la línea de comandos, y como resultado mostrará las diferencias entre el archivo que se esta editando y el archivo del tutorial. De esta manera se puede ver claramente que es exactamente lo que falta para realizar los pasos indicados en el tutorial. Para ello, se debe utilizar el comando 'git diff' de la siguiente manera:
+	</p>
+	<pre>
+		<code class="language-markup">{{"
+git diff master..tutorial -- myfile.ts"}}
+		</code>
+	</pre>
+	<p>
+		Este comando supone que se esta realizando el tutorial desde la rama master, de estar realizándose desde una rama personalizada iniciada en master en el punto v0.1.0 habrá que usar el nombre de esa rama en lugar de master. En lugar de myfile.ts hay que poner el nombre del archivo que se quiere comparar.
+	</p>
+	<p>
+		Para más información sobre git visitar <a routerLink="/developer/git">el tutorial sobre git</a>.
+	</p>
+</section>

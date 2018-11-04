@@ -1,0 +1,125 @@
+<section>
+	<h2>Creació de les pàgines en el repositori Dashboard</h2>
+	<p>
+		Tant el model com el servei són exactament iguals als de la part Mobile, per tant, es pot copiar directament les classes (els models i els serveis estan dins de la carpeta app/shared dins de les seves respectives carpetes). També s’ha de definir la url en el fitxer <b>app.config.ts</b> tal com es va fer en el repositori de Mobile.
+	</p>
+	<p>
+		La única diferència és que s’ha d’afegir l’exportació del servei de “Mesa” al fitxer <b>index.ts</b> dins de la carpeta src/app/services.
+	</p>
+	<p>
+		Per crear la pàgina des d’on es mostrarà la informació de l’objecte “Mesa”, s’ha de crear de la mateixa manera que en Mobile, un directori dins de la carpeta pages que contingui, com a mínim els tres fitxers següents:
+	</p>
+</section>
+<section>
+	<h2>Mesa.ts</h2>
+	<p>
+		Primer s’ha de definir el component i la forma que tindrà la pàgina:
+	</p>
+	<pre class="line-numbers" data-start="12">
+		<code class="language-typescript">{{"@Component({
+  selector: 'app-mesa',
+  templateUrl: './mesa.html',
+  styleUrls: ['./mesa.scss']
+})"}}</code>
+	</pre>
+	<p>
+		Després, a diferència de la part Mobile, la petició es fa directament a la pàgina de “Mesa” ja que només hi ha un botó que porti a la pàgina i dins del mètode que s’executa en quan s’obre la pàgina (ngOnInit())
+	</p>
+	<p>
+		En dashboard, no es diuen pàgines (MesaPage en Mobile) si no components (MesaComponent)
+	</p>
+	<pre class="line-numbers" data-start="17">
+		<code class="language-typescript">{{"export class MesaComponent implements OnInit {
+  public mesas: Mesa;
+  public myRole: Role;
+  public role = Role;
+
+  constructor(
+    public alertService: AlertService,
+    public utilsService: UtilsService,
+    public mesaServices: MesaService,
+    public loadingService: LoadingService,
+    public snackbar: MatSnackBar) {
+
+    this.utilsService.currentUser = Login.toObject(localStorage.getItem(AppConfig.LS_USER));
+    this.utilsService.role = Number(localStorage.getItem(AppConfig.LS_ROLE));
+    this.myRole = this.utilsService.role;
+  }
+
+  ngOnInit(): void {
+    if (this.myRole === Role.STUDENT) {
+      this.loadingService.show();
+      this.mesaServices.getMyMesa().subscribe(
+        ((mesa: Mesa) => {
+          this.loadingService.hide();
+          this.mesas = mesa;
+        }),
+        ((error: Response) => {
+          this.loadingService.hide();
+          this.alertService.show(error.toString());
+        }));
+    }
+  }
+
+}"}}</code>
+	</pre>
+</section>
+<section>
+	<h2>Mesa.scss</h2>
+	<p>
+		En aquest fitxer simplement es defineix l’estil de la pàgina:
+	</p>
+	<pre class="line-numbers">
+		<code class="language-scss">{{'.mesa-content {
+  margin: 40px auto;
+  max-width: 400px;
+}
+
+mat-form-field {
+  width: 100%;
+}'}}</code>
+	</pre>
+</section>
+<section>
+	<h2>Mesa.html</h2>
+	<p>
+		Finalment el fitxer html defineix com està estructurada la pàgina, que en el nostre cas, només es tracte de la imatge en la part de dalt i dues línies d’informació:
+	</p>
+	<pre class="line-numbers">
+		<code class="language-markup">&lt;div class="mesa-content"&gt;
+  &lt;h3 *ngIf="myRole == role.STUDENT"&gt;{{'{'}}{{'{'}} 'MESA.TITLE' | translate {{'}'}}{{'}'}}&lt;/h3&gt;
+  &lt;mat-card *ngIf="mesas"&gt;
+    &lt;mat-card-header&gt;
+      &lt;img [src]="mesas.imageM"&gt;
+      &lt;mat-card-title&gt;{{'{'}}{{'{'}} mesas.nombreAula {{'}'}}{{'}'}}&lt;/mat-card-title&gt;
+      &lt;mat-card-subtitle&gt;{{'{'}}{{'{'}} 'Columna: ' {{'}'}}{{'}'}} {{'{'}}{{'{'}} mesas.numColumna {{'}'}}{{'}'}}&lt;/mat-card-subtitle&gt;
+      &lt;mat-card-subtitle&gt;{{'{'}}{{'{'}} 'Fila: ' {{'}'}}{{'}'}} {{'{'}}{{'{'}} mesas.numFila {{'}'}}{{'}'}}&lt;/mat-card-subtitle&gt;
+    &lt;/mat-card-header&gt;
+  &lt;/mat-card&gt;
+&lt;/div&gt;</code>
+	</pre>
+	<p>
+		Per poder referenciar la pàgina, s’ha d’afegir les següents línies en els fitxers especificats:
+	</p>
+	<ul><li>Fitxer <b>navBar.html</b> dins la carpeta src/app/shared/navBar</li></ul>
+	<p>
+		Els tres fitxers navBar corresponen a la barra de dalt de la pàgina on estan col·locats tots els botons.
+	</p>
+	<p>
+		Per afegir el botó de “Mesa” simplement s’ha d’afegir una línia abans de la línia corresponent al botó de logout que tingui com a routerLink el direccionalment a la pàgina de mesa i el títol que es vol mostrar dins del botó:
+	</p>
+	<pre class="line-numbers" data-start="8">
+		<code class="language-markup">&lt;a mat-button class="docs-navbar-hide-small docs-button" routerLink="/mesa"&gt;{{'{'}}{{'{'}} 'MESA.TITLE' | translate {{'}'}}{{'}'}}&lt;/a&gt;</code>
+	</pre>
+	<ul><li>Fitxer <b>app.module.ts</b> dins la carpeta src/app</li></ul>
+	<p>
+		Tal com s’ha fet en la part de Mobile, s’ha d’afegir la declaració MesaComponent en la part de declarations i MesaService dins la part de providers.
+	</p>
+	<ul><li>Fitxer <b>app.routing.ts</b> dins la carpeta src/app</li></ul>
+	<p>
+		Per últim, s’ha d’afegir el direccionalment a la pàgina afegint una línia amb el path i el component a que es dirigeix:
+	</p>
+	<pre class="line-numbers" data-start="16">
+		<code class="language-typescript">{{"{ path: 'mesa', component: MesaComponent, canActivate: [AuthGuard] },"}}</code>
+	</pre>
+</section>

@@ -21,6 +21,7 @@ import { MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from 
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatTabsModule} from '@angular/material/tabs';
 import { StudentsComponent } from './pages/students/students.component';
 import { TeachersComponent } from './pages/teachers/teachers.component';
 import { AdministratorComponent } from './pages/administrator/administrator.component';
@@ -30,6 +31,10 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { OnboardingComponent } from './pages/onboarding/onboarding.component';
 import { PrivacyComponent } from './shared/privacy/privacy.component';
 import { LegalwarningComponent } from './shared/legalwarning/legalwarning.component';
+import { ServicesComponent } from './pages/tutorial/services/services.component';
+import { DashboardComponent } from './pages/tutorial/dashboard/dashboard.component';
+import { MobileComponent } from './pages/tutorial/mobile/mobile.component';
+import { IntroductionComponent } from './pages/tutorial/introduction/introduction.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +52,11 @@ import { LegalwarningComponent } from './shared/legalwarning/legalwarning.compon
     FaqComponent,
     OnboardingComponent,
     PrivacyComponent,
-    LegalwarningComponent
+    LegalwarningComponent,
+    ServicesComponent,
+    DashboardComponent,
+    MobileComponent,
+    IntroductionComponent
   ],
   imports: [
     BrowserModule,
@@ -64,6 +73,7 @@ import { LegalwarningComponent } from './shared/legalwarning/legalwarning.compon
     MatExpansionModule,
     MatCardModule,
     MatGridListModule,
+    MatTabsModule,
     DragDropModule,
     HttpClientModule
   ],
