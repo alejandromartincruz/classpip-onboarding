@@ -1,0 +1,126 @@
+<h2>
+	Catalogo de errores
+</h2>
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Error #1: Failed to install 'cordova-plugin-inappbrowser'</h3>
+    </mat-expansion-panel-header>
+    <p>
+    	<b>Error:</b>
+    </p>
+    <p>
+    	En la versión mobile al utilizar el comando ‘cordova prepare’ se obtiene el error:
+    </p>
+    <div class="error-code">
+    	Failed to install 'cordova-plugin-inappbrowser':CordovaError: Failed to find 'ANDROID_HOME' environment variable. Try setting setting it manually.
+    </div>
+    <p>
+    	<b>Solución:</b>
+    </p>
+    <p>
+    	La forma de solucionarlo es ir a la pagina de <a href="https://developer.android.com/studio/">android studio</a> e instalar el Android SDK correspondiente al sistema operativo, en este caso la versión mac. Si se realiza la instalación de Android studio, ya viene el Android sdk.
+    </p>
+    <p>
+    	En caso de no querer usar/instalar Android studio hay que descargar solo los archivos del sdk y copiarlos en la ruta /Users/alex/Library/Android/sdk. Y luego indicarle al SO el PATH hacia estos archivos con los siguientes comandos.
+    </p>
+    <pre>
+    	<code class="language-markup">
+export ANDROID_HOME=/Users/alex/Library/Android/sdk
+export PATH=${{'{'}}PATH{{'}'}}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+    	</code>
+    </pre>
+  </mat-expansion-panel>
+  
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Error #2: repositories.cfg could not be loaded</h3>
+    </mat-expansion-panel-header>
+    <p>
+    	<b>Error:</b>
+    </p>
+    <div class="error-code">
+    	Error: File  \Users\User\.android\repositories.cfg could not be loaded.
+    </div>
+    <p>
+    	<b>Solución:</b>
+    </p>
+    <p>
+    	Crear archivo repositories.cfg en la ruta \Users\User\.android\ 
+    </p>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Error #3: Build failed with an exception.</h3>
+    </mat-expansion-panel-header>
+    <p>
+    	<b>Error:</b>
+    </p>
+    <div class="error-code">
+    	<b>FAILURE: Build failed with an exception.</b><br>
+    	<br>
+		* What went wrong:<br>
+		A problem occurred configuring root project 'android'.<br>
+		> You have not accepted the license agreements of the following SDK components:<br>
+		  [Android SDK Platform 25].<br>
+		  Before building your project, you need to accept the license agreements and complete the installation of the missing components using the Android Studio SDK Manager.
+    </div>
+    <p>
+    	<b>Solución:</b>
+    </p>
+    <p>
+    	En Android studio ir al menú preferences y en la opción Android SDK en la pestaña sdk platforms y se instala andoid 7.0 (Nougat) que es el que corresponde a la plataforma 24. En la instalación se aceptan los acuerdos de la licencia.
+    </p>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Error #4: Errores de typescript cuando se ejecuta ionic serve</h3>
+    </mat-expansion-panel-header>
+    <p>
+    	<b>Error:</b>
+    </p>
+    <p>
+		Al ejecutar el comando ionic serve para inicar el servidor del modulo de mobile, este muestra toda una serie de errores en typescript, abriendo una ventana del navegador que muestra todos los errores de typescript.
+    </p>
+    <p>
+    	<b>Solución:</b>
+    </p>
+    <p>
+    	En el package.json hay que subir la versión de "typescript": "2.0.9" a la versión "typescript": "2.1.4". Despues se ejecuta npm install una vez más. Ahora al ejecutar ionic serve, no se muestra ningún error y la pagina de la aplicación mobile se abre sin problemas.
+    </p>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Error #5: Errores derivados de la instalación de Node.js</h3>
+    </mat-expansion-panel-header>
+    <p>
+    	<b>Error:</b>
+    </p>
+    <p>
+		Node.js se instala correctamente y sin dar ningún error, pero a la hora de usar el cliente de comandos de angular se empiezan a ver multitud de errores en el términal y los comandos no funcionan. También se obtienen errores al intentar instalar módulos en el proyecto con npm install.
+    </p>
+    <p>
+    	<b>Solución:</b>
+    </p>
+    <p>
+    	El problema es que al realizar una instalación de Node.js desde el instalador que hay en la página de Node.js este se instala sin los permisos de lectura/escritura correspondientes. Al no tener los permisos que necesita, al intentar realizar las acciones que requieren de esos permisos no se pueden ejecutar y el funcionamiento es inestable o directamente da errores.
+    </p>
+    <p>
+    	la mejor forma de solucionarlo es utilizar el instalador <a href="http://nvm.sh">nvm (node versión manager)</a>, se instala utilizando brew, con el comando ‘brew install nvm’. 
+    </p>
+    <p>
+    	Luego con poner ‘nvm install 8.6’ ya se instala la versión de node 8.6 y se configuran todos los permisos correctamente.
+    </p>
+    <pre>
+    	<code class="language-markup">
+nvm install &lt;versión&gt;  // instala la versión de node indicada
+nvm uninstall &lt;versión&gt;  // desinstala una versión de node
+nvm list  // lista las versiones de node instaladas
+nvm use &lt;versión&gt;  // cambia la versión de node a la indicada
+    	</code>
+    </pre>
+  </mat-expansion-panel>
+
+</mat-accordion>

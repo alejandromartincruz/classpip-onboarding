@@ -35,6 +35,10 @@ import { ServicesComponent } from './pages/tutorial/services/services.component'
 import { DashboardComponent } from './pages/tutorial/dashboard/dashboard.component';
 import { MobileComponent } from './pages/tutorial/mobile/mobile.component';
 import { IntroductionComponent } from './pages/tutorial/introduction/introduction.component';
+import { WindowsComponent } from './pages/faq/windows/windows.component';
+import { LinuxComponent } from './pages/faq/linux/linux.component';
+import { MacosComponent } from './pages/faq/macos/macos.component';
+import { GeneralsComponent } from './pages/faq/generals/generals.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +60,11 @@ import { IntroductionComponent } from './pages/tutorial/introduction/introductio
     ServicesComponent,
     DashboardComponent,
     MobileComponent,
-    IntroductionComponent
+    IntroductionComponent,
+    WindowsComponent,
+    LinuxComponent,
+    MacosComponent,
+    GeneralsComponent
   ],
   imports: [
     BrowserModule,

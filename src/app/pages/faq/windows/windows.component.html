@@ -1,0 +1,29 @@
+<h2>
+	Catalogo de errores
+</h2>
+<mat-accordion>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Error #1: Can’t find Python executable</h3>
+    </mat-expansion-panel-header>
+
+    <p>
+		<img src="../../../assets/img/faq/img1.png" style="max-width:100%;margin: 15px 0 10px;">
+		L’error surt per primera vegada a l’instal·lar l’strongloop en el mòdul de services, però ja que es tracta d’una eina, per executar els serveis no dona ningun problema.
+	</p>
+	<p>
+		L’error torna a sortir en fer el set up del mòdul de Mobile en executar la instrucció “npm install”:
+		<img src="../../../assets/img/faq/img2.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+	<p>
+		Simplement, executant la següent instrucció, s’instal·laran tots els components necessaris per dur a terme el set up sense errors:
+	</p>
+	<pre>
+		<code class="language-markup">
+npm install --global --production windows-build-tools
+		</code>
+	</pre>
+
+  </mat-expansion-panel>
+</mat-accordion>

@@ -1,0 +1,81 @@
+<h2>
+	Catalogo de errores
+</h2>
+<mat-accordion>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Error #1: Permission denied</h3>
+    </mat-expansion-panel-header>
+
+    <p>
+		<img src="../../../assets/img/faq/img3.png" style="max-width:100%;margin: 15px 0 10px;">
+		Aquest error apareix quan no s’executa una instrucció amb permisos d’administració
+	</p>
+	<p>
+		Es soluciona posant “sudo” al davant de la instrucció.
+	</p>
+
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Error #2: Bucle del strongLoop</h3>
+    </mat-expansion-panel-header>
+    <p>
+		<img src="../../../assets/img/faq/img4.png" style="max-width:100%;margin: 15px 0 10px;">
+		En instal·lar el strongLoop de la part del services, en la part final de la instal·lació entra en bucle.
+	</p>
+	<p>
+		Es para mitjançant Crtl+C. No s’ha observat ninguna implicació en continuar la instal·lació.
+	</p>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Error #3: not found: make</h3>
+    </mat-expansion-panel-header>
+    <p>
+		<img src="../../../assets/img/faq/img5.png" style="max-width:100%;margin: 15px 0 10px;">
+		En executar la instrucció npm install, després d’instal·lar l’ionic i el cordovà en la part Mobile, pot aparèixer aquest error.
+	</p>
+	<p>
+		Executar la instrucció:
+	</p>
+	<pre>
+		<code class="language-markup">
+sudo apt-get install build-essential
+		</code>
+	</pre>
+	<p>
+		És un paquet que conté una llista de paquets necessaris per compilar en C/C++.
+	</p>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Error #4: plugins no trobats</h3>
+    </mat-expansion-panel-header>
+    <p>
+		En executar la instrucció “cordovà prepare” apareixen una sèrie de warnings de plugins que no s’han trobat:
+		<img src="../../../assets/img/faq/img6.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+	<p>
+		Amb un error al final que diu que no troba l’entorn de “ANDROID_HOME”
+	</p>
+	<p>
+		S’executen les següents instruccions per solucionar-ho:
+	</p>
+	<pre>
+		<code class="language-markup">
+export ANDROID_HOME=/usr/local/android-sdk-linux/tools 
+export PATH="$PATH:/usr/local/android-sdk-linux/platform-tools"
+		</code>
+	</pre>
+	<p>
+		En executar-les es defineix l’entorn automàticament i en executar la instrucció “cordova prepare”, es redueix la llista de plugins a un:
+		<img src="../../../assets/img/faq/img7.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+  </mat-expansion-panel>
+
+</mat-accordion>
