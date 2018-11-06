@@ -230,12 +230,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_tutorial_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./pages/tutorial/dashboard/dashboard.component */ "./src/app/pages/tutorial/dashboard/dashboard.component.ts");
 /* harmony import */ var _pages_tutorial_mobile_mobile_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./pages/tutorial/mobile/mobile.component */ "./src/app/pages/tutorial/mobile/mobile.component.ts");
 /* harmony import */ var _pages_tutorial_introduction_introduction_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./pages/tutorial/introduction/introduction.component */ "./src/app/pages/tutorial/introduction/introduction.component.ts");
+/* harmony import */ var _pages_faq_windows_windows_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./pages/faq/windows/windows.component */ "./src/app/pages/faq/windows/windows.component.ts");
+/* harmony import */ var _pages_faq_linux_linux_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./pages/faq/linux/linux.component */ "./src/app/pages/faq/linux/linux.component.ts");
+/* harmony import */ var _pages_faq_macos_macos_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./pages/faq/macos/macos.component */ "./src/app/pages/faq/macos/macos.component.ts");
+/* harmony import */ var _pages_faq_generals_generals_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./pages/faq/generals/generals.component */ "./src/app/pages/faq/generals/generals.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
 
 
 
@@ -294,7 +302,11 @@ var AppModule = /** @class */ (function () {
                 _pages_tutorial_services_services_component__WEBPACK_IMPORTED_MODULE_30__["ServicesComponent"],
                 _pages_tutorial_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_31__["DashboardComponent"],
                 _pages_tutorial_mobile_mobile_component__WEBPACK_IMPORTED_MODULE_32__["MobileComponent"],
-                _pages_tutorial_introduction_introduction_component__WEBPACK_IMPORTED_MODULE_33__["IntroductionComponent"]
+                _pages_tutorial_introduction_introduction_component__WEBPACK_IMPORTED_MODULE_33__["IntroductionComponent"],
+                _pages_faq_windows_windows_component__WEBPACK_IMPORTED_MODULE_34__["WindowsComponent"],
+                _pages_faq_linux_linux_component__WEBPACK_IMPORTED_MODULE_35__["LinuxComponent"],
+                _pages_faq_macos_macos_component__WEBPACK_IMPORTED_MODULE_36__["MacosComponent"],
+                _pages_faq_generals_generals_component__WEBPACK_IMPORTED_MODULE_37__["GeneralsComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -436,7 +448,7 @@ var AdministratorComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section>\n\t<h2>Catàleg d’errors</h2>\n\t<p>\n\t\tEn aquest catàleg consta la descripció dels errors trobats durant la instal·lació i la seva solució segons el sistema operatiu on s’ha fet la instal·lació.\n\t</p>\n\t<p>\n\t\tEs tracta d’un manual dinàmic en que si els o les futures desenvolupadores es troben algun error durant la instal·lació de l’entorn que no està descrit o es troba una solució més eficient, es pot ampliar o millorar la informació que hi hagi actualment.\n\t</p>\n\t<p>\n\t\tTexto provisional hasta que se rellene con la informacion adecuada\n\t</p>\n\t<p>\n\t\tEn total s’han trobat vuit solucions a errors recurrents en les instal·lacions dutes a terme:\n\t</p>\n\t<ul>\n\t\t<li>Un en el sistema operatiu de Windows. En aquest cas, s’ha trobat que diversos errors s’han pogut solucionar simplement introduint una instrucció per la consola d’instruccions (cmd) al començament de la instal·lació. Aquesta instrucció, bàsicament el que fa es instal·lar els compiladors necessaris no especificats en la guia d’instal·lació per dur a terme la instal·lació sense problemes, com per exemple, el Python.</li>\n\t\t<li>Quatre solucions a errors en el sistema operatiu de Linux. Per a aquest sistema operatiu si que es van tenir diversos errors diferenciats, com la instal·lació de la versió pertinent del node (la 8.6) o els errors de permís per no estar executant el terminal en mode Administrador.</li>\n\t\t<li>Tres errors generals trobats en la instal·lació en els dos sistemes operatius, com per exemple, la falta d’un paquet del Visual o un error que pot semblar molt simple però que a vegades ens ha fet perdre el temps: l’error intern del servidor que simplement t’indica que el programa no està apuntant a l’entorn de desenvolupament.</li>\n\t</ul>\n</section>\n"
+module.exports = "<mat-tab-group (selectedTabChange)=\"tabSelectionChanged($event)\">\n  <mat-tab label=\"Windows\">\n    <ng-template matTabContent>\n      <app-windows></app-windows>\n    </ng-template>\n  </mat-tab>\n  <mat-tab label=\"Linux\">\n    <ng-template matTabContent>\n      <app-linux></app-linux>\n    </ng-template>\n  </mat-tab>\n  <mat-tab label=\"macOS\">\n    <ng-template matTabContent>\n      <app-macos></app-macos>\n    </ng-template>\n  </mat-tab>\n  <mat-tab label=\"Generales\">\n    <ng-template matTabContent>\n      <app-generals></app-generals>\n    </ng-template>\n  </mat-tab>\n</mat-tab-group>\n"
 
 /***/ }),
 
@@ -462,6 +474,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FaqComponent", function() { return FaqComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../shared/services/highlight.service */ "./src/app/shared/services/highlight.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -472,10 +485,25 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var FaqComponent = /** @class */ (function () {
-    function FaqComponent() {
+    function FaqComponent(highlightService) {
+        this.highlightService = highlightService;
+        this.highlighted = false;
     }
     FaqComponent.prototype.ngOnInit = function () {
+    };
+    /**
+     * Highlight blog post when it's ready
+     */
+    FaqComponent.prototype.ngAfterViewChecked = function () {
+        if (!this.highlighted) {
+            this.highlightService.highlightAll();
+            this.highlighted = true;
+        }
+    };
+    FaqComponent.prototype.tabSelectionChanged = function (event) {
+        this.highlightService.highlightAll();
     };
     FaqComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -483,9 +511,261 @@ var FaqComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./faq.component.html */ "./src/app/pages/faq/faq.component.html"),
             styles: [__webpack_require__(/*! ./faq.component.scss */ "./src/app/pages/faq/faq.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__["HighlightService"]])
     ], FaqComponent);
     return FaqComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/faq/generals/generals.component.html":
+/*!************************************************************!*\
+  !*** ./src/app/pages/faq/generals/generals.component.html ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2>\n\tCatalogo de errores\n</h2>\n<mat-accordion>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Error #1: error Visual Package 8.1 SDK</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tQuan es fa la instal·lació del Visual Studio Code, si surt un error en que s’especifica que s’ha d’instal·lar el SDK 8.1 i ja es té instal·lat, s’ha d’anar a: Panell de control &gt; Programes &gt; Programes i Característiques\n    \t<img src=\"../../../assets/img/faq/img8.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n    </p>\n    <p>\n    \tEn la llista de programes, es selecciona el Visual Studio Code, click a botó dret, i seleccionar Canviar. En el formulari que s’obre, seleccionar el SDK 8.1 per a descargar-ho.\n    </p>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Error #2: error Visual Package 8.1 SDK</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tEn quant es fa la instal·lació del repositori del Mobile si a l’executar la instrucció “cordova prepare” surt aquest error:\n    \t<img src=\"../../../assets/img/faq/img9.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n    </p>\n    <p>\n    \tEs soluciona afegint les següents línies en l’arxiu tsconfig.json, en la part “exclude”\n    </p>\n    <pre>\n    \t<code class=\"language-markup\">\n\"e2e\", \n\"**/*.spec.ts\"\n    \t</code>\n    </pre>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Error #3: error intern del servidor</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \t<img src=\"../../../assets/img/faq/img10.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n    \tSi en el moment d’executar l’aplicació i interactuar surt el missatge superior, es pot deure a que el programa estigui apuntant al servidor de producció.\n    </p>\n    <p>\n    \tSi es vol desenvolupar, s’ha de comentar i descomentar les següents línies del fitxer: <b>/classpip-mobile/src/app/app.config.ts</b>\n    </p>\n    <pre>\n    \t<code class=\"language-markup\">\n// public static get SERVER_URL(): string {{'{'}} return 'https://api.classpip.com'; {{'}'}} // PRO \npublic static get SERVER_URL(): string {{'{'}} return 'http://localhost:3000'; {{'}'}} // DEV\n    \t</code>\n    </pre>\n  </mat-expansion-panel>\n\n</mat-accordion>\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/faq/generals/generals.component.scss":
+/*!************************************************************!*\
+  !*** ./src/app/pages/faq/generals/generals.component.scss ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2ZhcS9nZW5lcmFscy9nZW5lcmFscy5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/pages/faq/generals/generals.component.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/pages/faq/generals/generals.component.ts ***!
+  \**********************************************************/
+/*! exports provided: GeneralsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeneralsComponent", function() { return GeneralsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var GeneralsComponent = /** @class */ (function () {
+    function GeneralsComponent() {
+    }
+    GeneralsComponent.prototype.ngOnInit = function () {
+    };
+    GeneralsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-generals',
+            template: __webpack_require__(/*! ./generals.component.html */ "./src/app/pages/faq/generals/generals.component.html"),
+            styles: [__webpack_require__(/*! ./generals.component.scss */ "./src/app/pages/faq/generals/generals.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], GeneralsComponent);
+    return GeneralsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/faq/linux/linux.component.html":
+/*!******************************************************!*\
+  !*** ./src/app/pages/faq/linux/linux.component.html ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2>\n\tCatalogo de errores\n</h2>\n<mat-accordion>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Error #1: Permission denied</h3>\n    </mat-expansion-panel-header>\n\n    <p>\n\t\t<img src=\"../../../assets/img/faq/img3.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n\t\tAquest error apareix quan no s’executa una instrucció amb permisos d’administració\n\t</p>\n\t<p>\n\t\tEs soluciona posant “sudo” al davant de la instrucció.\n\t</p>\n\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Error #2: Bucle del strongLoop</h3>\n    </mat-expansion-panel-header>\n    <p>\n\t\t<img src=\"../../../assets/img/faq/img4.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n\t\tEn instal·lar el strongLoop de la part del services, en la part final de la instal·lació entra en bucle.\n\t</p>\n\t<p>\n\t\tEs para mitjançant Crtl+C. No s’ha observat ninguna implicació en continuar la instal·lació.\n\t</p>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Error #3: not found: make</h3>\n    </mat-expansion-panel-header>\n    <p>\n\t\t<img src=\"../../../assets/img/faq/img5.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n\t\tEn executar la instrucció npm install, després d’instal·lar l’ionic i el cordovà en la part Mobile, pot aparèixer aquest error.\n\t</p>\n\t<p>\n\t\tExecutar la instrucció:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">\nsudo apt-get install build-essential\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tÉs un paquet que conté una llista de paquets necessaris per compilar en C/C++.\n\t</p>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Error #4: plugins no trobats</h3>\n    </mat-expansion-panel-header>\n    <p>\n\t\tEn executar la instrucció “cordovà prepare” apareixen una sèrie de warnings de plugins que no s’han trobat:\n\t\t<img src=\"../../../assets/img/faq/img6.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n\t</p>\n\t<p>\n\t\tAmb un error al final que diu que no troba l’entorn de “ANDROID_HOME”\n\t</p>\n\t<p>\n\t\tS’executen les següents instruccions per solucionar-ho:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">\nexport ANDROID_HOME=/usr/local/android-sdk-linux/tools \nexport PATH=\"$PATH:/usr/local/android-sdk-linux/platform-tools\"\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tEn executar-les es defineix l’entorn automàticament i en executar la instrucció “cordova prepare”, es redueix la llista de plugins a un:\n\t\t<img src=\"../../../assets/img/faq/img7.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n\t</p>\n  </mat-expansion-panel>\n\n</mat-accordion>\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/faq/linux/linux.component.scss":
+/*!******************************************************!*\
+  !*** ./src/app/pages/faq/linux/linux.component.scss ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2ZhcS9saW51eC9saW51eC5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/pages/faq/linux/linux.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/pages/faq/linux/linux.component.ts ***!
+  \****************************************************/
+/*! exports provided: LinuxComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinuxComponent", function() { return LinuxComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var LinuxComponent = /** @class */ (function () {
+    function LinuxComponent() {
+    }
+    LinuxComponent.prototype.ngOnInit = function () {
+    };
+    LinuxComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-linux',
+            template: __webpack_require__(/*! ./linux.component.html */ "./src/app/pages/faq/linux/linux.component.html"),
+            styles: [__webpack_require__(/*! ./linux.component.scss */ "./src/app/pages/faq/linux/linux.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], LinuxComponent);
+    return LinuxComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/faq/macos/macos.component.html":
+/*!******************************************************!*\
+  !*** ./src/app/pages/faq/macos/macos.component.html ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2>\n\tCatalogo de errores\n</h2>\n<mat-accordion>\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Error #1: Failed to install 'cordova-plugin-inappbrowser'</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \t<b>Error:</b>\n    </p>\n    <p>\n    \tEn la versión mobile al utilizar el comando ‘cordova prepare’ se obtiene el error:\n    </p>\n    <div class=\"error-code\">\n    \tFailed to install 'cordova-plugin-inappbrowser':CordovaError: Failed to find 'ANDROID_HOME' environment variable. Try setting setting it manually.\n    </div>\n    <p>\n    \t<b>Solución:</b>\n    </p>\n    <p>\n    \tLa forma de solucionarlo es ir a la pagina de <a href=\"https://developer.android.com/studio/\">android studio</a> e instalar el Android SDK correspondiente al sistema operativo, en este caso la versión mac. Si se realiza la instalación de Android studio, ya viene el Android sdk.\n    </p>\n    <p>\n    \tEn caso de no querer usar/instalar Android studio hay que descargar solo los archivos del sdk y copiarlos en la ruta /Users/alex/Library/Android/sdk. Y luego indicarle al SO el PATH hacia estos archivos con los siguientes comandos.\n    </p>\n    <pre>\n    \t<code class=\"language-markup\">\nexport ANDROID_HOME=/Users/alex/Library/Android/sdk\nexport PATH=${{'{'}}PATH{{'}'}}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools\n    \t</code>\n    </pre>\n  </mat-expansion-panel>\n  \n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Error #2: repositories.cfg could not be loaded</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \t<b>Error:</b>\n    </p>\n    <div class=\"error-code\">\n    \tError: File  \\Users\\User\\.android\\repositories.cfg could not be loaded.\n    </div>\n    <p>\n    \t<b>Solución:</b>\n    </p>\n    <p>\n    \tCrear archivo repositories.cfg en la ruta \\Users\\User\\.android\\ \n    </p>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Error #3: Build failed with an exception.</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \t<b>Error:</b>\n    </p>\n    <div class=\"error-code\">\n    \t<b>FAILURE: Build failed with an exception.</b><br>\n    \t<br>\n\t\t* What went wrong:<br>\n\t\tA problem occurred configuring root project 'android'.<br>\n\t\t> You have not accepted the license agreements of the following SDK components:<br>\n\t\t  [Android SDK Platform 25].<br>\n\t\t  Before building your project, you need to accept the license agreements and complete the installation of the missing components using the Android Studio SDK Manager.\n    </div>\n    <p>\n    \t<b>Solución:</b>\n    </p>\n    <p>\n    \tEn Android studio ir al menú preferences y en la opción Android SDK en la pestaña sdk platforms y se instala andoid 7.0 (Nougat) que es el que corresponde a la plataforma 24. En la instalación se aceptan los acuerdos de la licencia.\n    </p>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Error #4: Errores de typescript cuando se ejecuta ionic serve</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \t<b>Error:</b>\n    </p>\n    <p>\n\t\tAl ejecutar el comando ionic serve para inicar el servidor del modulo de mobile, este muestra toda una serie de errores en typescript, abriendo una ventana del navegador que muestra todos los errores de typescript.\n    </p>\n    <p>\n    \t<b>Solución:</b>\n    </p>\n    <p>\n    \tEn el package.json hay que subir la versión de \"typescript\": \"2.0.9\" a la versión \"typescript\": \"2.1.4\". Despues se ejecuta npm install una vez más. Ahora al ejecutar ionic serve, no se muestra ningún error y la pagina de la aplicación mobile se abre sin problemas.\n    </p>\n  </mat-expansion-panel>\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Error #5: Errores derivados de la instalación de Node.js</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \t<b>Error:</b>\n    </p>\n    <p>\n\t\tNode.js se instala correctamente y sin dar ningún error, pero a la hora de usar el cliente de comandos de angular se empiezan a ver multitud de errores en el términal y los comandos no funcionan. También se obtienen errores al intentar instalar módulos en el proyecto con npm install.\n    </p>\n    <p>\n    \t<b>Solución:</b>\n    </p>\n    <p>\n    \tEl problema es que al realizar una instalación de Node.js desde el instalador que hay en la página de Node.js este se instala sin los permisos de lectura/escritura correspondientes. Al no tener los permisos que necesita, al intentar realizar las acciones que requieren de esos permisos no se pueden ejecutar y el funcionamiento es inestable o directamente da errores.\n    </p>\n    <p>\n    \tla mejor forma de solucionarlo es utilizar el instalador <a href=\"http://nvm.sh\">nvm (node versión manager)</a>, se instala utilizando brew, con el comando ‘brew install nvm’. \n    </p>\n    <p>\n    \tLuego con poner ‘nvm install 8.6’ ya se instala la versión de node 8.6 y se configuran todos los permisos correctamente.\n    </p>\n    <pre>\n    \t<code class=\"language-markup\">\nnvm install &lt;versión&gt;  // instala la versión de node indicada\nnvm uninstall &lt;versión&gt;  // desinstala una versión de node\nnvm list  // lista las versiones de node instaladas\nnvm use &lt;versión&gt;  // cambia la versión de node a la indicada\n    \t</code>\n    </pre>\n  </mat-expansion-panel>\n\n</mat-accordion>"
+
+/***/ }),
+
+/***/ "./src/app/pages/faq/macos/macos.component.scss":
+/*!******************************************************!*\
+  !*** ./src/app/pages/faq/macos/macos.component.scss ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".error-code {\n  color: #96a01b;\n  font-weight: bold;\n  padding: 2em;\n  background-color: #edf9fb;\n  border: 1px solid #bfe8ef; }\n  .error-code b {\n    color: #bd3f0a; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvcGFnZXMvZmFxL21hY29zL21hY29zLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0MsZUFBYztFQUNkLGtCQUFpQjtFQUNqQixhQUFZO0VBQ1osMEJBQXlCO0VBQ3pCLDBCQUF5QixFQUl6QjtFQVREO0lBT0UsZUFBYyxFQUNkIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvZmFxL21hY29zL21hY29zLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmVycm9yLWNvZGUge1xuXHRjb2xvcjogIzk2YTAxYjtcblx0Zm9udC13ZWlnaHQ6IGJvbGQ7XG5cdHBhZGRpbmc6IDJlbTtcblx0YmFja2dyb3VuZC1jb2xvcjogI2VkZjlmYjtcblx0Ym9yZGVyOiAxcHggc29saWQgI2JmZThlZjtcblx0YiB7XG5cdFx0Y29sb3I6ICNiZDNmMGE7XG5cdH1cbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/pages/faq/macos/macos.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/pages/faq/macos/macos.component.ts ***!
+  \****************************************************/
+/*! exports provided: MacosComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MacosComponent", function() { return MacosComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MacosComponent = /** @class */ (function () {
+    function MacosComponent() {
+    }
+    MacosComponent.prototype.ngOnInit = function () {
+    };
+    MacosComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-macos',
+            template: __webpack_require__(/*! ./macos.component.html */ "./src/app/pages/faq/macos/macos.component.html"),
+            styles: [__webpack_require__(/*! ./macos.component.scss */ "./src/app/pages/faq/macos/macos.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], MacosComponent);
+    return MacosComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/faq/windows/windows.component.html":
+/*!**********************************************************!*\
+  !*** ./src/app/pages/faq/windows/windows.component.html ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2>\n\tCatalogo de errores\n</h2>\n<mat-accordion>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Error #1: Can’t find Python executable</h3>\n    </mat-expansion-panel-header>\n\n    <p>\n\t\t<img src=\"../../../assets/img/faq/img1.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n\t\tL’error surt per primera vegada a l’instal·lar l’strongloop en el mòdul de services, però ja que es tracta d’una eina, per executar els serveis no dona ningun problema.\n\t</p>\n\t<p>\n\t\tL’error torna a sortir en fer el set up del mòdul de Mobile en executar la instrucció “npm install”:\n\t\t<img src=\"../../../assets/img/faq/img2.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n\t</p>\n\t<p>\n\t\tSimplement, executant la següent instrucció, s’instal·laran tots els components necessaris per dur a terme el set up sense errors:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">\nnpm install --global --production windows-build-tools\n\t\t</code>\n\t</pre>\n\n  </mat-expansion-panel>\n</mat-accordion>\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/faq/windows/windows.component.scss":
+/*!**********************************************************!*\
+  !*** ./src/app/pages/faq/windows/windows.component.scss ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2ZhcS93aW5kb3dzL3dpbmRvd3MuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/pages/faq/windows/windows.component.ts":
+/*!********************************************************!*\
+  !*** ./src/app/pages/faq/windows/windows.component.ts ***!
+  \********************************************************/
+/*! exports provided: WindowsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WindowsComponent", function() { return WindowsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var WindowsComponent = /** @class */ (function () {
+    function WindowsComponent() {
+    }
+    WindowsComponent.prototype.ngOnInit = function () {
+    };
+    WindowsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-windows',
+            template: __webpack_require__(/*! ./windows.component.html */ "./src/app/pages/faq/windows/windows.component.html"),
+            styles: [__webpack_require__(/*! ./windows.component.scss */ "./src/app/pages/faq/windows/windows.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], WindowsComponent);
+    return WindowsComponent;
 }());
 
 

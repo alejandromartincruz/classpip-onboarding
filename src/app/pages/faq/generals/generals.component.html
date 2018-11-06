@@ -1,0 +1,57 @@
+<h2>
+	Catalogo de errores
+</h2>
+<mat-accordion>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Error #1: error Visual Package 8.1 SDK</h3>
+    </mat-expansion-panel-header>
+    <p>
+    	Quan es fa la instal·lació del Visual Studio Code, si surt un error en que s’especifica que s’ha d’instal·lar el SDK 8.1 i ja es té instal·lat, s’ha d’anar a: Panell de control &gt; Programes &gt; Programes i Característiques
+    	<img src="../../../assets/img/faq/img8.png" style="max-width:100%;margin: 15px 0 10px;">
+    </p>
+    <p>
+    	En la llista de programes, es selecciona el Visual Studio Code, click a botó dret, i seleccionar Canviar. En el formulari que s’obre, seleccionar el SDK 8.1 per a descargar-ho.
+    </p>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Error #2: error Visual Package 8.1 SDK</h3>
+    </mat-expansion-panel-header>
+    <p>
+    	En quant es fa la instal·lació del repositori del Mobile si a l’executar la instrucció “cordova prepare” surt aquest error:
+    	<img src="../../../assets/img/faq/img9.png" style="max-width:100%;margin: 15px 0 10px;">
+    </p>
+    <p>
+    	Es soluciona afegint les següents línies en l’arxiu tsconfig.json, en la part “exclude”
+    </p>
+    <pre>
+    	<code class="language-markup">
+"e2e", 
+"**/*.spec.ts"
+    	</code>
+    </pre>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Error #3: error intern del servidor</h3>
+    </mat-expansion-panel-header>
+    <p>
+    	<img src="../../../assets/img/faq/img10.png" style="max-width:100%;margin: 15px 0 10px;">
+    	Si en el moment d’executar l’aplicació i interactuar surt el missatge superior, es pot deure a que el programa estigui apuntant al servidor de producció.
+    </p>
+    <p>
+    	Si es vol desenvolupar, s’ha de comentar i descomentar les següents línies del fitxer: <b>/classpip-mobile/src/app/app.config.ts</b>
+    </p>
+    <pre>
+    	<code class="language-markup">
+// public static get SERVER_URL(): string {{'{'}} return 'https://api.classpip.com'; {{'}'}} // PRO 
+public static get SERVER_URL(): string {{'{'}} return 'http://localhost:3000'; {{'}'}} // DEV
+    	</code>
+    </pre>
+  </mat-expansion-panel>
+
+</mat-accordion>
