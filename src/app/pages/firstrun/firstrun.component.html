@@ -1,0 +1,22 @@
+<mat-tab-group (selectedTabChange)="tabSelectionChanged($event)">
+  <mat-tab label="Services">
+    <ng-template matTabContent>
+      <app-initservices></app-initservices>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Dashboard">
+    <ng-template matTabContent>
+      <app-initdashboard></app-initdashboard>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Mobile">
+    <ng-template matTabContent>
+      <app-initmobile></app-initmobile>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Onboarding">
+    <ng-template matTabContent>
+      <app-initonboarding></app-initonboarding>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>

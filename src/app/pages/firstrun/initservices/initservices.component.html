@@ -1,0 +1,65 @@
+<h2>Iniciar proyecto de Services</h2>
+<app-commonconsiderations></app-commonconsiderations>
+<p>
+	<b>Paso 1:</b> Clona el repositorio en tu entorno de desarrollo local:
+</p>
+<pre>
+	<code class="language-markup">
+git clone https://github.com/alejandromartincruz/classpip-services.git
+	</code>
+</pre>
+<p>
+	<b>Paso 2:</b> Instala la versión 6.0.3 de strongloop con npm
+</p>
+<pre>
+	<code class="language-markup">
+npm install -g strongloop@6.0.3
+	</code>
+</pre>
+<p>
+	<i>Nota: en macOS la instalación de strongloop acaba con error y parece que no se haya instalado correctamente, pero el funcionamiento de strongloop es correcto.</i>
+</p>
+<p>
+	<b>Paso 3:</b> Instala las dependencias del proyecto:
+</p>
+<pre>
+	<code class="language-markup">
+cd classpip-services
+npm install
+	</code>
+</pre>
+<p>
+	<b>Paso 4:</b> Inicia Classpip-services (por defecto en <a href="http://localhost:3000/">localhost:3000</a>) con el siguiente comando:
+</p>
+<pre>
+	<code class="language-markup">
+npm run start
+	</code>
+</pre>
+<section>
+	<h2>In-Memory o base de datos</h2>
+	<p>
+		El repositorio esta preparado para guardar por defecto la información in-memory, si se quiere cambiar este funcionamiento por una base de datos mysql, hay que ir al archivo <i>'classpip-services/server/datasources.json'</i> y cambiar las lineas:
+	</p>
+	<pre class="line-numbers" data-start="2">
+		<code class="language-json">"db": {{'{'}}
+    "name": "db",
+    "connector": "memory"
+{{'}'}},</code>
+	</pre>
+	<p>
+		En su lugar, hay que sustituirlas por:
+	</p>
+	<pre class="line-numbers" data-start="2">
+		<code class="language-json">"db": {{'{'}}
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "&lt;database_name&gt;",
+    "password": "&lt;local_user_password&gt;",
+    "name": "db",
+    "user": "&lt;local_user&gt;",
+    "connector": "mysql"
+{{'}'}},</code>
+	</pre>
+</section>

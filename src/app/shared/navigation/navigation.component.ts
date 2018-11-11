@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title }     from '@angular/platform-browser';
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -17,7 +18,10 @@ export class NavigationComponent {
       map(result => result.matches)
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(
+    private titleService: Title,
+    private breakpointObserver: BreakpointObserver
+  ) {}
 
   openClose(identifier, caretId) {
   	identifier = !identifier;
@@ -30,6 +34,10 @@ export class NavigationComponent {
   	}
 
   	return identifier;
+  }
+
+  public setTitle( newTitle: string) {
+    this.titleService.setTitle( newTitle );
   }
 
 }

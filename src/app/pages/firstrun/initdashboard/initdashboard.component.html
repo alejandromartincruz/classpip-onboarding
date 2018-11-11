@@ -1,0 +1,42 @@
+<h2>Iniciar proyecto de Dashboard</h2>
+<app-commonconsiderations></app-commonconsiderations>
+<p>
+	<b>Paso 1:</b> Clona el repositorio en tu entorno de desarrollo local:
+</p>
+<pre>
+	<code class="language-markup">
+git clone https://github.com/alejandromartincruz/classpip-dashboard.git
+	</code>
+</pre>
+<p>
+	<b>Paso 2:</b> Instala las dependencias del proyecto:
+</p>
+<pre>
+	<code class="language-markup">
+cd classpip-dashboard
+npm install
+	</code>
+</pre>
+<p>
+	<b>Paso 3:</b> Inicia Classpip-dashboard (por defecto en <a href="http://localhost:4200/">http://localhost:4200</a>) con el siguiente comando:
+</p>
+<pre>
+	<code class="language-markup">
+npm run start
+	</code>
+</pre>
+<section>
+	<h2>Origen de los datos</h2>
+	<p>
+		Hay que asegurarse de que la aplicación de servicios esta funcionando antes de intentar usar la aplicación de mobile, ya que la aplicación de servicios es el origen y destino de los datos. De no ser así, al intentar iniciar sesión se obtendrá el error: <i>ERROR: Ha ocurrido un error interno en el servidor. Por favor, contacta con tu administrador.</i>
+	</p>
+	<p>
+		También hay que asegurar que este configurado el origen de los datos en localhost:3000. Para ello hay que dirigirse al archivo <i>'src/environments/environment.ts'</i> y asegurarse de que el <i>SERVER_URL</i> apunta a localhost:3000 y no a https://dashboard.classpip.com basta con dejar las lineas como se muestra a continuación:
+	</p>
+	<pre class="line-numbers" data-start="6">
+		<code class="language-typescript">export const environment = {{'{'}}
+  production: false,
+  api: 'http://localhost:3000'
+{{'}'}};</code>
+	</pre>
+</section>

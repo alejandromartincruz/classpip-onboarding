@@ -1,0 +1,148 @@
+<h2>
+	Instalación del entorno de desarrollo en macOS
+</h2>
+<mat-accordion>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Homebrew Package Manager</h3>
+    </mat-expansion-panel-header>
+    <p>
+    	Homebrew instala todo aquello <a href="https://formulae.brew.sh/formula/" target="_blank">que se necesita</a> y que Apple no instala de serie. Y será muy útil para instalar otros elementos necesarios para iniciar el desarrollo de este proyecto.
+    </p>
+    <p>
+    	Para abrir la instalación de Homebrew, de aqui en adelante brew, hay que abrir el términal e introducir el siguientes comando:
+    </p>
+    <pre>
+    	<code class="language-markup">
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    	</code>
+    </pre>
+    <p>
+    	Y luego ir siguiendo las instrucciones que aparecerán por pantalla. Si finalmente esta bien instalado un simple comando "brew -v" en el terminal devolverá la versión de brew instalada.
+    </p>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>NODE y NPM</h3>
+    </mat-expansion-panel-header>
+    <p>
+    	La versión de Node que se usa en el desarrollo es la 8.6.0, por lo que se recomienda descargar esta versión para evitar conflictos entre las versiones de los diferentes programas utilizados.
+    </p>
+    <p>
+    	No se recomienda utilizar el instalador de Nodejs para macOS, ya que, aunque se instala sin ningún tipo de error suele dar problemas de permisos de ficheros en la instalación, que se traduce en constantes fallos y problemas a la hora de utilizar comandos de node y de npm.
+    </p>
+    <p>
+    	Lo más facil y seguro para la instalación de Nodejs en macOS es utilizar Node Version Manager (NVM), que además permite instalar varias versiones de Node y cambiar entre ellas fácilmente. Para instalar NVM hay que abrir el términal e instroducir uno de los siguientes comandos curl o wget:
+    </p>
+    <pre>
+    	<code class="language-markup">
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+    	</code>
+    </pre>
+    <p>
+    	wget no viene de serie con macOS, si se quiere usar para instalar nvm, antes hay que instalarlo usando brew con el siguiente comando:
+    </p>
+    <pre>
+    	<code class="language-markup">
+$ brew install wget
+    	</code>
+    </pre>
+    <p>
+    	Una vez instalado nvm, hay que cerrar el términal y volver a abrirlo. Para verificar que NVM se ha instalado correctamente instroducir el siguiente comando en el términal:
+    </p>
+    <pre>
+    	<code class="language-markup">
+$ nvm --version
+    	</code>
+    </pre>
+    <p>
+    	Una vez que NVM esta instalado y funcional, instalar la versión 8.6 de Node es tan sencillo como poner el siguiente comando en el terminal:
+    </p>
+    <pre>
+    	<code class="language-markup">
+$ nvm install 8.6.0
+    	</code>
+    </pre>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Git</h3>
+    </mat-expansion-panel-header>
+    <p>
+    	Git es una herramienta imprescindible para este proyecto. Para poder utilizar los comandos de Git en el terminal del sistema. La mejor forma de instalarlo es ir a <a href="https://git-scm.com/downloads" target="_blank">esta pagina web</a> y seguir sus instrucciones de instalación para Microsoft Windows. Lo ideal es instalar la versión más reciente disponible.
+    </p>
+    <p>
+    	En macOS si se tiene instalado XCode desde la mac App Store, ya se tiene instalado Git y no es necesario instalarlo. Pero si no se quiere instalar XCode, otra forma de instalarlo es mediante brew con el siguiente comando de terminal.
+    </p>
+    <pre>
+    	<code class="language-markup">
+$ brew install git
+    	</code>
+    </pre>
+    <p>
+    	Para acabar la instalación de Git solo falta configurar el nombre y el email de Git con los siguientes comandos:
+    </p>
+    <pre>
+    	<code class="language-markup">
+$ git config --global user.name "John Doe"
+$ git config --global user.email "johndoe@example.com"
+    	</code>
+    </pre>
+    <p>
+    	Recordar usar vuestro nombre de usuario y vuestro correo en lugar de "John Doe" y "johndoe@example.com"
+    </p>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Sourcetree</h3>
+    </mat-expansion-panel-header>
+    <p>
+    	Sourcetree es un cliente gráfico de Git, no es necesario para llevar a cabo un desarrollo en el proyecto, pero va muy bien para visionar los commits y las ramas que se han ido llevando a cabo en el repositorio de una forma más clara y sencilla.
+    </p>
+    <p>
+    	Este programa se instala desde su <a href="https://www.sourcetreeapp.com" target="_blank">página oficial</a>.
+    </p>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Visual Studio Code</h3>
+    </mat-expansion-panel-header>
+    <p>
+    	Para escribir código se puede utilizar cualquier GUI, existen muchos, como por ejemplo WebStorm de JetBrains, Sublime Text, etc. pero se recomienda el uso de Visual Studio Code.
+    </p>
+    <p>
+    	Este programa se instala desde su <a href="https://code.visualstudio.com/#alt-downloads" target="_blank">página oficial</a> seleccionando el instalador de macOS.
+    </p>
+    <p>
+    	Una de las razones por las que se recomienda el uso de este GUI, es por la facilidad de instalar diversos plugins que facilitan el desarrollo. Una vez instalado el Visual Studio es muy recomendable instalar los siguientes plugins:
+    </p>
+    <ul>
+    	<li><a href="https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2">Angular Snippets plugin por John Papa</a></li>
+    	<li><a href="https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify">Beautify por HookyQR</a></li>
+    	<li><a href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig">EditorConfig for VS Code</a></li>
+    	<li><a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint por Dirk Baeumer</a></li>
+    	<li><a href="https://marketplace.visualstudio.com/items?itemName=glen-84.sass-lint">Sass Lint por glen-84</a></li>
+    	<li><a href="https://marketplace.visualstudio.com/items?itemName=eg2.tslint">TSLint por egamma</a></li>
+    	<li><a href="https://marketplace.visualstudio.com/items?itemName=DSKWRK.vscode-generate-getter-setter">TypeScript Toolbox por DSKWRK</a></li>
+    </ul>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Android Studio</h3>
+    </mat-expansion-panel-header>
+    <p>
+    	Android Studio no es una herramienta neceesaria para el proyecto, pero puede llegar a ser útil para debuggar la aplicación de Android generada por Cordova. Aunque en caso de no querer instalar Android Studio, habrá que instalar Android SDK, que si que es necesario.
+    </p>
+    <p>
+    	El instalador se encuentra en su <a href="https://developer.android.com/studio/#downloads" target="_blank">página oficial</a>.
+    </p>
+  </mat-expansion-panel>
+
+</mat-accordion>

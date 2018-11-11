@@ -1,0 +1,17 @@
+<mat-tab-group (selectedTabChange)="tabSelectionChanged($event)">
+  <mat-tab label="Windows">
+    <ng-template matTabContent>
+      <app-windowsinstall></app-windowsinstall>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Linux">
+    <ng-template matTabContent>
+      <app-linuxinstall></app-linuxinstall>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="macOS">
+    <ng-template matTabContent>
+      <app-macosinstall></app-macosinstall>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>
