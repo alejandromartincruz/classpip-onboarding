@@ -40,13 +40,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_students_students_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/students/students.component */ "./src/app/pages/students/students.component.ts");
 /* harmony import */ var _pages_teachers_teachers_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/teachers/teachers.component */ "./src/app/pages/teachers/teachers.component.ts");
 /* harmony import */ var _pages_administrator_administrator_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/administrator/administrator.component */ "./src/app/pages/administrator/administrator.component.ts");
-/* harmony import */ var _pages_git_git_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/git/git.component */ "./src/app/pages/git/git.component.ts");
-/* harmony import */ var _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/tutorial/tutorial.component */ "./src/app/pages/tutorial/tutorial.component.ts");
-/* harmony import */ var _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/onboarding/onboarding.component */ "./src/app/pages/onboarding/onboarding.component.ts");
-/* harmony import */ var _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/faq/faq.component */ "./src/app/pages/faq/faq.component.ts");
-/* harmony import */ var _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./shared/privacy/privacy.component */ "./src/app/shared/privacy/privacy.component.ts");
-/* harmony import */ var _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./shared/legalwarning/legalwarning.component */ "./src/app/shared/legalwarning/legalwarning.component.ts");
-/* harmony import */ var _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/notfound/notfound.component */ "./src/app/pages/notfound/notfound.component.ts");
+/* harmony import */ var _pages_install_install_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/install/install.component */ "./src/app/pages/install/install.component.ts");
+/* harmony import */ var _pages_firstrun_firstrun_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/firstrun/firstrun.component */ "./src/app/pages/firstrun/firstrun.component.ts");
+/* harmony import */ var _pages_git_git_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/git/git.component */ "./src/app/pages/git/git.component.ts");
+/* harmony import */ var _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/tutorial/tutorial.component */ "./src/app/pages/tutorial/tutorial.component.ts");
+/* harmony import */ var _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/onboarding/onboarding.component */ "./src/app/pages/onboarding/onboarding.component.ts");
+/* harmony import */ var _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/faq/faq.component */ "./src/app/pages/faq/faq.component.ts");
+/* harmony import */ var _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./shared/privacy/privacy.component */ "./src/app/shared/privacy/privacy.component.ts");
+/* harmony import */ var _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./shared/legalwarning/legalwarning.component */ "./src/app/shared/legalwarning/legalwarning.component.ts");
+/* harmony import */ var _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/notfound/notfound.component */ "./src/app/pages/notfound/notfound.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -67,19 +69,23 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
     { path: 'user/students', component: _pages_students_students_component__WEBPACK_IMPORTED_MODULE_4__["StudentsComponent"] },
     { path: 'user/teachers', component: _pages_teachers_teachers_component__WEBPACK_IMPORTED_MODULE_5__["TeachersComponent"] },
     { path: 'user/administrator', component: _pages_administrator_administrator_component__WEBPACK_IMPORTED_MODULE_6__["AdministratorComponent"] },
-    { path: 'developer/git', component: _pages_git_git_component__WEBPACK_IMPORTED_MODULE_7__["GitComponent"] },
-    { path: 'developer/tutorial', component: _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_8__["TutorialComponent"] },
-    { path: 'developer/onboarding', component: _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_9__["OnboardingComponent"] },
-    { path: 'developer/faq', component: _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_10__["FaqComponent"] },
-    { path: 'privacy', component: _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_11__["PrivacyComponent"] },
-    { path: 'legalwarning', component: _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_12__["LegalwarningComponent"] },
-    { path: '404', component: _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_13__["NotfoundComponent"] },
+    { path: 'developer/install', component: _pages_install_install_component__WEBPACK_IMPORTED_MODULE_7__["InstallComponent"] },
+    { path: 'developer/firstrun', component: _pages_firstrun_firstrun_component__WEBPACK_IMPORTED_MODULE_8__["FirstrunComponent"] },
+    { path: 'developer/git', component: _pages_git_git_component__WEBPACK_IMPORTED_MODULE_9__["GitComponent"] },
+    { path: 'developer/tutorial', component: _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_10__["TutorialComponent"] },
+    { path: 'developer/onboarding', component: _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_11__["OnboardingComponent"] },
+    { path: 'developer/faq', component: _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_12__["FaqComponent"] },
+    { path: 'privacy', component: _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_13__["PrivacyComponent"] },
+    { path: 'legalwarning', component: _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_14__["LegalwarningComponent"] },
+    { path: '404', component: _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_15__["NotfoundComponent"] },
     { path: '**', redirectTo: '/404' }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -135,8 +141,9 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -149,8 +156,10 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var AppComponent = /** @class */ (function () {
-    function AppComponent(matIconRegistry, router) {
+    function AppComponent(titleService, matIconRegistry, router) {
+        this.titleService = titleService;
         this.matIconRegistry = matIconRegistry;
         this.router = router;
         this.title = 'classpip-onboarding';
@@ -161,14 +170,17 @@ var AppComponent = /** @class */ (function () {
         var _this = this;
         this.router.events
             .subscribe(function (event) {
-            if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_1__["NavigationStart"]) {
+            if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["NavigationStart"]) {
                 _this.loading = true;
             }
-            else if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_1__["NavigationEnd"] ||
-                event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_1__["NavigationCancel"]) {
+            else if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["NavigationEnd"] ||
+                event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["NavigationCancel"]) {
                 _this.loading = false;
             }
         });
+    };
+    AppComponent.prototype.setTitle = function (newTitle) {
+        this.titleService.setTitle(newTitle);
     };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -176,8 +188,9 @@ var AppComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
             styles: [__webpack_require__(/*! ./app.component.scss */ "./src/app/app.component.scss")]
         }),
-        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatIconRegistry"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
+        __metadata("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatIconRegistry"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -234,12 +247,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_faq_linux_linux_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./pages/faq/linux/linux.component */ "./src/app/pages/faq/linux/linux.component.ts");
 /* harmony import */ var _pages_faq_macos_macos_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./pages/faq/macos/macos.component */ "./src/app/pages/faq/macos/macos.component.ts");
 /* harmony import */ var _pages_faq_generals_generals_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./pages/faq/generals/generals.component */ "./src/app/pages/faq/generals/generals.component.ts");
+/* harmony import */ var _pages_install_install_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./pages/install/install.component */ "./src/app/pages/install/install.component.ts");
+/* harmony import */ var _pages_firstrun_firstrun_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./pages/firstrun/firstrun.component */ "./src/app/pages/firstrun/firstrun.component.ts");
+/* harmony import */ var _pages_install_linuxinstall_linuxinstall_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./pages/install/linuxinstall/linuxinstall.component */ "./src/app/pages/install/linuxinstall/linuxinstall.component.ts");
+/* harmony import */ var _pages_install_macosinstall_macosinstall_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./pages/install/macosinstall/macosinstall.component */ "./src/app/pages/install/macosinstall/macosinstall.component.ts");
+/* harmony import */ var _pages_install_windowsinstall_windowsinstall_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./pages/install/windowsinstall/windowsinstall.component */ "./src/app/pages/install/windowsinstall/windowsinstall.component.ts");
+/* harmony import */ var _pages_firstrun_initservices_initservices_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./pages/firstrun/initservices/initservices.component */ "./src/app/pages/firstrun/initservices/initservices.component.ts");
+/* harmony import */ var _pages_firstrun_initdashboard_initdashboard_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./pages/firstrun/initdashboard/initdashboard.component */ "./src/app/pages/firstrun/initdashboard/initdashboard.component.ts");
+/* harmony import */ var _pages_firstrun_initmobile_initmobile_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./pages/firstrun/initmobile/initmobile.component */ "./src/app/pages/firstrun/initmobile/initmobile.component.ts");
+/* harmony import */ var _pages_firstrun_initonboarding_initonboarding_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./pages/firstrun/initonboarding/initonboarding.component */ "./src/app/pages/firstrun/initonboarding/initonboarding.component.ts");
+/* harmony import */ var _pages_firstrun_commonconsiderations_commonconsiderations_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./pages/firstrun/commonconsiderations/commonconsiderations.component */ "./src/app/pages/firstrun/commonconsiderations/commonconsiderations.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -306,7 +339,17 @@ var AppModule = /** @class */ (function () {
                 _pages_faq_windows_windows_component__WEBPACK_IMPORTED_MODULE_34__["WindowsComponent"],
                 _pages_faq_linux_linux_component__WEBPACK_IMPORTED_MODULE_35__["LinuxComponent"],
                 _pages_faq_macos_macos_component__WEBPACK_IMPORTED_MODULE_36__["MacosComponent"],
-                _pages_faq_generals_generals_component__WEBPACK_IMPORTED_MODULE_37__["GeneralsComponent"]
+                _pages_faq_generals_generals_component__WEBPACK_IMPORTED_MODULE_37__["GeneralsComponent"],
+                _pages_install_install_component__WEBPACK_IMPORTED_MODULE_38__["InstallComponent"],
+                _pages_firstrun_firstrun_component__WEBPACK_IMPORTED_MODULE_39__["FirstrunComponent"],
+                _pages_install_linuxinstall_linuxinstall_component__WEBPACK_IMPORTED_MODULE_40__["LinuxinstallComponent"],
+                _pages_install_macosinstall_macosinstall_component__WEBPACK_IMPORTED_MODULE_41__["MacosinstallComponent"],
+                _pages_install_windowsinstall_windowsinstall_component__WEBPACK_IMPORTED_MODULE_42__["WindowsinstallComponent"],
+                _pages_firstrun_initservices_initservices_component__WEBPACK_IMPORTED_MODULE_43__["InitservicesComponent"],
+                _pages_firstrun_initdashboard_initdashboard_component__WEBPACK_IMPORTED_MODULE_44__["InitdashboardComponent"],
+                _pages_firstrun_initmobile_initmobile_component__WEBPACK_IMPORTED_MODULE_45__["InitmobileComponent"],
+                _pages_firstrun_initonboarding_initonboarding_component__WEBPACK_IMPORTED_MODULE_46__["InitonboardingComponent"],
+                _pages_firstrun_commonconsiderations_commonconsiderations_component__WEBPACK_IMPORTED_MODULE_47__["CommonconsiderationsComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -327,7 +370,7 @@ var AppModule = /** @class */ (function () {
                 _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_4__["DragDropModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"]
             ],
-            providers: [],
+            providers: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["Title"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
         })
     ], AppModule);
@@ -772,6 +815,406 @@ var WindowsComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/pages/firstrun/commonconsiderations/commonconsiderations.component.html":
+/*!*****************************************************************************************!*\
+  !*** ./src/app/pages/firstrun/commonconsiderations/commonconsiderations.component.html ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div>\n  <b>Consideración previa:</b> hay que tener en cuenta dos posibilidades, si eres un estudiante eetac cursando un proyecto de final de carrera, deberás pedir acceso al repositorio para poder trabajar en él según el <a routerLink=\"/developer/git\" (click)=\"setTitle( 'Classpip onboarding como trabajar con git en el proyecto' )\">protocolo de trabajo establecido para Git</a> correspondiente a <i>equipo directamente relacionado con el proyecto</i>. En caso contrario, de querer colaborar, se debería hacer según el caso 2 del protocolo <i>aportaciones de personas o equipos ajenos al proyecto</i>. En este último caso, habrá que hacer un 'fork' del repositorio en lugar de un 'clone'.\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/firstrun/commonconsiderations/commonconsiderations.component.scss":
+/*!*****************************************************************************************!*\
+  !*** ./src/app/pages/firstrun/commonconsiderations/commonconsiderations.component.scss ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "div {\n  color: #3c4fbc;\n  background-color: #f0f8ff;\n  border: 1px solid #add8e6;\n  -webkit-margin-before: 1em;\n          margin-block-start: 1em;\n  -webkit-margin-after: 4em;\n          margin-block-end: 4em;\n  -webkit-margin-start: 0px;\n          margin-inline-start: 0px;\n  -webkit-margin-end: 0px;\n          margin-inline-end: 0px;\n  padding: 10px;\n  text-align: justify; }\n  div i {\n    color: #8a1683; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvcGFnZXMvZmlyc3RydW4vY29tbW9uY29uc2lkZXJhdGlvbnMvY29tbW9uY29uc2lkZXJhdGlvbnMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQyxlQUFjO0VBQ2QsMEJBQXlCO0VBQ3pCLDBCQUF5QjtFQUN6QiwyQkFBdUI7VUFBdkIsd0JBQXVCO0VBQ3BCLDBCQUFxQjtVQUFyQixzQkFBcUI7RUFDckIsMEJBQXdCO1VBQXhCLHlCQUF3QjtFQUN4Qix3QkFBc0I7VUFBdEIsdUJBQXNCO0VBQ3RCLGNBQWE7RUFDYixvQkFBbUIsRUFJdEI7RUFiRDtJQVdLLGVBQWMsRUFDZCIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2ZpcnN0cnVuL2NvbW1vbmNvbnNpZGVyYXRpb25zL2NvbW1vbmNvbnNpZGVyYXRpb25zLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiZGl2IHtcblx0Y29sb3I6ICMzYzRmYmM7XG5cdGJhY2tncm91bmQtY29sb3I6ICNmMGY4ZmY7XG5cdGJvcmRlcjogMXB4IHNvbGlkICNhZGQ4ZTY7XG5cdG1hcmdpbi1ibG9jay1zdGFydDogMWVtO1xuICAgIG1hcmdpbi1ibG9jay1lbmQ6IDRlbTtcbiAgICBtYXJnaW4taW5saW5lLXN0YXJ0OiAwcHg7XG4gICAgbWFyZ2luLWlubGluZS1lbmQ6IDBweDtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIHRleHQtYWxpZ246IGp1c3RpZnk7XG4gICAgaSB7XG4gICAgXHRjb2xvcjogIzhhMTY4MztcbiAgICB9XG59XHQiXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/pages/firstrun/commonconsiderations/commonconsiderations.component.ts":
+/*!***************************************************************************************!*\
+  !*** ./src/app/pages/firstrun/commonconsiderations/commonconsiderations.component.ts ***!
+  \***************************************************************************************/
+/*! exports provided: CommonconsiderationsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CommonconsiderationsComponent", function() { return CommonconsiderationsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CommonconsiderationsComponent = /** @class */ (function () {
+    function CommonconsiderationsComponent(titleService) {
+        this.titleService = titleService;
+    }
+    CommonconsiderationsComponent.prototype.ngOnInit = function () {
+    };
+    CommonconsiderationsComponent.prototype.setTitle = function (newTitle) {
+        this.titleService.setTitle(newTitle);
+    };
+    CommonconsiderationsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-commonconsiderations',
+            template: __webpack_require__(/*! ./commonconsiderations.component.html */ "./src/app/pages/firstrun/commonconsiderations/commonconsiderations.component.html"),
+            styles: [__webpack_require__(/*! ./commonconsiderations.component.scss */ "./src/app/pages/firstrun/commonconsiderations/commonconsiderations.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"]])
+    ], CommonconsiderationsComponent);
+    return CommonconsiderationsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/firstrun/firstrun.component.html":
+/*!********************************************************!*\
+  !*** ./src/app/pages/firstrun/firstrun.component.html ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mat-tab-group (selectedTabChange)=\"tabSelectionChanged($event)\">\n  <mat-tab label=\"Services\">\n    <ng-template matTabContent>\n      <app-initservices></app-initservices>\n    </ng-template>\n  </mat-tab>\n  <mat-tab label=\"Dashboard\">\n    <ng-template matTabContent>\n      <app-initdashboard></app-initdashboard>\n    </ng-template>\n  </mat-tab>\n  <mat-tab label=\"Mobile\">\n    <ng-template matTabContent>\n      <app-initmobile></app-initmobile>\n    </ng-template>\n  </mat-tab>\n  <mat-tab label=\"Onboarding\">\n    <ng-template matTabContent>\n      <app-initonboarding></app-initonboarding>\n    </ng-template>\n  </mat-tab>\n</mat-tab-group>"
+
+/***/ }),
+
+/***/ "./src/app/pages/firstrun/firstrun.component.scss":
+/*!********************************************************!*\
+  !*** ./src/app/pages/firstrun/firstrun.component.scss ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2ZpcnN0cnVuL2ZpcnN0cnVuLmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/pages/firstrun/firstrun.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/pages/firstrun/firstrun.component.ts ***!
+  \******************************************************/
+/*! exports provided: FirstrunComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FirstrunComponent", function() { return FirstrunComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../shared/services/highlight.service */ "./src/app/shared/services/highlight.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var FirstrunComponent = /** @class */ (function () {
+    function FirstrunComponent(highlightService) {
+        this.highlightService = highlightService;
+        this.highlighted = false;
+    }
+    FirstrunComponent.prototype.ngOnInit = function () {
+    };
+    /**
+     * Highlight blog post when it's ready
+     */
+    FirstrunComponent.prototype.ngAfterViewChecked = function () {
+        if (!this.highlighted) {
+            this.highlightService.highlightAll();
+            this.highlighted = true;
+        }
+    };
+    FirstrunComponent.prototype.tabSelectionChanged = function (event) {
+        this.highlightService.highlightAll();
+    };
+    FirstrunComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-firstrun',
+            template: __webpack_require__(/*! ./firstrun.component.html */ "./src/app/pages/firstrun/firstrun.component.html"),
+            styles: [__webpack_require__(/*! ./firstrun.component.scss */ "./src/app/pages/firstrun/firstrun.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__["HighlightService"]])
+    ], FirstrunComponent);
+    return FirstrunComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/firstrun/initdashboard/initdashboard.component.html":
+/*!***************************************************************************!*\
+  !*** ./src/app/pages/firstrun/initdashboard/initdashboard.component.html ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2>Iniciar proyecto de Dashboard</h2>\n<app-commonconsiderations></app-commonconsiderations>\n<p>\n\t<b>Paso 1:</b> Clona el repositorio en tu entorno de desarrollo local:\n</p>\n<pre>\n\t<code class=\"language-markup\">\ngit clone https://github.com/alejandromartincruz/classpip-dashboard.git\n\t</code>\n</pre>\n<p>\n\t<b>Paso 2:</b> Instala las dependencias del proyecto:\n</p>\n<pre>\n\t<code class=\"language-markup\">\ncd classpip-dashboard\nnpm install\n\t</code>\n</pre>\n<p>\n\t<b>Paso 3:</b> Inicia Classpip-dashboard (por defecto en <a href=\"http://localhost:4200/\">http://localhost:4200</a>) con el siguiente comando:\n</p>\n<pre>\n\t<code class=\"language-markup\">\nnpm run start\n\t</code>\n</pre>\n<section>\n\t<h2>Origen de los datos</h2>\n\t<p>\n\t\tHay que asegurarse de que la aplicación de servicios esta funcionando antes de intentar usar la aplicación de mobile, ya que la aplicación de servicios es el origen y destino de los datos. De no ser así, al intentar iniciar sesión se obtendrá el error: <i>ERROR: Ha ocurrido un error interno en el servidor. Por favor, contacta con tu administrador.</i>\n\t</p>\n\t<p>\n\t\tTambién hay que asegurar que este configurado el origen de los datos en localhost:3000. Para ello hay que dirigirse al archivo <i>'src/environments/environment.ts'</i> y asegurarse de que el <i>SERVER_URL</i> apunta a localhost:3000 y no a https://dashboard.classpip.com basta con dejar las lineas como se muestra a continuación:\n\t</p>\n\t<pre class=\"line-numbers\" data-start=\"6\">\n\t\t<code class=\"language-typescript\">export const environment = {{'{'}}\n  production: false,\n  api: 'http://localhost:3000'\n{{'}'}};</code>\n\t</pre>\n</section>"
+
+/***/ }),
+
+/***/ "./src/app/pages/firstrun/initdashboard/initdashboard.component.scss":
+/*!***************************************************************************!*\
+  !*** ./src/app/pages/firstrun/initdashboard/initdashboard.component.scss ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2ZpcnN0cnVuL2luaXRkYXNoYm9hcmQvaW5pdGRhc2hib2FyZC5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/pages/firstrun/initdashboard/initdashboard.component.ts":
+/*!*************************************************************************!*\
+  !*** ./src/app/pages/firstrun/initdashboard/initdashboard.component.ts ***!
+  \*************************************************************************/
+/*! exports provided: InitdashboardComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InitdashboardComponent", function() { return InitdashboardComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var InitdashboardComponent = /** @class */ (function () {
+    function InitdashboardComponent() {
+    }
+    InitdashboardComponent.prototype.ngOnInit = function () {
+    };
+    InitdashboardComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-initdashboard',
+            template: __webpack_require__(/*! ./initdashboard.component.html */ "./src/app/pages/firstrun/initdashboard/initdashboard.component.html"),
+            styles: [__webpack_require__(/*! ./initdashboard.component.scss */ "./src/app/pages/firstrun/initdashboard/initdashboard.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], InitdashboardComponent);
+    return InitdashboardComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/firstrun/initmobile/initmobile.component.html":
+/*!*********************************************************************!*\
+  !*** ./src/app/pages/firstrun/initmobile/initmobile.component.html ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2>Iniciar proyecto de Mobile</h2>\n<app-commonconsiderations></app-commonconsiderations>\n<p>\n\t<b>Paso 1:</b> Clona el repositorio en tu entorno de desarrollo local:\n</p>\n<pre>\n\t<code class=\"language-markup\">\ngit clone https://github.com/alejandromartincruz/classpip-mobile.git\n\t</code>\n</pre>\n<p>\n\t<b>Paso 2:</b> Instala la versión 2.2.2 de ionic y la versión 6.4.0 de cordova con npm:\n</p>\n<pre>\n\t<code class=\"language-markup\">\nnpm install -g ionic@2.2.2\nnpm install -g cordova@6.4.0\n\t</code>\n</pre>\n<p>\n\t<b>Paso 3:</b> Instala las dependencias del proyecto:\n</p>\n<pre>\n\t<code class=\"language-markup\">\ncd classpip-mobile\nnpm install\nmkdir www\ncordova prepare\n\t</code>\n</pre>\n<p>\n\t<b>Paso 4:</b> Inicia Classpip-mobile (por defecto en <a href=\"http://localhost:8100/\">http://localhost:8100</a>) con el siguiente comando:\n</p>\n<pre>\n\t<code class=\"language-markup\">\nionic serve --lab\n\t</code>\n</pre>\n<section>\n\t<h2>Origen de los datos</h2>\n\t<p>\n\t\tHay que asegurarse de que la aplicación de servicios esta funcionando antes de intentar usar la aplicación de mobile, ya que la aplicación de servicios es el origen y destino de los datos. De no ser así, al intentar iniciar sesión se obtendrá el error: <i>ERROR: Ha ocurrido un error interno en el servidor. Por favor, contacta con tu administrador.</i>\n\t</p>\n\t<p>\n\t\tTambién hay que asegurar que este configurado el origen de los datos en localhost:3000. Para ello hay que dirigirse al archivo <i>'src/app/app.config.ts'</i> y asegurarse de que el <i>SERVER_URL</i> apunta a localhost:3000 y no a https://api.classpip.com basta con dejar las lineas como se muestra a continuación:\n\t</p>\n\t<pre class=\"line-numbers\" data-start=\"3\">\n\t\t<code class=\"language-typescript\">// Server connection\n// public static get SERVER_URL(): string {{'{'}} return 'https://api.classpip.com'; {{'}'}} // PRO\npublic static get SERVER_URL(): string {{'{'}} return 'http://localhost:3000'; {{'}'}} // DEV</code>\n\t</pre>\n</section>\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/firstrun/initmobile/initmobile.component.scss":
+/*!*********************************************************************!*\
+  !*** ./src/app/pages/firstrun/initmobile/initmobile.component.scss ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2ZpcnN0cnVuL2luaXRtb2JpbGUvaW5pdG1vYmlsZS5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/pages/firstrun/initmobile/initmobile.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/pages/firstrun/initmobile/initmobile.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: InitmobileComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InitmobileComponent", function() { return InitmobileComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var InitmobileComponent = /** @class */ (function () {
+    function InitmobileComponent() {
+    }
+    InitmobileComponent.prototype.ngOnInit = function () {
+    };
+    InitmobileComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-initmobile',
+            template: __webpack_require__(/*! ./initmobile.component.html */ "./src/app/pages/firstrun/initmobile/initmobile.component.html"),
+            styles: [__webpack_require__(/*! ./initmobile.component.scss */ "./src/app/pages/firstrun/initmobile/initmobile.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], InitmobileComponent);
+    return InitmobileComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/firstrun/initonboarding/initonboarding.component.html":
+/*!*****************************************************************************!*\
+  !*** ./src/app/pages/firstrun/initonboarding/initonboarding.component.html ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2>Iniciar proyecto de Onboarding</h2>\n<app-commonconsiderations></app-commonconsiderations>\n<p>\n\t<b>Paso 1:</b> Clona el repositorio en tu entorno de desarrollo local:\n</p>\n<pre>\n\t<code class=\"language-markup\">\ngit clone https://github.com/alejandromartincruz/classpip-onboarding.git\n\t</code>\n</pre>\n<p>\n\t<b>Paso 2:</b> Instala las dependencias del proyecto:\n</p>\n<pre>\n\t<code class=\"language-markup\">\ncd classpip-onboarding\nnpm install\n\t</code>\n</pre>\n<p>\n\t<b>Paso 3:</b> Inicia Classpip-onboarding (por defecto en <a href=\"http://localhost:4200/\">http://localhost:4200</a>) con el siguiente comando:\n</p>\n<pre>\n\t<code class=\"language-markup\">\nng serve --open\n\t</code>\n</pre>"
+
+/***/ }),
+
+/***/ "./src/app/pages/firstrun/initonboarding/initonboarding.component.scss":
+/*!*****************************************************************************!*\
+  !*** ./src/app/pages/firstrun/initonboarding/initonboarding.component.scss ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2ZpcnN0cnVuL2luaXRvbmJvYXJkaW5nL2luaXRvbmJvYXJkaW5nLmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/pages/firstrun/initonboarding/initonboarding.component.ts":
+/*!***************************************************************************!*\
+  !*** ./src/app/pages/firstrun/initonboarding/initonboarding.component.ts ***!
+  \***************************************************************************/
+/*! exports provided: InitonboardingComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InitonboardingComponent", function() { return InitonboardingComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var InitonboardingComponent = /** @class */ (function () {
+    function InitonboardingComponent() {
+    }
+    InitonboardingComponent.prototype.ngOnInit = function () {
+    };
+    InitonboardingComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-initonboarding',
+            template: __webpack_require__(/*! ./initonboarding.component.html */ "./src/app/pages/firstrun/initonboarding/initonboarding.component.html"),
+            styles: [__webpack_require__(/*! ./initonboarding.component.scss */ "./src/app/pages/firstrun/initonboarding/initonboarding.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], InitonboardingComponent);
+    return InitonboardingComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/firstrun/initservices/initservices.component.html":
+/*!*************************************************************************!*\
+  !*** ./src/app/pages/firstrun/initservices/initservices.component.html ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2>Iniciar proyecto de Services</h2>\n<app-commonconsiderations></app-commonconsiderations>\n<p>\n\t<b>Paso 1:</b> Clona el repositorio en tu entorno de desarrollo local:\n</p>\n<pre>\n\t<code class=\"language-markup\">\ngit clone https://github.com/alejandromartincruz/classpip-services.git\n\t</code>\n</pre>\n<p>\n\t<b>Paso 2:</b> Instala la versión 6.0.3 de strongloop con npm\n</p>\n<pre>\n\t<code class=\"language-markup\">\nnpm install -g strongloop@6.0.3\n\t</code>\n</pre>\n<p>\n\t<i>Nota: en macOS la instalación de strongloop acaba con error y parece que no se haya instalado correctamente, pero el funcionamiento de strongloop es correcto.</i>\n</p>\n<p>\n\t<b>Paso 3:</b> Instala las dependencias del proyecto:\n</p>\n<pre>\n\t<code class=\"language-markup\">\ncd classpip-services\nnpm install\n\t</code>\n</pre>\n<p>\n\t<b>Paso 4:</b> Inicia Classpip-services (por defecto en <a href=\"http://localhost:3000/\">localhost:3000</a>) con el siguiente comando:\n</p>\n<pre>\n\t<code class=\"language-markup\">\nnpm run start\n\t</code>\n</pre>\n<section>\n\t<h2>In-Memory o base de datos</h2>\n\t<p>\n\t\tEl repositorio esta preparado para guardar por defecto la información in-memory, si se quiere cambiar este funcionamiento por una base de datos mysql, hay que ir al archivo <i>'classpip-services/server/datasources.json'</i> y cambiar las lineas:\n\t</p>\n\t<pre class=\"line-numbers\" data-start=\"2\">\n\t\t<code class=\"language-json\">\"db\": {{'{'}}\n    \"name\": \"db\",\n    \"connector\": \"memory\"\n{{'}'}},</code>\n\t</pre>\n\t<p>\n\t\tEn su lugar, hay que sustituirlas por:\n\t</p>\n\t<pre class=\"line-numbers\" data-start=\"2\">\n\t\t<code class=\"language-json\">\"db\": {{'{'}}\n    \"host\": \"localhost\",\n    \"port\": 3306,\n    \"url\": \"\",\n    \"database\": \"&lt;database_name&gt;\",\n    \"password\": \"&lt;local_user_password&gt;\",\n    \"name\": \"db\",\n    \"user\": \"&lt;local_user&gt;\",\n    \"connector\": \"mysql\"\n{{'}'}},</code>\n\t</pre>\n</section>\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/firstrun/initservices/initservices.component.scss":
+/*!*************************************************************************!*\
+  !*** ./src/app/pages/firstrun/initservices/initservices.component.scss ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2ZpcnN0cnVuL2luaXRzZXJ2aWNlcy9pbml0c2VydmljZXMuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/pages/firstrun/initservices/initservices.component.ts":
+/*!***********************************************************************!*\
+  !*** ./src/app/pages/firstrun/initservices/initservices.component.ts ***!
+  \***********************************************************************/
+/*! exports provided: InitservicesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InitservicesComponent", function() { return InitservicesComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var InitservicesComponent = /** @class */ (function () {
+    function InitservicesComponent() {
+    }
+    InitservicesComponent.prototype.ngOnInit = function () {
+    };
+    InitservicesComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-initservices',
+            template: __webpack_require__(/*! ./initservices.component.html */ "./src/app/pages/firstrun/initservices/initservices.component.html"),
+            styles: [__webpack_require__(/*! ./initservices.component.scss */ "./src/app/pages/firstrun/initservices/initservices.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], InitservicesComponent);
+    return InitservicesComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/pages/git/git.component.html":
 /*!**********************************************!*\
   !*** ./src/app/pages/git/git.component.html ***!
@@ -906,6 +1349,274 @@ var HomeComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], HomeComponent);
     return HomeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/install/install.component.html":
+/*!******************************************************!*\
+  !*** ./src/app/pages/install/install.component.html ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mat-tab-group (selectedTabChange)=\"tabSelectionChanged($event)\">\n  <mat-tab label=\"Windows\">\n    <ng-template matTabContent>\n      <app-windowsinstall></app-windowsinstall>\n    </ng-template>\n  </mat-tab>\n  <mat-tab label=\"Linux\">\n    <ng-template matTabContent>\n      <app-linuxinstall></app-linuxinstall>\n    </ng-template>\n  </mat-tab>\n  <mat-tab label=\"macOS\">\n    <ng-template matTabContent>\n      <app-macosinstall></app-macosinstall>\n    </ng-template>\n  </mat-tab>\n</mat-tab-group>\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/install/install.component.scss":
+/*!******************************************************!*\
+  !*** ./src/app/pages/install/install.component.scss ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2luc3RhbGwvaW5zdGFsbC5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/pages/install/install.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/pages/install/install.component.ts ***!
+  \****************************************************/
+/*! exports provided: InstallComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InstallComponent", function() { return InstallComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../shared/services/highlight.service */ "./src/app/shared/services/highlight.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var InstallComponent = /** @class */ (function () {
+    function InstallComponent(highlightService) {
+        this.highlightService = highlightService;
+        this.highlighted = false;
+    }
+    InstallComponent.prototype.ngOnInit = function () {
+    };
+    /**
+     * Highlight blog post when it's ready
+     */
+    InstallComponent.prototype.ngAfterViewChecked = function () {
+        if (!this.highlighted) {
+            this.highlightService.highlightAll();
+            this.highlighted = true;
+        }
+    };
+    InstallComponent.prototype.tabSelectionChanged = function (event) {
+        this.highlightService.highlightAll();
+    };
+    InstallComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-install',
+            template: __webpack_require__(/*! ./install.component.html */ "./src/app/pages/install/install.component.html"),
+            styles: [__webpack_require__(/*! ./install.component.scss */ "./src/app/pages/install/install.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__["HighlightService"]])
+    ], InstallComponent);
+    return InstallComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/install/linuxinstall/linuxinstall.component.html":
+/*!************************************************************************!*\
+  !*** ./src/app/pages/install/linuxinstall/linuxinstall.component.html ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2>\n\tInstalación del entorno de desarrollo en Linux\n</h2>\n<mat-accordion>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>NODE y NPM</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tLa versión de Node que se usa en el desarrollo es la 8.6.0, por lo que se recomienda descargar esta versión para evitar conflictos entre las versiones de los diferentes programas utilizados.\n    </p>\n    <p>\n    \tNo se recomienda utilizar el instalador de Nodejs para Linux, ya que, aunque se instala sin ningún tipo de error suele dar problemas de permisos de ficheros en la instalación, que se traduce en constantes fallos y problemas a la hora de utilizar comandos de node y de npm.\n    </p>\n    <p>\n    \tLo más facil y seguro para la instalación de Nodejs en Linux es utilizar Node Version Manager (NVM), que además permite instalar varias versiones de Node y cambiar entre ellas fácilmente. Para instalar NVM hay que abrir el términal e introducir uno de los siguientes comandos, o curl o wget:\n    </p>\n    <pre>\n    \t<code class=\"language-markup\">\ncurl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash\nwget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash\n    \t</code>\n    </pre>\n    <p>\n    \tRecarga el shell con el siguiente comando en el términal:\n    </p>\n    <pre>\n    \t<code class=\"language-markup\">\nsource ~/.bashrc\n    \t</code>\n    </pre>\n    <p>\n    \tUna vez que NVM esta instalado y funcional, instalar la versión 8.6 de Node es tan sencillo como poner el siguiente comando en el terminal:\n    </p>\n    <pre>\n    \t<code class=\"language-markup\">\nnvm install 8.6.0\n    \t</code>\n    </pre>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Git</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tGit es una herramienta imprescindible para este proyecto. Para poder utilizar los comandos de Git en el terminal del sistema. La mejor forma de instalarlo es ir a <a href=\"https://git-scm.com/downloads\" target=\"_blank\">esta pagina web</a> y seguir sus instrucciones de instalación para Linux. Lo ideal es instalar la versión más reciente disponible.\n    </p>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Sourcetree</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tSourcetree es un cliente gráfico de Git, no es necesario para llevar a cabo un desarrollo en el proyecto, pero va muy bien para visionar los commits y las ramas que se han ido llevando a cabo en el repositorio de una forma más clara y sencilla.\n    </p>\n    <p>\n    \tEste programa se instala desde su <a href=\"https://www.sourcetreeapp.com\" target=\"_blank\">página oficial</a>.\n    </p>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Visual Studio Code</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tPara escribir código se puede utilizar cualquier GUI, existen muchos, como por ejemplo WebStorm de JetBrains, Sublime Text, etc. pero se recomienda el uso de Visual Studio Code.\n    </p>\n    <p>\n    \tEste programa se instala desde su <a href=\"https://code.visualstudio.com/#alt-downloads\" target=\"_blank\">página oficial</a> seleccionando el instalador de Linux. Para instalarlo en Ubuntu, una vez descargado el archivo hay que situarse en la carpeta donde se ha descargado e introducir el siguiente comando:\n    </p>\n    <pre>\n    \t<code>\nsudo dpkg -i nomDeLArchiu.deb\n    \t</code>\n    </pre>\n    <p>\n    \tUna de las razones por las que se recomienda el uso de este GUI, es por la facilidad de instalar diversos plugins que facilitan el desarrollo. Una vez instalado el Visual Studio es muy recomendable instalar los siguientes plugins:\n    </p>\n    <ul>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2\">Angular Snippets plugin por John Papa</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify\">Beautify por HookyQR</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig\">EditorConfig for VS Code</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint\">ESLint por Dirk Baeumer</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=glen-84.sass-lint\">Sass Lint por glen-84</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=eg2.tslint\">TSLint por egamma</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=DSKWRK.vscode-generate-getter-setter\">TypeScript Toolbox por DSKWRK</a></li>\n    </ul>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Android Studio</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tAndroid Studio no es una herramienta neceesaria para el proyecto, pero puede llegar a ser útil para debuggar la aplicación de Android generada por Cordova. Aunque en caso de no querer instalar Android Studio, habrá que instalar Android SDK, que si que es necesario.\n    </p>\n    <p>\n    \tEl instalador se encuentra en su <a href=\"https://developer.android.com/studio/#downloads\" target=\"_blank\">página oficial</a>.\n    </p>\n  </mat-expansion-panel>\n\n</mat-accordion>\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/install/linuxinstall/linuxinstall.component.scss":
+/*!************************************************************************!*\
+  !*** ./src/app/pages/install/linuxinstall/linuxinstall.component.scss ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2luc3RhbGwvbGludXhpbnN0YWxsL2xpbnV4aW5zdGFsbC5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/pages/install/linuxinstall/linuxinstall.component.ts":
+/*!**********************************************************************!*\
+  !*** ./src/app/pages/install/linuxinstall/linuxinstall.component.ts ***!
+  \**********************************************************************/
+/*! exports provided: LinuxinstallComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinuxinstallComponent", function() { return LinuxinstallComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var LinuxinstallComponent = /** @class */ (function () {
+    function LinuxinstallComponent() {
+    }
+    LinuxinstallComponent.prototype.ngOnInit = function () {
+    };
+    LinuxinstallComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-linuxinstall',
+            template: __webpack_require__(/*! ./linuxinstall.component.html */ "./src/app/pages/install/linuxinstall/linuxinstall.component.html"),
+            styles: [__webpack_require__(/*! ./linuxinstall.component.scss */ "./src/app/pages/install/linuxinstall/linuxinstall.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], LinuxinstallComponent);
+    return LinuxinstallComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/install/macosinstall/macosinstall.component.html":
+/*!************************************************************************!*\
+  !*** ./src/app/pages/install/macosinstall/macosinstall.component.html ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2>\n\tInstalación del entorno de desarrollo en macOS\n</h2>\n<mat-accordion>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Homebrew Package Manager</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tHomebrew instala todo aquello <a href=\"https://formulae.brew.sh/formula/\" target=\"_blank\">que se necesita</a> y que Apple no instala de serie. Y será muy útil para instalar otros elementos necesarios para iniciar el desarrollo de este proyecto.\n    </p>\n    <p>\n    \tPara abrir la instalación de Homebrew, de aqui en adelante brew, hay que abrir el términal e introducir el siguientes comando:\n    </p>\n    <pre>\n    \t<code class=\"language-markup\">\n/usr/bin/ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\"\n    \t</code>\n    </pre>\n    <p>\n    \tY luego ir siguiendo las instrucciones que aparecerán por pantalla. Si finalmente esta bien instalado un simple comando \"brew -v\" en el terminal devolverá la versión de brew instalada.\n    </p>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>NODE y NPM</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tLa versión de Node que se usa en el desarrollo es la 8.6.0, por lo que se recomienda descargar esta versión para evitar conflictos entre las versiones de los diferentes programas utilizados.\n    </p>\n    <p>\n    \tNo se recomienda utilizar el instalador de Nodejs para macOS, ya que, aunque se instala sin ningún tipo de error suele dar problemas de permisos de ficheros en la instalación, que se traduce en constantes fallos y problemas a la hora de utilizar comandos de node y de npm.\n    </p>\n    <p>\n    \tLo más facil y seguro para la instalación de Nodejs en macOS es utilizar Node Version Manager (NVM), que además permite instalar varias versiones de Node y cambiar entre ellas fácilmente. Para instalar NVM hay que abrir el términal e instroducir uno de los siguientes comandos curl o wget:\n    </p>\n    <pre>\n    \t<code class=\"language-markup\">\ncurl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash\nwget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash\n    \t</code>\n    </pre>\n    <p>\n    \twget no viene de serie con macOS, si se quiere usar para instalar nvm, antes hay que instalarlo usando brew con el siguiente comando:\n    </p>\n    <pre>\n    \t<code class=\"language-markup\">\n$ brew install wget\n    \t</code>\n    </pre>\n    <p>\n    \tUna vez instalado nvm, hay que cerrar el términal y volver a abrirlo. Para verificar que NVM se ha instalado correctamente instroducir el siguiente comando en el términal:\n    </p>\n    <pre>\n    \t<code class=\"language-markup\">\n$ nvm --version\n    \t</code>\n    </pre>\n    <p>\n    \tUna vez que NVM esta instalado y funcional, instalar la versión 8.6 de Node es tan sencillo como poner el siguiente comando en el terminal:\n    </p>\n    <pre>\n    \t<code class=\"language-markup\">\n$ nvm install 8.6.0\n    \t</code>\n    </pre>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Git</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tGit es una herramienta imprescindible para este proyecto. Para poder utilizar los comandos de Git en el terminal del sistema. La mejor forma de instalarlo es ir a <a href=\"https://git-scm.com/downloads\" target=\"_blank\">esta pagina web</a> y seguir sus instrucciones de instalación para Microsoft Windows. Lo ideal es instalar la versión más reciente disponible.\n    </p>\n    <p>\n    \tEn macOS si se tiene instalado XCode desde la mac App Store, ya se tiene instalado Git y no es necesario instalarlo. Pero si no se quiere instalar XCode, otra forma de instalarlo es mediante brew con el siguiente comando de terminal.\n    </p>\n    <pre>\n    \t<code class=\"language-markup\">\n$ brew install git\n    \t</code>\n    </pre>\n    <p>\n    \tPara acabar la instalación de Git solo falta configurar el nombre y el email de Git con los siguientes comandos:\n    </p>\n    <pre>\n    \t<code class=\"language-markup\">\n$ git config --global user.name \"John Doe\"\n$ git config --global user.email \"johndoe@example.com\"\n    \t</code>\n    </pre>\n    <p>\n    \tRecordar usar vuestro nombre de usuario y vuestro correo en lugar de \"John Doe\" y \"johndoe@example.com\"\n    </p>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Sourcetree</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tSourcetree es un cliente gráfico de Git, no es necesario para llevar a cabo un desarrollo en el proyecto, pero va muy bien para visionar los commits y las ramas que se han ido llevando a cabo en el repositorio de una forma más clara y sencilla.\n    </p>\n    <p>\n    \tEste programa se instala desde su <a href=\"https://www.sourcetreeapp.com\" target=\"_blank\">página oficial</a>.\n    </p>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Visual Studio Code</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tPara escribir código se puede utilizar cualquier GUI, existen muchos, como por ejemplo WebStorm de JetBrains, Sublime Text, etc. pero se recomienda el uso de Visual Studio Code.\n    </p>\n    <p>\n    \tEste programa se instala desde su <a href=\"https://code.visualstudio.com/#alt-downloads\" target=\"_blank\">página oficial</a> seleccionando el instalador de macOS.\n    </p>\n    <p>\n    \tUna de las razones por las que se recomienda el uso de este GUI, es por la facilidad de instalar diversos plugins que facilitan el desarrollo. Una vez instalado el Visual Studio es muy recomendable instalar los siguientes plugins:\n    </p>\n    <ul>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2\">Angular Snippets plugin por John Papa</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify\">Beautify por HookyQR</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig\">EditorConfig for VS Code</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint\">ESLint por Dirk Baeumer</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=glen-84.sass-lint\">Sass Lint por glen-84</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=eg2.tslint\">TSLint por egamma</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=DSKWRK.vscode-generate-getter-setter\">TypeScript Toolbox por DSKWRK</a></li>\n    </ul>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Android Studio</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tAndroid Studio no es una herramienta neceesaria para el proyecto, pero puede llegar a ser útil para debuggar la aplicación de Android generada por Cordova. Aunque en caso de no querer instalar Android Studio, habrá que instalar Android SDK, que si que es necesario.\n    </p>\n    <p>\n    \tEl instalador se encuentra en su <a href=\"https://developer.android.com/studio/#downloads\" target=\"_blank\">página oficial</a>.\n    </p>\n  </mat-expansion-panel>\n\n</mat-accordion>\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/install/macosinstall/macosinstall.component.scss":
+/*!************************************************************************!*\
+  !*** ./src/app/pages/install/macosinstall/macosinstall.component.scss ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2luc3RhbGwvbWFjb3NpbnN0YWxsL21hY29zaW5zdGFsbC5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/pages/install/macosinstall/macosinstall.component.ts":
+/*!**********************************************************************!*\
+  !*** ./src/app/pages/install/macosinstall/macosinstall.component.ts ***!
+  \**********************************************************************/
+/*! exports provided: MacosinstallComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MacosinstallComponent", function() { return MacosinstallComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MacosinstallComponent = /** @class */ (function () {
+    function MacosinstallComponent() {
+    }
+    MacosinstallComponent.prototype.ngOnInit = function () {
+    };
+    MacosinstallComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-macosinstall',
+            template: __webpack_require__(/*! ./macosinstall.component.html */ "./src/app/pages/install/macosinstall/macosinstall.component.html"),
+            styles: [__webpack_require__(/*! ./macosinstall.component.scss */ "./src/app/pages/install/macosinstall/macosinstall.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], MacosinstallComponent);
+    return MacosinstallComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/install/windowsinstall/windowsinstall.component.html":
+/*!****************************************************************************!*\
+  !*** ./src/app/pages/install/windowsinstall/windowsinstall.component.html ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2>\n\tInstalación del entorno de desarrollo en Microsoft Windows\n</h2>\n<mat-accordion>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>NODE y NPM</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tLa versión de Node que se usa en el desarrollo es la 8.6.0, por lo que se recomienda descargar esta versión para evitar conflictos entre las versiones de los diferentes programas utilizados.\n    </p>\n    <p>\n    \tPara ello, hay que ir a la pagina web de <a href=\"https://nodejs.org/dist/v8.6.0/\" target=\"_blank\">Nodejs 8.6</a> y seleccionar el instalador correspondiente al tipo de sistema operativo, en este caso Microsoft Windows.\n    \t<img src=\"../../../assets/img/install/img1.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n    </p>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Git</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tGit es una herramienta imprescindible para este proyecto. Para poder utilizar los comandos de Git en el terminal del sistema. La mejor forma de instalarlo es ir a <a href=\"https://git-scm.com/downloads\" target=\"_blank\">esta pagina web</a> y seguir sus instrucciones de instalación para Microsoft Windows. Lo ideal es instalar la versión más reciente disponible.\n    </p>\n    <p>\n    \tpara comprobar que Git se ha instalado correctamente lo mejor es probarlo con el comando \"<i>git --version</i>\", si Git está instalado y funcionando se verá una linea con la versión de Git instalada.\n    </p>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Sourcetree</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tSourcetree es un cliente gráfico de Git, no es necesario para llevar a cabo un desarrollo en el proyecto, pero va muy bien para visionar los commits y las ramas que se han ido llevando a cabo en el repositorio de una forma más clara y sencilla.\n    </p>\n    <p>\n    \tEste programa se instala desde su <a href=\"https://www.sourcetreeapp.com\" target=\"_blank\">página oficial</a>.\n    </p>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Visual Studio Code</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tPara escribir código se puede utilizar cualquier GUI, existen muchos, como por ejemplo WebStorm de JetBrains, Sublime Text, etc. pero se recomienda el uso de Visual Studio Code.\n    </p>\n    <p>\n    \tEste programa se instala desde su <a href=\"https://code.visualstudio.com/#alt-downloads\" target=\"_blank\">página oficial</a> seleccionando el instalador de Microsoft Windows.\n    </p>\n    <p>\n    \tUna de las razones por las que se recomienda el uso de este GUI, es por la facilidad de instalar diversos plugins que facilitan el desarrollo. Una vez instalado el Visual Studio es muy recomendable instalar los siguientes plugins:\n    </p>\n    <ul>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2\">Angular Snippets plugin por John Papa</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify\">Beautify por HookyQR</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig\">EditorConfig for VS Code</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint\">ESLint por Dirk Baeumer</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=glen-84.sass-lint\">Sass Lint por glen-84</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=eg2.tslint\">TSLint por egamma</a></li>\n    \t<li><a href=\"https://marketplace.visualstudio.com/items?itemName=DSKWRK.vscode-generate-getter-setter\">TypeScript Toolbox por DSKWRK</a></li>\n    </ul>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Android Studio</h3>\n    </mat-expansion-panel-header>\n    <p>\n    \tAndroid Studio no es una herramienta neceesaria para el proyecto, pero puede llegar a ser útil para debuggar la aplicación de Android generada por Cordova. Aunque en caso de no querer instalar Android Studio, habrá que instalar Android SDK, que si que es necesario.\n    </p>\n    <p>\n    \tEl instalador se encuentra en su <a href=\"https://developer.android.com/studio/#downloads\" target=\"_blank\">página oficial</a>.\n    </p>\n  </mat-expansion-panel>\n\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <h3>Windows Build Tools</h3>\n    </mat-expansion-panel-header>\n    <p>\n      El windows build tools instalará algunos componentes necesarios para el proyecto. Para instalarlo, después de haber realizado la instalación de Nodejs hay que introducir el siguiente comando en el terminal:\n    </p>\n    <pre>\n      <code class=\"language-markup\">\nnpm install --global --production windows-build-tools\n      </code>\n    </pre>\n  </mat-expansion-panel>\n\n</mat-accordion>"
+
+/***/ }),
+
+/***/ "./src/app/pages/install/windowsinstall/windowsinstall.component.scss":
+/*!****************************************************************************!*\
+  !*** ./src/app/pages/install/windowsinstall/windowsinstall.component.scss ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2luc3RhbGwvd2luZG93c2luc3RhbGwvd2luZG93c2luc3RhbGwuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/pages/install/windowsinstall/windowsinstall.component.ts":
+/*!**************************************************************************!*\
+  !*** ./src/app/pages/install/windowsinstall/windowsinstall.component.ts ***!
+  \**************************************************************************/
+/*! exports provided: WindowsinstallComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WindowsinstallComponent", function() { return WindowsinstallComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var WindowsinstallComponent = /** @class */ (function () {
+    function WindowsinstallComponent() {
+    }
+    WindowsinstallComponent.prototype.ngOnInit = function () {
+    };
+    WindowsinstallComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-windowsinstall',
+            template: __webpack_require__(/*! ./windowsinstall.component.html */ "./src/app/pages/install/windowsinstall/windowsinstall.component.html"),
+            styles: [__webpack_require__(/*! ./windowsinstall.component.scss */ "./src/app/pages/install/windowsinstall/windowsinstall.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], WindowsinstallComponent);
+    return WindowsinstallComponent;
 }());
 
 
@@ -1723,7 +2434,7 @@ var LoadingComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container class=\"sidenav-container\">\n  <mat-sidenav\n    #drawer\n    class=\"sidenav\"\n    fixedInViewport=\"true\"\n    [attr.role]=\"(isHandset$ | async) ? 'dialog' : 'navigation'\"\n    [mode]=\"(isHandset$ | async) ? 'over' : 'side'\"\n    [opened]=\"!(isHandset$ | async)\">\n    <mat-toolbar color=\"primary\">Menu</mat-toolbar>\n    <mat-nav-list>\n      <a mat-list-item routerLink=\"/home\">\n        <mat-icon mat-list-icon>home</mat-icon>\n        <span>Home</span>\n      </a>      \n      <a mat-list-item (click)=\"usersShow = openClose(usersShow, 'userCaret')\">\n        <mat-icon mat-list-icon>people</mat-icon>\n        <span>Usuarios</span>\n        <span class=\"fill-space\"></span>\n        <mat-icon id=\"userCaret\" class=\"material-icons\">expand_more</mat-icon>\n      </a>\n      <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/students\" (click)=\"usersShow = openClose(usersShow, 'userCaret')\">\n        <mat-icon mat-list-icon>face</mat-icon>\n        <span>Estudiantes</span>\n      </a>\n      <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/teachers\" (click)=\"usersShow = openClose(usersShow, 'userCaret')\">\n        <mat-icon mat-list-icon>school</mat-icon>\n        <span>Profesores</span>\n      </a>\n      <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/administrator\" (click)=\"usersShow = openClose(usersShow, 'userCaret')\">\n        <mat-icon mat-list-icon>person</mat-icon>\n        <span>Administradores</span>\n      </a>\n      <a mat-list-item (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>developer_mode</mat-icon>\n        <span>Desarrolladores</span>\n        <span class=\"fill-space\"></span>\n        <mat-icon id=\"devCaret\" class=\"material-icons\">expand_more</mat-icon>\n      </a>\n      <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/git\" (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon fontSet=\"fab\" fontIcon=\"fa-github\"></mat-icon>\n        <span>Pautas git</span>\n      </a>\n      <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/tutorial\" (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>computer</mat-icon>\n        <span>Tutorial</span>\n      </a>\n      <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/onboarding\" (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>web</mat-icon>\n        <span>Onboarding</span>\n      </a>\n      <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/faq\" (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>report</mat-icon>\n        <span>Problemas</span>\n      </a>\n    </mat-nav-list>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"primary\">\n      <button\n        type=\"button\"\n        aria-label=\"Toggle sidenav\"\n        mat-icon-button\n        (click)=\"drawer.toggle()\"\n        *ngIf=\"isHandset$ | async\">\n        <mat-icon aria-label=\"Side nav toggle icon\">menu</mat-icon>\n      </button>\n      <a mat-button class=\"docs-button\" routerLink=\"/home\">\n        <img class=\"docs-classpip-logo\" src=\"../assets/img/classpip-icon.svg\" alt=\"angular\">\n        <span>Classpip</span>\n      </a>\n    </mat-toolbar>\n    <!-- Add Content Here -->\n    <div fxFlex=\"grow\" class=\"main-content\">\n      <div [hidden]=\"!loading\" class=\"loader\">\n        <h2>Loading...</h2>\n        <app-loading></app-loading>\n      </div>\n      <div [hidden]=\"loading\" class=\"router-output\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n"
+module.exports = "<mat-sidenav-container class=\"sidenav-container\">\n  <mat-sidenav\n    #drawer\n    class=\"sidenav\"\n    fixedInViewport=\"true\"\n    [attr.role]=\"(isHandset$ | async) ? 'dialog' : 'navigation'\"\n    [mode]=\"(isHandset$ | async) ? 'over' : 'side'\"\n    [opened]=\"!(isHandset$ | async)\">\n    <mat-toolbar color=\"primary\">Menu</mat-toolbar>\n    <mat-nav-list>\n      <a mat-list-item routerLink=\"/home\" (click)=\"setTitle( 'Classpip onboarding para la aplicación de gamificación' )\">\n        <mat-icon mat-list-icon>home</mat-icon>\n        <span>Home</span>\n      </a>      \n      <a mat-list-item (click)=\"usersShow = openClose(usersShow, 'userCaret')\">\n        <mat-icon mat-list-icon>people</mat-icon>\n        <span>Usuarios</span>\n        <span class=\"fill-space\"></span>\n        <mat-icon id=\"userCaret\" class=\"material-icons\">expand_more</mat-icon>\n      </a>\n      <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/students\" (click)=\"usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar la aplicacion como estudiante' );\">\n        <mat-icon mat-list-icon fontSet=\"fa\" fontIcon=\"fa-user-graduate\"></mat-icon>\n        <span>Estudiantes</span>\n      </a>\n      <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/teachers\" (click)=\"usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar las funciones de profesor' );\">\n        <mat-icon mat-list-icon fontSet=\"fa\" fontIcon=\"fa-chalkboard-teacher\"></mat-icon>\n        <span>Profesores</span>\n      </a>\n      <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/administrator\" (click)=\"usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar las funciones de administrador' );\">\n        <mat-icon mat-list-icon fontSet=\"fa\" fontIcon=\"fa-user-tie\"></mat-icon>\n        <span>Administradores</span>\n      </a>\n      <a mat-list-item (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>developer_mode</mat-icon>\n        <span>Desarrolladores</span>\n        <span class=\"fill-space\"></span>\n        <mat-icon id=\"devCaret\" class=\"material-icons\">expand_more</mat-icon>\n      </a>\n      <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"developer/install\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding instala tu entorno de desarrollo' );\">\n        <mat-icon mat-list-icon fontSet=\"far\" fontIcon=\"fa-save\"></mat-icon>\n        <span>Instalación del entorno</span>\n      </a>\n      <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"developer/firstrun\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding primeros pasos para poner en marcha el proyecto' );\">\n        <mat-icon mat-list-icon fontSet=\"fas\" fontIcon=\"fa-shoe-prints\"></mat-icon>\n        <span>Puesta en marcha</span>\n      </a>\n      <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/git\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding como trabajar con git en el proyecto' );\">\n        <mat-icon mat-list-icon fontSet=\"fab\" fontIcon=\"fa-github\"></mat-icon>\n        <span>Pautas git</span>\n      </a>\n      <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/tutorial\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding aprende a desarrollar un módulo para la aplicación' );\">\n        <mat-icon mat-list-icon>computer</mat-icon>\n        <span>Tutorial</span>\n      </a>\n      <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/onboarding\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding aprende a desarrollar y mantener la web de onboarding' );\">\n        <mat-icon mat-list-icon>web</mat-icon>\n        <span>Onboarding</span>\n      </a>\n      <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/faq\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding resuleve tus dudas y problemas' );\">\n        <mat-icon mat-list-icon>report</mat-icon>\n        <span>Problemas</span>\n      </a>\n    </mat-nav-list>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"primary\">\n      <button\n        type=\"button\"\n        aria-label=\"Toggle sidenav\"\n        mat-icon-button\n        (click)=\"drawer.toggle()\"\n        *ngIf=\"isHandset$ | async\">\n        <mat-icon aria-label=\"Side nav toggle icon\">menu</mat-icon>\n      </button>\n      <a mat-button class=\"docs-button\" routerLink=\"/home\" (click)=\"setTitle( 'Classpip onboarding para la aplicación de gamificación' )\">\n        <img class=\"docs-classpip-logo\" src=\"../assets/img/classpip-icon.svg\" alt=\"classpip logo\">\n        <span>Classpip</span>\n      </a>\n    </mat-toolbar>\n    <!-- Add Content Here -->\n    <div fxFlex=\"grow\" class=\"main-content\">\n      <div [hidden]=\"!loading\" class=\"loader\">\n        <h2>Loading...</h2>\n        <app-loading></app-loading>\n      </div>\n      <div [hidden]=\"loading\" class=\"router-output\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n"
 
 /***/ }),
 
@@ -1734,7 +2445,7 @@ module.exports = "<mat-sidenav-container class=\"sidenav-container\">\n  <mat-si
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".sidenav-container {\n  height: 100%; }\n\n.sidenav {\n  width: 200px; }\n\n.mat-toolbar.mat-primary {\n  position: -webkit-sticky;\n  position: sticky;\n  top: 0;\n  z-index: 2; }\n\n.docs-button {\n  font-size: 18px; }\n\n.docs-classpip-logo {\n  height: 40px;\n  margin: 0 4px 3px 0; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvc2hhcmVkL25hdmlnYXRpb24vbmF2aWdhdGlvbi5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQVksRUFDYjs7QUFFRDtFQUNFLGFBQVksRUFDYjs7QUFFRDtFQUNFLHlCQUFnQjtFQUFoQixpQkFBZ0I7RUFDaEIsT0FBTTtFQUNOLFdBQVUsRUFDWDs7QUFFRDtFQUNFLGdCQUFlLEVBQ2hCOztBQUVEO0VBQ0UsYUFBWTtFQUNaLG9CQUFtQixFQUNwQiIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9uYXZpZ2F0aW9uL25hdmlnYXRpb24uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2lkZW5hdi1jb250YWluZXIge1xuICBoZWlnaHQ6IDEwMCU7XG59XG5cbi5zaWRlbmF2IHtcbiAgd2lkdGg6IDIwMHB4O1xufVxuXG4ubWF0LXRvb2xiYXIubWF0LXByaW1hcnkge1xuICBwb3NpdGlvbjogc3RpY2t5O1xuICB0b3A6IDA7XG4gIHotaW5kZXg6IDI7XG59XG5cbi5kb2NzLWJ1dHRvbiB7XG4gIGZvbnQtc2l6ZTogMThweDtcbn1cblxuLmRvY3MtY2xhc3NwaXAtbG9nbyB7XG4gIGhlaWdodDogNDBweDtcbiAgbWFyZ2luOiAwIDRweCAzcHggMDtcbn0iXX0= */"
+module.exports = ".sidenav-container {\n  height: 100%; }\n\n.sidenav {\n  width: 200px; }\n\n.mat-toolbar.mat-primary {\n  position: -webkit-sticky;\n  position: sticky;\n  top: 0;\n  z-index: 2; }\n\n.docs-button {\n  font-size: 18px; }\n\n.docs-classpip-logo {\n  height: 40px;\n  margin: 0 4px 3px 0; }\n\n.fa-chalkboard-teacher,\n.fa-shoe-prints {\n  padding-left: 0;\n  margin-right: 9px;\n  margin-left: -4px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvc2hhcmVkL25hdmlnYXRpb24vbmF2aWdhdGlvbi5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQVksRUFDYjs7QUFFRDtFQUNFLGFBQVksRUFDYjs7QUFFRDtFQUNFLHlCQUFnQjtFQUFoQixpQkFBZ0I7RUFDaEIsT0FBTTtFQUNOLFdBQVUsRUFDWDs7QUFFRDtFQUNFLGdCQUFlLEVBQ2hCOztBQUVEO0VBQ0UsYUFBWTtFQUNaLG9CQUFtQixFQUNwQjs7QUFFRDs7RUFFQyxnQkFBZTtFQUNaLGtCQUFpQjtFQUNqQixrQkFBaUIsRUFDcEIiLCJmaWxlIjoic3JjL2FwcC9zaGFyZWQvbmF2aWdhdGlvbi9uYXZpZ2F0aW9uLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNpZGVuYXYtY29udGFpbmVyIHtcbiAgaGVpZ2h0OiAxMDAlO1xufVxuXG4uc2lkZW5hdiB7XG4gIHdpZHRoOiAyMDBweDtcbn1cblxuLm1hdC10b29sYmFyLm1hdC1wcmltYXJ5IHtcbiAgcG9zaXRpb246IHN0aWNreTtcbiAgdG9wOiAwO1xuICB6LWluZGV4OiAyO1xufVxuXG4uZG9jcy1idXR0b24ge1xuICBmb250LXNpemU6IDE4cHg7XG59XG5cbi5kb2NzLWNsYXNzcGlwLWxvZ28ge1xuICBoZWlnaHQ6IDQwcHg7XG4gIG1hcmdpbjogMCA0cHggM3B4IDA7XG59XG5cbi5mYS1jaGFsa2JvYXJkLXRlYWNoZXIsXG4uZmEtc2hvZS1wcmludHMge1xuXHRwYWRkaW5nLWxlZnQ6IDA7XG4gICAgbWFyZ2luLXJpZ2h0OiA5cHg7XG4gICAgbWFyZ2luLWxlZnQ6IC00cHg7XG59Il19 */"
 
 /***/ }),
 
@@ -1749,8 +2460,9 @@ module.exports = ".sidenav-container {\n  height: 100%; }\n\n.sidenav {\n  width
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavigationComponent", function() { return NavigationComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/cdk/layout */ "./node_modules/@angular/cdk/esm5/layout.es5.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/cdk/layout */ "./node_modules/@angular/cdk/esm5/layout.es5.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1763,12 +2475,14 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var NavigationComponent = /** @class */ (function () {
-    function NavigationComponent(breakpointObserver) {
+    function NavigationComponent(titleService, breakpointObserver) {
+        this.titleService = titleService;
         this.breakpointObserver = breakpointObserver;
         this.usersShow = false;
         this.isHandset$ = this.breakpointObserver.observe('(max-width: 768px)')
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (result) { return result.matches; }));
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (result) { return result.matches; }));
     }
     NavigationComponent.prototype.openClose = function (identifier, caretId) {
         identifier = !identifier;
@@ -1781,13 +2495,17 @@ var NavigationComponent = /** @class */ (function () {
         }
         return identifier;
     };
+    NavigationComponent.prototype.setTitle = function (newTitle) {
+        this.titleService.setTitle(newTitle);
+    };
     NavigationComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-navigation',
             template: __webpack_require__(/*! ./navigation.component.html */ "./src/app/shared/navigation/navigation.component.html"),
             styles: [__webpack_require__(/*! ./navigation.component.scss */ "./src/app/shared/navigation/navigation.component.scss")],
         }),
-        __metadata("design:paramtypes", [_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_1__["BreakpointObserver"]])
+        __metadata("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"],
+            _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_2__["BreakpointObserver"]])
     ], NavigationComponent);
     return NavigationComponent;
 }());

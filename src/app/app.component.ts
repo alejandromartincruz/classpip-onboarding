@@ -1,4 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { Title }     from '@angular/platform-browser';
 import { 
     Router, NavigationStart, NavigationCancel, NavigationEnd 
 } from '@angular/router';
@@ -14,6 +15,7 @@ export class AppComponent implements AfterViewInit {
   loading;
 
   constructor(
+    private titleService: Title,
     public matIconRegistry: MatIconRegistry,
     private router: Router
   ) {
@@ -24,15 +26,19 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.router.events
       .subscribe((event) => {
-        if(event instanceof NavigationStart) {
-          this.loading = true;
-        }
-        else if (
-          event instanceof NavigationEnd || 
-          event instanceof NavigationCancel
-        ) {
-          this.loading = false;
-        }
-      });
-    }
+      if(event instanceof NavigationStart) {
+        this.loading = true;
+      }
+      else if (
+        event instanceof NavigationEnd || 
+        event instanceof NavigationCancel
+      ) {
+        this.loading = false;
+      }
+    });
+  }
+
+  public setTitle( newTitle: string) {
+    this.titleService.setTitle( newTitle );
+  }
 }
