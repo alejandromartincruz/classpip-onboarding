@@ -4,6 +4,7 @@
 @include mat-core();
 
 @import './variables';
+@import './materialize';
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
 @import '~prismjs/plugins/toolbar/prism-toolbar.css';
@@ -32,6 +33,13 @@ body {
 
 @include material-classpip-theme($classpip-theme);
 
+a {
+  color: #b14dff;
+}
+
+a:hover {
+  color: #df00d3;
+}
 
 .main-content {
 	min-height: calc(100% - 203px);
@@ -65,15 +73,25 @@ body {
 .home-card {
 	background-color:#4527a0;
 	margin: -20px -35px;
-	.left .mat-figure {
-		flex-direction: column;
-		color: #fff;
-		h3 {
-			text-align: justify;
-		}
-	}
-	.right .mat-figure {
-		height: 105%
+  border-radius: 0 !important;
+	.left {
+    position: relative;
+    .homecard-text {
+  		flex-direction: column;
+  		color: #fff;
+      border: 8px solid #fff;
+      padding: 0.3em 1.5em;
+      position: static;
+      transform: none;
+  		h3 {
+  			text-align: justify;
+  		}
+	  }
+  }
+	.right img {
+		max-width: 400px;
+    margin: 0 auto;
+    display: block;
 	}
 }
 
@@ -90,19 +108,21 @@ body {
 
 .home-parallax {
 	/* The image used */
-    background-image: url("../assets/img/students-connected.jpg");
-    position: relative;
+  background-image: url("../assets/img/students-connected.jpg");
+  position: relative;
+  .text-container {
     .parallas-text {
-    	position: absolute;
-    	top: 50%;
-    	left: 50%;
-    	transform: translate(-50%, -50%);
-    	width: 80%;
-    	text-align: center;
-    	background: rgba(0, 0, 0, 0.1);
-  		padding: 4px 8px;
-    	color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.1);
+      padding: 4px 10%;
+      color: #fff;
     }
+  }
 }
 
 .home-image {
@@ -190,5 +210,14 @@ a.second-level .mat-list-item-content {
     :nth-child(4) a {
       border: 1px solid #fafafa;
     }
+  }
+  .home-card .left {
+    min-height: 410px;
+    .homecard-text {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
   }
 } 

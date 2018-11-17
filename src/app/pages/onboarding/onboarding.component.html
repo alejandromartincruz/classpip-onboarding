@@ -1,5 +1,5 @@
 <section>
-	<h2>Añadir pagina a web de onboarding</h2>
+	<h2>Añadir página a web de onboarding</h2>
 	<p>
 		Para añadir una página a la web de onboarding, primero habrá que crear el nuevo componente que alojará el texto, las imagenes y el resto de componentes de esa página. En este ejemplo se creará una nueva página de privacidad. Para crear un nuevo componente hay que usar el temrinal. Primero hay que ir a la carpeta del proyecto, y luego hay que usar el siguiente comando:
 	</p>
@@ -21,7 +21,7 @@ ng generate component shared/privacy
 		Grácias a este comando, también se ha agregado el componente en app.module.ts, tanto la importación como la declaración.
 	</p>
 	<p>
-		Lo siguiente es generar la ruta para esta nueva pagina, para ello hay que ir al archivo 'app.routing.ts', importar el componente que se ha generado y añadirle la ruta.
+		Lo siguiente es generar la ruta para esta nueva página, para ello hay que ir al archivo 'app.routing.ts', importar el componente que se ha generado y añadirle la ruta.
 	</p>
 	<pre class="line-numbers">
 		<code class="language-typescript">{{"import { PrivacyComponent } from './shared/privacy/privacy.component';
@@ -42,9 +42,68 @@ const routes: Routes = [
 
 </section>
 <section>
+	<h2>Añadir enlaces al menu para nuevas páginas</h2>
+	<p>
+		Para modificar los enlaces del menu sidenav hay que dirigirse al archivo <i>src/app/shared/navigation/links/links.component.html</i>, en ese archivo se encuentra un <i>mat-nav-list</i> que contiene los enlaces del menú.
+	</p>
+	<p>
+		Existen dos niveles de enlaces, el que se ve directamente en el menú sidenav (primer nivel), y los que se ven cuando se abren estos (segundo nivel). Todos los enlaces deben llevar <i>mat-list-item</i> dentro del html tag <i>a</i>.
+	</p>
+	<p>
+		A todos los enlaces que llevan a una página nueva hay que ponerles la función <i>setTitle( 'Título de la nueva página' )</i> cuando se dispare el evento click. Esto se hace para que el título de la pestaña cambie y cada página tenga un título. <i>setTitle</i> es una función de un servicio de angular creada para cambiar el título de las paginas. Que cada página tenga su propio título mejora el seo (Search Engine Optimization) de la web y por lo tanto su posición a la hora de aparecer en búscadores como Google.
+	</p>
+	<p>
+		A los enlaces de primer nivel, si contienen enlaces de segundo nivel, hay que ponerles la funcion <i>openClose( 'idGrupo', 'idGrupoCaret')</i>, y dentro del contenido del html tag <i>a</i> hay que poner un icono <i>caret</i> de material con un id único que se va a asignar a cada grupo de enlaces y que es el parámetro <i>'idGrupoCaret'</i> de la función. El otro parámetro de la función es el nombre de una variable booleana que se va a utilizar para mostrar o ocultar los enlaces de segundo nivel de ese grupo. La función devuelve el valor <i>true</i> o <i>false</i> que se asigna a esa misma variable y gira el icono con el id proporcionado en el segundo parámetro.
+	</p>
+	<pre class="line-numbers">
+		<code class="language-markup">
+&lt;a mat-list-item (click)="usersShow = openClose(usersShow, 'userCaret')"&gt;
+    &lt;mat-icon mat-list-icon&gt;people&lt;/mat-icon&gt;
+    &lt;span&gt;Usuarios&lt;/span&gt;  // titulo enlace
+    &lt;span class="fill-space"&gt;&lt;/span&gt;  // span vacio para alinear el caret a la derecha
+    &lt;mat-icon id="userCaret" class="material-icons"&gt;expand_more&lt;/mat-icon&gt;
+&lt;/a&gt;
+		</code>
+	</pre>
+	<p>
+		Los enlaces de segundo nivel deben tener un <i>*ngIf="idGrupo"</i>, al ser una variable booleana los enlaces se mostrarán u ocultarán según su valor. A estos enlaces de segundo nivel tambien hay que añadirles la función <i>openClose()</i> en el evento click para que se cierre el grupo una vez seleccionado uno de los enlaces. 
+	</p>
+	<pre class="line-numbers">
+		<code class="language-markup">
+&lt;a *ngIf="usersShow" class="second-level" mat-list-item routerLink="/user/students" (click)="usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar la aplicacion como estudiante' );"&gt;
+    &lt;mat-icon mat-list-icon fontSet="fa" fontIcon="fa-user-graduate"&gt;&lt;/mat-icon&gt;  // ver sección iconos
+    &lt;span&gt;Estudiantes&lt;/span&gt;  // titulo enlace
+&lt;/a&gt;
+		</code>
+	</pre>
+	<p>
+		En el ejemplo previo, se observa como esta realizado el enlace de primer nivel 'Usuarios', y un enlace de segundo nivel que pertenece a este llamado 'Estudiantes'.
+	</p>
+</section>
+<section>
+	<h2>Iconos</h2>
+	<p>
+		En este proyecto se pueden usar los <a href="https://material.io/tools/icons/?style=baseline">material icons</a> de la forma usual, que es <i>&lt;mat-icon&gt;nombreIcono&lt;/mat-icon&gt;</i>, usando como 'nombreIcono' cualquiera de los de la lista del enlace.
+	</p>
+	<p>
+		Pero también se han añadido los iconos gratuitos de <a href="https://fontawesome.com/icons?d=gallery">font Awesome</a>, que ofrecen una mayor variedad de iconos inexistentes en los material icons, como por ejemplo el del logo de Github. Para poder utilizar los iconos de font awesome dentro de un tag mat-icon, como los de material, se ha instalado un modulo de Node y se ha creado un servicio.
+	</p>
+	<p>
+		Ahora para añadir un icono de font awesome solo hay que añadir al tag mat-icon un <i>fontSet</i> y un <i>fontIcon</i>. El fontSet depende del tipo de icono que se vaya a utilizar, los normales usan el fontSet <i>fa</i>, los de marcas usan el <i>fab</i>, los del grupo solid usan el <i>fas</i>,etc. En el fontIcon hay que poner el nombre del icono precedido de <i>fa-</i>. Y finalmente, al contrario que con los iconos de material, no hay que poner ningún texto dentro del tag mat-icon.
+	</p>
+	<p>
+		Si por ejemplo se quiere usar el icono <i>addess-card</i> del grupo <i>Solid</i> hay que hacerlo de la siguiente manera:
+	</p>
+	<pre class="line-numbers">
+		<code class="language-markup">
+&lt;mat-icon mat-list-icon fontSet="fas" fontIcon="fa-address-card"&gt;&lt;/mat-icon&gt;
+		</code>
+	</pre>
+</section>
+<section>
 	<h2>Crear un nuevo servicio</h2>
 	<p>
-		Como ejemplo se va a crear el servicio que da estilo al formato de código que hay en las paginas de desarrollo de la web de onboarding. Para ello se va a usar el modulo de prismjs.
+		Como ejemplo se va a crear el servicio que da estilo al formato de código que hay en las páginas de desarrollo de la web de onboarding. Para ello se va a usar el modulo de prismjs.
 
 		El primer paso es, desde terminal nos situamos en la carpeta del proyecto, y para instalar el módulo de pismjs se utiliza el siguiente comando:
 	</p>
@@ -166,7 +225,7 @@ pre[class*="language-"]:before, pre[class*="language-"]:after {
 <section>
 	<h2>Añadir o modificar datos en página de Profesores</h2>
 	<p>
-		Las páginas del proyecto de onboarding estan hechas con contenido estático, a excepción de la página con el tutorial de uso para profesores que tiene un archivo con el contenido que se llama y se lista desde el componente correspondiente a la pagina de profesores. 
+		Las páginas del proyecto de onboarding estan hechas con contenido estático, a excepción de la página con el tutorial de uso para profesores que tiene un archivo con el contenido que se llama y se lista desde el componente correspondiente a la página de profesores. 
 	</p>
 	<p>
 		Para este contenido se ha creado un objeto dataCard en <i>app/class/dataCard.ts</i> que se utiliza en el archivo <i>app/data/teacher_videos.ts</i>, donde se ha escrito un array de objetos dataCard.
@@ -207,5 +266,113 @@ export class TeachersComponent implements OnInit {
   }
 
 }"}}</code>
+	</pre>
+</section>
+<section>
+	<h2>Insertar fragmentos de código</h2>
+	<p>
+		Para facilitar la lectura de código en los tutoriales de la web de onboarding se ha utilizado el módulo de Node <a href="https://prismjs.com/">prismjs</a>, y como se ha visto en un punto anterior de este tutorial se ha creado un servicio para su uso.
+	</p>
+	<p>
+		Para utilizar el formatado de código en un componente se hace de la siguiente manera:
+	</p>
+	<ul>
+		<li>Se importa el servicio en el componente <i>"import {{'{'}} HighlightService {{'}'}} from 'ruta-hasta/shared/services/highlight.service';"</i></li>
+		<li>Se añade <i>"private highlightService: HighlightService" al constructor de la clase.</i></li>
+		<li>Se añade la variable <i>"highlighted: boolean = false;"</i></li>
+		<li>Se añade <i>"AfterViewChecked"</i> después del <i>"implements OnInit"</i></li>
+		<li>Se añade el método <i>"ngAfterViewChecked()"</i></li>
+	</ul>
+	<pre class="line-numbers">
+		<code class="language-typescript">{{"ngAfterViewChecked() {
+	if (this.onboarding && !this.highlighted) {
+	  this.highlightService.highlightAll();
+	  this.highlighted = true;
+	}
+}"}}</code>
+	</pre>
+	<p>
+		En este caso, se puede seguir de ejemplo el código que hay en el anterior apartado. Donde se implementa el servicio de highlightService en el componente de <i>teachers.component.ts</i>
+	</p>
+	<p>
+		En el caso de utilizar <i>tabs</i>, estos utilizan lazy loading, lo que significa que van cargando contenido cuando se abre el correspondiente tab, no antes. El servicio de hightlightService esta implementado de forma que solo carga una vez cuando carga la página. De esta manera, cuando acaba de cargar la página se da formato al código, pero al cambiar el <i>tab</i>, carga el nuevo contenido y no se lanza la función de formatado, por lo que se ve el texto sin formato. Para solucionar esto, hay que utilizar el evento <i>selectedTabChange</i> para lanzar la función <i>tabSelectionChanged($event)</i> en el tag mat-tab-group.
+	</p>
+	<pre>
+		<code class="language-markup">&lt;mat-tab-group (selectedTabChange)="tabSelectionChanged($event)"&gt;</code>
+	</pre>
+	<p>
+		La función <i>tabSelectionChanged(event)</i> lo que hace es volver a lanzar el servicio de highlightService para el nuevo contenido. La función es la siguiente:
+	</p>
+	<pre class="line-numbers">
+		<code class="language-typescript">{{"tabSelectionChanged(event) {
+    this.highlightService.highlightAll();
+}"}}</code>
+	</pre>
+	<p>
+		Una vez que esta todo listo para formatar el código, solo falta añadirlo en la plantilla html del componente. Para ello se utilizan los tags <i>code</i> y <i>pre</i>.
+	</p>
+	<p>
+		En el tag <i>pre</i> se puede seleccionar si mostrar o no las lineas en el código. Para mostrar las lineas hay que añadir la clase <i>line-numbers</i> al tag <i>pre</i>, en el caso de ponerlas lineas del código se puede elegir en que número comenzar. Si no se pone nada, comienza por la linea numero 1, pero si se quiere comenzar por alguna linea en concreto hay que poner un <i>data-start</i> con el número de linea por el que se quiere comenzar. Si, por ejemplo, se quieren poner números y comenzar por la linea 17, el tag <i>pre</i> quedará de la siguiente manera <i>&lt;pre class="line-numbers" data-start="17"&gt;</i>.
+	</p>
+	<p>
+		Lo único que queda es indicar que tipo de código se va a mostrar para que le haga un formatado correcto. Para ello hay que añadir una clase al tag <i>code</i>, la clase es <i>language-'tipo-lenguaje'</i>, por lo que si se va a mostrar lenguaje typescript hay que añadir <i>class="language-typescript"</i>.
+	</p>
+	<p>
+		Ahora mismo, los lenguajes que se pueden formatar son los importados en el archivo <i>highlight.services.ts</i>, y son:
+	</p>
+	<ul>
+		<li>javascript</li>
+		<li>markup (actualmente usado para mostrar html)</li>
+		<li>typescript</li>
+		<li>sass</li>
+		<li>scss</li>
+	</ul>
+	<p>
+		Aunque se pueden añadir cualquiera de los lenguajes disponibles en la página de <a href="https://prismjs.com/">prismjs</a>. Solo se han añadido esos lenguajes ya que, de momento, son los únicos utilizados en el proyecto.
+	</p>
+	<p>
+		<b>Importante:</b> Angular compila el código que hay dentro de los pre-code, y nomalmente da error al introducir código y compilar. La forma de solucionarlo es la siguiente: 
+	</p>
+	<ul>
+		<li>Si aparece algún caracter <i>{{'{'}}</i> y <i>{{'}'}}</i> en el código hay que poner <i>{{'{'}}{{'{'}}'</i> al principio del código, y <i>'{{'}'}}{{'}'}}</i> al final.</li>
+		<li>En ocasiones el código tiene comillas en varios sitios y la forma anterior no funciona. En estos casos hay que sustituir cada <i>{{'}'}}</i> por <i>{{'{'}}{{'{'}}'{{'{'}}'{{'}'}}{{'}'}}</i> y también hay que sustituir cada <i>{{'}'}}</i> por <i>{{'{'}}{{'{'}}'{{'}'}}'{{'}'}}{{'}'}}</i>.</li>
+		<li>Si se quiere mostrar código html hay que sustituir los <i>&lt;</i> y los <i>&gt;</i> de los tags por <i>&amp;lt;</i> y por <i>&amp;gt;</i> de lo contrario angular da error y no carga la página.</li>
+	</ul>
+</section>
+<section>
+	<h2>Actualizar proyecto de onboarding</h2>
+	<p>
+		Desde angular 6 se ha introducido una forma de actualizar la aplicación y sus dependencias muy fácil y sencilla. Este proyecto se inició con Angular 6, y posteriormente se ha actualizado en diversas ocasiones hasta la versión 7 de Angular. Para actualizar basta con introducir el siguiente comando en el terminal:
+	</p>
+	<pre>
+		<code class="language-markup">ng update</code>
+	</pre>
+	<p>
+		Introduciendo este comando, se obtiene un listado de las actualizaciones disponibles, si las hay, de la siguiente manera:
+		<img src="../../../assets/img/onboarding/img1.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+	<p>
+		El paso siguiente es introducir los comando <i>ng update</i> que nos ofrece el mismo listado de actualizaciones uno a uno hasta haberlos introducido todos. El resultado es el que se ve en la siguiente imagen:<br>
+		<img src="../../../assets/img/onboarding/img2.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+	<p>
+		Una vez realizadas todas las actualizaciones, o si se ejecuta el comando <i>ng update</i> sin haber actualizaciones disponibles, el resultado de este comando es el siguiente:<br>
+		<img src="../../../assets/img/onboarding/img3.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+	<p>
+		<b>Importante:</b> en ocasiones el resultado de la actualización es un mensaje de error que avisa de que se han encontrado depdendencias incompatibles.
+	</p>
+	<p>
+		En la siguiente imagen se puede apreciar como al intentar actualizar <i>@angular/cdk</i> de la versión 7.0.3 a la versión 7.0.4, aparece un mensaje de error informando de que <i>@angular/material</i> en su versión 7.0.3 requiere la versión 7.0.3 de @angular/cli. La solución a este problema es tan sencilla como realizar el comando de actualización primero a <i>@angular/material</i>, y luego a las demás dependencias, si es que no se han actualizado ya. <br>
+		<img src="../../../assets/img/onboarding/img4.png" style="max-width:100%;margin: 15px 0 10px;">
+	</p>
+</section>
+<section>
+	<h2>Compilar aplicación de Angular</h2>
+	<p>
+		<b>Muy importante:</b> después de actualizar o de hacer cualquier cambio en la web, y antes de commitear, no hay que olvidarse de hacer un <i>ng build</i> para que los cambios generados se suban también a la web de producción.
+	</p>
+	<pre>
+		<code class="language-markup">ng build</code>
 	</pre>
 </section>
