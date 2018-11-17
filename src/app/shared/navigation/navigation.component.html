@@ -7,60 +7,7 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="!(isHandset$ | async)">
     <mat-toolbar color="primary">Menu</mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item routerLink="/home" (click)="setTitle( 'Classpip onboarding para la aplicación de gamificación' )">
-        <mat-icon mat-list-icon>home</mat-icon>
-        <span>Home</span>
-      </a>      
-      <a mat-list-item (click)="usersShow = openClose(usersShow, 'userCaret')">
-        <mat-icon mat-list-icon>people</mat-icon>
-        <span>Usuarios</span>
-        <span class="fill-space"></span>
-        <mat-icon id="userCaret" class="material-icons">expand_more</mat-icon>
-      </a>
-      <a *ngIf="usersShow" class="second-level" mat-list-item routerLink="/user/students" (click)="usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar la aplicacion como estudiante' );">
-        <mat-icon mat-list-icon fontSet="fa" fontIcon="fa-user-graduate"></mat-icon>
-        <span>Estudiantes</span>
-      </a>
-      <a *ngIf="usersShow" class="second-level" mat-list-item routerLink="/user/teachers" (click)="usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar las funciones de profesor' );">
-        <mat-icon mat-list-icon fontSet="fa" fontIcon="fa-chalkboard-teacher"></mat-icon>
-        <span>Profesores</span>
-      </a>
-      <a *ngIf="usersShow" class="second-level" mat-list-item routerLink="/user/administrator" (click)="usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar las funciones de administrador' );">
-        <mat-icon mat-list-icon fontSet="fa" fontIcon="fa-user-tie"></mat-icon>
-        <span>Administradores</span>
-      </a>
-      <a mat-list-item (click)="devShow = openClose(devShow, 'devCaret')">
-        <mat-icon mat-list-icon>developer_mode</mat-icon>
-        <span>Desarrolladores</span>
-        <span class="fill-space"></span>
-        <mat-icon id="devCaret" class="material-icons">expand_more</mat-icon>
-      </a>
-      <a *ngIf="devShow" class="second-level" mat-list-item routerLink="developer/install" (click)="devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding instala tu entorno de desarrollo' );">
-        <mat-icon mat-list-icon fontSet="far" fontIcon="fa-save"></mat-icon>
-        <span>Instalación del entorno</span>
-      </a>
-      <a *ngIf="devShow" class="second-level" mat-list-item routerLink="developer/firstrun" (click)="devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding primeros pasos para poner en marcha el proyecto' );">
-        <mat-icon mat-list-icon fontSet="fas" fontIcon="fa-shoe-prints"></mat-icon>
-        <span>Puesta en marcha</span>
-      </a>
-      <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/git" (click)="devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding como trabajar con git en el proyecto' );">
-        <mat-icon mat-list-icon fontSet="fab" fontIcon="fa-github"></mat-icon>
-        <span>Pautas git</span>
-      </a>
-      <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/tutorial" (click)="devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding aprende a desarrollar un módulo para la aplicación' );">
-        <mat-icon mat-list-icon>computer</mat-icon>
-        <span>Tutorial</span>
-      </a>
-      <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/onboarding" (click)="devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding aprende a desarrollar y mantener la web de onboarding' );">
-        <mat-icon mat-list-icon>web</mat-icon>
-        <span>Onboarding</span>
-      </a>
-      <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/faq" (click)="devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding resuleve tus dudas y problemas' );">
-        <mat-icon mat-list-icon>report</mat-icon>
-        <span>Problemas</span>
-      </a>
-    </mat-nav-list>
+    <app-links></app-links>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">

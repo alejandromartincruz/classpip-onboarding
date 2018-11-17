@@ -37,7 +37,7 @@
 
   <mat-expansion-panel>
     <mat-expansion-panel-header>
-      <h3>Error #3: error intern del servidor</h3>
+      <h3>Error #3: error interno del servidor</h3>
     </mat-expansion-panel-header>
     <p>
     	<img src="../../../assets/img/faq/img10.png" style="max-width:100%;margin: 15px 0 10px;">
@@ -52,6 +52,19 @@
 public static get SERVER_URL(): string {{'{'}} return 'http://localhost:3000'; {{'}'}} // DEV
     	</code>
     </pre>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <h3>Error #4: error de dependencias incompatibles al usar ng update</h3>
+    </mat-expansion-panel-header>
+    <p>
+      En ocasiones el resultado de la actualización es un mensaje de error que avisa de que se han encontrado depdendencias incompatibles.
+    </p>
+    <p>
+      En la siguiente imagen se puede apreciar como al intentar actualizar <i>@angular/cdk</i> de la versión 7.0.3 a la versión 7.0.4, aparece un mensaje de error informando de que <i>@angular/material</i> en su versión 7.0.3 requiere la versión 7.0.3 de @angular/cli. La solución a este problema es tan sencilla como realizar el comando de actualización primero a <i>@angular/material</i>, y luego a las demás dependencias, si es que no se han actualizado ya. <br>
+      <img src="../../../assets/img/onboarding/img4.png" style="max-width:100%;margin: 15px 0 10px;">
+    </p>
   </mat-expansion-panel>
 
 </mat-accordion>
