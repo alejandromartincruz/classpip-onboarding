@@ -45,10 +45,14 @@
     </a>
     <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/onboarding" (click)="devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding aprende a desarrollar y mantener la web de onboarding' );">
         <mat-icon mat-list-icon>web</mat-icon>
-        <span>Onboarding</span>
+        <span>Desarrollo web de Onboarding</span>
     </a>
     <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/faq" (click)="devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding resuleve tus dudas y problemas' );">
         <mat-icon mat-list-icon>report</mat-icon>
-        <span>Problemas</span>
+        <span>Errores conocidos</span>
+    </a>
+    <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/projects" (click)="devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding links a los proyectos realizados previamente' );">
+        <mat-icon mat-list-icon fontSet="fas" fontIcon="fa-book"></mat-icon>
+        <span>Proyectos realizados</span>
     </a>
 </mat-nav-list>

@@ -12,6 +12,7 @@ import { GitComponent } from './pages/git/git.component';
 import { TutorialComponent } from './pages/tutorial/tutorial.component';
 import { OnboardingComponent } from './pages/onboarding/onboarding.component';
 import { FaqComponent } from './pages/faq/faq.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
 import { PrivacyComponent } from './shared/privacy/privacy.component';
 import { LegalwarningComponent } from './shared/legalwarning/legalwarning.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'developer/git', component: GitComponent },
   { path: 'developer/tutorial', component: TutorialComponent },
   { path: 'developer/onboarding', component: OnboardingComponent },
+  { path: 'developer/projects', component: ProjectsComponent },
   { path: 'developer/faq', component: FaqComponent },
   { path: 'privacy', component: PrivacyComponent },
   { path: 'legalwarning', component: LegalwarningComponent },
