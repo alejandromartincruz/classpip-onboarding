@@ -50,6 +50,7 @@ import { InitmobileComponent } from './pages/firstrun/initmobile/initmobile.comp
 import { InitonboardingComponent } from './pages/firstrun/initonboarding/initonboarding.component';
 import { CommonconsiderationsComponent } from './pages/firstrun/commonconsiderations/commonconsiderations.component';
 import { LinksComponent } from './shared/navigation/links/links.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +87,8 @@ import { LinksComponent } from './shared/navigation/links/links.component';
     InitmobileComponent,
     InitonboardingComponent,
     CommonconsiderationsComponent,
-    LinksComponent
+    LinksComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

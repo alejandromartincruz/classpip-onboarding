@@ -46,15 +46,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/tutorial/tutorial.component */ "./src/app/pages/tutorial/tutorial.component.ts");
 /* harmony import */ var _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/onboarding/onboarding.component */ "./src/app/pages/onboarding/onboarding.component.ts");
 /* harmony import */ var _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/faq/faq.component */ "./src/app/pages/faq/faq.component.ts");
-/* harmony import */ var _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./shared/privacy/privacy.component */ "./src/app/shared/privacy/privacy.component.ts");
-/* harmony import */ var _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./shared/legalwarning/legalwarning.component */ "./src/app/shared/legalwarning/legalwarning.component.ts");
-/* harmony import */ var _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/notfound/notfound.component */ "./src/app/pages/notfound/notfound.component.ts");
+/* harmony import */ var _pages_projects_projects_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/projects/projects.component */ "./src/app/pages/projects/projects.component.ts");
+/* harmony import */ var _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./shared/privacy/privacy.component */ "./src/app/shared/privacy/privacy.component.ts");
+/* harmony import */ var _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./shared/legalwarning/legalwarning.component */ "./src/app/shared/legalwarning/legalwarning.component.ts");
+/* harmony import */ var _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/notfound/notfound.component */ "./src/app/pages/notfound/notfound.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -82,10 +84,11 @@ var routes = [
     { path: 'developer/git', component: _pages_git_git_component__WEBPACK_IMPORTED_MODULE_9__["GitComponent"] },
     { path: 'developer/tutorial', component: _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_10__["TutorialComponent"] },
     { path: 'developer/onboarding', component: _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_11__["OnboardingComponent"] },
+    { path: 'developer/projects', component: _pages_projects_projects_component__WEBPACK_IMPORTED_MODULE_13__["ProjectsComponent"] },
     { path: 'developer/faq', component: _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_12__["FaqComponent"] },
-    { path: 'privacy', component: _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_13__["PrivacyComponent"] },
-    { path: 'legalwarning', component: _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_14__["LegalwarningComponent"] },
-    { path: '404', component: _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_15__["NotfoundComponent"] },
+    { path: 'privacy', component: _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_14__["PrivacyComponent"] },
+    { path: 'legalwarning', component: _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_15__["LegalwarningComponent"] },
+    { path: '404', component: _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_16__["NotfoundComponent"] },
     { path: '**', redirectTo: '/404' }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -258,12 +261,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_firstrun_initonboarding_initonboarding_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./pages/firstrun/initonboarding/initonboarding.component */ "./src/app/pages/firstrun/initonboarding/initonboarding.component.ts");
 /* harmony import */ var _pages_firstrun_commonconsiderations_commonconsiderations_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./pages/firstrun/commonconsiderations/commonconsiderations.component */ "./src/app/pages/firstrun/commonconsiderations/commonconsiderations.component.ts");
 /* harmony import */ var _shared_navigation_links_links_component__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./shared/navigation/links/links.component */ "./src/app/shared/navigation/links/links.component.ts");
+/* harmony import */ var _pages_projects_projects_component__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./pages/projects/projects.component */ "./src/app/pages/projects/projects.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -352,7 +357,8 @@ var AppModule = /** @class */ (function () {
                 _pages_firstrun_initmobile_initmobile_component__WEBPACK_IMPORTED_MODULE_45__["InitmobileComponent"],
                 _pages_firstrun_initonboarding_initonboarding_component__WEBPACK_IMPORTED_MODULE_46__["InitonboardingComponent"],
                 _pages_firstrun_commonconsiderations_commonconsiderations_component__WEBPACK_IMPORTED_MODULE_47__["CommonconsiderationsComponent"],
-                _shared_navigation_links_links_component__WEBPACK_IMPORTED_MODULE_48__["LinksComponent"]
+                _shared_navigation_links_links_component__WEBPACK_IMPORTED_MODULE_48__["LinksComponent"],
+                _pages_projects_projects_component__WEBPACK_IMPORTED_MODULE_49__["ProjectsComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -1765,6 +1771,69 @@ var OnboardingComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/pages/projects/projects.component.html":
+/*!********************************************************!*\
+  !*** ./src/app/pages/projects/projects.component.html ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mat-list>\n  <h2 mat-subheader>Proyectos realizados</h2>\n  <a href=\"https://upcommons.upc.edu/handle/2117/101237\" target=\"_blank\">\n  <mat-list-item >\n    <mat-icon mat-list-icon fontSet=\"fas\" fontIcon=\"fa-external-link-alt\"></mat-icon>\n    <h4 mat-line>Arquitectura software</h4>\n    <p mat-line class=\"project-author\"> Ferran Vila </p>\n  </mat-list-item>\n  </a>\n\n  <a href=\"https://upcommons.upc.edu/handle/2117/108143\" target=\"_blank\">\n  <mat-list-item>\n    <mat-icon mat-list-icon fontSet=\"fas\" fontIcon=\"fa-external-link-alt\"></mat-icon>\n    <h4 mat-line>Puntos e Insignias</h4>\n    <p mat-line class=\"project-author\"> Guillermo Riverola </p>\n    <p mat-line class=\"project-description\">PBL en una arquitectura de gamificación para un entorno docente</p>\n  </mat-list-item>\n  </a>\n\n  <a href=\"https://upcommons.upc.edu/handle/2117/111094\" target=\"_blank\">\n  <mat-list-item>\n    <mat-icon mat-list-icon fontSet=\"fas\" fontIcon=\"fa-external-link-alt\"></mat-icon>\n    <h4 mat-line>Colecciones</h4>\n    <p mat-line class=\"project-author\"> Manuel Mendez </p>\n    <p mat-line class=\"project-description\">Gamificació d’entorns docents</p>\n  </mat-list-item>\n  </a>\n\n  <a href=\"https://upcommons.upc.edu/handle/2117/114992\" target=\"_blank\">\n  <mat-list-item>\n    <mat-icon mat-list-icon fontSet=\"fas\" fontIcon=\"fa-external-link-alt\"></mat-icon>\n    <h4 mat-line>Preguntas</h4>\n    <p mat-line class=\"project-author\"> Daniel Viles </p>\n    <p mat-line class=\"project-description\">Plataforma de gamificació docent amb smartphones</p>\n  </mat-list-item>\n  </a>\n\n  <a href=\"https://upcommons.upc.edu/handle/2117/119560\" target=\"_blank\">\n  <mat-list-item>\n    <mat-icon mat-list-icon fontSet=\"fas\" fontIcon=\"fa-external-link-alt\"></mat-icon>\n    <h4 mat-line>Competiciones</h4>\n    <p mat-line class=\"project-author\"> Maria del Mar Olmo </p>\n    <p mat-line class=\"project-description\">Generador de competiciones en una herramienta de gamificación</p>\n  </mat-list-item>\n  </a>\n\n  <a href=\"https://upcommons.upc.edu/handle/2117/121556\" target=\"_blank\">\n  <mat-list-item>\n    <mat-icon mat-list-icon fontSet=\"fas\" fontIcon=\"fa-external-link-alt\"></mat-icon>\n    <h4 mat-line>Primera versión vendible</h4>\n    <p mat-line class=\"project-author\"> Anna García y Joan Valverde </p>\n    <p mat-line class=\"project-description\">Integració de diferents mòduls i posada a punt d’una eina de gamificació</p>\n  </mat-list-item>\n  </a>\n\n</mat-list>"
+
+/***/ }),
+
+/***/ "./src/app/pages/projects/projects.component.scss":
+/*!********************************************************!*\
+  !*** ./src/app/pages/projects/projects.component.scss ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "mat-list-item {\n  background-color: #fff;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }\n  mat-list-item mat-icon {\n    transition-duration: 0.3s;\n    transition-property: -webkit-transform;\n    transition-property: transform;\n    transition-property: transform, -webkit-transform;\n    transition-timing-function: ease-in-out; }\n  mat-list-item:hover {\n    background-color: #f0ffff; }\n  mat-list-item:hover mat-icon {\n      -webkit-transform: translateX(4px);\n      transform: translateX(4px); }\n  mat-list-item .project-author {\n    color: #939393; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvcGFnZXMvcHJvamVjdHMvcHJvamVjdHMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQyx1QkFBc0I7RUFDdEIsNkNBQTRDLEVBc0I1QztFQXhCRDtJQUtLLDBCQUF5QjtJQUV6Qix1Q0FBOEI7SUFBOUIsK0JBQThCO0lBQTlCLGtEQUE4QjtJQUU5Qix3Q0FBdUMsRUFDMUM7RUFWRjtJQVlFLDBCQUF5QixFQUt6QjtFQWpCRjtNQWNHLG1DQUFrQztNQUMvQiwyQkFBMEIsRUFDN0I7RUFoQkg7SUFtQkUsZUFBYyxFQUNkIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvcHJvamVjdHMvcHJvamVjdHMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtbGlzdC1pdGVtIHtcblx0YmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcblx0Ym9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIHJnYmEoMCwgMCwgMCwgMC4xMik7XG5cdG1hdC1pY29uIHtcblx0XHQtd2Via2l0LXRyYW5zaXRpb24tZHVyYXRpb246IDAuM3M7XG4gICAgXHR0cmFuc2l0aW9uLWR1cmF0aW9uOiAwLjNzO1xuICAgIFx0LXdlYmtpdC10cmFuc2l0aW9uLXByb3BlcnR5OiB0cmFuc2Zvcm07XG4gICAgXHR0cmFuc2l0aW9uLXByb3BlcnR5OiB0cmFuc2Zvcm07XG4gICAgXHQtd2Via2l0LXRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9uOiBlYXNlLWluLW91dDtcbiAgICBcdHRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9uOiBlYXNlLWluLW91dDtcblx0fVxuXHQmOmhvdmVyIHtcblx0XHRiYWNrZ3JvdW5kLWNvbG9yOiAjZjBmZmZmO1xuXHRcdG1hdC1pY29uIHtcblx0XHRcdC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGVYKDRweCk7XG4gICAgXHRcdHRyYW5zZm9ybTogdHJhbnNsYXRlWCg0cHgpO1xuXHRcdH1cblx0fVxuXHQucHJvamVjdC1hdXRob3Ige1xuXHRcdGNvbG9yOiAjOTM5MzkzO1xuXHR9XG5cdC5wcm9qZWN0LWRlc2NyaXB0aW9uIHtcblxuXHR9XG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/pages/projects/projects.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/pages/projects/projects.component.ts ***!
+  \******************************************************/
+/*! exports provided: ProjectsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectsComponent", function() { return ProjectsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ProjectsComponent = /** @class */ (function () {
+    function ProjectsComponent() {
+    }
+    ProjectsComponent.prototype.ngOnInit = function () {
+    };
+    ProjectsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-projects',
+            template: __webpack_require__(/*! ./projects.component.html */ "./src/app/pages/projects/projects.component.html"),
+            styles: [__webpack_require__(/*! ./projects.component.scss */ "./src/app/pages/projects/projects.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ProjectsComponent);
+    return ProjectsComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/pages/students/students.component.html":
 /*!********************************************************!*\
   !*** ./src/app/pages/students/students.component.html ***!
@@ -2437,7 +2506,7 @@ var LoadingComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-nav-list>\n    <a mat-list-item routerLink=\"/home\" (click)=\"setTitle( 'Classpip onboarding para la aplicación de gamificación' )\">\n        <mat-icon mat-list-icon>home</mat-icon>\n        <span>Home</span>\n    </a>      \n    <a mat-list-item (click)=\"usersShow = openClose(usersShow, 'userCaret')\">\n        <mat-icon mat-list-icon>people</mat-icon>\n        <span>Usuarios</span>\n        <span class=\"fill-space\"></span>\n        <mat-icon id=\"userCaret\" class=\"material-icons\">expand_more</mat-icon>\n    </a>\n    <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/students\" (click)=\"usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar la aplicacion como estudiante' );\">\n        <mat-icon mat-list-icon fontSet=\"fa\" fontIcon=\"fa-user-graduate\"></mat-icon>\n        <span>Estudiantes</span>\n    </a>\n    <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/teachers\" (click)=\"usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar las funciones de profesor' );\">\n        <mat-icon mat-list-icon fontSet=\"fa\" fontIcon=\"fa-chalkboard-teacher\"></mat-icon>\n        <span>Profesores</span>\n    </a>\n    <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/administrator\" (click)=\"usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar las funciones de administrador' );\">\n        <mat-icon mat-list-icon fontSet=\"fa\" fontIcon=\"fa-user-tie\"></mat-icon>\n        <span>Administradores</span>\n    </a>\n    <a mat-list-item (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>developer_mode</mat-icon>\n        <span>Desarrolladores</span>\n    \t<span class=\"fill-space\"></span>\n        <mat-icon id=\"devCaret\" class=\"material-icons\">expand_more</mat-icon>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"developer/install\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding instala tu entorno de desarrollo' );\">\n        <mat-icon mat-list-icon fontSet=\"far\" fontIcon=\"fa-save\"></mat-icon>\n        <span>Instalación del entorno</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"developer/firstrun\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding primeros pasos para poner en marcha el proyecto' );\">\n        <mat-icon mat-list-icon fontSet=\"fas\" fontIcon=\"fa-shoe-prints\"></mat-icon>\n        <span>Puesta en marcha</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/git\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding como trabajar con git en el proyecto' );\">\n        <mat-icon mat-list-icon fontSet=\"fab\" fontIcon=\"fa-github\"></mat-icon>\n        <span>Pautas git</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/tutorial\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding aprende a desarrollar un módulo para la aplicación' );\">\n        <mat-icon mat-list-icon>computer</mat-icon>\n        <span>Tutorial</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/onboarding\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding aprende a desarrollar y mantener la web de onboarding' );\">\n        <mat-icon mat-list-icon>web</mat-icon>\n        <span>Onboarding</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/faq\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding resuleve tus dudas y problemas' );\">\n        <mat-icon mat-list-icon>report</mat-icon>\n        <span>Problemas</span>\n    </a>\n</mat-nav-list>"
+module.exports = "<mat-nav-list>\n    <a mat-list-item routerLink=\"/home\" (click)=\"setTitle( 'Classpip onboarding para la aplicación de gamificación' )\">\n        <mat-icon mat-list-icon>home</mat-icon>\n        <span>Home</span>\n    </a>      \n    <a mat-list-item (click)=\"usersShow = openClose(usersShow, 'userCaret')\">\n        <mat-icon mat-list-icon>people</mat-icon>\n        <span>Usuarios</span>\n        <span class=\"fill-space\"></span>\n        <mat-icon id=\"userCaret\" class=\"material-icons\">expand_more</mat-icon>\n    </a>\n    <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/students\" (click)=\"usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar la aplicacion como estudiante' );\">\n        <mat-icon mat-list-icon fontSet=\"fa\" fontIcon=\"fa-user-graduate\"></mat-icon>\n        <span>Estudiantes</span>\n    </a>\n    <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/teachers\" (click)=\"usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar las funciones de profesor' );\">\n        <mat-icon mat-list-icon fontSet=\"fa\" fontIcon=\"fa-chalkboard-teacher\"></mat-icon>\n        <span>Profesores</span>\n    </a>\n    <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/administrator\" (click)=\"usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar las funciones de administrador' );\">\n        <mat-icon mat-list-icon fontSet=\"fa\" fontIcon=\"fa-user-tie\"></mat-icon>\n        <span>Administradores</span>\n    </a>\n    <a mat-list-item (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>developer_mode</mat-icon>\n        <span>Desarrolladores</span>\n    \t<span class=\"fill-space\"></span>\n        <mat-icon id=\"devCaret\" class=\"material-icons\">expand_more</mat-icon>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"developer/install\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding instala tu entorno de desarrollo' );\">\n        <mat-icon mat-list-icon fontSet=\"far\" fontIcon=\"fa-save\"></mat-icon>\n        <span>Instalación del entorno</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"developer/firstrun\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding primeros pasos para poner en marcha el proyecto' );\">\n        <mat-icon mat-list-icon fontSet=\"fas\" fontIcon=\"fa-shoe-prints\"></mat-icon>\n        <span>Puesta en marcha</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/git\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding como trabajar con git en el proyecto' );\">\n        <mat-icon mat-list-icon fontSet=\"fab\" fontIcon=\"fa-github\"></mat-icon>\n        <span>Pautas git</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/tutorial\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding aprende a desarrollar un módulo para la aplicación' );\">\n        <mat-icon mat-list-icon>computer</mat-icon>\n        <span>Tutorial</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/onboarding\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding aprende a desarrollar y mantener la web de onboarding' );\">\n        <mat-icon mat-list-icon>web</mat-icon>\n        <span>Desarrollo web de Onboarding</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/faq\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding resuleve tus dudas y problemas' );\">\n        <mat-icon mat-list-icon>report</mat-icon>\n        <span>Errores conocidos</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/projects\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding links a los proyectos realizados previamente' );\">\n        <mat-icon mat-list-icon fontSet=\"fas\" fontIcon=\"fa-book\"></mat-icon>\n        <span>Proyectos realizados</span>\n    </a>\n</mat-nav-list>"
 
 /***/ }),
 
@@ -2517,7 +2586,7 @@ var LinksComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container class=\"sidenav-container\">\n  <mat-sidenav\n    #drawer\n    class=\"sidenav\"\n    fixedInViewport=\"true\"\n    [attr.role]=\"(isHandset$ | async) ? 'dialog' : 'navigation'\"\n    [mode]=\"(isHandset$ | async) ? 'over' : 'side'\"\n    [opened]=\"!(isHandset$ | async)\">\n    <mat-toolbar color=\"primary\">Menu</mat-toolbar>\n    <app-links></app-links>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"primary\">\n      <button\n        type=\"button\"\n        aria-label=\"Toggle sidenav\"\n        mat-icon-button\n        (click)=\"drawer.toggle()\"\n        *ngIf=\"isHandset$ | async\">\n        <mat-icon aria-label=\"Side nav toggle icon\">menu</mat-icon>\n      </button>\n      <a mat-button class=\"docs-button\" routerLink=\"/home\" (click)=\"setTitle( 'Classpip onboarding para la aplicación de gamificación' )\">\n        <img class=\"docs-classpip-logo\" src=\"../assets/img/classpip-icon.svg\" alt=\"classpip logo\">\n        <span>Classpip</span>\n      </a>\n    </mat-toolbar>\n    <!-- Add Content Here -->\n    <div fxFlex=\"grow\" class=\"main-content\">\n      <div [hidden]=\"!loading\" class=\"loader\">\n        <h2>Loading...</h2>\n        <app-loading></app-loading>\n      </div>\n      <div [hidden]=\"loading\" class=\"router-output\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n"
+module.exports = "<mat-sidenav-container class=\"sidenav-container\">\n  <mat-sidenav\n    #drawer\n    class=\"sidenav\"\n    fixedInViewport=\"true\"\n    [attr.role]=\"(isHandset$ | async) ? 'dialog' : 'navigation'\"\n    [mode]=\"(isHandset$ | async) ? 'over' : 'side'\"\n    [opened]=\"!(isHandset$ | async)\">\n    <mat-toolbar color=\"primary\">Menu</mat-toolbar>\n    <app-links></app-links>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"primary\">\n      <button\n        type=\"button\"\n        aria-label=\"Toggle sidenav\"\n        mat-icon-button\n        (click)=\"drawer.toggle()\"\n        *ngIf=\"isHandset$ | async\">\n        <mat-icon aria-label=\"Side nav toggle icon\">menu</mat-icon>\n      </button>\n      <a mat-button class=\"docs-button\" routerLink=\"/home\" (click)=\"setTitle( 'Classpip onboarding para la aplicación de gamificación' )\">\n        <img class=\"docs-classpip-logo\" src=\"../assets/img/classpip-icon.svg\" alt=\"classpip logo\">\n        <span>Classpip</span>\n      </a>\n    </mat-toolbar>\n    <!-- Add Content Here -->\n    <div fxFlex=\"grow\" class=\"main-content\">\n      <div [hidden]=\"!loading\" class=\"loader\">\n        <h2>Loading...</h2>\n        <app-loading></app-loading>\n      </div>\n      <div [hidden]=\"loading\" class=\"router-output\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n    <app-footer></app-footer>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n"
 
 /***/ }),
 
@@ -2528,7 +2597,7 @@ module.exports = "<mat-sidenav-container class=\"sidenav-container\">\n  <mat-si
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".sidenav-container {\n  height: 100%; }\n\n.sidenav {\n  width: 200px; }\n\n.mat-toolbar.mat-primary {\n  position: -webkit-sticky;\n  position: sticky;\n  top: 0;\n  z-index: 2; }\n\n.docs-button {\n  font-size: 18px; }\n\n.docs-classpip-logo {\n  height: 40px;\n  margin: 0 4px 3px 0; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvc2hhcmVkL25hdmlnYXRpb24vbmF2aWdhdGlvbi5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQVksRUFDYjs7QUFFRDtFQUNFLGFBQVksRUFDYjs7QUFFRDtFQUNFLHlCQUFnQjtFQUFoQixpQkFBZ0I7RUFDaEIsT0FBTTtFQUNOLFdBQVUsRUFDWDs7QUFFRDtFQUNFLGdCQUFlLEVBQ2hCOztBQUVEO0VBQ0UsYUFBWTtFQUNaLG9CQUFtQixFQUNwQiIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9uYXZpZ2F0aW9uL25hdmlnYXRpb24uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2lkZW5hdi1jb250YWluZXIge1xuICBoZWlnaHQ6IDEwMCU7XG59XG5cbi5zaWRlbmF2IHtcbiAgd2lkdGg6IDIwMHB4O1xufVxuXG4ubWF0LXRvb2xiYXIubWF0LXByaW1hcnkge1xuICBwb3NpdGlvbjogc3RpY2t5O1xuICB0b3A6IDA7XG4gIHotaW5kZXg6IDI7XG59XG5cbi5kb2NzLWJ1dHRvbiB7XG4gIGZvbnQtc2l6ZTogMThweDtcbn1cblxuLmRvY3MtY2xhc3NwaXAtbG9nbyB7XG4gIGhlaWdodDogNDBweDtcbiAgbWFyZ2luOiAwIDRweCAzcHggMDtcbn0iXX0= */"
+module.exports = ".sidenav-container {\n  height: 100%; }\n\n.sidenav {\n  width: 220px; }\n\n.mat-toolbar.mat-primary {\n  position: -webkit-sticky;\n  position: sticky;\n  top: 0;\n  z-index: 2; }\n\n.docs-button {\n  font-size: 18px; }\n\n.docs-classpip-logo {\n  height: 40px;\n  margin: 0 4px 3px 0; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvc2hhcmVkL25hdmlnYXRpb24vbmF2aWdhdGlvbi5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQVksRUFDYjs7QUFFRDtFQUNFLGFBQVksRUFDYjs7QUFFRDtFQUNFLHlCQUFnQjtFQUFoQixpQkFBZ0I7RUFDaEIsT0FBTTtFQUNOLFdBQVUsRUFDWDs7QUFFRDtFQUNFLGdCQUFlLEVBQ2hCOztBQUVEO0VBQ0UsYUFBWTtFQUNaLG9CQUFtQixFQUNwQiIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9uYXZpZ2F0aW9uL25hdmlnYXRpb24uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2lkZW5hdi1jb250YWluZXIge1xuICBoZWlnaHQ6IDEwMCU7XG59XG5cbi5zaWRlbmF2IHtcbiAgd2lkdGg6IDIyMHB4O1xufVxuXG4ubWF0LXRvb2xiYXIubWF0LXByaW1hcnkge1xuICBwb3NpdGlvbjogc3RpY2t5O1xuICB0b3A6IDA7XG4gIHotaW5kZXg6IDI7XG59XG5cbi5kb2NzLWJ1dHRvbiB7XG4gIGZvbnQtc2l6ZTogMThweDtcbn1cblxuLmRvY3MtY2xhc3NwaXAtbG9nbyB7XG4gIGhlaWdodDogNDBweDtcbiAgbWFyZ2luOiAwIDRweCAzcHggMDtcbn0iXX0= */"
 
 /***/ }),
 
