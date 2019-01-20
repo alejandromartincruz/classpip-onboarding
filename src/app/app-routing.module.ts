@@ -9,6 +9,8 @@ import { AdministratorComponent } from './pages/administrator/administrator.comp
 import { InstallComponent } from './pages/install/install.component';
 import { FirstrunComponent } from './pages/firstrun/firstrun.component';
 import { GitComponent } from './pages/git/git.component';
+import { TutorialesComponent } from './pages/tutoriales/tutoriales.component';
+import { BasicosComponent } from './pages/basicos/basicos.component';
 import { TutorialComponent } from './pages/tutorial/tutorial.component';
 import { OnboardingComponent } from './pages/onboarding/onboarding.component';
 import { FaqComponent } from './pages/faq/faq.component';
@@ -25,9 +27,11 @@ const routes: Routes = [
   { path: 'user/administrator', component: AdministratorComponent },
   { path: 'developer/install', component: InstallComponent },
   { path: 'developer/firstrun', component: FirstrunComponent },
-  { path: 'developer/git', component: GitComponent },
-  { path: 'developer/tutorial', component: TutorialComponent },
-  { path: 'developer/onboarding', component: OnboardingComponent },
+  { path: 'developer/tutoriales', component: TutorialesComponent },
+  { path: 'developer/tutoriales/basicos', component: BasicosComponent },
+  { path: 'developer/tutoriales/git', component: GitComponent },
+  { path: 'developer/tutoriales/mesa', component: TutorialComponent },
+  { path: 'developer/tutoriales/onboarding', component: OnboardingComponent },
   { path: 'developer/projects', component: ProjectsComponent },
   { path: 'developer/faq', component: FaqComponent },
   { path: 'privacy', component: PrivacyComponent },

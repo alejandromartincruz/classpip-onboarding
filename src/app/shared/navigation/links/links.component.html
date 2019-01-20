@@ -35,17 +35,9 @@
         <mat-icon mat-list-icon fontSet="fas" fontIcon="fa-shoe-prints"></mat-icon>
         <span>Puesta en marcha</span>
     </a>
-    <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/git" (click)="devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding como trabajar con git en el proyecto' );">
-        <mat-icon mat-list-icon fontSet="fab" fontIcon="fa-github"></mat-icon>
-        <span>Pautas git</span>
-    </a>
-    <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/tutorial" (click)="devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding aprende a desarrollar un módulo para la aplicación' );">
+    <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/tutoriales" (click)="devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding listado de tutoriales disponibles' );">
         <mat-icon mat-list-icon>computer</mat-icon>
-        <span>Tutorial</span>
-    </a>
-    <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/onboarding" (click)="devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding aprende a desarrollar y mantener la web de onboarding' );">
-        <mat-icon mat-list-icon>web</mat-icon>
-        <span>Desarrollo web de Onboarding</span>
+        <span>Tutoriales</span>
     </a>
     <a *ngIf="devShow" class="second-level" mat-list-item routerLink="/developer/faq" (click)="devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding resuleve tus dudas y problemas' );">
         <mat-icon mat-list-icon>report</mat-icon>

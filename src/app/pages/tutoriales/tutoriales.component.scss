@@ -1,0 +1,25 @@
+mat-list-item {
+	background-color: #fff;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+	mat-icon {
+		-webkit-transition-duration: 0.3s;
+    	transition-duration: 0.3s;
+    	-webkit-transition-property: transform;
+    	transition-property: transform;
+    	-webkit-transition-timing-function: ease-in-out;
+    	transition-timing-function: ease-in-out;
+	}
+	&:hover {
+		background-color: #f0ffff;
+		mat-icon {
+			-webkit-transform: translateX(4px);
+    		transform: translateX(4px);
+		}
+	}
+	.project-author {
+		color: #939393;
+	}
+	.project-description {
+
+	}
+}
