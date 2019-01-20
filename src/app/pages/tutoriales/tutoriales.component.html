@@ -1,0 +1,36 @@
+<mat-list>
+  <h2 mat-subheader>Tutoriales disponibles</h2>
+
+  <a routerLink="/developer/tutoriales/basicos" (click)="setTitle( 'Classpip onboarding conjunto de videotutoriales de desarrollo' );">
+  <mat-list-item >
+    <mat-icon mat-list-icon fontSet="fab" fontIcon="fa-youtube"></mat-icon>
+    <h4 mat-line>Videotutoriales de todas las tecnologias usadas</h4>
+    <p mat-line class="project-description">Conjunto de videotutoriales que comprenden todas las tecnologías usadas en el proyecto para aprenderlas desde cero.</p>
+  </mat-list-item>
+  </a>
+
+  <a routerLink="/developer/tutoriales/git" (click)="setTitle( 'Classpip onboarding como trabajar con git en el proyecto' );">
+  <mat-list-item >
+    <mat-icon mat-list-icon fontSet="fab" fontIcon="fa-github"></mat-icon>
+    <h4 mat-line>Pautas git</h4>
+    <p mat-line class="project-description">Aprende la metodología a utilizar para trabajar con git en este proyecto </p>
+  </mat-list-item>
+  </a>
+
+  <a routerLink="/developer/tutoriales/mesa" (click)="setTitle( 'Classpip onboarding aprende a desarrollar un módulo para la aplicación' );">
+  <mat-list-item>
+    <mat-icon mat-list-icon>link</mat-icon>
+    <h4 mat-line>Tutorial módulo mesa</h4>
+    <p mat-line class="project-description">desarrolla un pequeño módulo para aprender a realizar nuevos desarrollos en el proyecto</p>
+  </mat-list-item>
+  </a>
+
+  <a routerLink="/developer/tutoriales/onboarding" (click)="setTitle( 'Classpip onboarding aprende a desarrollar y mantener la web de onboarding' );">
+  <mat-list-item>
+    <mat-icon mat-list-icon>web</mat-icon>
+    <h4 mat-line>Desarrollo para la web de Onboarding</h4>
+    <p mat-line class="project-description">Tutorial para aprender a hacer cambios en la web de onboarding</p>
+  </mat-list-item>
+  </a>
+
+</mat-list>

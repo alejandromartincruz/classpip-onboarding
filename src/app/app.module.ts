@@ -51,6 +51,8 @@ import { InitonboardingComponent } from './pages/firstrun/initonboarding/initonb
 import { CommonconsiderationsComponent } from './pages/firstrun/commonconsiderations/commonconsiderations.component';
 import { LinksComponent } from './shared/navigation/links/links.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
+import { TutorialesComponent } from './pages/tutoriales/tutoriales.component';
+import { BasicosComponent } from './pages/basicos/basicos.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +90,9 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     InitonboardingComponent,
     CommonconsiderationsComponent,
     LinksComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    TutorialesComponent,
+    BasicosComponent
   ],
   imports: [
     BrowserModule,

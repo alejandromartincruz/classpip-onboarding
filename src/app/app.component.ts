@@ -12,7 +12,6 @@ import { MatIconRegistry } from "@angular/material";
 })
 export class AppComponent implements AfterViewInit {
   title = 'classpip-onboarding';
-  loading;
 
   constructor(
     private titleService: Title,
@@ -20,22 +19,10 @@ export class AppComponent implements AfterViewInit {
     private router: Router
   ) {
     matIconRegistry.registerFontClassAlias ('fab');
-    this.loading = true;
   }
 
   ngAfterViewInit() {
-    this.router.events
-      .subscribe((event) => {
-      if(event instanceof NavigationStart) {
-        this.loading = true;
-      }
-      else if (
-        event instanceof NavigationEnd || 
-        event instanceof NavigationCancel
-      ) {
-        this.loading = false;
-      }
-    });
+
   }
 
   public setTitle( newTitle: string) {

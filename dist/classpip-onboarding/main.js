@@ -33,29 +33,29 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/home/home.component */ "./src/app/pages/home/home.component.ts");
-/* harmony import */ var _pages_students_students_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/students/students.component */ "./src/app/pages/students/students.component.ts");
-/* harmony import */ var _pages_teachers_teachers_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/teachers/teachers.component */ "./src/app/pages/teachers/teachers.component.ts");
-/* harmony import */ var _pages_administrator_administrator_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/administrator/administrator.component */ "./src/app/pages/administrator/administrator.component.ts");
-/* harmony import */ var _pages_install_install_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/install/install.component */ "./src/app/pages/install/install.component.ts");
-/* harmony import */ var _pages_firstrun_firstrun_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/firstrun/firstrun.component */ "./src/app/pages/firstrun/firstrun.component.ts");
-/* harmony import */ var _pages_git_git_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/git/git.component */ "./src/app/pages/git/git.component.ts");
-/* harmony import */ var _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/tutorial/tutorial.component */ "./src/app/pages/tutorial/tutorial.component.ts");
-/* harmony import */ var _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/onboarding/onboarding.component */ "./src/app/pages/onboarding/onboarding.component.ts");
-/* harmony import */ var _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/faq/faq.component */ "./src/app/pages/faq/faq.component.ts");
-/* harmony import */ var _pages_projects_projects_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/projects/projects.component */ "./src/app/pages/projects/projects.component.ts");
-/* harmony import */ var _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./shared/privacy/privacy.component */ "./src/app/shared/privacy/privacy.component.ts");
-/* harmony import */ var _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./shared/legalwarning/legalwarning.component */ "./src/app/shared/legalwarning/legalwarning.component.ts");
-/* harmony import */ var _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/notfound/notfound.component */ "./src/app/pages/notfound/notfound.component.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/home/home.component */ "./src/app/pages/home/home.component.ts");
+/* harmony import */ var _pages_students_students_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/students/students.component */ "./src/app/pages/students/students.component.ts");
+/* harmony import */ var _pages_teachers_teachers_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/teachers/teachers.component */ "./src/app/pages/teachers/teachers.component.ts");
+/* harmony import */ var _pages_administrator_administrator_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/administrator/administrator.component */ "./src/app/pages/administrator/administrator.component.ts");
+/* harmony import */ var _pages_install_install_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/install/install.component */ "./src/app/pages/install/install.component.ts");
+/* harmony import */ var _pages_firstrun_firstrun_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/firstrun/firstrun.component */ "./src/app/pages/firstrun/firstrun.component.ts");
+/* harmony import */ var _pages_git_git_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/git/git.component */ "./src/app/pages/git/git.component.ts");
+/* harmony import */ var _pages_tutoriales_tutoriales_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/tutoriales/tutoriales.component */ "./src/app/pages/tutoriales/tutoriales.component.ts");
+/* harmony import */ var _pages_basicos_basicos_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/basicos/basicos.component */ "./src/app/pages/basicos/basicos.component.ts");
+/* harmony import */ var _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/tutorial/tutorial.component */ "./src/app/pages/tutorial/tutorial.component.ts");
+/* harmony import */ var _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/onboarding/onboarding.component */ "./src/app/pages/onboarding/onboarding.component.ts");
+/* harmony import */ var _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/faq/faq.component */ "./src/app/pages/faq/faq.component.ts");
+/* harmony import */ var _pages_projects_projects_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/projects/projects.component */ "./src/app/pages/projects/projects.component.ts");
+/* harmony import */ var _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./shared/privacy/privacy.component */ "./src/app/shared/privacy/privacy.component.ts");
+/* harmony import */ var _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./shared/legalwarning/legalwarning.component */ "./src/app/shared/legalwarning/legalwarning.component.ts");
+/* harmony import */ var _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pages/notfound/notfound.component */ "./src/app/pages/notfound/notfound.component.ts");
+
+
+
 
 
 
@@ -75,32 +75,34 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'home', component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
-    { path: 'user/students', component: _pages_students_students_component__WEBPACK_IMPORTED_MODULE_4__["StudentsComponent"] },
-    { path: 'user/teachers', component: _pages_teachers_teachers_component__WEBPACK_IMPORTED_MODULE_5__["TeachersComponent"] },
-    { path: 'user/administrator', component: _pages_administrator_administrator_component__WEBPACK_IMPORTED_MODULE_6__["AdministratorComponent"] },
-    { path: 'developer/install', component: _pages_install_install_component__WEBPACK_IMPORTED_MODULE_7__["InstallComponent"] },
-    { path: 'developer/firstrun', component: _pages_firstrun_firstrun_component__WEBPACK_IMPORTED_MODULE_8__["FirstrunComponent"] },
-    { path: 'developer/git', component: _pages_git_git_component__WEBPACK_IMPORTED_MODULE_9__["GitComponent"] },
-    { path: 'developer/tutorial', component: _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_10__["TutorialComponent"] },
-    { path: 'developer/onboarding', component: _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_11__["OnboardingComponent"] },
-    { path: 'developer/projects', component: _pages_projects_projects_component__WEBPACK_IMPORTED_MODULE_13__["ProjectsComponent"] },
-    { path: 'developer/faq', component: _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_12__["FaqComponent"] },
-    { path: 'privacy', component: _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_14__["PrivacyComponent"] },
-    { path: 'legalwarning', component: _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_15__["LegalwarningComponent"] },
-    { path: '404', component: _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_16__["NotfoundComponent"] },
+    { path: 'home', component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"] },
+    { path: 'user/students', component: _pages_students_students_component__WEBPACK_IMPORTED_MODULE_5__["StudentsComponent"] },
+    { path: 'user/teachers', component: _pages_teachers_teachers_component__WEBPACK_IMPORTED_MODULE_6__["TeachersComponent"] },
+    { path: 'user/administrator', component: _pages_administrator_administrator_component__WEBPACK_IMPORTED_MODULE_7__["AdministratorComponent"] },
+    { path: 'developer/install', component: _pages_install_install_component__WEBPACK_IMPORTED_MODULE_8__["InstallComponent"] },
+    { path: 'developer/firstrun', component: _pages_firstrun_firstrun_component__WEBPACK_IMPORTED_MODULE_9__["FirstrunComponent"] },
+    { path: 'developer/tutoriales', component: _pages_tutoriales_tutoriales_component__WEBPACK_IMPORTED_MODULE_11__["TutorialesComponent"] },
+    { path: 'developer/tutoriales/basicos', component: _pages_basicos_basicos_component__WEBPACK_IMPORTED_MODULE_12__["BasicosComponent"] },
+    { path: 'developer/tutoriales/git', component: _pages_git_git_component__WEBPACK_IMPORTED_MODULE_10__["GitComponent"] },
+    { path: 'developer/tutoriales/mesa', component: _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_13__["TutorialComponent"] },
+    { path: 'developer/tutoriales/onboarding', component: _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_14__["OnboardingComponent"] },
+    { path: 'developer/projects', component: _pages_projects_projects_component__WEBPACK_IMPORTED_MODULE_16__["ProjectsComponent"] },
+    { path: 'developer/faq', component: _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_15__["FaqComponent"] },
+    { path: 'privacy', component: _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_17__["PrivacyComponent"] },
+    { path: 'legalwarning', component: _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_18__["LegalwarningComponent"] },
+    { path: '404', component: _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_19__["NotfoundComponent"] },
     { path: '**', redirectTo: '/404' }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
     }
-    AppRoutingModule = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+    AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             imports: [
-                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)
+                _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes)
             ],
-            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]],
+            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"]],
             declarations: []
         })
     ], AppRoutingModule);
@@ -143,19 +145,12 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+
 
 
 
@@ -167,33 +162,21 @@ var AppComponent = /** @class */ (function () {
         this.router = router;
         this.title = 'classpip-onboarding';
         matIconRegistry.registerFontClassAlias('fab');
-        this.loading = true;
     }
     AppComponent.prototype.ngAfterViewInit = function () {
-        var _this = this;
-        this.router.events
-            .subscribe(function (event) {
-            if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["NavigationStart"]) {
-                _this.loading = true;
-            }
-            else if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["NavigationEnd"] ||
-                event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["NavigationCancel"]) {
-                _this.loading = false;
-            }
-        });
     };
     AppComponent.prototype.setTitle = function (newTitle) {
         this.titleService.setTitle(newTitle);
     };
-    AppComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-root',
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
             styles: [__webpack_require__(/*! ./app.component.scss */ "./src/app/app.component.scss")]
         }),
-        __metadata("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"],
-            _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatIconRegistry"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["Title"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatIconRegistry"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -212,62 +195,62 @@ var AppComponent = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
-/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/cdk/drag-drop */ "./node_modules/@angular/cdk/esm5/drag-drop.es5.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _angular_material_menu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/menu */ "./node_modules/@angular/material/esm5/menu.es5.js");
-/* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/toolbar */ "./node_modules/@angular/material/esm5/toolbar.es5.js");
-/* harmony import */ var _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/progress-bar */ "./node_modules/@angular/material/esm5/progress-bar.es5.js");
-/* harmony import */ var _shared_footer_footer_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./shared/footer/footer.component */ "./src/app/shared/footer/footer.component.ts");
-/* harmony import */ var _shared_loading_loading_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./shared/loading/loading.component */ "./src/app/shared/loading/loading.component.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/home/home.component */ "./src/app/pages/home/home.component.ts");
-/* harmony import */ var _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/notfound/notfound.component */ "./src/app/pages/notfound/notfound.component.ts");
-/* harmony import */ var _shared_navigation_navigation_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./shared/navigation/navigation.component */ "./src/app/shared/navigation/navigation.component.ts");
-/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/cdk/layout */ "./node_modules/@angular/cdk/esm5/layout.es5.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/expansion */ "./node_modules/@angular/material/esm5/expansion.es5.js");
-/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm5/card.es5.js");
-/* harmony import */ var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/material/grid-list */ "./node_modules/@angular/material/esm5/grid-list.es5.js");
-/* harmony import */ var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/material/tabs */ "./node_modules/@angular/material/esm5/tabs.es5.js");
-/* harmony import */ var _pages_students_students_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./pages/students/students.component */ "./src/app/pages/students/students.component.ts");
-/* harmony import */ var _pages_teachers_teachers_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./pages/teachers/teachers.component */ "./src/app/pages/teachers/teachers.component.ts");
-/* harmony import */ var _pages_administrator_administrator_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./pages/administrator/administrator.component */ "./src/app/pages/administrator/administrator.component.ts");
-/* harmony import */ var _pages_git_git_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./pages/git/git.component */ "./src/app/pages/git/git.component.ts");
-/* harmony import */ var _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./pages/tutorial/tutorial.component */ "./src/app/pages/tutorial/tutorial.component.ts");
-/* harmony import */ var _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./pages/faq/faq.component */ "./src/app/pages/faq/faq.component.ts");
-/* harmony import */ var _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./pages/onboarding/onboarding.component */ "./src/app/pages/onboarding/onboarding.component.ts");
-/* harmony import */ var _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./shared/privacy/privacy.component */ "./src/app/shared/privacy/privacy.component.ts");
-/* harmony import */ var _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./shared/legalwarning/legalwarning.component */ "./src/app/shared/legalwarning/legalwarning.component.ts");
-/* harmony import */ var _pages_tutorial_services_services_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./pages/tutorial/services/services.component */ "./src/app/pages/tutorial/services/services.component.ts");
-/* harmony import */ var _pages_tutorial_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./pages/tutorial/dashboard/dashboard.component */ "./src/app/pages/tutorial/dashboard/dashboard.component.ts");
-/* harmony import */ var _pages_tutorial_mobile_mobile_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./pages/tutorial/mobile/mobile.component */ "./src/app/pages/tutorial/mobile/mobile.component.ts");
-/* harmony import */ var _pages_tutorial_introduction_introduction_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./pages/tutorial/introduction/introduction.component */ "./src/app/pages/tutorial/introduction/introduction.component.ts");
-/* harmony import */ var _pages_faq_windows_windows_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./pages/faq/windows/windows.component */ "./src/app/pages/faq/windows/windows.component.ts");
-/* harmony import */ var _pages_faq_linux_linux_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./pages/faq/linux/linux.component */ "./src/app/pages/faq/linux/linux.component.ts");
-/* harmony import */ var _pages_faq_macos_macos_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./pages/faq/macos/macos.component */ "./src/app/pages/faq/macos/macos.component.ts");
-/* harmony import */ var _pages_faq_generals_generals_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./pages/faq/generals/generals.component */ "./src/app/pages/faq/generals/generals.component.ts");
-/* harmony import */ var _pages_install_install_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./pages/install/install.component */ "./src/app/pages/install/install.component.ts");
-/* harmony import */ var _pages_firstrun_firstrun_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./pages/firstrun/firstrun.component */ "./src/app/pages/firstrun/firstrun.component.ts");
-/* harmony import */ var _pages_install_linuxinstall_linuxinstall_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./pages/install/linuxinstall/linuxinstall.component */ "./src/app/pages/install/linuxinstall/linuxinstall.component.ts");
-/* harmony import */ var _pages_install_macosinstall_macosinstall_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./pages/install/macosinstall/macosinstall.component */ "./src/app/pages/install/macosinstall/macosinstall.component.ts");
-/* harmony import */ var _pages_install_windowsinstall_windowsinstall_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./pages/install/windowsinstall/windowsinstall.component */ "./src/app/pages/install/windowsinstall/windowsinstall.component.ts");
-/* harmony import */ var _pages_firstrun_initservices_initservices_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./pages/firstrun/initservices/initservices.component */ "./src/app/pages/firstrun/initservices/initservices.component.ts");
-/* harmony import */ var _pages_firstrun_initdashboard_initdashboard_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./pages/firstrun/initdashboard/initdashboard.component */ "./src/app/pages/firstrun/initdashboard/initdashboard.component.ts");
-/* harmony import */ var _pages_firstrun_initmobile_initmobile_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./pages/firstrun/initmobile/initmobile.component */ "./src/app/pages/firstrun/initmobile/initmobile.component.ts");
-/* harmony import */ var _pages_firstrun_initonboarding_initonboarding_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./pages/firstrun/initonboarding/initonboarding.component */ "./src/app/pages/firstrun/initonboarding/initonboarding.component.ts");
-/* harmony import */ var _pages_firstrun_commonconsiderations_commonconsiderations_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./pages/firstrun/commonconsiderations/commonconsiderations.component */ "./src/app/pages/firstrun/commonconsiderations/commonconsiderations.component.ts");
-/* harmony import */ var _shared_navigation_links_links_component__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./shared/navigation/links/links.component */ "./src/app/shared/navigation/links/links.component.ts");
-/* harmony import */ var _pages_projects_projects_component__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./pages/projects/projects.component */ "./src/app/pages/projects/projects.component.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/cdk/drag-drop */ "./node_modules/@angular/cdk/esm5/drag-drop.es5.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_material_menu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/menu */ "./node_modules/@angular/material/esm5/menu.es5.js");
+/* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/toolbar */ "./node_modules/@angular/material/esm5/toolbar.es5.js");
+/* harmony import */ var _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/progress-bar */ "./node_modules/@angular/material/esm5/progress-bar.es5.js");
+/* harmony import */ var _shared_footer_footer_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./shared/footer/footer.component */ "./src/app/shared/footer/footer.component.ts");
+/* harmony import */ var _shared_loading_loading_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./shared/loading/loading.component */ "./src/app/shared/loading/loading.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/home/home.component */ "./src/app/pages/home/home.component.ts");
+/* harmony import */ var _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/notfound/notfound.component */ "./src/app/pages/notfound/notfound.component.ts");
+/* harmony import */ var _shared_navigation_navigation_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./shared/navigation/navigation.component */ "./src/app/shared/navigation/navigation.component.ts");
+/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/cdk/layout */ "./node_modules/@angular/cdk/esm5/layout.es5.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/material/expansion */ "./node_modules/@angular/material/esm5/expansion.es5.js");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm5/card.es5.js");
+/* harmony import */ var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/material/grid-list */ "./node_modules/@angular/material/esm5/grid-list.es5.js");
+/* harmony import */ var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/material/tabs */ "./node_modules/@angular/material/esm5/tabs.es5.js");
+/* harmony import */ var _pages_students_students_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./pages/students/students.component */ "./src/app/pages/students/students.component.ts");
+/* harmony import */ var _pages_teachers_teachers_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./pages/teachers/teachers.component */ "./src/app/pages/teachers/teachers.component.ts");
+/* harmony import */ var _pages_administrator_administrator_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./pages/administrator/administrator.component */ "./src/app/pages/administrator/administrator.component.ts");
+/* harmony import */ var _pages_git_git_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./pages/git/git.component */ "./src/app/pages/git/git.component.ts");
+/* harmony import */ var _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./pages/tutorial/tutorial.component */ "./src/app/pages/tutorial/tutorial.component.ts");
+/* harmony import */ var _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./pages/faq/faq.component */ "./src/app/pages/faq/faq.component.ts");
+/* harmony import */ var _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./pages/onboarding/onboarding.component */ "./src/app/pages/onboarding/onboarding.component.ts");
+/* harmony import */ var _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./shared/privacy/privacy.component */ "./src/app/shared/privacy/privacy.component.ts");
+/* harmony import */ var _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./shared/legalwarning/legalwarning.component */ "./src/app/shared/legalwarning/legalwarning.component.ts");
+/* harmony import */ var _pages_tutorial_services_services_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./pages/tutorial/services/services.component */ "./src/app/pages/tutorial/services/services.component.ts");
+/* harmony import */ var _pages_tutorial_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./pages/tutorial/dashboard/dashboard.component */ "./src/app/pages/tutorial/dashboard/dashboard.component.ts");
+/* harmony import */ var _pages_tutorial_mobile_mobile_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./pages/tutorial/mobile/mobile.component */ "./src/app/pages/tutorial/mobile/mobile.component.ts");
+/* harmony import */ var _pages_tutorial_introduction_introduction_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./pages/tutorial/introduction/introduction.component */ "./src/app/pages/tutorial/introduction/introduction.component.ts");
+/* harmony import */ var _pages_faq_windows_windows_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./pages/faq/windows/windows.component */ "./src/app/pages/faq/windows/windows.component.ts");
+/* harmony import */ var _pages_faq_linux_linux_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./pages/faq/linux/linux.component */ "./src/app/pages/faq/linux/linux.component.ts");
+/* harmony import */ var _pages_faq_macos_macos_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./pages/faq/macos/macos.component */ "./src/app/pages/faq/macos/macos.component.ts");
+/* harmony import */ var _pages_faq_generals_generals_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./pages/faq/generals/generals.component */ "./src/app/pages/faq/generals/generals.component.ts");
+/* harmony import */ var _pages_install_install_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./pages/install/install.component */ "./src/app/pages/install/install.component.ts");
+/* harmony import */ var _pages_firstrun_firstrun_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./pages/firstrun/firstrun.component */ "./src/app/pages/firstrun/firstrun.component.ts");
+/* harmony import */ var _pages_install_linuxinstall_linuxinstall_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./pages/install/linuxinstall/linuxinstall.component */ "./src/app/pages/install/linuxinstall/linuxinstall.component.ts");
+/* harmony import */ var _pages_install_macosinstall_macosinstall_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./pages/install/macosinstall/macosinstall.component */ "./src/app/pages/install/macosinstall/macosinstall.component.ts");
+/* harmony import */ var _pages_install_windowsinstall_windowsinstall_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./pages/install/windowsinstall/windowsinstall.component */ "./src/app/pages/install/windowsinstall/windowsinstall.component.ts");
+/* harmony import */ var _pages_firstrun_initservices_initservices_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./pages/firstrun/initservices/initservices.component */ "./src/app/pages/firstrun/initservices/initservices.component.ts");
+/* harmony import */ var _pages_firstrun_initdashboard_initdashboard_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./pages/firstrun/initdashboard/initdashboard.component */ "./src/app/pages/firstrun/initdashboard/initdashboard.component.ts");
+/* harmony import */ var _pages_firstrun_initmobile_initmobile_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./pages/firstrun/initmobile/initmobile.component */ "./src/app/pages/firstrun/initmobile/initmobile.component.ts");
+/* harmony import */ var _pages_firstrun_initonboarding_initonboarding_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./pages/firstrun/initonboarding/initonboarding.component */ "./src/app/pages/firstrun/initonboarding/initonboarding.component.ts");
+/* harmony import */ var _pages_firstrun_commonconsiderations_commonconsiderations_component__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./pages/firstrun/commonconsiderations/commonconsiderations.component */ "./src/app/pages/firstrun/commonconsiderations/commonconsiderations.component.ts");
+/* harmony import */ var _shared_navigation_links_links_component__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./shared/navigation/links/links.component */ "./src/app/shared/navigation/links/links.component.ts");
+/* harmony import */ var _pages_projects_projects_component__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./pages/projects/projects.component */ "./src/app/pages/projects/projects.component.ts");
+/* harmony import */ var _pages_tutoriales_tutoriales_component__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./pages/tutoriales/tutoriales.component */ "./src/app/pages/tutoriales/tutoriales.component.ts");
+/* harmony import */ var _pages_basicos_basicos_component__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./pages/basicos/basicos.component */ "./src/app/pages/basicos/basicos.component.ts");
+
+
+
 
 
 
@@ -321,71 +304,261 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
-    AppModule = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+    AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
-                _shared_footer_footer_component__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"],
-                _shared_loading_loading_component__WEBPACK_IMPORTED_MODULE_10__["LoadingComponent"],
-                _pages_home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"],
-                _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_13__["NotfoundComponent"],
-                _shared_navigation_navigation_component__WEBPACK_IMPORTED_MODULE_14__["NavigationComponent"],
-                _pages_students_students_component__WEBPACK_IMPORTED_MODULE_21__["StudentsComponent"],
-                _pages_teachers_teachers_component__WEBPACK_IMPORTED_MODULE_22__["TeachersComponent"],
-                _pages_administrator_administrator_component__WEBPACK_IMPORTED_MODULE_23__["AdministratorComponent"],
-                _pages_git_git_component__WEBPACK_IMPORTED_MODULE_24__["GitComponent"],
-                _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_25__["TutorialComponent"],
-                _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_26__["FaqComponent"],
-                _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_27__["OnboardingComponent"],
-                _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_28__["PrivacyComponent"],
-                _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_29__["LegalwarningComponent"],
-                _pages_tutorial_services_services_component__WEBPACK_IMPORTED_MODULE_30__["ServicesComponent"],
-                _pages_tutorial_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_31__["DashboardComponent"],
-                _pages_tutorial_mobile_mobile_component__WEBPACK_IMPORTED_MODULE_32__["MobileComponent"],
-                _pages_tutorial_introduction_introduction_component__WEBPACK_IMPORTED_MODULE_33__["IntroductionComponent"],
-                _pages_faq_windows_windows_component__WEBPACK_IMPORTED_MODULE_34__["WindowsComponent"],
-                _pages_faq_linux_linux_component__WEBPACK_IMPORTED_MODULE_35__["LinuxComponent"],
-                _pages_faq_macos_macos_component__WEBPACK_IMPORTED_MODULE_36__["MacosComponent"],
-                _pages_faq_generals_generals_component__WEBPACK_IMPORTED_MODULE_37__["GeneralsComponent"],
-                _pages_install_install_component__WEBPACK_IMPORTED_MODULE_38__["InstallComponent"],
-                _pages_firstrun_firstrun_component__WEBPACK_IMPORTED_MODULE_39__["FirstrunComponent"],
-                _pages_install_linuxinstall_linuxinstall_component__WEBPACK_IMPORTED_MODULE_40__["LinuxinstallComponent"],
-                _pages_install_macosinstall_macosinstall_component__WEBPACK_IMPORTED_MODULE_41__["MacosinstallComponent"],
-                _pages_install_windowsinstall_windowsinstall_component__WEBPACK_IMPORTED_MODULE_42__["WindowsinstallComponent"],
-                _pages_firstrun_initservices_initservices_component__WEBPACK_IMPORTED_MODULE_43__["InitservicesComponent"],
-                _pages_firstrun_initdashboard_initdashboard_component__WEBPACK_IMPORTED_MODULE_44__["InitdashboardComponent"],
-                _pages_firstrun_initmobile_initmobile_component__WEBPACK_IMPORTED_MODULE_45__["InitmobileComponent"],
-                _pages_firstrun_initonboarding_initonboarding_component__WEBPACK_IMPORTED_MODULE_46__["InitonboardingComponent"],
-                _pages_firstrun_commonconsiderations_commonconsiderations_component__WEBPACK_IMPORTED_MODULE_47__["CommonconsiderationsComponent"],
-                _shared_navigation_links_links_component__WEBPACK_IMPORTED_MODULE_48__["LinksComponent"],
-                _pages_projects_projects_component__WEBPACK_IMPORTED_MODULE_49__["ProjectsComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+                _shared_footer_footer_component__WEBPACK_IMPORTED_MODULE_10__["FooterComponent"],
+                _shared_loading_loading_component__WEBPACK_IMPORTED_MODULE_11__["LoadingComponent"],
+                _pages_home_home_component__WEBPACK_IMPORTED_MODULE_13__["HomeComponent"],
+                _pages_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_14__["NotfoundComponent"],
+                _shared_navigation_navigation_component__WEBPACK_IMPORTED_MODULE_15__["NavigationComponent"],
+                _pages_students_students_component__WEBPACK_IMPORTED_MODULE_22__["StudentsComponent"],
+                _pages_teachers_teachers_component__WEBPACK_IMPORTED_MODULE_23__["TeachersComponent"],
+                _pages_administrator_administrator_component__WEBPACK_IMPORTED_MODULE_24__["AdministratorComponent"],
+                _pages_git_git_component__WEBPACK_IMPORTED_MODULE_25__["GitComponent"],
+                _pages_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_26__["TutorialComponent"],
+                _pages_faq_faq_component__WEBPACK_IMPORTED_MODULE_27__["FaqComponent"],
+                _pages_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_28__["OnboardingComponent"],
+                _shared_privacy_privacy_component__WEBPACK_IMPORTED_MODULE_29__["PrivacyComponent"],
+                _shared_legalwarning_legalwarning_component__WEBPACK_IMPORTED_MODULE_30__["LegalwarningComponent"],
+                _pages_tutorial_services_services_component__WEBPACK_IMPORTED_MODULE_31__["ServicesComponent"],
+                _pages_tutorial_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_32__["DashboardComponent"],
+                _pages_tutorial_mobile_mobile_component__WEBPACK_IMPORTED_MODULE_33__["MobileComponent"],
+                _pages_tutorial_introduction_introduction_component__WEBPACK_IMPORTED_MODULE_34__["IntroductionComponent"],
+                _pages_faq_windows_windows_component__WEBPACK_IMPORTED_MODULE_35__["WindowsComponent"],
+                _pages_faq_linux_linux_component__WEBPACK_IMPORTED_MODULE_36__["LinuxComponent"],
+                _pages_faq_macos_macos_component__WEBPACK_IMPORTED_MODULE_37__["MacosComponent"],
+                _pages_faq_generals_generals_component__WEBPACK_IMPORTED_MODULE_38__["GeneralsComponent"],
+                _pages_install_install_component__WEBPACK_IMPORTED_MODULE_39__["InstallComponent"],
+                _pages_firstrun_firstrun_component__WEBPACK_IMPORTED_MODULE_40__["FirstrunComponent"],
+                _pages_install_linuxinstall_linuxinstall_component__WEBPACK_IMPORTED_MODULE_41__["LinuxinstallComponent"],
+                _pages_install_macosinstall_macosinstall_component__WEBPACK_IMPORTED_MODULE_42__["MacosinstallComponent"],
+                _pages_install_windowsinstall_windowsinstall_component__WEBPACK_IMPORTED_MODULE_43__["WindowsinstallComponent"],
+                _pages_firstrun_initservices_initservices_component__WEBPACK_IMPORTED_MODULE_44__["InitservicesComponent"],
+                _pages_firstrun_initdashboard_initdashboard_component__WEBPACK_IMPORTED_MODULE_45__["InitdashboardComponent"],
+                _pages_firstrun_initmobile_initmobile_component__WEBPACK_IMPORTED_MODULE_46__["InitmobileComponent"],
+                _pages_firstrun_initonboarding_initonboarding_component__WEBPACK_IMPORTED_MODULE_47__["InitonboardingComponent"],
+                _pages_firstrun_commonconsiderations_commonconsiderations_component__WEBPACK_IMPORTED_MODULE_48__["CommonconsiderationsComponent"],
+                _shared_navigation_links_links_component__WEBPACK_IMPORTED_MODULE_49__["LinksComponent"],
+                _pages_projects_projects_component__WEBPACK_IMPORTED_MODULE_50__["ProjectsComponent"],
+                _pages_tutoriales_tutoriales_component__WEBPACK_IMPORTED_MODULE_51__["TutorialesComponent"],
+                _pages_basicos_basicos_component__WEBPACK_IMPORTED_MODULE_52__["BasicosComponent"]
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"],
-                _angular_material_menu__WEBPACK_IMPORTED_MODULE_6__["MatMenuModule"],
-                _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_7__["MatToolbarModule"],
-                _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_8__["MatProgressBarModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_11__["AppRoutingModule"],
-                _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_15__["LayoutModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_16__["MatButtonModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_16__["MatSidenavModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_16__["MatIconModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_16__["MatListModule"],
-                _angular_material_expansion__WEBPACK_IMPORTED_MODULE_17__["MatExpansionModule"],
-                _angular_material_card__WEBPACK_IMPORTED_MODULE_18__["MatCardModule"],
-                _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_19__["MatGridListModule"],
-                _angular_material_tabs__WEBPACK_IMPORTED_MODULE_20__["MatTabsModule"],
-                _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_4__["DragDropModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"]
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"],
+                _angular_material_menu__WEBPACK_IMPORTED_MODULE_7__["MatMenuModule"],
+                _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_8__["MatToolbarModule"],
+                _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_9__["MatProgressBarModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_12__["AppRoutingModule"],
+                _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_16__["LayoutModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_17__["MatButtonModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_17__["MatSidenavModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_17__["MatIconModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_17__["MatListModule"],
+                _angular_material_expansion__WEBPACK_IMPORTED_MODULE_18__["MatExpansionModule"],
+                _angular_material_card__WEBPACK_IMPORTED_MODULE_19__["MatCardModule"],
+                _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_20__["MatGridListModule"],
+                _angular_material_tabs__WEBPACK_IMPORTED_MODULE_21__["MatTabsModule"],
+                _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_5__["DragDropModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClientModule"]
             ],
-            providers: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["Title"]],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
+            providers: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
 }());
 
+
+
+/***/ }),
+
+/***/ "./src/app/data/basic_dev_videos.ts":
+/*!******************************************!*\
+  !*** ./src/app/data/basic_dev_videos.ts ***!
+  \******************************************/
+/*! exports provided: CARDS */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CARDS", function() { return CARDS; });
+var CARDS = [
+    {
+        "title": "Lección 0: Lo básico de Git (1/5)",
+        "videoLink": "https://www.youtube.com/embed/CUhVn7U0rh4"
+    },
+    {
+        "title": "Lección 0: Lo básico de Git (2/5)",
+        "videoLink": "https://www.youtube.com/embed/icB8LFqS0eg"
+    },
+    {
+        "title": "Lección 0: Lo básico de Git (3/5)",
+        "videoLink": "https://www.youtube.com/embed/daWGU3BkX94"
+    },
+    {
+        "title": "Lección 0: Lo básico de Git (4/5)",
+        "videoLink": "https://www.youtube.com/embed/5OEPUXmRpD0"
+    },
+    {
+        "title": "Lección 0: Lo básico de Git (5/5)",
+        "videoLink": "https://www.youtube.com/embed/4cGCQuYaFGU"
+    },
+    {
+        "title": "Lección 1: Iniciar el proyecto Angular (1/2)",
+        "videoLink": "https://www.youtube.com/embed/QrBoKDTWr28"
+    },
+    {
+        "title": "Lección 1: Iniciar el proyecto Angular (2/2)",
+        "videoLink": "https://www.youtube.com/embed/cxNKX5NfJDI"
+    },
+    {
+        "title": "Lección 2: Añadir componentes (1/2)",
+        "videoLink": "https://www.youtube.com/embed/y2wSVOIaAI8"
+    },
+    {
+        "title": "Lección 2: Añadir componentes (2/2)",
+        "videoLink": "https://www.youtube.com/embed/ppKKxJWWbeI"
+    },
+    {
+        "title": "Lección 3: Mostrar los datos de una lista (1/2)",
+        "videoLink": "https://www.youtube.com/embed/kAsVu6lQ_fo"
+    },
+    {
+        "title": "Lección 3: Mostrar los datos de una lista (2/2)",
+        "videoLink": "https://www.youtube.com/embed/IYs3I6Xg68o"
+    },
+    {
+        "title": "Lección 4: Servicios (1/3)",
+        "videoLink": "https://www.youtube.com/embed/6kPrjPsxqzM"
+    },
+    {
+        "title": "Lección 4: Servicios (2/3)",
+        "videoLink": "https://www.youtube.com/embed/IjnSYFyg5zc"
+    },
+    {
+        "title": "Lección 4: Servicios (3/3)",
+        "videoLink": "https://www.youtube.com/embed/NySGLrFgqlw"
+    },
+    {
+        "title": "Lección 5: Bootstrap (1/3)",
+        "videoLink": "https://www.youtube.com/embed/DSM7s591100"
+    },
+    {
+        "title": "Lección 5: Bootstrap (2/3)",
+        "videoLink": "https://www.youtube.com/embed/qa6QkTAaW24"
+    },
+    {
+        "title": "Lección 5: Bootstrap (3/3)",
+        "videoLink": "https://www.youtube.com/embed/wqXxw1BwjFo"
+    },
+    {
+        "title": "Lección 6: Angular Material (1/3)",
+        "videoLink": "https://www.youtube.com/embed/mdieVEyMk-Y"
+    },
+    {
+        "title": "Lección 6: Angular Material (2/3)",
+        "videoLink": "https://www.youtube.com/embed/hidsRs_nXOE"
+    },
+    {
+        "title": "Lección 6: Angular Material (3/3)",
+        "videoLink": "https://www.youtube.com/embed/voW79Wfpqww"
+    },
+    {
+        "title": "Lección 7: Navegación en Angular (1/4)",
+        "videoLink": "https://www.youtube.com/embed/wDr6ys3OdCA"
+    },
+    {
+        "title": "Lección 7: Navegación en Angular (2/4)",
+        "videoLink": "https://www.youtube.com/embed/bU5BcrLEKtM"
+    },
+    {
+        "title": "Lección 7: Navegación en Angular (3/4)",
+        "videoLink": "https://www.youtube.com/embed/Dzr8ATAcqHo"
+    },
+    {
+        "title": "Lección 7: Navegación en Angular (4/4)",
+        "videoLink": "https://www.youtube.com/embed/lClVl32XTwY"
+    },
+    {
+        "title": "Lección 8: API REST (1/7)",
+        "videoLink": "https://www.youtube.com/embed/xudEttaBytg"
+    },
+    {
+        "title": "Lección 8: API REST (2/7)",
+        "videoLink": "https://www.youtube.com/embed/8huGPxId3m8"
+    },
+    {
+        "title": "Lección 8: API REST (3/7)",
+        "videoLink": "https://www.youtube.com/embed/yNtevAhJUyg"
+    },
+    {
+        "title": "Lección 8: API REST (4/7)",
+        "videoLink": "https://www.youtube.com/embed/73_mGc0rJMo"
+    },
+    {
+        "title": "Lección 8: API REST (5/7)",
+        "videoLink": "https://www.youtube.com/embed/g4b12JDmoBw"
+    },
+    {
+        "title": "Lección 8: API REST (6/7)",
+        "videoLink": "https://www.youtube.com/embed/dacU0L9bKzI"
+    },
+    {
+        "title": "Lección 8: API REST (7/7)",
+        "videoLink": "https://www.youtube.com/embed/wJnNXOIpE_w"
+    },
+    {
+        "title": "Lección 9: API-REST con conexión a MySQL (1/1)",
+        "videoLink": "https://www.youtube.com/embed/mkaIHE8ozHI"
+    },
+    {
+        "title": "Lección 10: Lo básico de IONIC (1/4)",
+        "videoLink": "https://www.youtube.com/embed/bFfYgvsDb0A"
+    },
+    {
+        "title": "Lección 10: Lo básico de IONIC (2/4)",
+        "videoLink": "https://www.youtube.com/embed/owp8X6xyYBg"
+    },
+    {
+        "title": "Lección 10: Lo básico de IONIC (3/4)",
+        "videoLink": "https://www.youtube.com/embed/Yb6tBXcsJnE"
+    },
+    {
+        "title": "Lección 10: Lo básico de IONIC (4/4)",
+        "videoLink": "https://www.youtube.com/embed/jRBPiCrFA80"
+    },
+    {
+        "title": "Lección 11: Desarrollo de la app (1/4)",
+        "videoLink": "https://www.youtube.com/embed/icDWFAJ9F4I"
+    },
+    {
+        "title": "Lección 11: Desarrollo de la app (2/4)",
+        "videoLink": "https://www.youtube.com/embed/00B4T_2My6E"
+    },
+    {
+        "title": "Lección 11: Desarrollo de la app (3/4)",
+        "videoLink": "https://www.youtube.com/embed/eOtw6NWr61g"
+    },
+    {
+        "title": "Lección 11: Desarrollo de la app (4/4)",
+        "videoLink": "https://www.youtube.com/embed/hG-iAsW1pJI"
+    },
+    {
+        "title": "Lección 12: Ejecución de la app en el movil (1/3)",
+        "videoLink": "https://www.youtube.com/embed/LbN6MijaqFk"
+    },
+    {
+        "title": "Lección 12: Ejecución de la app en el movil (2/3)",
+        "videoLink": "https://www.youtube.com/embed/CneKjUMnY98"
+    },
+    {
+        "title": "Lección 12: Ejecución de la app en el movil (3/3)",
+        "videoLink": "https://www.youtube.com/embed/YY74i8xvb4A"
+    }
+];
 
 
 /***/ }),
@@ -462,31 +635,97 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdministratorComponent", function() { return AdministratorComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var AdministratorComponent = /** @class */ (function () {
     function AdministratorComponent() {
     }
     AdministratorComponent.prototype.ngOnInit = function () {
     };
-    AdministratorComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    AdministratorComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-administrator',
             template: __webpack_require__(/*! ./administrator.component.html */ "./src/app/pages/administrator/administrator.component.html"),
             styles: [__webpack_require__(/*! ./administrator.component.scss */ "./src/app/pages/administrator/administrator.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], AdministratorComponent);
     return AdministratorComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/basicos/basicos.component.html":
+/*!******************************************************!*\
+  !*** ./src/app/pages/basicos/basicos.component.html ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<button mat-button (click)=\"goBack()\"><mat-icon>chevron_left</mat-icon> Volver</button>\n<h2>Tutoriales en video de todas las tecnologías usadas</h2>\n<div cdkDropList class=\"list\" (cdkDropListDropped)=\"drop($event)\">\n  <mat-card *ngFor=\"let card of cards\" class=\"box\" cdkDrag>\n  \t<mat-card-header>\n  \t  <mat-card-title>{{card.title}}</mat-card-title>\n    </mat-card-header>\n    <mat-card-content>\n\t  <iframe mat-card-image width=\"560\" height=\"315\" [src]='sanitizer.bypassSecurityTrustResourceUrl(card.videoLink)' frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\n    </mat-card-content>\n  </mat-card>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/basicos/basicos.component.scss":
+/*!******************************************************!*\
+  !*** ./src/app/pages/basicos/basicos.component.scss ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".list {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between; }\n  .list mat-card {\n    width: 100%;\n    padding-bottom: 0;\n    background-color: #4527a0;\n    color: #FFF;\n    background-image: linear-gradient(90deg, #4527a0, #3f51b5, #4527a0); }\n  .list mat-card mat-card-header {\n      min-height: 100px; }\n  @media screen and (min-width: 451px) {\n  .list mat-card {\n    width: 40%; } }\n  @media screen and (min-width: 981px) {\n  .list mat-card {\n    width: 30%; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvcGFnZXMvYmFzaWNvcy9iYXNpY29zLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0MsYUFBYTtFQUNiLGVBQWU7RUFDZiw4QkFBOEIsRUFBQTtFQUgvQjtJQUtFLFdBQVc7SUFDWCxpQkFBaUI7SUFDakIseUJBQXdCO0lBQ3hCLFdBQVc7SUFDWCxtRUFBbUUsRUFBQTtFQVRyRTtNQVdHLGlCQUFpQixFQUFBO0VBS3BCO0VBQ0M7SUFDQyxVQUFVLEVBQUEsRUFDVjtFQUdGO0VBQ0M7SUFDQyxVQUFVLEVBQUEsRUFDViIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2Jhc2ljb3MvYmFzaWNvcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5saXN0e1xuXHRkaXNwbGF5OiBmbGV4O1xuXHRmbGV4LXdyYXA6IHdyYXA7XG5cdGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2Vlbjtcblx0bWF0LWNhcmQge1xuXHRcdHdpZHRoOiAxMDAlO1xuXHRcdHBhZGRpbmctYm90dG9tOiAwO1xuXHRcdGJhY2tncm91bmQtY29sb3I6IzQ1MjdhMDtcblx0XHRjb2xvcjogI0ZGRjtcblx0XHRiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQoOTBkZWcsICM0NTI3YTAsICMzZjUxYjUsICM0NTI3YTApO1xuXHRcdG1hdC1jYXJkLWhlYWRlciB7XG5cdFx0XHRtaW4taGVpZ2h0OiAxMDBweDtcblx0XHR9XG5cdH1cbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNDUxcHgpIHtcblx0Lmxpc3QgbWF0LWNhcmQge1xuXHRcdHdpZHRoOiA0MCU7XG5cdH1cbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogOTgxcHgpIHtcblx0Lmxpc3QgbWF0LWNhcmQge1xuXHRcdHdpZHRoOiAzMCU7XG5cdH1cbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/pages/basicos/basicos.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/pages/basicos/basicos.component.ts ***!
+  \****************************************************/
+/*! exports provided: BasicosComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BasicosComponent", function() { return BasicosComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/drag-drop */ "./node_modules/@angular/cdk/esm5/drag-drop.es5.js");
+/* harmony import */ var _data_basic_dev_videos__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../data/basic_dev_videos */ "./src/app/data/basic_dev_videos.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
+
+
+
+
+
+var BasicosComponent = /** @class */ (function () {
+    function BasicosComponent(sanitizer, location) {
+        this.sanitizer = sanitizer;
+        this.location = location;
+        this.cards = _data_basic_dev_videos__WEBPACK_IMPORTED_MODULE_4__["CARDS"];
+    }
+    BasicosComponent.prototype.ngOnInit = function () { };
+    BasicosComponent.prototype.drop = function (event) {
+        Object(_angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_3__["moveItemInArray"])(this.cards, event.previousIndex, event.currentIndex);
+    };
+    BasicosComponent.prototype.goBack = function () {
+        this.location.back();
+    };
+    BasicosComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-basicos',
+            template: __webpack_require__(/*! ./basicos.component.html */ "./src/app/pages/basicos/basicos.component.html"),
+            styles: [__webpack_require__(/*! ./basicos.component.scss */ "./src/app/pages/basicos/basicos.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["DomSanitizer"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_5__["Location"]])
+    ], BasicosComponent);
+    return BasicosComponent;
 }());
 
 
@@ -525,17 +764,10 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FaqComponent", function() { return FaqComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../shared/services/highlight.service */ "./src/app/shared/services/highlight.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../shared/services/highlight.service */ "./src/app/shared/services/highlight.service.ts");
+
 
 
 var FaqComponent = /** @class */ (function () {
@@ -557,13 +789,13 @@ var FaqComponent = /** @class */ (function () {
     FaqComponent.prototype.tabSelectionChanged = function (event) {
         this.highlightService.highlightAll();
     };
-    FaqComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    FaqComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-faq',
             template: __webpack_require__(/*! ./faq.component.html */ "./src/app/pages/faq/faq.component.html"),
             styles: [__webpack_require__(/*! ./faq.component.scss */ "./src/app/pages/faq/faq.component.scss")]
         }),
-        __metadata("design:paramtypes", [_shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__["HighlightService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_2__["HighlightService"]])
     ], FaqComponent);
     return FaqComponent;
 }());
@@ -604,29 +836,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeneralsComponent", function() { return GeneralsComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var GeneralsComponent = /** @class */ (function () {
     function GeneralsComponent() {
     }
     GeneralsComponent.prototype.ngOnInit = function () {
     };
-    GeneralsComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    GeneralsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-generals',
             template: __webpack_require__(/*! ./generals.component.html */ "./src/app/pages/faq/generals/generals.component.html"),
             styles: [__webpack_require__(/*! ./generals.component.scss */ "./src/app/pages/faq/generals/generals.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], GeneralsComponent);
     return GeneralsComponent;
 }());
@@ -667,29 +892,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinuxComponent", function() { return LinuxComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var LinuxComponent = /** @class */ (function () {
     function LinuxComponent() {
     }
     LinuxComponent.prototype.ngOnInit = function () {
     };
-    LinuxComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    LinuxComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-linux',
             template: __webpack_require__(/*! ./linux.component.html */ "./src/app/pages/faq/linux/linux.component.html"),
             styles: [__webpack_require__(/*! ./linux.component.scss */ "./src/app/pages/faq/linux/linux.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], LinuxComponent);
     return LinuxComponent;
 }());
@@ -716,7 +934,7 @@ module.exports = "<h2>\n\tCatalogo de errores\n</h2>\n<mat-accordion>\n  <mat-ex
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".error-code {\n  color: #96a01b;\n  font-weight: bold;\n  padding: 2em;\n  background-color: #edf9fb;\n  border: 1px solid #bfe8ef; }\n  .error-code b {\n    color: #bd3f0a; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvcGFnZXMvZmFxL21hY29zL21hY29zLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0MsZUFBYztFQUNkLGtCQUFpQjtFQUNqQixhQUFZO0VBQ1osMEJBQXlCO0VBQ3pCLDBCQUF5QixFQUl6QjtFQVREO0lBT0UsZUFBYyxFQUNkIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvZmFxL21hY29zL21hY29zLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmVycm9yLWNvZGUge1xuXHRjb2xvcjogIzk2YTAxYjtcblx0Zm9udC13ZWlnaHQ6IGJvbGQ7XG5cdHBhZGRpbmc6IDJlbTtcblx0YmFja2dyb3VuZC1jb2xvcjogI2VkZjlmYjtcblx0Ym9yZGVyOiAxcHggc29saWQgI2JmZThlZjtcblx0YiB7XG5cdFx0Y29sb3I6ICNiZDNmMGE7XG5cdH1cbn0iXX0= */"
+module.exports = ".error-code {\n  color: #96a01b;\n  font-weight: bold;\n  padding: 2em;\n  background-color: #edf9fb;\n  border: 1px solid #bfe8ef; }\n  .error-code b {\n    color: #bd3f0a; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvcGFnZXMvZmFxL21hY29zL21hY29zLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0MsY0FBYztFQUNkLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1oseUJBQXlCO0VBQ3pCLHlCQUF5QixFQUFBO0VBTDFCO0lBT0UsY0FBYyxFQUFBIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvZmFxL21hY29zL21hY29zLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmVycm9yLWNvZGUge1xuXHRjb2xvcjogIzk2YTAxYjtcblx0Zm9udC13ZWlnaHQ6IGJvbGQ7XG5cdHBhZGRpbmc6IDJlbTtcblx0YmFja2dyb3VuZC1jb2xvcjogI2VkZjlmYjtcblx0Ym9yZGVyOiAxcHggc29saWQgI2JmZThlZjtcblx0YiB7XG5cdFx0Y29sb3I6ICNiZDNmMGE7XG5cdH1cbn0iXX0= */"
 
 /***/ }),
 
@@ -730,29 +948,22 @@ module.exports = ".error-code {\n  color: #96a01b;\n  font-weight: bold;\n  padd
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MacosComponent", function() { return MacosComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var MacosComponent = /** @class */ (function () {
     function MacosComponent() {
     }
     MacosComponent.prototype.ngOnInit = function () {
     };
-    MacosComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    MacosComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-macos',
             template: __webpack_require__(/*! ./macos.component.html */ "./src/app/pages/faq/macos/macos.component.html"),
             styles: [__webpack_require__(/*! ./macos.component.scss */ "./src/app/pages/faq/macos/macos.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], MacosComponent);
     return MacosComponent;
 }());
@@ -793,29 +1004,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WindowsComponent", function() { return WindowsComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var WindowsComponent = /** @class */ (function () {
     function WindowsComponent() {
     }
     WindowsComponent.prototype.ngOnInit = function () {
     };
-    WindowsComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    WindowsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-windows',
             template: __webpack_require__(/*! ./windows.component.html */ "./src/app/pages/faq/windows/windows.component.html"),
             styles: [__webpack_require__(/*! ./windows.component.scss */ "./src/app/pages/faq/windows/windows.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], WindowsComponent);
     return WindowsComponent;
 }());
@@ -831,7 +1035,7 @@ var WindowsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <b>Consideración previa:</b> hay que tener en cuenta dos posibilidades, si eres un estudiante eetac cursando un proyecto de final de carrera, deberás pedir acceso al repositorio para poder trabajar en él según el <a routerLink=\"/developer/git\" (click)=\"setTitle( 'Classpip onboarding como trabajar con git en el proyecto' )\">protocolo de trabajo establecido para Git</a> correspondiente a <i>equipo directamente relacionado con el proyecto</i>. En caso contrario, de querer colaborar, se debería hacer según el caso 2 del protocolo <i>aportaciones de personas o equipos ajenos al proyecto</i>. En este último caso, habrá que hacer un 'fork' del repositorio en lugar de un 'clone'.\n</div>"
+module.exports = "<div>\n  <b>Consideración previa:</b> hay que tener en cuenta dos posibilidades, si eres un estudiante eetac cursando un proyecto de final de carrera, deberás pedir acceso al repositorio para poder trabajar en él según el <a routerLink=\"/developer/tutoriales/git\" (click)=\"setTitle( 'Classpip onboarding como trabajar con git en el proyecto' );\">protocolo de trabajo establecido para Git</a> correspondiente a <i>equipo directamente relacionado con el proyecto</i>. En caso contrario, de querer colaborar, se debería hacer según el caso 2 del protocolo <i>aportaciones de personas o equipos ajenos al proyecto</i>. En este último caso, habrá que hacer un 'fork' del repositorio en lugar de un 'clone'.\n</div>"
 
 /***/ }),
 
@@ -842,7 +1046,7 @@ module.exports = "<div>\n  <b>Consideración previa:</b> hay que tener en cuenta
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "div {\n  color: #3c4fbc;\n  background-color: #f0f8ff;\n  border: 1px solid #add8e6;\n  -webkit-margin-before: 1em;\n          margin-block-start: 1em;\n  -webkit-margin-after: 4em;\n          margin-block-end: 4em;\n  -webkit-margin-start: 0px;\n          margin-inline-start: 0px;\n  -webkit-margin-end: 0px;\n          margin-inline-end: 0px;\n  padding: 10px;\n  text-align: justify; }\n  div i {\n    color: #8a1683; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvcGFnZXMvZmlyc3RydW4vY29tbW9uY29uc2lkZXJhdGlvbnMvY29tbW9uY29uc2lkZXJhdGlvbnMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQyxlQUFjO0VBQ2QsMEJBQXlCO0VBQ3pCLDBCQUF5QjtFQUN6QiwyQkFBdUI7VUFBdkIsd0JBQXVCO0VBQ3BCLDBCQUFxQjtVQUFyQixzQkFBcUI7RUFDckIsMEJBQXdCO1VBQXhCLHlCQUF3QjtFQUN4Qix3QkFBc0I7VUFBdEIsdUJBQXNCO0VBQ3RCLGNBQWE7RUFDYixvQkFBbUIsRUFJdEI7RUFiRDtJQVdLLGVBQWMsRUFDZCIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2ZpcnN0cnVuL2NvbW1vbmNvbnNpZGVyYXRpb25zL2NvbW1vbmNvbnNpZGVyYXRpb25zLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiZGl2IHtcblx0Y29sb3I6ICMzYzRmYmM7XG5cdGJhY2tncm91bmQtY29sb3I6ICNmMGY4ZmY7XG5cdGJvcmRlcjogMXB4IHNvbGlkICNhZGQ4ZTY7XG5cdG1hcmdpbi1ibG9jay1zdGFydDogMWVtO1xuICAgIG1hcmdpbi1ibG9jay1lbmQ6IDRlbTtcbiAgICBtYXJnaW4taW5saW5lLXN0YXJ0OiAwcHg7XG4gICAgbWFyZ2luLWlubGluZS1lbmQ6IDBweDtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIHRleHQtYWxpZ246IGp1c3RpZnk7XG4gICAgaSB7XG4gICAgXHRjb2xvcjogIzhhMTY4MztcbiAgICB9XG59XHQiXX0= */"
+module.exports = "div {\n  color: #3c4fbc;\n  background-color: #f0f8ff;\n  border: 1px solid #add8e6;\n  -webkit-margin-before: 1em;\n          margin-block-start: 1em;\n  -webkit-margin-after: 4em;\n          margin-block-end: 4em;\n  -webkit-margin-start: 0px;\n          margin-inline-start: 0px;\n  -webkit-margin-end: 0px;\n          margin-inline-end: 0px;\n  padding: 10px;\n  text-align: justify; }\n  div i {\n    color: #8a1683; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvcGFnZXMvZmlyc3RydW4vY29tbW9uY29uc2lkZXJhdGlvbnMvY29tbW9uY29uc2lkZXJhdGlvbnMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQyxjQUFjO0VBQ2QseUJBQXlCO0VBQ3pCLHlCQUF5QjtFQUN6QiwwQkFBdUI7VUFBdkIsdUJBQXVCO0VBQ3BCLHlCQUFxQjtVQUFyQixxQkFBcUI7RUFDckIseUJBQXdCO1VBQXhCLHdCQUF3QjtFQUN4Qix1QkFBc0I7VUFBdEIsc0JBQXNCO0VBQ3RCLGFBQWE7RUFDYixtQkFBbUIsRUFBQTtFQVR2QjtJQVdLLGNBQWMsRUFBQSIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2ZpcnN0cnVuL2NvbW1vbmNvbnNpZGVyYXRpb25zL2NvbW1vbmNvbnNpZGVyYXRpb25zLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiZGl2IHtcblx0Y29sb3I6ICMzYzRmYmM7XG5cdGJhY2tncm91bmQtY29sb3I6ICNmMGY4ZmY7XG5cdGJvcmRlcjogMXB4IHNvbGlkICNhZGQ4ZTY7XG5cdG1hcmdpbi1ibG9jay1zdGFydDogMWVtO1xuICAgIG1hcmdpbi1ibG9jay1lbmQ6IDRlbTtcbiAgICBtYXJnaW4taW5saW5lLXN0YXJ0OiAwcHg7XG4gICAgbWFyZ2luLWlubGluZS1lbmQ6IDBweDtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIHRleHQtYWxpZ246IGp1c3RpZnk7XG4gICAgaSB7XG4gICAgXHRjb2xvcjogIzhhMTY4MztcbiAgICB9XG59XHQiXX0= */"
 
 /***/ }),
 
@@ -856,17 +1060,10 @@ module.exports = "div {\n  color: #3c4fbc;\n  background-color: #f0f8ff;\n  bord
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CommonconsiderationsComponent", function() { return CommonconsiderationsComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+
 
 
 var CommonconsiderationsComponent = /** @class */ (function () {
@@ -878,13 +1075,13 @@ var CommonconsiderationsComponent = /** @class */ (function () {
     CommonconsiderationsComponent.prototype.setTitle = function (newTitle) {
         this.titleService.setTitle(newTitle);
     };
-    CommonconsiderationsComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    CommonconsiderationsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-commonconsiderations',
             template: __webpack_require__(/*! ./commonconsiderations.component.html */ "./src/app/pages/firstrun/commonconsiderations/commonconsiderations.component.html"),
             styles: [__webpack_require__(/*! ./commonconsiderations.component.scss */ "./src/app/pages/firstrun/commonconsiderations/commonconsiderations.component.scss")]
         }),
-        __metadata("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["Title"]])
     ], CommonconsiderationsComponent);
     return CommonconsiderationsComponent;
 }());
@@ -925,17 +1122,10 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FirstrunComponent", function() { return FirstrunComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../shared/services/highlight.service */ "./src/app/shared/services/highlight.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../shared/services/highlight.service */ "./src/app/shared/services/highlight.service.ts");
+
 
 
 var FirstrunComponent = /** @class */ (function () {
@@ -957,13 +1147,13 @@ var FirstrunComponent = /** @class */ (function () {
     FirstrunComponent.prototype.tabSelectionChanged = function (event) {
         this.highlightService.highlightAll();
     };
-    FirstrunComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    FirstrunComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-firstrun',
             template: __webpack_require__(/*! ./firstrun.component.html */ "./src/app/pages/firstrun/firstrun.component.html"),
             styles: [__webpack_require__(/*! ./firstrun.component.scss */ "./src/app/pages/firstrun/firstrun.component.scss")]
         }),
-        __metadata("design:paramtypes", [_shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__["HighlightService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_2__["HighlightService"]])
     ], FirstrunComponent);
     return FirstrunComponent;
 }());
@@ -1004,29 +1194,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InitdashboardComponent", function() { return InitdashboardComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var InitdashboardComponent = /** @class */ (function () {
     function InitdashboardComponent() {
     }
     InitdashboardComponent.prototype.ngOnInit = function () {
     };
-    InitdashboardComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    InitdashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-initdashboard',
             template: __webpack_require__(/*! ./initdashboard.component.html */ "./src/app/pages/firstrun/initdashboard/initdashboard.component.html"),
             styles: [__webpack_require__(/*! ./initdashboard.component.scss */ "./src/app/pages/firstrun/initdashboard/initdashboard.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], InitdashboardComponent);
     return InitdashboardComponent;
 }());
@@ -1067,29 +1250,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InitmobileComponent", function() { return InitmobileComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var InitmobileComponent = /** @class */ (function () {
     function InitmobileComponent() {
     }
     InitmobileComponent.prototype.ngOnInit = function () {
     };
-    InitmobileComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    InitmobileComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-initmobile',
             template: __webpack_require__(/*! ./initmobile.component.html */ "./src/app/pages/firstrun/initmobile/initmobile.component.html"),
             styles: [__webpack_require__(/*! ./initmobile.component.scss */ "./src/app/pages/firstrun/initmobile/initmobile.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], InitmobileComponent);
     return InitmobileComponent;
 }());
@@ -1130,29 +1306,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InitonboardingComponent", function() { return InitonboardingComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var InitonboardingComponent = /** @class */ (function () {
     function InitonboardingComponent() {
     }
     InitonboardingComponent.prototype.ngOnInit = function () {
     };
-    InitonboardingComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    InitonboardingComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-initonboarding',
             template: __webpack_require__(/*! ./initonboarding.component.html */ "./src/app/pages/firstrun/initonboarding/initonboarding.component.html"),
             styles: [__webpack_require__(/*! ./initonboarding.component.scss */ "./src/app/pages/firstrun/initonboarding/initonboarding.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], InitonboardingComponent);
     return InitonboardingComponent;
 }());
@@ -1193,29 +1362,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InitservicesComponent", function() { return InitservicesComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var InitservicesComponent = /** @class */ (function () {
     function InitservicesComponent() {
     }
     InitservicesComponent.prototype.ngOnInit = function () {
     };
-    InitservicesComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    InitservicesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-initservices',
             template: __webpack_require__(/*! ./initservices.component.html */ "./src/app/pages/firstrun/initservices/initservices.component.html"),
             styles: [__webpack_require__(/*! ./initservices.component.scss */ "./src/app/pages/firstrun/initservices/initservices.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], InitservicesComponent);
     return InitservicesComponent;
 }());
@@ -1231,7 +1393,7 @@ var InitservicesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section>\n\t<h2>Introducción a Git</h2>\n\t<p>\n\t\tGit es un sistema de control de versiones distribuido. Git es multiplataforma, por lo que se puede usar sin restricciones en los sistemas operativos más comunes, como son Windows, Linux o MacOS.\n\t</p>\n\t<p>\n\t\tGracias a Git se van guardando los cambios que se realizan en los diversos archivos del proyecto, pudiendo ir atrás o adelante en ellos luego con unos simples comandos. Algunas de las funciones más útiles de Git son:\n\t</p>\n\t<ul>\n\t\t<li>Poder comparar el código de un archivo con sus versiones anteriores, para ver los cambios realizados en este.</li>\n\t\t<li>Restaurar versiones anteriores de un archivo.</li>\n\t\t<li>Unir los cambios en un archivo con los cambios realizados por otra persona.</li>\n\t\t<li>Dividir el proyecto en ramas, para que los cambios realizados en una de las ramas no afecte al resto.</li>\n\t\t<li>Subir los cambios realizados a un repositorio remoto para que estén disponibles para el resto del equipo.</li>\n\t</ul>\n\t<p>\n\t\tPara el proyecto de Classpip se ha utilizado Github, que es un servicio de alojamiento de repositorios gestionados con Git.\n\t</p>\n\t<p>\n\t\tSi no se esta familiarizado con Git, hay varios recursos con los que aprender Git de forma fácil y practica:\n\t</p>\n\t<ul class=\"repositorios-list\">\n\t\t<li><a href=\"https://www.codecademy.com/learn/learn-git\">Tutorial básico</a></li>\n\t\t<li><a href=\"https://www.katacoda.com/courses/git\">Tutorial intermedio</a></li>\n\t\t<li><a href=\"https://learngitbranching.js.org\">Tutorial para aprender a trabajar con ramas</a></li>\n\t</ul>\n\t<p>\n\t\tHay bastantes cosas que aprender en Git, pero para manejarse bien en el proyecto, es importante familiarizarse con los conceptos de:\n\t</p>\n\t<ul>\n\t\t<li>Añadir y commitear cambios (git add y git commit).</li>\n\t\t<li>Moverse entre versiones (git checkout).</li>\n\t\t<li>El concepto de rama, poder verlas, crearlas y cambiar entre ellas (git branch, git checkout).</li>\n\t\t<li>Fusionar los cambios realizados en una rama con otra (git merge).</li>\n\t</ul>\n</section>\n<section>\n\t<h2>Los repositorios de Classpip</h2>\n\t<p>\n\t\tLos repositorios de Classpip se encuentran en Github.com, sus enlaces son los siguientes:\n\t</p>\n\t<ul class=\"repositorios-list\">\n\t\t<li><a href=\"https://github.com/alejandromartincruz/classpip-services\">Repositorio de Classpip services</a></li>\n\t\t<li><a href=\"https://github.com/alejandromartincruz/classpip-dashboard\">Repositorio de Classpip dashboard</a></li>\n\t\t<li><a href=\"https://github.com/alejandromartincruz/classpip-mobile\">Repositorio de Classpip mobile</a></li>\n\t\t<li><a href=\"https://github.com/alejandromartincruz/classpip-onboarding\">Repositorio de Classpip onboarding</a></li>\n\t</ul>\n</section>\n<section>\n\t<h2>Primeros pasos con reporitorio Classpip</h2>\n\t<p>\n\t\tPara comenzar a trabajar con uno de los proyectos, es suficiente con clonar el proyecto en nuestro equipo. Para ello bastará con abrir el terminal, ir a la carpeta donde se quieran tener los proyectos y utilizar el siguiente comando:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit clone &lt;url-del-repositorio&gt;\n\nejemplo: git clone https://github.com/alejandromartincruz/classpip-mobile.git\"}}\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tuna vez que se ha clonado el proyecto en el equipo, se entra en su carpeta correspondiente, y desde allí se puede ver el estado (git status), las ramas del proyecto (git branch) y sus versiones (git tag). Al estar recién bajado el estado mostrará que no hay cambios, y solo mostrará la rama master.\n\t</p>\n\t<p>\n\t\tLos repositorios tienen la rama master, la dev, la test y la tutorial. Para obtener una rama del repositorio es tan sencillo como utilizar los siguientes comandos:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit fetch origin &lt;nombre-rama&gt;\ngit checkout &lt;nombre-rama&gt;\n\nejemplo: git fetch origin tutorial\ngit checkout tutorial\"}}\n\t</code>\n\t</pre>\n\t<p>\n\t\tDespués de esto, todo el código del proyecto cambiará para mostrar el código que hay en la rama tutorial. Donde se verán los archivos añadidos en el tutorial de desarrollo para classpip.\n\t</p>\n\t<p>\n\t\tCuando se cambie de una versión a otra dentro del repositorio, es bastante probable que los módulos de node instalados hayan cambiado de versión, no se hayan instalado en esa versión, o se hayan instalado módulos nuevos que no estaban en la versión previa. Por ello, es recomendable borrar la carpeta node_modules y volver a realizar la instalación de módulos:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\nrm –rf node_modules\nnpm install\"}}\n\t</code>\n\t</pre>\t\n</section>\n<section>\n\t<h2>Protocolo para trabajo en  grupo en Git</h2>\n\t<p>\n\t\tLa utilización de un programa de control de versiones, como git en este caso, supone un gran avance a la hora de realizar trabajo en equipo en cualquier software.\n\t</p>\n\t<p>Es conveniente marcar unas pautas de trabajo en equipo para facilitar la coordinación de grupos de trabajo en el mismo proyecto, agilizando de esta manera el trabajo de diversas características o módulos, y su posterior integración en el proyecto.\n\t</p>\n\t<p>\n\t\tSe parte de la premisa de que actualmente hay dos ramas, la <b>master</b> y la <b>dev</b>. Teniendo esto en cuenta, cada proyecto nuevo comenzará con una nueva rama que surgirá de la versión actual de master. El objetivo es tener las ramas master y dev sin diferencias entre ellas para poder comenzar a trabajar óptimamente, y una rama donde se realizará el proyecto que será idéntica a master en el momento de comenzarlo. Cada proyecto tendrá un nombre único e identificativo para su rama. A partir de ahora ya se puede considerar:\n\t</p>\n\t<ul>\n\t\t<li>La rama master como la rama de producción, es decir, la que se verá públicamente y utilizarán los usuarios.</li>\n\t\t<li>La rama dev como la rama de preproducción, una rama que será idéntica a la de producción para probar los desarrollos antes de que sean publicados en producción.</li>\n\t\t<li>La rama propia de cada proyecto como la rama donde cada estudiante o grupo de estudiantes irá integrando los diversos desarrollos de su proyecto.</li>\n\t</ul>\n\t<p>\n\t\tAdemás se tomarán en cuenta dos situaciones diferentes, el trabajo del equipo envuelto en el proyecto directamente, y el trabajo por parte de personas o equipos ajenos al proyecto pero que quieran participar.\n\t</p>\n</section>\n<section>\n\t<h2>Caso 1, trabajo en el equipo directamente relacionado con el proyecto:</h2>\n\t<p>\n\t\tLo primero es fijar un tiempo de desarrollo, unas funcionalidades a desarrollar o ambas cosas simultáneamente siguiendo una metodología scrum. Una vez pasado el tiempo fijado, se publicarán los desarrollos que se hayan realizado correctamente durante ese periodo de tiempo. O en el caso de haber fijado funcionalidades en lugar de tiempo, se publicarán las funcionalidades una vez acabadas. La elección de un método u otro deberá ser elegida por el equipo de trabajo.\n\t</p>\n\t<p>\n\t\tEl siguiente paso es clonar el proyecto, y prepararlo con las ramas <b>master</b> y <b>test</b>. Cuando ya están las dos ramas listas, tan solo falta crear una nueva rama para el proyecto. <u>Es importante estar situado en la rama master cuando se crea una rama nueva para que esta surja de master</u>. La creación de esta rama se hace mediante el comando:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit checkout master\ngit checkout –b &lt;nombre-nueva-rama&gt;\"}}\n\t</code>\n\t</pre>\n\t<p>\n\t\tUna vez que se tiene preparado el entorno de trabajo con las tres ramas en la misma situación, se podrá comenzar una metodología de trabajo en equipo que facilite la coordinación entre los miembros del equipo, que asegure el correcto testeo de los trabajos individuales de cada uno.\n\t</p>\n\t<p>\n\t\tPara comenzar un nuevo desarrollo se deberá crear una nueva rama a partir de la rama master, que llamaremos a modo de ejemplo desarrollo_1. Con el comando:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit checkout master\ngit checkout –b desarrollo_1\"}}\n\t</code>\n\t</pre>\n\t<p>\n\t\tEn este momento la rama desarrollo_1 es exactamente igual que la rama master, dev y la del proyecto. Y aquí es donde se comienza a desarrollar la nueva funcionalidad que se quiera añadir al proyecto.\n\t</p>\n\t<p>\n\t\tNo se debería hacer ningún commit hasta que este nuevo desarrollo no este finalizado y funcionando. Si se realizan muchos commits, en el caso de tener que realizar una revisión del trabajo para encontrar un bug o para mejorar algo, habrá que revisar los cambios realizados en cada uno de los commits individualmente, lo que dificulta bastante la revisión. Tener todo el trabajo realizado en un solo commit facilitará la posterior revisión de los cambios realizados, al tenerlos todos juntos. \n\t</p>\n\t<p>\n\t\tUna vez finalizado el nuevo desarrollo, se realizará un merge contra la rama del proyecto. Y se realizarán las pruebas para comprobar el correcto funcionamiento del proyecto.\n\t</p>\n\t<p>\n\t\tPara realizar el merge sobre la rama del proyecto (llamada a partir de ahora <b>proyecto</b> a modo de ejemplo), se hará de la siguiente manera:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit checkout proyecto\ngit pull origin proyecto\nmerge --no-ff --no-commit desarrollo_1\ngit commit -m “[proyecto] merge with desarrollo_1”\"}}\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tHay que destacar, que antes de realizar el merge, es importante hacer un pull como se indica en el paso 2, en el que se descargarían todos los posibles cambios a la rama realizados por otro miembro del grupo, y con lo que se realizaría el merge sobre una rama actualizada.\n\t</p>\n\t<p>\n\t\tCuando el desarrollo esta correctamente finalizado, y funciona bien en proyecto, se realiza un merge sobre dev. El proceso de merge en dev es el mismo que en proyecto:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit checkout dev\ngit pull origin dev\nmerge --no-ff --no-commit desarrollo_1\ngit commit -m “[dev] merge with desarrollo_1”\"}}\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tEn caso de haber un conflicto entre los pasos 3 y 4, este no quedará commiteado gracias al flag “--no-commit”, entonces bastará con solucionar el conflicto, añadir los cambios con un “git add” y commitear según el paso 4:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\nSolucionar conflicto\ngit add –A\ngit commit –m “[dev] merge with desarrollo_1”\"}}\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tEl flag “--no-ff” se utiliza para evitar que se realice un fast-forward que nos hará perder información del histórico de ramas. En la siguiente imagen se puede apreciar la diferencia entre realizar un commit con el flag y sin el flag.\n\t\t<img src=\"../../assets/img/git/gitmerge--no-ff.png\" style=\"display:block;max-width:100%;margin: 15px auto 10px;\">\n\t\t<span style=\"display:block;text-align:center;\">Ilustración 1: <a href=\"https://nvie.com/posts/a-successful-git-branching-model/\" target=\"_blank\">fuente</a></span>\n\t</p>\n\t<p>\n\t\tSi todos los desarrollos mergeados en la rama dev funcionan correctamente, una vez finalizado el tiempo de desarrollo, o todos los desarrollos que se quieran publicar, se realiza un merge contra la rama master, arrastrando todos los cambios mergeados contra la rama dev a la rama master. Una vez realizado este merge se tiene una nueva versión funcional del proyecto, por lo que se procederá a etiquetar dicha versión según el procedimiento habitual.\n\t</p>\n\t<p>\n\t\tEl procedimiento habitual de etiquetado es: <b>x.y.z</b>, donde:\n\t</p>\n\t<ul>\n\t\t<li><b>X</b> es la versión mayor, se usa cuando hay un cambio importante en fucionalidad.</li>\n\t\t<li><b>Y</b> es la versión menor, se usa para añadidos de funcionalidades que no suponen cambios muy grandes.</li>\n\t\t<li><b>Z</b> se usa para pequeñas correcciones de errores.</li>\n\t</ul>\n\t<p>\n\t\tPor lo que una primera versión podría considerarse como v0.1.0, y tras añadir una funcionalidad pasaría a ser la v0.2.0, después de hacer cambios importantes en la aplicación como para considerar que ya esta lista pasaríamos a denominarla con la etiqueta v1.0.0, y en el caso de que esta versión tuviera un bug que requiriera de un fix la nueva versión sería la v1.0.1. Poner un tag en la rama activa es tan fácil como usar el comando:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit tag v0.1.0\"}}\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tSi algo funcionara mal en la nueva versión, sería muy fácil revertir los cambios a la versión anterior que fue etiquetada y que se sabe que funcionaba bien. Se puede revertir a un estado anterior usando los tags en lugar de los commits, el comando para realizar este cambio:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit checkout v0.1.0\"}}\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tUsando el comando “git tag” se muestra un listado de versiones por etiqueta, que si se ha seguido el protocolo de numeración correctamente será fácil determinar cual es la versión previa a la actual.\n\t\t<img src=\"../../assets/img/git/protocolo-git.png\" style=\"display:block;max-width:100%;margin: 15px auto 10px;\">\n\t\t<span style=\"display:block;text-align:center;\">Ilustración 2: ejemplo de linea de trabajo</span>\n\t</p>\n</section>\n<section>\n\t<h2>Caso 2, aportaciones de personas o equipos ajenos al proyecto</h2>\n\t<p>\n\t\tEs de sobras conocido que un proyecto open source acaba siendo tan potente como la comunidad de desarrolladores que tiene detrás. Siendo las colaboraciones de estos tan o más importantes como los del equipo de trabajo directamente implicado. Es por ello que cabe plantear un método de trabajo para publicar en el proyecto las aportaciones de terceros.\n\t</p>\n\t<p>\n\t\tEn este caso los desarrolladores necesitaran crear un fork del repositorio original, pasando a tener su propio repositorio y su propio remoto. La forma de trabajar debe ser similar a la del caso 1, con la excepción de que para publicar algo deberán hacer un pull request.\n\t</p>\n\t<p>\n\t\tPara hacer el pull request hay que ir al repositorio original desde el que se realizó el fork, y presionar el botón “New pull request”.\n\t\t<img src=\"../../assets/img/git/img1.png\" style=\"display:block;max-width:100%;margin: 15px auto 10px;\">\n\t</p>\n\t<p>\n\t\tEn este punto, se muestra una pagina con el titulo “Compare changes”, en esta pagina hay que pulsar sobre el enlace “compare across forks”.\n\t\t<img src=\"../../assets/img/git/img2.png\" style=\"display:block;max-width:100%;margin: 15px auto 10px;\">\n\t</p>\n\t<p>\n\t\tA continuación hay que seleccionar como “base fork” la rama dev del repositorio original, y como “head fork” la rama dev del repositorio del colaborador. Además habrá que escribir un titulo y una descripción para facilitar la comprensión de los cambios en el código a quien deba aprobar el pull request. Y ya se podrá presionar la solicitud de pull request.\n\t\t<img src=\"../../assets/img/git/img3.png\" style=\"display:block;max-width:100%;margin: 15px auto 10px;\">\n\t</p>\n\t<p>\n\t\tAhora un miembro del equipo con acceso al repositorio original podrá aprobar, rechazar o solicitar una revisión en el pull request.\n\t</p>\n\t<p>\n\t\tEl miembro del equipo, con permisos de escritura en el repositorio, deberá ir a la pestaña “pull requests” que aparecerá ahora en el proyecto, seleccionar el pull request que se quiera integrar en el proyecto, y una vez revisado el código, para aceptarlo solo tendrá que seleccionar “aprove” y luego presionar el botón “Submit review”.\n\t</p>\n\t<p>\n\t\tLas otras dos opciones que hay para seleccionar en un pull request son “Comment”, donde el revisor puede poner un comentario sobre el pull request sin tener que aprobarlo.\n\t</p>\n\t<p>\n\t\tY “Request changes”, donde se solicita que se realicen cambios en el código que se quiere mergear al repositorio.\n\t</p>\n</section>\n<section>\n\t<h2>Consejo tutorial de desarrollo modulo de mesa</h2>\n\t<p>\n\t\tPara seguir el <a routerLink=\"/developer/tutorial\">tutorial de desarrollo</a> en el que se realiza un modulo de mesa de estudiante, es importante tener en cuenta que hay que situarse en el tag v0.1.0 antes de comenzar a intentar desarrollar el modulo del tutorial. Pues el código del tutorial parte de ese punto, y si se iniciara el desarrollo en otro punto el código seria diferente y podría inducir a errores o confusiones.\n\t</p>\n\t<p>\n\t\tSi en algún momento se quiere comparar el código que se esta realizando con el código del tutorial, existen dos opciones. La primera es ir al repositorio de github del proyecto y una vez ahí situarse en la rama tutorial y buscar el archivo que se quiere comparar.\n\t</p>\n\t<p>\n\t\tEl segundo método se pude ejecutar directamente desde la línea de comandos, y como resultado mostrará las diferencias entre el archivo que se esta editando y el archivo del tutorial. De esta manera se puede ver claramente que es exactamente lo que falta para realizar los pasos indicados en el tutorial. Para ello, se debe utilizar el comando 'git diff' de la siguiente manera:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit diff master..tutorial -- myfile.ts\"}}\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tEste comando supone que se esta realizando el tutorial desde la rama master, de estar realizándose desde una rama personalizada iniciada en master en el punto v0.1.0 habrá que usar el nombre de esa rama en lugar de master. En lugar de myfile.ts hay que poner el nombre del archivo que se quiere comparar.\n\t</p>\n</section>"
+module.exports = "<button mat-button (click)=\"goBack()\"><mat-icon>chevron_left</mat-icon> Volver</button>\n<section>\n\t<h2>Introducción a Git</h2>\n\t<p>\n\t\tGit es un sistema de control de versiones distribuido. Git es multiplataforma, por lo que se puede usar sin restricciones en los sistemas operativos más comunes, como son Windows, Linux o MacOS.\n\t</p>\n\t<p>\n\t\tGracias a Git se van guardando los cambios que se realizan en los diversos archivos del proyecto, pudiendo ir atrás o adelante en ellos luego con unos simples comandos. Algunas de las funciones más útiles de Git son:\n\t</p>\n\t<ul>\n\t\t<li>Poder comparar el código de un archivo con sus versiones anteriores, para ver los cambios realizados en este.</li>\n\t\t<li>Restaurar versiones anteriores de un archivo.</li>\n\t\t<li>Unir los cambios en un archivo con los cambios realizados por otra persona.</li>\n\t\t<li>Dividir el proyecto en ramas, para que los cambios realizados en una de las ramas no afecte al resto.</li>\n\t\t<li>Subir los cambios realizados a un repositorio remoto para que estén disponibles para el resto del equipo.</li>\n\t</ul>\n\t<p>\n\t\tPara el proyecto de Classpip se ha utilizado Github, que es un servicio de alojamiento de repositorios gestionados con Git.\n\t</p>\n\t<p>\n\t\tSi no se esta familiarizado con Git, hay varios recursos con los que aprender Git de forma fácil y practica:\n\t</p>\n\t<ul class=\"repositorios-list\">\n\t\t<li><a href=\"https://www.codecademy.com/learn/learn-git\" target=\"_blank\">Tutorial básico</a></li>\n\t\t<li><a href=\"https://www.katacoda.com/courses/git\" target=\"_blank\">Tutorial intermedio</a></li>\n\t\t<li><a href=\"https://learngitbranching.js.org\" target=\"_blank\">Tutorial para aprender a trabajar con ramas</a></li>\n\t</ul>\n\t<p>\n\t\tHay bastantes cosas que aprender en Git, pero para manejarse bien en el proyecto, es importante familiarizarse con los conceptos de:\n\t</p>\n\t<ul>\n\t\t<li>Añadir y commitear cambios (git add y git commit).</li>\n\t\t<li>Moverse entre versiones (git checkout).</li>\n\t\t<li>El concepto de rama, poder verlas, crearlas y cambiar entre ellas (git branch, git checkout).</li>\n\t\t<li>Fusionar los cambios realizados en una rama con otra (git merge).</li>\n\t</ul>\n</section>\n<section>\n\t<h2>Los repositorios de Classpip</h2>\n\t<p>\n\t\tLos repositorios de Classpip se encuentran en Github.com, sus enlaces son los siguientes:\n\t</p>\n\t<ul class=\"repositorios-list\">\n\t\t<li><a href=\"https://github.com/alejandromartincruz/classpip-services\" target=\"_blank\">Repositorio de Classpip services</a></li>\n\t\t<li><a href=\"https://github.com/alejandromartincruz/classpip-dashboard\" target=\"_blank\">Repositorio de Classpip dashboard</a></li>\n\t\t<li><a href=\"https://github.com/alejandromartincruz/classpip-mobile\" target=\"_blank\">Repositorio de Classpip mobile</a></li>\n\t\t<li><a href=\"https://github.com/alejandromartincruz/classpip-onboarding\" target=\"_blank\">Repositorio de Classpip onboarding</a></li>\n\t</ul>\n</section>\n<section>\n\t<h2>Primeros pasos con reporitorio Classpip</h2>\n\t<p>\n\t\tPara comenzar a trabajar con uno de los proyectos, es suficiente con clonar el proyecto en nuestro equipo. Para ello bastará con abrir el terminal, ir a la carpeta donde se quieran tener los proyectos y utilizar el siguiente comando:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit clone &lt;url-del-repositorio&gt;\n\nejemplo: git clone https://github.com/alejandromartincruz/classpip-mobile.git\"}}\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tuna vez que se ha clonado el proyecto en el equipo, se entra en su carpeta correspondiente, y desde allí se puede ver el estado (git status), las ramas del proyecto (git branch) y sus versiones (git tag). Al estar recién bajado el estado mostrará que no hay cambios, y solo mostrará la rama master.\n\t</p>\n\t<p>\n\t\tLos repositorios tienen la rama master, la dev, la test y la tutorial. Para obtener una rama del repositorio es tan sencillo como utilizar los siguientes comandos:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit fetch origin &lt;nombre-rama&gt;\ngit checkout &lt;nombre-rama&gt;\n\nejemplo: git fetch origin tutorial\ngit checkout tutorial\"}}\n\t</code>\n\t</pre>\n\t<p>\n\t\tDespués de esto, todo el código del proyecto cambiará para mostrar el código que hay en la rama tutorial. Donde se verán los archivos añadidos en el tutorial de desarrollo para classpip.\n\t</p>\n\t<p>\n\t\tCuando se cambie de una versión a otra dentro del repositorio, es bastante probable que los módulos de node instalados hayan cambiado de versión, no se hayan instalado en esa versión, o se hayan instalado módulos nuevos que no estaban en la versión previa. Por ello, es recomendable borrar la carpeta node_modules y volver a realizar la instalación de módulos:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\nrm –rf node_modules\nnpm install\"}}\n\t</code>\n\t</pre>\t\n</section>\n<section>\n\t<h2>Protocolo para trabajo en  grupo en Git</h2>\n\t<p>\n\t\tLa utilización de un programa de control de versiones, como git en este caso, supone un gran avance a la hora de realizar trabajo en equipo en cualquier software.\n\t</p>\n\t<p>Es conveniente marcar unas pautas de trabajo en equipo para facilitar la coordinación de grupos de trabajo en el mismo proyecto, agilizando de esta manera el trabajo de diversas características o módulos, y su posterior integración en el proyecto.\n\t</p>\n\t<p>\n\t\tSe parte de la premisa de que actualmente hay dos ramas, la <b>master</b> y la <b>dev</b>. Teniendo esto en cuenta, cada proyecto nuevo comenzará con una nueva rama que surgirá de la versión actual de master. El objetivo es tener las ramas master y dev sin diferencias entre ellas para poder comenzar a trabajar óptimamente, y una rama donde se realizará el proyecto que será idéntica a master en el momento de comenzarlo. Cada proyecto tendrá un nombre único e identificativo para su rama. A partir de ahora ya se puede considerar:\n\t</p>\n\t<ul>\n\t\t<li>La rama master como la rama de producción, es decir, la que se verá públicamente y utilizarán los usuarios.</li>\n\t\t<li>La rama dev como la rama de preproducción, una rama que será idéntica a la de producción para probar los desarrollos antes de que sean publicados en producción.</li>\n\t\t<li>La rama propia de cada proyecto como la rama donde cada estudiante o grupo de estudiantes irá integrando los diversos desarrollos de su proyecto.</li>\n\t</ul>\n\t<p>\n\t\tAdemás se tomarán en cuenta dos situaciones diferentes, el trabajo del equipo envuelto en el proyecto directamente, y el trabajo por parte de personas o equipos ajenos al proyecto pero que quieran participar.\n\t</p>\n</section>\n<section>\n\t<h2>Caso 1, trabajo en el equipo directamente relacionado con el proyecto:</h2>\n\t<p>\n\t\tLo primero es fijar un tiempo de desarrollo, unas funcionalidades a desarrollar o ambas cosas simultáneamente siguiendo una metodología scrum. Una vez pasado el tiempo fijado, se publicarán los desarrollos que se hayan realizado correctamente durante ese periodo de tiempo. O en el caso de haber fijado funcionalidades en lugar de tiempo, se publicarán las funcionalidades una vez acabadas. La elección de un método u otro deberá ser elegida por el equipo de trabajo.\n\t</p>\n\t<p>\n\t\tEl siguiente paso es clonar el proyecto, y prepararlo con las ramas <b>master</b> y <b>test</b>. Cuando ya están las dos ramas listas, tan solo falta crear una nueva rama para el proyecto. <u>Es importante estar situado en la rama master cuando se crea una rama nueva para que esta surja de master</u>. La creación de esta rama se hace mediante el comando:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit checkout master\ngit checkout –b &lt;nombre-nueva-rama&gt;\"}}\n\t</code>\n\t</pre>\n\t<p>\n\t\tUna vez que se tiene preparado el entorno de trabajo con las tres ramas en la misma situación, se podrá comenzar una metodología de trabajo en equipo que facilite la coordinación entre los miembros del equipo, que asegure el correcto testeo de los trabajos individuales de cada uno.\n\t</p>\n\t<p>\n\t\tPara comenzar un nuevo desarrollo se deberá crear una nueva rama a partir de la rama master, que llamaremos a modo de ejemplo desarrollo_1. Con el comando:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit checkout master\ngit checkout –b desarrollo_1\"}}\n\t</code>\n\t</pre>\n\t<p>\n\t\tEn este momento la rama desarrollo_1 es exactamente igual que la rama master, dev y la del proyecto. Y aquí es donde se comienza a desarrollar la nueva funcionalidad que se quiera añadir al proyecto.\n\t</p>\n\t<p>\n\t\tNo se debería hacer ningún commit hasta que este nuevo desarrollo no este finalizado y funcionando. Si se realizan muchos commits, en el caso de tener que realizar una revisión del trabajo para encontrar un bug o para mejorar algo, habrá que revisar los cambios realizados en cada uno de los commits individualmente, lo que dificulta bastante la revisión. Tener todo el trabajo realizado en un solo commit facilitará la posterior revisión de los cambios realizados, al tenerlos todos juntos. \n\t</p>\n\t<p>\n\t\tUna vez finalizado el nuevo desarrollo, se realizará un merge contra la rama del proyecto. Y se realizarán las pruebas para comprobar el correcto funcionamiento del proyecto.\n\t</p>\n\t<p>\n\t\tPara realizar el merge sobre la rama del proyecto (llamada a partir de ahora <b>proyecto</b> a modo de ejemplo), se hará de la siguiente manera:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit checkout proyecto\ngit pull origin proyecto\nmerge --no-ff --no-commit desarrollo_1\ngit commit -m “[proyecto] merge with desarrollo_1”\"}}\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tHay que destacar, que antes de realizar el merge, es importante hacer un pull como se indica en el paso 2, en el que se descargarían todos los posibles cambios a la rama realizados por otro miembro del grupo, y con lo que se realizaría el merge sobre una rama actualizada.\n\t</p>\n\t<p>\n\t\tCuando el desarrollo esta correctamente finalizado, y funciona bien en proyecto, se realiza un merge sobre dev. El proceso de merge en dev es el mismo que en proyecto:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit checkout dev\ngit pull origin dev\nmerge --no-ff --no-commit desarrollo_1\ngit commit -m “[dev] merge with desarrollo_1”\"}}\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tEn caso de haber un conflicto entre los pasos 3 y 4, este no quedará commiteado gracias al flag “--no-commit”, entonces bastará con solucionar el conflicto, añadir los cambios con un “git add” y commitear según el paso 4:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\nSolucionar conflicto\ngit add –A\ngit commit –m “[dev] merge with desarrollo_1”\"}}\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tEl flag “--no-ff” se utiliza para evitar que se realice un fast-forward que nos hará perder información del histórico de ramas. En la siguiente imagen se puede apreciar la diferencia entre realizar un commit con el flag y sin el flag.\n\t\t<img src=\"../../assets/img/git/gitmerge--no-ff.png\" style=\"display:block;max-width:100%;margin: 15px auto 10px;\">\n\t\t<span style=\"display:block;text-align:center;\">Ilustración 1: <a href=\"https://nvie.com/posts/a-successful-git-branching-model/\" target=\"_blank\">fuente</a></span>\n\t</p>\n\t<p>\n\t\tSi todos los desarrollos mergeados en la rama dev funcionan correctamente, una vez finalizado el tiempo de desarrollo, o todos los desarrollos que se quieran publicar, se realiza un merge contra la rama master, arrastrando todos los cambios mergeados contra la rama dev a la rama master. Una vez realizado este merge se tiene una nueva versión funcional del proyecto, por lo que se procederá a etiquetar dicha versión según el procedimiento habitual.\n\t</p>\n\t<p>\n\t\tEl procedimiento habitual de etiquetado es: <b>x.y.z</b>, donde:\n\t</p>\n\t<ul>\n\t\t<li><b>X</b> es la versión mayor, se usa cuando hay un cambio importante en fucionalidad.</li>\n\t\t<li><b>Y</b> es la versión menor, se usa para añadidos de funcionalidades que no suponen cambios muy grandes.</li>\n\t\t<li><b>Z</b> se usa para pequeñas correcciones de errores.</li>\n\t</ul>\n\t<p>\n\t\tPor lo que una primera versión podría considerarse como v0.1.0, y tras añadir una funcionalidad pasaría a ser la v0.2.0, después de hacer cambios importantes en la aplicación como para considerar que ya esta lista pasaríamos a denominarla con la etiqueta v1.0.0, y en el caso de que esta versión tuviera un bug que requiriera de un fix la nueva versión sería la v1.0.1. Poner un tag en la rama activa es tan fácil como usar el comando:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit tag v0.1.0\"}}\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tSi algo funcionara mal en la nueva versión, sería muy fácil revertir los cambios a la versión anterior que fue etiquetada y que se sabe que funcionaba bien. Se puede revertir a un estado anterior usando los tags en lugar de los commits, el comando para realizar este cambio:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit checkout v0.1.0\"}}\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tUsando el comando “git tag” se muestra un listado de versiones por etiqueta, que si se ha seguido el protocolo de numeración correctamente será fácil determinar cual es la versión previa a la actual.\n\t\t<img src=\"../../assets/img/git/protocolo-git.png\" style=\"display:block;max-width:100%;margin: 15px auto 10px;\">\n\t\t<span style=\"display:block;text-align:center;\">Ilustración 2: ejemplo de linea de trabajo</span>\n\t</p>\n</section>\n<section>\n\t<h2>Caso 2, aportaciones de personas o equipos ajenos al proyecto</h2>\n\t<p>\n\t\tEs de sobras conocido que un proyecto open source acaba siendo tan potente como la comunidad de desarrolladores que tiene detrás. Siendo las colaboraciones de estos tan o más importantes como los del equipo de trabajo directamente implicado. Es por ello que cabe plantear un método de trabajo para publicar en el proyecto las aportaciones de terceros.\n\t</p>\n\t<p>\n\t\tEn este caso los desarrolladores necesitaran crear un fork del repositorio original, pasando a tener su propio repositorio y su propio remoto. La forma de trabajar debe ser similar a la del caso 1, con la excepción de que para publicar algo deberán hacer un pull request.\n\t</p>\n\t<p>\n\t\tPara hacer el pull request hay que ir al repositorio original desde el que se realizó el fork, y presionar el botón “New pull request”.\n\t\t<img src=\"../../assets/img/git/img1.png\" style=\"display:block;max-width:100%;margin: 15px auto 10px;\">\n\t</p>\n\t<p>\n\t\tEn este punto, se muestra una pagina con el titulo “Compare changes”, en esta pagina hay que pulsar sobre el enlace “compare across forks”.\n\t\t<img src=\"../../assets/img/git/img2.png\" style=\"display:block;max-width:100%;margin: 15px auto 10px;\">\n\t</p>\n\t<p>\n\t\tA continuación hay que seleccionar como “base fork” la rama dev del repositorio original, y como “head fork” la rama dev del repositorio del colaborador. Además habrá que escribir un titulo y una descripción para facilitar la comprensión de los cambios en el código a quien deba aprobar el pull request. Y ya se podrá presionar la solicitud de pull request.\n\t\t<img src=\"../../assets/img/git/img3.png\" style=\"display:block;max-width:100%;margin: 15px auto 10px;\">\n\t</p>\n\t<p>\n\t\tAhora un miembro del equipo con acceso al repositorio original podrá aprobar, rechazar o solicitar una revisión en el pull request.\n\t</p>\n\t<p>\n\t\tEl miembro del equipo, con permisos de escritura en el repositorio, deberá ir a la pestaña “pull requests” que aparecerá ahora en el proyecto, seleccionar el pull request que se quiera integrar en el proyecto, y una vez revisado el código, para aceptarlo solo tendrá que seleccionar “aprove” y luego presionar el botón “Submit review”.\n\t</p>\n\t<p>\n\t\tLas otras dos opciones que hay para seleccionar en un pull request son “Comment”, donde el revisor puede poner un comentario sobre el pull request sin tener que aprobarlo.\n\t</p>\n\t<p>\n\t\tY “Request changes”, donde se solicita que se realicen cambios en el código que se quiere mergear al repositorio.\n\t</p>\n</section>\n<section>\n\t<h2>Consejo tutorial de desarrollo modulo de mesa</h2>\n\t<p>\n\t\tPara seguir el <a routerLink=\"/developer/tutorial\">tutorial de desarrollo</a> en el que se realiza un modulo de mesa de estudiante, es importante tener en cuenta que hay que situarse en el tag v0.1.0 antes de comenzar a intentar desarrollar el modulo del tutorial. Pues el código del tutorial parte de ese punto, y si se iniciara el desarrollo en otro punto el código seria diferente y podría inducir a errores o confusiones.\n\t</p>\n\t<p>\n\t\tSi en algún momento se quiere comparar el código que se esta realizando con el código del tutorial, existen dos opciones. La primera es ir al repositorio de github del proyecto y una vez ahí situarse en la rama tutorial y buscar el archivo que se quiere comparar.\n\t</p>\n\t<p>\n\t\tEl segundo método se pude ejecutar directamente desde la línea de comandos, y como resultado mostrará las diferencias entre el archivo que se esta editando y el archivo del tutorial. De esta manera se puede ver claramente que es exactamente lo que falta para realizar los pasos indicados en el tutorial. Para ello, se debe utilizar el comando 'git diff' de la siguiente manera:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">{{\"\ngit diff master..tutorial -- myfile.ts\"}}\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tEste comando supone que se esta realizando el tutorial desde la rama master, de estar realizándose desde una rama personalizada iniciada en master en el punto v0.1.0 habrá que usar el nombre de esa rama en lugar de master. En lugar de myfile.ts hay que poner el nombre del archivo que se quiere comparar.\n\t</p>\n</section>"
 
 /***/ }),
 
@@ -1256,22 +1418,18 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GitComponent", function() { return GitComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../shared/services/highlight.service */ "./src/app/shared/services/highlight.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../shared/services/highlight.service */ "./src/app/shared/services/highlight.service.ts");
+
+
 
 
 var GitComponent = /** @class */ (function () {
-    function GitComponent(highlightService) {
+    function GitComponent(highlightService, location) {
         this.highlightService = highlightService;
+        this.location = location;
         this.highlighted = false;
     }
     GitComponent.prototype.ngOnInit = function () {
@@ -1285,13 +1443,17 @@ var GitComponent = /** @class */ (function () {
             this.highlighted = true;
         }
     };
-    GitComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    GitComponent.prototype.goBack = function () {
+        this.location.back();
+    };
+    GitComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-git',
             template: __webpack_require__(/*! ./git.component.html */ "./src/app/pages/git/git.component.html"),
             styles: [__webpack_require__(/*! ./git.component.scss */ "./src/app/pages/git/git.component.scss")]
         }),
-        __metadata("design:paramtypes", [_shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__["HighlightService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_3__["HighlightService"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"]])
     ], GitComponent);
     return GitComponent;
 }());
@@ -1332,16 +1494,9 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var HomeComponent = /** @class */ (function () {
     function HomeComponent() {
@@ -1349,13 +1504,13 @@ var HomeComponent = /** @class */ (function () {
     }
     HomeComponent.prototype.ngOnInit = function () {
     };
-    HomeComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-home',
             template: __webpack_require__(/*! ./home.component.html */ "./src/app/pages/home/home.component.html"),
             styles: [__webpack_require__(/*! ./home.component.scss */ "./src/app/pages/home/home.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], HomeComponent);
     return HomeComponent;
 }());
@@ -1396,17 +1551,10 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InstallComponent", function() { return InstallComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../shared/services/highlight.service */ "./src/app/shared/services/highlight.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../shared/services/highlight.service */ "./src/app/shared/services/highlight.service.ts");
+
 
 
 var InstallComponent = /** @class */ (function () {
@@ -1428,13 +1576,13 @@ var InstallComponent = /** @class */ (function () {
     InstallComponent.prototype.tabSelectionChanged = function (event) {
         this.highlightService.highlightAll();
     };
-    InstallComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    InstallComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-install',
             template: __webpack_require__(/*! ./install.component.html */ "./src/app/pages/install/install.component.html"),
             styles: [__webpack_require__(/*! ./install.component.scss */ "./src/app/pages/install/install.component.scss")]
         }),
-        __metadata("design:paramtypes", [_shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__["HighlightService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_2__["HighlightService"]])
     ], InstallComponent);
     return InstallComponent;
 }());
@@ -1475,29 +1623,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinuxinstallComponent", function() { return LinuxinstallComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var LinuxinstallComponent = /** @class */ (function () {
     function LinuxinstallComponent() {
     }
     LinuxinstallComponent.prototype.ngOnInit = function () {
     };
-    LinuxinstallComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    LinuxinstallComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-linuxinstall',
             template: __webpack_require__(/*! ./linuxinstall.component.html */ "./src/app/pages/install/linuxinstall/linuxinstall.component.html"),
             styles: [__webpack_require__(/*! ./linuxinstall.component.scss */ "./src/app/pages/install/linuxinstall/linuxinstall.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], LinuxinstallComponent);
     return LinuxinstallComponent;
 }());
@@ -1538,29 +1679,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MacosinstallComponent", function() { return MacosinstallComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var MacosinstallComponent = /** @class */ (function () {
     function MacosinstallComponent() {
     }
     MacosinstallComponent.prototype.ngOnInit = function () {
     };
-    MacosinstallComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    MacosinstallComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-macosinstall',
             template: __webpack_require__(/*! ./macosinstall.component.html */ "./src/app/pages/install/macosinstall/macosinstall.component.html"),
             styles: [__webpack_require__(/*! ./macosinstall.component.scss */ "./src/app/pages/install/macosinstall/macosinstall.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], MacosinstallComponent);
     return MacosinstallComponent;
 }());
@@ -1601,29 +1735,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WindowsinstallComponent", function() { return WindowsinstallComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var WindowsinstallComponent = /** @class */ (function () {
     function WindowsinstallComponent() {
     }
     WindowsinstallComponent.prototype.ngOnInit = function () {
     };
-    WindowsinstallComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    WindowsinstallComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-windowsinstall',
             template: __webpack_require__(/*! ./windowsinstall.component.html */ "./src/app/pages/install/windowsinstall/windowsinstall.component.html"),
             styles: [__webpack_require__(/*! ./windowsinstall.component.scss */ "./src/app/pages/install/windowsinstall/windowsinstall.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], WindowsinstallComponent);
     return WindowsinstallComponent;
 }());
@@ -1650,7 +1777,7 @@ module.exports = "<div class=\"error-page-wrap\">\n\t<article class=\"error-page
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".error-page-wrap {\n  width: 310px;\n  height: 310px;\n  margin: 155px auto; }\n\n.error-page-wrap:before {\n  box-shadow: 0 0 200px 150px #fff;\n  width: 310px;\n  height: 310px;\n  border-radius: 50%;\n  position: relative;\n  z-index: -1;\n  content: '';\n  display: block; }\n\n.error-page {\n  width: 310px;\n  height: 310px;\n  border-radius: 50%;\n  top: -310px;\n  position: relative;\n  text-align: center;\n  background: #3f51b5;\n  background: linear-gradient(to bottom, #4d99b5 0%, #3f51b5 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$firstColor', endColorstr='$secondColor',GradientType=0 ); }\n\n.error-page:before {\n  width: 63px;\n  height: 63px;\n  border-radius: 50%;\n  box-shadow: 3px 25px 0 5px #4d99b5;\n  content: '';\n  z-index: -1;\n  display: block;\n  position: relative;\n  top: -19px;\n  left: 44px; }\n\n.error-page:after {\n  width: 310px;\n  height: 17px;\n  margin: 0 auto;\n  top: 25px;\n  content: '';\n  z-index: -1;\n  display: block;\n  position: relative;\n  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 0%, rgba(35, 26, 26, 0) 59%, rgba(60, 44, 44, 0) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#003c2c2c',GradientType=1 ); }\n\n.error-page h1 {\n  color: rgba(255, 255, 255, 0.94);\n  font-size: 100px;\n  margin: 10px auto 0 auto;\n  text-shadow: 0px 0 7px rgba(0, 0, 0, 0.5); }\n\n.error-page h1:before {\n  width: 260px;\n  height: 1px;\n  position: relative;\n  margin: 0 auto;\n  top: 120px;\n  content: '';\n  display: block;\n  background: radial-gradient(ellipse at center, rgba(111, 25, 25, 0.65) 0%, rgba(75, 38, 38, 0) 70%, rgba(60, 44, 44, 0) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a66f1919', endColorstr='#003c2c2c',GradientType=1 ); }\n\n.error-page h1:after {\n  width: 260px;\n  height: 1px;\n  content: '';\n  display: block;\n  opacity: 0.2;\n  margin: 0 auto;\n  top: 50px;\n  position: relative;\n  /*background: -moz-radial-gradient(center, ellipse cover, rgba(247, 173, 148, 0.65) 0%, rgba(255, 255, 255, 0.01) 99%, rgba(255, 255, 255, 0) 100%);\n      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(247, 173, 148, 0.65)), color-stop(99%, rgba(255, 255, 255, 0.01)), color-stop(100%, rgba(255, 255, 255, 0)));\n      background: -webkit-radial-gradient(center, ellipse cover, rgba(247, 173, 148, 0.65) 0%, rgba(255, 255, 255, 0.01) 99%, rgba(255, 255, 255, 0) 100%);\n      background: -o-radial-gradient(center, ellipse cover, rgba(247, 173, 148, 0.65) 0%, rgba(255, 255, 255, 0.01) 99%, rgba(255, 255, 255, 0) 100%);\n      background: -ms-radial-gradient(center, ellipse cover, rgba(247, 173, 148, 0.65) 0%, rgba(255, 255, 255, 0.01) 99%, rgba(255, 255, 255, 0) 100%);\n      background: radial-gradient(ellipse at center, rgba(247, 173, 148, 0.65) 0%, rgba(255, 255, 255, 0.01) 99%, rgba(255, 255, 255, 0) 100%);*/\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6f7ad94', endColorstr='#00ffffff',GradientType=1 ); }\n\n.error-page h2 {\n  margin: 14px 0 30px 0;\n  font-size: 17px; }\n\n.error-page h2:before {\n  width: 130px;\n  height: 1px;\n  position: relative;\n  margin: 0 auto;\n  top: 31px;\n  content: '';\n  display: block;\n  background: radial-gradient(ellipse at center, rgba(111, 25, 25, 0.65) 0%, rgba(75, 38, 38, 0) 70%, rgba(60, 44, 44, 0) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a66f1919', endColorstr='#003c2c2c',GradientType=1 ); }\n\n.error-page h2:after {\n  width: 130px;\n  height: 1px;\n  content: '';\n  display: block;\n  opacity: 0.2;\n  margin: 0 auto;\n  top: 11px;\n  position: relative;\n  background: radial-gradient(ellipse at center, rgba(247, 173, 148, 0.65) 0%, rgba(255, 255, 255, 0.01) 99%, rgba(255, 255, 255, 0) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6f7ad94', endColorstr='#00ffffff',GradientType=1 ); }\n\n.error-back {\n  text-decoration: none;\n  color: #430400;\n  font-size: 15px; }\n\n.error-back:hover {\n  color: #EB957D;\n  text-shadow: 0 0 3px black; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvcGFnZXMvbm90Zm91bmQvbm90Zm91bmQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFZO0VBQ1osY0FBYTtFQUNiLG1CQUFrQixFQUFHOztBQUNyQjtFQUNFLGlDQUFnQztFQUNoQyxhQUFZO0VBQ1osY0FBYTtFQUNiLG1CQUFrQjtFQUNsQixtQkFBa0I7RUFDbEIsWUFBVztFQUNYLFlBQVc7RUFDWCxlQUFjLEVBQUc7O0FBRXJCO0VBQ0UsYUFBWTtFQUNaLGNBQWE7RUFDYixtQkFBa0I7RUFDbEIsWUFBVztFQUNYLG1CQUFrQjtFQUNsQixtQkFBa0I7RUFDbEIsb0JBQW1CO0VBTW5CLGlFQUFnRTtFQUNoRSw0SEFBMkgsRUFBRzs7QUFDOUg7RUFDRSxZQUFXO0VBQ1gsYUFBWTtFQUNaLG1CQUFrQjtFQUNsQixtQ0FBa0M7RUFDbEMsWUFBVztFQUNYLFlBQVc7RUFDWCxlQUFjO0VBQ2QsbUJBQWtCO0VBQ2xCLFdBQVU7RUFDVixXQUFVLEVBQUc7O0FBQ2Y7RUFDRSxhQUFZO0VBQ1osYUFBWTtFQUNaLGVBQWM7RUFDZCxVQUFTO0VBQ1QsWUFBVztFQUNYLFlBQVc7RUFDWCxlQUFjO0VBQ2QsbUJBQWtCO0VBTWxCLDBIQUF5SDtFQUN6SCx1SEFBc0gsRUFBRzs7QUFDM0g7RUFDRSxpQ0FBZ0M7RUFDaEMsaUJBQWdCO0VBQ2hCLHlCQUF3QjtFQUN4QiwwQ0FBeUMsRUFBRzs7QUFDNUM7RUFDRSxhQUFZO0VBQ1osWUFBVztFQUNYLG1CQUFrQjtFQUNsQixlQUFjO0VBQ2QsV0FBVTtFQUNWLFlBQVc7RUFDWCxlQUFjO0VBTWQsOEhBQTZIO0VBQzdILHVIQUFzSCxFQUFHOztBQUMzSDtFQUNFLGFBQVk7RUFDWixZQUFXO0VBQ1gsWUFBVztFQUNYLGVBQWM7RUFDZCxhQUFZO0VBQ1osZUFBYztFQUNkLFVBQVM7RUFDVCxtQkFBa0I7RUFDbEI7Ozs7O2lKQUsySTtFQUMzSSx1SEFBc0gsRUFBRzs7QUFDN0g7RUFDRSxzQkFBcUI7RUFDckIsZ0JBQWUsRUFBRzs7QUFDbEI7RUFDRSxhQUFZO0VBQ1osWUFBVztFQUNYLG1CQUFrQjtFQUNsQixlQUFjO0VBQ2QsVUFBUztFQUNULFlBQVc7RUFDWCxlQUFjO0VBTWQsOEhBQTZIO0VBQzdILHVIQUFzSCxFQUFHOztBQUMzSDtFQUNFLGFBQVk7RUFDWixZQUFXO0VBQ1gsWUFBVztFQUNYLGVBQWM7RUFDZCxhQUFZO0VBQ1osZUFBYztFQUNkLFVBQVM7RUFDVCxtQkFBa0I7RUFNbEIseUlBQXdJO0VBQ3hJLHVIQUFzSCxFQUFHOztBQUUvSDtFQUNFLHNCQUFxQjtFQUNyQixlQUFjO0VBQ2QsZ0JBQWUsRUFDaEI7O0FBQ0Q7RUFDSSxlQUFjO0VBQ2QsMkJBQTBCLEVBQzdCIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvbm90Zm91bmQvbm90Zm91bmQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZXJyb3ItcGFnZS13cmFwIHtcbiAgd2lkdGg6IDMxMHB4O1xuICBoZWlnaHQ6IDMxMHB4O1xuICBtYXJnaW46IDE1NXB4IGF1dG87IH1cbiAgLmVycm9yLXBhZ2Utd3JhcDpiZWZvcmUge1xuICAgIGJveC1zaGFkb3c6IDAgMCAyMDBweCAxNTBweCAjZmZmO1xuICAgIHdpZHRoOiAzMTBweDtcbiAgICBoZWlnaHQ6IDMxMHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgei1pbmRleDogLTE7XG4gICAgY29udGVudDogJyc7XG4gICAgZGlzcGxheTogYmxvY2s7IH1cblxuLmVycm9yLXBhZ2Uge1xuICB3aWR0aDogMzEwcHg7XG4gIGhlaWdodDogMzEwcHg7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgdG9wOiAtMzEwcHg7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBiYWNrZ3JvdW5kOiAjM2Y1MWI1O1xuICBiYWNrZ3JvdW5kOiAtbW96LWxpbmVhci1ncmFkaWVudCh0b3AsICM0ZDk5YjUgMCUsICMzZjUxYjUgMTAwJSk7XG4gIGJhY2tncm91bmQ6IC13ZWJraXQtZ3JhZGllbnQobGluZWFyLCBsZWZ0IHRvcCwgbGVmdCBib3R0b20sIGNvbG9yLXN0b3AoMCUsICM0ZDk5YjUpLCBjb2xvci1zdG9wKDEwMCUsICMzZjUxYjUpKTtcbiAgYmFja2dyb3VuZDogLXdlYmtpdC1saW5lYXItZ3JhZGllbnQodG9wLCAjNGQ5OWI1IDAlLCAjM2Y1MWI1IDEwMCUpO1xuICBiYWNrZ3JvdW5kOiAtby1saW5lYXItZ3JhZGllbnQodG9wLCAjNGQ5OWI1IDAlLCAjM2Y1MWI1IDEwMCUpO1xuICBiYWNrZ3JvdW5kOiAtbXMtbGluZWFyLWdyYWRpZW50KHRvcCwgIzRkOTliNSAwJSwgIzNmNTFiNSAxMDAlKTtcbiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KHRvIGJvdHRvbSwgIzRkOTliNSAwJSwgIzNmNTFiNSAxMDAlKTtcbiAgZmlsdGVyOiBwcm9naWQ6RFhJbWFnZVRyYW5zZm9ybS5NaWNyb3NvZnQuZ3JhZGllbnQoc3RhcnRDb2xvcnN0cj0nJGZpcnN0Q29sb3InLCBlbmRDb2xvcnN0cj0nJHNlY29uZENvbG9yJyxHcmFkaWVudFR5cGU9MCApOyB9XG4gIC5lcnJvci1wYWdlOmJlZm9yZSB7XG4gICAgd2lkdGg6IDYzcHg7XG4gICAgaGVpZ2h0OiA2M3B4O1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICBib3gtc2hhZG93OiAzcHggMjVweCAwIDVweCAjNGQ5OWI1O1xuICAgIGNvbnRlbnQ6ICcnO1xuICAgIHotaW5kZXg6IC0xO1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICB0b3A6IC0xOXB4O1xuICAgIGxlZnQ6IDQ0cHg7IH1cbiAgLmVycm9yLXBhZ2U6YWZ0ZXIge1xuICAgIHdpZHRoOiAzMTBweDtcbiAgICBoZWlnaHQ6IDE3cHg7XG4gICAgbWFyZ2luOiAwIGF1dG87XG4gICAgdG9wOiAyNXB4O1xuICAgIGNvbnRlbnQ6ICcnO1xuICAgIHotaW5kZXg6IC0xO1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBiYWNrZ3JvdW5kOiAtbW96LXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMCwgMCwgMCwgMC42NSkgMCUsIHJnYmEoMzUsIDI2LCAyNiwgMCkgNTklLCByZ2JhKDYwLCA0NCwgNDQsIDApIDEwMCUpO1xuICAgIGJhY2tncm91bmQ6IC13ZWJraXQtZ3JhZGllbnQocmFkaWFsLCBjZW50ZXIgY2VudGVyLCAwcHgsIGNlbnRlciBjZW50ZXIsIDEwMCUsIGNvbG9yLXN0b3AoMCUsIHJnYmEoMCwgMCwgMCwgMC42NSkpLCBjb2xvci1zdG9wKDU5JSwgcmdiYSgzNSwgMjYsIDI2LCAwKSksIGNvbG9yLXN0b3AoMTAwJSwgcmdiYSg2MCwgNDQsIDQ0LCAwKSkpO1xuICAgIGJhY2tncm91bmQ6IC13ZWJraXQtcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgwLCAwLCAwLCAwLjY1KSAwJSwgcmdiYSgzNSwgMjYsIDI2LCAwKSA1OSUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gICAgYmFja2dyb3VuZDogLW8tcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgwLCAwLCAwLCAwLjY1KSAwJSwgcmdiYSgzNSwgMjYsIDI2LCAwKSA1OSUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gICAgYmFja2dyb3VuZDogLW1zLXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMCwgMCwgMCwgMC42NSkgMCUsIHJnYmEoMzUsIDI2LCAyNiwgMCkgNTklLCByZ2JhKDYwLCA0NCwgNDQsIDApIDEwMCUpO1xuICAgIGJhY2tncm91bmQ6IHJhZGlhbC1ncmFkaWVudChlbGxpcHNlIGF0IGNlbnRlciwgcmdiYSgwLCAwLCAwLCAwLjY1KSAwJSwgcmdiYSgzNSwgMjYsIDI2LCAwKSA1OSUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gICAgZmlsdGVyOiBwcm9naWQ6RFhJbWFnZVRyYW5zZm9ybS5NaWNyb3NvZnQuZ3JhZGllbnQoc3RhcnRDb2xvcnN0cj0nI2E2MDAwMDAwJywgZW5kQ29sb3JzdHI9JyMwMDNjMmMyYycsR3JhZGllbnRUeXBlPTEgKTsgfVxuICAuZXJyb3ItcGFnZSBoMSB7XG4gICAgY29sb3I6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC45NCk7XG4gICAgZm9udC1zaXplOiAxMDBweDtcbiAgICBtYXJnaW46IDEwcHggYXV0byAwIGF1dG87XG4gICAgdGV4dC1zaGFkb3c6IDBweCAwIDdweCByZ2JhKDAsIDAsIDAsIDAuNSk7IH1cbiAgICAuZXJyb3ItcGFnZSBoMTpiZWZvcmUge1xuICAgICAgd2lkdGg6IDI2MHB4O1xuICAgICAgaGVpZ2h0OiAxcHg7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICBtYXJnaW46IDAgYXV0bztcbiAgICAgIHRvcDogMTIwcHg7XG4gICAgICBjb250ZW50OiAnJztcbiAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgYmFja2dyb3VuZDogLW1vei1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDExMSwgMjUsIDI1LCAwLjY1KSAwJSwgcmdiYSg3NSwgMzgsIDM4LCAwKSA3MCUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gICAgICBiYWNrZ3JvdW5kOiAtd2Via2l0LWdyYWRpZW50KHJhZGlhbCwgY2VudGVyIGNlbnRlciwgMHB4LCBjZW50ZXIgY2VudGVyLCAxMDAlLCBjb2xvci1zdG9wKDAlLCByZ2JhKDExMSwgMjUsIDI1LCAwLjY1KSksIGNvbG9yLXN0b3AoNzAlLCByZ2JhKDc1LCAzOCwgMzgsIDApKSwgY29sb3Itc3RvcCgxMDAlLCByZ2JhKDYwLCA0NCwgNDQsIDApKSk7XG4gICAgICBiYWNrZ3JvdW5kOiAtd2Via2l0LXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMTExLCAyNSwgMjUsIDAuNjUpIDAlLCByZ2JhKDc1LCAzOCwgMzgsIDApIDcwJSwgcmdiYSg2MCwgNDQsIDQ0LCAwKSAxMDAlKTtcbiAgICAgIGJhY2tncm91bmQ6IC1vLXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMTExLCAyNSwgMjUsIDAuNjUpIDAlLCByZ2JhKDc1LCAzOCwgMzgsIDApIDcwJSwgcmdiYSg2MCwgNDQsIDQ0LCAwKSAxMDAlKTtcbiAgICAgIGJhY2tncm91bmQ6IC1tcy1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDExMSwgMjUsIDI1LCAwLjY1KSAwJSwgcmdiYSg3NSwgMzgsIDM4LCAwKSA3MCUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gICAgICBiYWNrZ3JvdW5kOiByYWRpYWwtZ3JhZGllbnQoZWxsaXBzZSBhdCBjZW50ZXIsIHJnYmEoMTExLCAyNSwgMjUsIDAuNjUpIDAlLCByZ2JhKDc1LCAzOCwgMzgsIDApIDcwJSwgcmdiYSg2MCwgNDQsIDQ0LCAwKSAxMDAlKTtcbiAgICAgIGZpbHRlcjogcHJvZ2lkOkRYSW1hZ2VUcmFuc2Zvcm0uTWljcm9zb2Z0LmdyYWRpZW50KHN0YXJ0Q29sb3JzdHI9JyNhNjZmMTkxOScsIGVuZENvbG9yc3RyPScjMDAzYzJjMmMnLEdyYWRpZW50VHlwZT0xICk7IH1cbiAgICAuZXJyb3ItcGFnZSBoMTphZnRlciB7XG4gICAgICB3aWR0aDogMjYwcHg7XG4gICAgICBoZWlnaHQ6IDFweDtcbiAgICAgIGNvbnRlbnQ6ICcnO1xuICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICBvcGFjaXR5OiAwLjI7XG4gICAgICBtYXJnaW46IDAgYXV0bztcbiAgICAgIHRvcDogNTBweDtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIC8qYmFja2dyb3VuZDogLW1vei1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDI0NywgMTczLCAxNDgsIDAuNjUpIDAlLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDEpIDk5JSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwKSAxMDAlKTtcbiAgICAgIGJhY2tncm91bmQ6IC13ZWJraXQtZ3JhZGllbnQocmFkaWFsLCBjZW50ZXIgY2VudGVyLCAwcHgsIGNlbnRlciBjZW50ZXIsIDEwMCUsIGNvbG9yLXN0b3AoMCUsIHJnYmEoMjQ3LCAxNzMsIDE0OCwgMC42NSkpLCBjb2xvci1zdG9wKDk5JSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAxKSksIGNvbG9yLXN0b3AoMTAwJSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwKSkpO1xuICAgICAgYmFja2dyb3VuZDogLXdlYmtpdC1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDI0NywgMTczLCAxNDgsIDAuNjUpIDAlLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDEpIDk5JSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwKSAxMDAlKTtcbiAgICAgIGJhY2tncm91bmQ6IC1vLXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMjQ3LCAxNzMsIDE0OCwgMC42NSkgMCUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wMSkgOTklLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApIDEwMCUpO1xuICAgICAgYmFja2dyb3VuZDogLW1zLXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMjQ3LCAxNzMsIDE0OCwgMC42NSkgMCUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wMSkgOTklLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApIDEwMCUpO1xuICAgICAgYmFja2dyb3VuZDogcmFkaWFsLWdyYWRpZW50KGVsbGlwc2UgYXQgY2VudGVyLCByZ2JhKDI0NywgMTczLCAxNDgsIDAuNjUpIDAlLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDEpIDk5JSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwKSAxMDAlKTsqL1xuICAgICAgZmlsdGVyOiBwcm9naWQ6RFhJbWFnZVRyYW5zZm9ybS5NaWNyb3NvZnQuZ3JhZGllbnQoc3RhcnRDb2xvcnN0cj0nI2E2ZjdhZDk0JywgZW5kQ29sb3JzdHI9JyMwMGZmZmZmZicsR3JhZGllbnRUeXBlPTEgKTsgfVxuICAuZXJyb3ItcGFnZSBoMiB7XG4gICAgbWFyZ2luOiAxNHB4IDAgMzBweCAwO1xuICAgIGZvbnQtc2l6ZTogMTdweDsgfVxuICAgIC5lcnJvci1wYWdlIGgyOmJlZm9yZSB7XG4gICAgICB3aWR0aDogMTMwcHg7XG4gICAgICBoZWlnaHQ6IDFweDtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIG1hcmdpbjogMCBhdXRvO1xuICAgICAgdG9wOiAzMXB4O1xuICAgICAgY29udGVudDogJyc7XG4gICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgIGJhY2tncm91bmQ6IC1tb3otcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgxMTEsIDI1LCAyNSwgMC42NSkgMCUsIHJnYmEoNzUsIDM4LCAzOCwgMCkgNzAlLCByZ2JhKDYwLCA0NCwgNDQsIDApIDEwMCUpO1xuICAgICAgYmFja2dyb3VuZDogLXdlYmtpdC1ncmFkaWVudChyYWRpYWwsIGNlbnRlciBjZW50ZXIsIDBweCwgY2VudGVyIGNlbnRlciwgMTAwJSwgY29sb3Itc3RvcCgwJSwgcmdiYSgxMTEsIDI1LCAyNSwgMC42NSkpLCBjb2xvci1zdG9wKDcwJSwgcmdiYSg3NSwgMzgsIDM4LCAwKSksIGNvbG9yLXN0b3AoMTAwJSwgcmdiYSg2MCwgNDQsIDQ0LCAwKSkpO1xuICAgICAgYmFja2dyb3VuZDogLXdlYmtpdC1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDExMSwgMjUsIDI1LCAwLjY1KSAwJSwgcmdiYSg3NSwgMzgsIDM4LCAwKSA3MCUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gICAgICBiYWNrZ3JvdW5kOiAtby1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDExMSwgMjUsIDI1LCAwLjY1KSAwJSwgcmdiYSg3NSwgMzgsIDM4LCAwKSA3MCUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gICAgICBiYWNrZ3JvdW5kOiAtbXMtcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgxMTEsIDI1LCAyNSwgMC42NSkgMCUsIHJnYmEoNzUsIDM4LCAzOCwgMCkgNzAlLCByZ2JhKDYwLCA0NCwgNDQsIDApIDEwMCUpO1xuICAgICAgYmFja2dyb3VuZDogcmFkaWFsLWdyYWRpZW50KGVsbGlwc2UgYXQgY2VudGVyLCByZ2JhKDExMSwgMjUsIDI1LCAwLjY1KSAwJSwgcmdiYSg3NSwgMzgsIDM4LCAwKSA3MCUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gICAgICBmaWx0ZXI6IHByb2dpZDpEWEltYWdlVHJhbnNmb3JtLk1pY3Jvc29mdC5ncmFkaWVudChzdGFydENvbG9yc3RyPScjYTY2ZjE5MTknLCBlbmRDb2xvcnN0cj0nIzAwM2MyYzJjJyxHcmFkaWVudFR5cGU9MSApOyB9XG4gICAgLmVycm9yLXBhZ2UgaDI6YWZ0ZXIge1xuICAgICAgd2lkdGg6IDEzMHB4O1xuICAgICAgaGVpZ2h0OiAxcHg7XG4gICAgICBjb250ZW50OiAnJztcbiAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgb3BhY2l0eTogMC4yO1xuICAgICAgbWFyZ2luOiAwIGF1dG87XG4gICAgICB0b3A6IDExcHg7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICBiYWNrZ3JvdW5kOiAtbW96LXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMjQ3LCAxNzMsIDE0OCwgMC42NSkgMCUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wMSkgOTklLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApIDEwMCUpO1xuICAgICAgYmFja2dyb3VuZDogLXdlYmtpdC1ncmFkaWVudChyYWRpYWwsIGNlbnRlciBjZW50ZXIsIDBweCwgY2VudGVyIGNlbnRlciwgMTAwJSwgY29sb3Itc3RvcCgwJSwgcmdiYSgyNDcsIDE3MywgMTQ4LCAwLjY1KSksIGNvbG9yLXN0b3AoOTklLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDEpKSwgY29sb3Itc3RvcCgxMDAlLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApKSk7XG4gICAgICBiYWNrZ3JvdW5kOiAtd2Via2l0LXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMjQ3LCAxNzMsIDE0OCwgMC42NSkgMCUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wMSkgOTklLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApIDEwMCUpO1xuICAgICAgYmFja2dyb3VuZDogLW8tcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgyNDcsIDE3MywgMTQ4LCAwLjY1KSAwJSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAxKSA5OSUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMCkgMTAwJSk7XG4gICAgICBiYWNrZ3JvdW5kOiAtbXMtcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgyNDcsIDE3MywgMTQ4LCAwLjY1KSAwJSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAxKSA5OSUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMCkgMTAwJSk7XG4gICAgICBiYWNrZ3JvdW5kOiByYWRpYWwtZ3JhZGllbnQoZWxsaXBzZSBhdCBjZW50ZXIsIHJnYmEoMjQ3LCAxNzMsIDE0OCwgMC42NSkgMCUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wMSkgOTklLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApIDEwMCUpO1xuICAgICAgZmlsdGVyOiBwcm9naWQ6RFhJbWFnZVRyYW5zZm9ybS5NaWNyb3NvZnQuZ3JhZGllbnQoc3RhcnRDb2xvcnN0cj0nI2E2ZjdhZDk0JywgZW5kQ29sb3JzdHI9JyMwMGZmZmZmZicsR3JhZGllbnRUeXBlPTEgKTsgfVxuXG4uZXJyb3ItYmFjayB7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgY29sb3I6ICM0MzA0MDA7XG4gIGZvbnQtc2l6ZTogMTVweDsgXG59XG4uZXJyb3ItYmFjazpob3ZlciB7XG4gICAgY29sb3I6ICNFQjk1N0Q7XG4gICAgdGV4dC1zaGFkb3c6IDAgMCAzcHggYmxhY2s7XG59XG5cbiJdfQ== */"
+module.exports = ".error-page-wrap {\n  width: 310px;\n  height: 310px;\n  margin: 155px auto; }\n\n.error-page-wrap:before {\n  box-shadow: 0 0 200px 150px #fff;\n  width: 310px;\n  height: 310px;\n  border-radius: 50%;\n  position: relative;\n  z-index: -1;\n  content: '';\n  display: block; }\n\n.error-page {\n  width: 310px;\n  height: 310px;\n  border-radius: 50%;\n  top: -310px;\n  position: relative;\n  text-align: center;\n  background: #3f51b5;\n  background: linear-gradient(to bottom, #4d99b5 0%, #3f51b5 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$firstColor', endColorstr='$secondColor',GradientType=0 ); }\n\n.error-page:before {\n  width: 63px;\n  height: 63px;\n  border-radius: 50%;\n  box-shadow: 3px 25px 0 5px #4d99b5;\n  content: '';\n  z-index: -1;\n  display: block;\n  position: relative;\n  top: -19px;\n  left: 44px; }\n\n.error-page:after {\n  width: 310px;\n  height: 17px;\n  margin: 0 auto;\n  top: 25px;\n  content: '';\n  z-index: -1;\n  display: block;\n  position: relative;\n  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 0%, rgba(35, 26, 26, 0) 59%, rgba(60, 44, 44, 0) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#003c2c2c',GradientType=1 ); }\n\n.error-page h1 {\n  color: rgba(255, 255, 255, 0.94);\n  font-size: 100px;\n  margin: 10px auto 0 auto;\n  text-shadow: 0px 0 7px rgba(0, 0, 0, 0.5); }\n\n.error-page h1:before {\n  width: 260px;\n  height: 1px;\n  position: relative;\n  margin: 0 auto;\n  top: 120px;\n  content: '';\n  display: block;\n  background: radial-gradient(ellipse at center, rgba(111, 25, 25, 0.65) 0%, rgba(75, 38, 38, 0) 70%, rgba(60, 44, 44, 0) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a66f1919', endColorstr='#003c2c2c',GradientType=1 ); }\n\n.error-page h1:after {\n  width: 260px;\n  height: 1px;\n  content: '';\n  display: block;\n  opacity: 0.2;\n  margin: 0 auto;\n  top: 50px;\n  position: relative;\n  /*background: -moz-radial-gradient(center, ellipse cover, rgba(247, 173, 148, 0.65) 0%, rgba(255, 255, 255, 0.01) 99%, rgba(255, 255, 255, 0) 100%);\n      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(247, 173, 148, 0.65)), color-stop(99%, rgba(255, 255, 255, 0.01)), color-stop(100%, rgba(255, 255, 255, 0)));\n      background: -webkit-radial-gradient(center, ellipse cover, rgba(247, 173, 148, 0.65) 0%, rgba(255, 255, 255, 0.01) 99%, rgba(255, 255, 255, 0) 100%);\n      background: -o-radial-gradient(center, ellipse cover, rgba(247, 173, 148, 0.65) 0%, rgba(255, 255, 255, 0.01) 99%, rgba(255, 255, 255, 0) 100%);\n      background: -ms-radial-gradient(center, ellipse cover, rgba(247, 173, 148, 0.65) 0%, rgba(255, 255, 255, 0.01) 99%, rgba(255, 255, 255, 0) 100%);\n      background: radial-gradient(ellipse at center, rgba(247, 173, 148, 0.65) 0%, rgba(255, 255, 255, 0.01) 99%, rgba(255, 255, 255, 0) 100%);*/\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6f7ad94', endColorstr='#00ffffff',GradientType=1 ); }\n\n.error-page h2 {\n  margin: 14px 0 30px 0;\n  font-size: 17px; }\n\n.error-page h2:before {\n  width: 130px;\n  height: 1px;\n  position: relative;\n  margin: 0 auto;\n  top: 31px;\n  content: '';\n  display: block;\n  background: radial-gradient(ellipse at center, rgba(111, 25, 25, 0.65) 0%, rgba(75, 38, 38, 0) 70%, rgba(60, 44, 44, 0) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a66f1919', endColorstr='#003c2c2c',GradientType=1 ); }\n\n.error-page h2:after {\n  width: 130px;\n  height: 1px;\n  content: '';\n  display: block;\n  opacity: 0.2;\n  margin: 0 auto;\n  top: 11px;\n  position: relative;\n  background: radial-gradient(ellipse at center, rgba(247, 173, 148, 0.65) 0%, rgba(255, 255, 255, 0.01) 99%, rgba(255, 255, 255, 0) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6f7ad94', endColorstr='#00ffffff',GradientType=1 ); }\n\n.error-back {\n  text-decoration: none;\n  color: #430400;\n  font-size: 15px; }\n\n.error-back:hover {\n  color: #EB957D;\n  text-shadow: 0 0 3px black; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvcGFnZXMvbm90Zm91bmQvbm90Zm91bmQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3BhZ2VzL25vdGZvdW5kL25vdGZvdW5kLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsWUFBWTtFQUNaLGFBQWE7RUFDYixrQkFBa0IsRUFBQTs7QUFDbEI7RUFDRSxnQ0FBZ0M7RUFDaEMsWUFBWTtFQUNaLGFBQWE7RUFDYixrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxXQUFXO0VBQ1gsY0FBYyxFQUFBOztBQUVsQjtFQUNFLFlBQVk7RUFDWixhQUFhO0VBQ2Isa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQU1uQixnRUFBZ0U7RUFDaEUsMkhBQTJILEVBQUE7O0FBQzNIO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsa0NBQWtDO0VBQ2xDLFdBQVc7RUFDWCxXQUFXO0VBQ1gsY0FBYztFQUNkLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1YsVUFBVSxFQUFBOztBQUNaO0VBQ0UsWUFBWTtFQUNaLFlBQVk7RUFDWixjQUFjO0VBQ2QsU0FBUztFQUNULFdBQVc7RUFDWCxXQUFXO0VBQ1gsY0FBYztFQUNkLGtCQUFrQjtFQU1sQix5SEFBeUg7RUFDekgsc0hBQXNILEVBQUE7O0FBQ3hIO0VBQ0UsZ0NBQWdDO0VBQ2hDLGdCQUFnQjtFQUNoQix3QkFBd0I7RUFDeEIseUNBQXlDLEVBQUE7O0FBQ3pDO0VBQ0UsWUFBWTtFQUNaLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIsY0FBYztFQUNkLFVBQVU7RUFDVixXQUFXO0VBQ1gsY0FBYztFQU1kLDZIQUE2SDtFQUM3SCxzSEFBc0gsRUFBQTs7QUFDeEg7RUFDRSxZQUFZO0VBQ1osV0FBVztFQUNYLFdBQVc7RUFDWCxjQUFjO0VBQ2QsWUFBWTtFQUNaLGNBQWM7RUFDZCxTQUFTO0VBQ1Qsa0JBQWtCO0VBQ2xCOzs7OztnSkNXMEk7RURMMUksc0hBQXNILEVBQUE7O0FBQzFIO0VBQ0UscUJBQXFCO0VBQ3JCLGVBQWUsRUFBQTs7QUFDZjtFQUNFLFlBQVk7RUFDWixXQUFXO0VBQ1gsa0JBQWtCO0VBQ2xCLGNBQWM7RUFDZCxTQUFTO0VBQ1QsV0FBVztFQUNYLGNBQWM7RUFNZCw2SEFBNkg7RUFDN0gsc0hBQXNILEVBQUE7O0FBQ3hIO0VBQ0UsWUFBWTtFQUNaLFdBQVc7RUFDWCxXQUFXO0VBQ1gsY0FBYztFQUNkLFlBQVk7RUFDWixjQUFjO0VBQ2QsU0FBUztFQUNULGtCQUFrQjtFQU1sQix3SUFBd0k7RUFDeEksc0hBQXNILEVBQUE7O0FBRTVIO0VBQ0UscUJBQXFCO0VBQ3JCLGNBQWM7RUFDZCxlQUFlLEVBQUE7O0FBRWpCO0VBQ0ksY0FBYztFQUNkLDBCQUEwQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvbm90Zm91bmQvbm90Zm91bmQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZXJyb3ItcGFnZS13cmFwIHtcbiAgd2lkdGg6IDMxMHB4O1xuICBoZWlnaHQ6IDMxMHB4O1xuICBtYXJnaW46IDE1NXB4IGF1dG87IH1cbiAgLmVycm9yLXBhZ2Utd3JhcDpiZWZvcmUge1xuICAgIGJveC1zaGFkb3c6IDAgMCAyMDBweCAxNTBweCAjZmZmO1xuICAgIHdpZHRoOiAzMTBweDtcbiAgICBoZWlnaHQ6IDMxMHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgei1pbmRleDogLTE7XG4gICAgY29udGVudDogJyc7XG4gICAgZGlzcGxheTogYmxvY2s7IH1cblxuLmVycm9yLXBhZ2Uge1xuICB3aWR0aDogMzEwcHg7XG4gIGhlaWdodDogMzEwcHg7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgdG9wOiAtMzEwcHg7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBiYWNrZ3JvdW5kOiAjM2Y1MWI1O1xuICBiYWNrZ3JvdW5kOiAtbW96LWxpbmVhci1ncmFkaWVudCh0b3AsICM0ZDk5YjUgMCUsICMzZjUxYjUgMTAwJSk7XG4gIGJhY2tncm91bmQ6IC13ZWJraXQtZ3JhZGllbnQobGluZWFyLCBsZWZ0IHRvcCwgbGVmdCBib3R0b20sIGNvbG9yLXN0b3AoMCUsICM0ZDk5YjUpLCBjb2xvci1zdG9wKDEwMCUsICMzZjUxYjUpKTtcbiAgYmFja2dyb3VuZDogLXdlYmtpdC1saW5lYXItZ3JhZGllbnQodG9wLCAjNGQ5OWI1IDAlLCAjM2Y1MWI1IDEwMCUpO1xuICBiYWNrZ3JvdW5kOiAtby1saW5lYXItZ3JhZGllbnQodG9wLCAjNGQ5OWI1IDAlLCAjM2Y1MWI1IDEwMCUpO1xuICBiYWNrZ3JvdW5kOiAtbXMtbGluZWFyLWdyYWRpZW50KHRvcCwgIzRkOTliNSAwJSwgIzNmNTFiNSAxMDAlKTtcbiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KHRvIGJvdHRvbSwgIzRkOTliNSAwJSwgIzNmNTFiNSAxMDAlKTtcbiAgZmlsdGVyOiBwcm9naWQ6RFhJbWFnZVRyYW5zZm9ybS5NaWNyb3NvZnQuZ3JhZGllbnQoc3RhcnRDb2xvcnN0cj0nJGZpcnN0Q29sb3InLCBlbmRDb2xvcnN0cj0nJHNlY29uZENvbG9yJyxHcmFkaWVudFR5cGU9MCApOyB9XG4gIC5lcnJvci1wYWdlOmJlZm9yZSB7XG4gICAgd2lkdGg6IDYzcHg7XG4gICAgaGVpZ2h0OiA2M3B4O1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICBib3gtc2hhZG93OiAzcHggMjVweCAwIDVweCAjNGQ5OWI1O1xuICAgIGNvbnRlbnQ6ICcnO1xuICAgIHotaW5kZXg6IC0xO1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICB0b3A6IC0xOXB4O1xuICAgIGxlZnQ6IDQ0cHg7IH1cbiAgLmVycm9yLXBhZ2U6YWZ0ZXIge1xuICAgIHdpZHRoOiAzMTBweDtcbiAgICBoZWlnaHQ6IDE3cHg7XG4gICAgbWFyZ2luOiAwIGF1dG87XG4gICAgdG9wOiAyNXB4O1xuICAgIGNvbnRlbnQ6ICcnO1xuICAgIHotaW5kZXg6IC0xO1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBiYWNrZ3JvdW5kOiAtbW96LXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMCwgMCwgMCwgMC42NSkgMCUsIHJnYmEoMzUsIDI2LCAyNiwgMCkgNTklLCByZ2JhKDYwLCA0NCwgNDQsIDApIDEwMCUpO1xuICAgIGJhY2tncm91bmQ6IC13ZWJraXQtZ3JhZGllbnQocmFkaWFsLCBjZW50ZXIgY2VudGVyLCAwcHgsIGNlbnRlciBjZW50ZXIsIDEwMCUsIGNvbG9yLXN0b3AoMCUsIHJnYmEoMCwgMCwgMCwgMC42NSkpLCBjb2xvci1zdG9wKDU5JSwgcmdiYSgzNSwgMjYsIDI2LCAwKSksIGNvbG9yLXN0b3AoMTAwJSwgcmdiYSg2MCwgNDQsIDQ0LCAwKSkpO1xuICAgIGJhY2tncm91bmQ6IC13ZWJraXQtcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgwLCAwLCAwLCAwLjY1KSAwJSwgcmdiYSgzNSwgMjYsIDI2LCAwKSA1OSUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gICAgYmFja2dyb3VuZDogLW8tcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgwLCAwLCAwLCAwLjY1KSAwJSwgcmdiYSgzNSwgMjYsIDI2LCAwKSA1OSUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gICAgYmFja2dyb3VuZDogLW1zLXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMCwgMCwgMCwgMC42NSkgMCUsIHJnYmEoMzUsIDI2LCAyNiwgMCkgNTklLCByZ2JhKDYwLCA0NCwgNDQsIDApIDEwMCUpO1xuICAgIGJhY2tncm91bmQ6IHJhZGlhbC1ncmFkaWVudChlbGxpcHNlIGF0IGNlbnRlciwgcmdiYSgwLCAwLCAwLCAwLjY1KSAwJSwgcmdiYSgzNSwgMjYsIDI2LCAwKSA1OSUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gICAgZmlsdGVyOiBwcm9naWQ6RFhJbWFnZVRyYW5zZm9ybS5NaWNyb3NvZnQuZ3JhZGllbnQoc3RhcnRDb2xvcnN0cj0nI2E2MDAwMDAwJywgZW5kQ29sb3JzdHI9JyMwMDNjMmMyYycsR3JhZGllbnRUeXBlPTEgKTsgfVxuICAuZXJyb3ItcGFnZSBoMSB7XG4gICAgY29sb3I6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC45NCk7XG4gICAgZm9udC1zaXplOiAxMDBweDtcbiAgICBtYXJnaW46IDEwcHggYXV0byAwIGF1dG87XG4gICAgdGV4dC1zaGFkb3c6IDBweCAwIDdweCByZ2JhKDAsIDAsIDAsIDAuNSk7IH1cbiAgICAuZXJyb3ItcGFnZSBoMTpiZWZvcmUge1xuICAgICAgd2lkdGg6IDI2MHB4O1xuICAgICAgaGVpZ2h0OiAxcHg7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICBtYXJnaW46IDAgYXV0bztcbiAgICAgIHRvcDogMTIwcHg7XG4gICAgICBjb250ZW50OiAnJztcbiAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgYmFja2dyb3VuZDogLW1vei1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDExMSwgMjUsIDI1LCAwLjY1KSAwJSwgcmdiYSg3NSwgMzgsIDM4LCAwKSA3MCUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gICAgICBiYWNrZ3JvdW5kOiAtd2Via2l0LWdyYWRpZW50KHJhZGlhbCwgY2VudGVyIGNlbnRlciwgMHB4LCBjZW50ZXIgY2VudGVyLCAxMDAlLCBjb2xvci1zdG9wKDAlLCByZ2JhKDExMSwgMjUsIDI1LCAwLjY1KSksIGNvbG9yLXN0b3AoNzAlLCByZ2JhKDc1LCAzOCwgMzgsIDApKSwgY29sb3Itc3RvcCgxMDAlLCByZ2JhKDYwLCA0NCwgNDQsIDApKSk7XG4gICAgICBiYWNrZ3JvdW5kOiAtd2Via2l0LXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMTExLCAyNSwgMjUsIDAuNjUpIDAlLCByZ2JhKDc1LCAzOCwgMzgsIDApIDcwJSwgcmdiYSg2MCwgNDQsIDQ0LCAwKSAxMDAlKTtcbiAgICAgIGJhY2tncm91bmQ6IC1vLXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMTExLCAyNSwgMjUsIDAuNjUpIDAlLCByZ2JhKDc1LCAzOCwgMzgsIDApIDcwJSwgcmdiYSg2MCwgNDQsIDQ0LCAwKSAxMDAlKTtcbiAgICAgIGJhY2tncm91bmQ6IC1tcy1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDExMSwgMjUsIDI1LCAwLjY1KSAwJSwgcmdiYSg3NSwgMzgsIDM4LCAwKSA3MCUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gICAgICBiYWNrZ3JvdW5kOiByYWRpYWwtZ3JhZGllbnQoZWxsaXBzZSBhdCBjZW50ZXIsIHJnYmEoMTExLCAyNSwgMjUsIDAuNjUpIDAlLCByZ2JhKDc1LCAzOCwgMzgsIDApIDcwJSwgcmdiYSg2MCwgNDQsIDQ0LCAwKSAxMDAlKTtcbiAgICAgIGZpbHRlcjogcHJvZ2lkOkRYSW1hZ2VUcmFuc2Zvcm0uTWljcm9zb2Z0LmdyYWRpZW50KHN0YXJ0Q29sb3JzdHI9JyNhNjZmMTkxOScsIGVuZENvbG9yc3RyPScjMDAzYzJjMmMnLEdyYWRpZW50VHlwZT0xICk7IH1cbiAgICAuZXJyb3ItcGFnZSBoMTphZnRlciB7XG4gICAgICB3aWR0aDogMjYwcHg7XG4gICAgICBoZWlnaHQ6IDFweDtcbiAgICAgIGNvbnRlbnQ6ICcnO1xuICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICBvcGFjaXR5OiAwLjI7XG4gICAgICBtYXJnaW46IDAgYXV0bztcbiAgICAgIHRvcDogNTBweDtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIC8qYmFja2dyb3VuZDogLW1vei1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDI0NywgMTczLCAxNDgsIDAuNjUpIDAlLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDEpIDk5JSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwKSAxMDAlKTtcbiAgICAgIGJhY2tncm91bmQ6IC13ZWJraXQtZ3JhZGllbnQocmFkaWFsLCBjZW50ZXIgY2VudGVyLCAwcHgsIGNlbnRlciBjZW50ZXIsIDEwMCUsIGNvbG9yLXN0b3AoMCUsIHJnYmEoMjQ3LCAxNzMsIDE0OCwgMC42NSkpLCBjb2xvci1zdG9wKDk5JSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAxKSksIGNvbG9yLXN0b3AoMTAwJSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwKSkpO1xuICAgICAgYmFja2dyb3VuZDogLXdlYmtpdC1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDI0NywgMTczLCAxNDgsIDAuNjUpIDAlLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDEpIDk5JSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwKSAxMDAlKTtcbiAgICAgIGJhY2tncm91bmQ6IC1vLXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMjQ3LCAxNzMsIDE0OCwgMC42NSkgMCUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wMSkgOTklLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApIDEwMCUpO1xuICAgICAgYmFja2dyb3VuZDogLW1zLXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMjQ3LCAxNzMsIDE0OCwgMC42NSkgMCUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wMSkgOTklLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApIDEwMCUpO1xuICAgICAgYmFja2dyb3VuZDogcmFkaWFsLWdyYWRpZW50KGVsbGlwc2UgYXQgY2VudGVyLCByZ2JhKDI0NywgMTczLCAxNDgsIDAuNjUpIDAlLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDEpIDk5JSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwKSAxMDAlKTsqL1xuICAgICAgZmlsdGVyOiBwcm9naWQ6RFhJbWFnZVRyYW5zZm9ybS5NaWNyb3NvZnQuZ3JhZGllbnQoc3RhcnRDb2xvcnN0cj0nI2E2ZjdhZDk0JywgZW5kQ29sb3JzdHI9JyMwMGZmZmZmZicsR3JhZGllbnRUeXBlPTEgKTsgfVxuICAuZXJyb3ItcGFnZSBoMiB7XG4gICAgbWFyZ2luOiAxNHB4IDAgMzBweCAwO1xuICAgIGZvbnQtc2l6ZTogMTdweDsgfVxuICAgIC5lcnJvci1wYWdlIGgyOmJlZm9yZSB7XG4gICAgICB3aWR0aDogMTMwcHg7XG4gICAgICBoZWlnaHQ6IDFweDtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIG1hcmdpbjogMCBhdXRvO1xuICAgICAgdG9wOiAzMXB4O1xuICAgICAgY29udGVudDogJyc7XG4gICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgIGJhY2tncm91bmQ6IC1tb3otcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgxMTEsIDI1LCAyNSwgMC42NSkgMCUsIHJnYmEoNzUsIDM4LCAzOCwgMCkgNzAlLCByZ2JhKDYwLCA0NCwgNDQsIDApIDEwMCUpO1xuICAgICAgYmFja2dyb3VuZDogLXdlYmtpdC1ncmFkaWVudChyYWRpYWwsIGNlbnRlciBjZW50ZXIsIDBweCwgY2VudGVyIGNlbnRlciwgMTAwJSwgY29sb3Itc3RvcCgwJSwgcmdiYSgxMTEsIDI1LCAyNSwgMC42NSkpLCBjb2xvci1zdG9wKDcwJSwgcmdiYSg3NSwgMzgsIDM4LCAwKSksIGNvbG9yLXN0b3AoMTAwJSwgcmdiYSg2MCwgNDQsIDQ0LCAwKSkpO1xuICAgICAgYmFja2dyb3VuZDogLXdlYmtpdC1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDExMSwgMjUsIDI1LCAwLjY1KSAwJSwgcmdiYSg3NSwgMzgsIDM4LCAwKSA3MCUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gICAgICBiYWNrZ3JvdW5kOiAtby1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDExMSwgMjUsIDI1LCAwLjY1KSAwJSwgcmdiYSg3NSwgMzgsIDM4LCAwKSA3MCUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gICAgICBiYWNrZ3JvdW5kOiAtbXMtcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgxMTEsIDI1LCAyNSwgMC42NSkgMCUsIHJnYmEoNzUsIDM4LCAzOCwgMCkgNzAlLCByZ2JhKDYwLCA0NCwgNDQsIDApIDEwMCUpO1xuICAgICAgYmFja2dyb3VuZDogcmFkaWFsLWdyYWRpZW50KGVsbGlwc2UgYXQgY2VudGVyLCByZ2JhKDExMSwgMjUsIDI1LCAwLjY1KSAwJSwgcmdiYSg3NSwgMzgsIDM4LCAwKSA3MCUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gICAgICBmaWx0ZXI6IHByb2dpZDpEWEltYWdlVHJhbnNmb3JtLk1pY3Jvc29mdC5ncmFkaWVudChzdGFydENvbG9yc3RyPScjYTY2ZjE5MTknLCBlbmRDb2xvcnN0cj0nIzAwM2MyYzJjJyxHcmFkaWVudFR5cGU9MSApOyB9XG4gICAgLmVycm9yLXBhZ2UgaDI6YWZ0ZXIge1xuICAgICAgd2lkdGg6IDEzMHB4O1xuICAgICAgaGVpZ2h0OiAxcHg7XG4gICAgICBjb250ZW50OiAnJztcbiAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgb3BhY2l0eTogMC4yO1xuICAgICAgbWFyZ2luOiAwIGF1dG87XG4gICAgICB0b3A6IDExcHg7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICBiYWNrZ3JvdW5kOiAtbW96LXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMjQ3LCAxNzMsIDE0OCwgMC42NSkgMCUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wMSkgOTklLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApIDEwMCUpO1xuICAgICAgYmFja2dyb3VuZDogLXdlYmtpdC1ncmFkaWVudChyYWRpYWwsIGNlbnRlciBjZW50ZXIsIDBweCwgY2VudGVyIGNlbnRlciwgMTAwJSwgY29sb3Itc3RvcCgwJSwgcmdiYSgyNDcsIDE3MywgMTQ4LCAwLjY1KSksIGNvbG9yLXN0b3AoOTklLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDEpKSwgY29sb3Itc3RvcCgxMDAlLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApKSk7XG4gICAgICBiYWNrZ3JvdW5kOiAtd2Via2l0LXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMjQ3LCAxNzMsIDE0OCwgMC42NSkgMCUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wMSkgOTklLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApIDEwMCUpO1xuICAgICAgYmFja2dyb3VuZDogLW8tcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgyNDcsIDE3MywgMTQ4LCAwLjY1KSAwJSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAxKSA5OSUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMCkgMTAwJSk7XG4gICAgICBiYWNrZ3JvdW5kOiAtbXMtcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgyNDcsIDE3MywgMTQ4LCAwLjY1KSAwJSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAxKSA5OSUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMCkgMTAwJSk7XG4gICAgICBiYWNrZ3JvdW5kOiByYWRpYWwtZ3JhZGllbnQoZWxsaXBzZSBhdCBjZW50ZXIsIHJnYmEoMjQ3LCAxNzMsIDE0OCwgMC42NSkgMCUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wMSkgOTklLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApIDEwMCUpO1xuICAgICAgZmlsdGVyOiBwcm9naWQ6RFhJbWFnZVRyYW5zZm9ybS5NaWNyb3NvZnQuZ3JhZGllbnQoc3RhcnRDb2xvcnN0cj0nI2E2ZjdhZDk0JywgZW5kQ29sb3JzdHI9JyMwMGZmZmZmZicsR3JhZGllbnRUeXBlPTEgKTsgfVxuXG4uZXJyb3ItYmFjayB7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgY29sb3I6ICM0MzA0MDA7XG4gIGZvbnQtc2l6ZTogMTVweDsgXG59XG4uZXJyb3ItYmFjazpob3ZlciB7XG4gICAgY29sb3I6ICNFQjk1N0Q7XG4gICAgdGV4dC1zaGFkb3c6IDAgMCAzcHggYmxhY2s7XG59XG5cbiIsIi5lcnJvci1wYWdlLXdyYXAge1xuICB3aWR0aDogMzEwcHg7XG4gIGhlaWdodDogMzEwcHg7XG4gIG1hcmdpbjogMTU1cHggYXV0bzsgfVxuXG4uZXJyb3ItcGFnZS13cmFwOmJlZm9yZSB7XG4gIGJveC1zaGFkb3c6IDAgMCAyMDBweCAxNTBweCAjZmZmO1xuICB3aWR0aDogMzEwcHg7XG4gIGhlaWdodDogMzEwcHg7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB6LWluZGV4OiAtMTtcbiAgY29udGVudDogJyc7XG4gIGRpc3BsYXk6IGJsb2NrOyB9XG5cbi5lcnJvci1wYWdlIHtcbiAgd2lkdGg6IDMxMHB4O1xuICBoZWlnaHQ6IDMxMHB4O1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIHRvcDogLTMxMHB4O1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgYmFja2dyb3VuZDogIzNmNTFiNTtcbiAgYmFja2dyb3VuZDogLW1vei1saW5lYXItZ3JhZGllbnQodG9wLCAjNGQ5OWI1IDAlLCAjM2Y1MWI1IDEwMCUpO1xuICBiYWNrZ3JvdW5kOiAtd2Via2l0LWdyYWRpZW50KGxpbmVhciwgbGVmdCB0b3AsIGxlZnQgYm90dG9tLCBjb2xvci1zdG9wKDAlLCAjNGQ5OWI1KSwgY29sb3Itc3RvcCgxMDAlLCAjM2Y1MWI1KSk7XG4gIGJhY2tncm91bmQ6IC13ZWJraXQtbGluZWFyLWdyYWRpZW50KHRvcCwgIzRkOTliNSAwJSwgIzNmNTFiNSAxMDAlKTtcbiAgYmFja2dyb3VuZDogLW8tbGluZWFyLWdyYWRpZW50KHRvcCwgIzRkOTliNSAwJSwgIzNmNTFiNSAxMDAlKTtcbiAgYmFja2dyb3VuZDogLW1zLWxpbmVhci1ncmFkaWVudCh0b3AsICM0ZDk5YjUgMCUsICMzZjUxYjUgMTAwJSk7XG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCh0byBib3R0b20sICM0ZDk5YjUgMCUsICMzZjUxYjUgMTAwJSk7XG4gIGZpbHRlcjogcHJvZ2lkOkRYSW1hZ2VUcmFuc2Zvcm0uTWljcm9zb2Z0LmdyYWRpZW50KHN0YXJ0Q29sb3JzdHI9JyRmaXJzdENvbG9yJywgZW5kQ29sb3JzdHI9JyRzZWNvbmRDb2xvcicsR3JhZGllbnRUeXBlPTAgKTsgfVxuXG4uZXJyb3ItcGFnZTpiZWZvcmUge1xuICB3aWR0aDogNjNweDtcbiAgaGVpZ2h0OiA2M3B4O1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGJveC1zaGFkb3c6IDNweCAyNXB4IDAgNXB4ICM0ZDk5YjU7XG4gIGNvbnRlbnQ6ICcnO1xuICB6LWluZGV4OiAtMTtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgdG9wOiAtMTlweDtcbiAgbGVmdDogNDRweDsgfVxuXG4uZXJyb3ItcGFnZTphZnRlciB7XG4gIHdpZHRoOiAzMTBweDtcbiAgaGVpZ2h0OiAxN3B4O1xuICBtYXJnaW46IDAgYXV0bztcbiAgdG9wOiAyNXB4O1xuICBjb250ZW50OiAnJztcbiAgei1pbmRleDogLTE7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGJhY2tncm91bmQ6IC1tb3otcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgwLCAwLCAwLCAwLjY1KSAwJSwgcmdiYSgzNSwgMjYsIDI2LCAwKSA1OSUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gIGJhY2tncm91bmQ6IC13ZWJraXQtZ3JhZGllbnQocmFkaWFsLCBjZW50ZXIgY2VudGVyLCAwcHgsIGNlbnRlciBjZW50ZXIsIDEwMCUsIGNvbG9yLXN0b3AoMCUsIHJnYmEoMCwgMCwgMCwgMC42NSkpLCBjb2xvci1zdG9wKDU5JSwgcmdiYSgzNSwgMjYsIDI2LCAwKSksIGNvbG9yLXN0b3AoMTAwJSwgcmdiYSg2MCwgNDQsIDQ0LCAwKSkpO1xuICBiYWNrZ3JvdW5kOiAtd2Via2l0LXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMCwgMCwgMCwgMC42NSkgMCUsIHJnYmEoMzUsIDI2LCAyNiwgMCkgNTklLCByZ2JhKDYwLCA0NCwgNDQsIDApIDEwMCUpO1xuICBiYWNrZ3JvdW5kOiAtby1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDAsIDAsIDAsIDAuNjUpIDAlLCByZ2JhKDM1LCAyNiwgMjYsIDApIDU5JSwgcmdiYSg2MCwgNDQsIDQ0LCAwKSAxMDAlKTtcbiAgYmFja2dyb3VuZDogLW1zLXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMCwgMCwgMCwgMC42NSkgMCUsIHJnYmEoMzUsIDI2LCAyNiwgMCkgNTklLCByZ2JhKDYwLCA0NCwgNDQsIDApIDEwMCUpO1xuICBiYWNrZ3JvdW5kOiByYWRpYWwtZ3JhZGllbnQoZWxsaXBzZSBhdCBjZW50ZXIsIHJnYmEoMCwgMCwgMCwgMC42NSkgMCUsIHJnYmEoMzUsIDI2LCAyNiwgMCkgNTklLCByZ2JhKDYwLCA0NCwgNDQsIDApIDEwMCUpO1xuICBmaWx0ZXI6IHByb2dpZDpEWEltYWdlVHJhbnNmb3JtLk1pY3Jvc29mdC5ncmFkaWVudChzdGFydENvbG9yc3RyPScjYTYwMDAwMDAnLCBlbmRDb2xvcnN0cj0nIzAwM2MyYzJjJyxHcmFkaWVudFR5cGU9MSApOyB9XG5cbi5lcnJvci1wYWdlIGgxIHtcbiAgY29sb3I6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC45NCk7XG4gIGZvbnQtc2l6ZTogMTAwcHg7XG4gIG1hcmdpbjogMTBweCBhdXRvIDAgYXV0bztcbiAgdGV4dC1zaGFkb3c6IDBweCAwIDdweCByZ2JhKDAsIDAsIDAsIDAuNSk7IH1cblxuLmVycm9yLXBhZ2UgaDE6YmVmb3JlIHtcbiAgd2lkdGg6IDI2MHB4O1xuICBoZWlnaHQ6IDFweDtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBtYXJnaW46IDAgYXV0bztcbiAgdG9wOiAxMjBweDtcbiAgY29udGVudDogJyc7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBiYWNrZ3JvdW5kOiAtbW96LXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMTExLCAyNSwgMjUsIDAuNjUpIDAlLCByZ2JhKDc1LCAzOCwgMzgsIDApIDcwJSwgcmdiYSg2MCwgNDQsIDQ0LCAwKSAxMDAlKTtcbiAgYmFja2dyb3VuZDogLXdlYmtpdC1ncmFkaWVudChyYWRpYWwsIGNlbnRlciBjZW50ZXIsIDBweCwgY2VudGVyIGNlbnRlciwgMTAwJSwgY29sb3Itc3RvcCgwJSwgcmdiYSgxMTEsIDI1LCAyNSwgMC42NSkpLCBjb2xvci1zdG9wKDcwJSwgcmdiYSg3NSwgMzgsIDM4LCAwKSksIGNvbG9yLXN0b3AoMTAwJSwgcmdiYSg2MCwgNDQsIDQ0LCAwKSkpO1xuICBiYWNrZ3JvdW5kOiAtd2Via2l0LXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMTExLCAyNSwgMjUsIDAuNjUpIDAlLCByZ2JhKDc1LCAzOCwgMzgsIDApIDcwJSwgcmdiYSg2MCwgNDQsIDQ0LCAwKSAxMDAlKTtcbiAgYmFja2dyb3VuZDogLW8tcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgxMTEsIDI1LCAyNSwgMC42NSkgMCUsIHJnYmEoNzUsIDM4LCAzOCwgMCkgNzAlLCByZ2JhKDYwLCA0NCwgNDQsIDApIDEwMCUpO1xuICBiYWNrZ3JvdW5kOiAtbXMtcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgxMTEsIDI1LCAyNSwgMC42NSkgMCUsIHJnYmEoNzUsIDM4LCAzOCwgMCkgNzAlLCByZ2JhKDYwLCA0NCwgNDQsIDApIDEwMCUpO1xuICBiYWNrZ3JvdW5kOiByYWRpYWwtZ3JhZGllbnQoZWxsaXBzZSBhdCBjZW50ZXIsIHJnYmEoMTExLCAyNSwgMjUsIDAuNjUpIDAlLCByZ2JhKDc1LCAzOCwgMzgsIDApIDcwJSwgcmdiYSg2MCwgNDQsIDQ0LCAwKSAxMDAlKTtcbiAgZmlsdGVyOiBwcm9naWQ6RFhJbWFnZVRyYW5zZm9ybS5NaWNyb3NvZnQuZ3JhZGllbnQoc3RhcnRDb2xvcnN0cj0nI2E2NmYxOTE5JywgZW5kQ29sb3JzdHI9JyMwMDNjMmMyYycsR3JhZGllbnRUeXBlPTEgKTsgfVxuXG4uZXJyb3ItcGFnZSBoMTphZnRlciB7XG4gIHdpZHRoOiAyNjBweDtcbiAgaGVpZ2h0OiAxcHg7XG4gIGNvbnRlbnQ6ICcnO1xuICBkaXNwbGF5OiBibG9jaztcbiAgb3BhY2l0eTogMC4yO1xuICBtYXJnaW46IDAgYXV0bztcbiAgdG9wOiA1MHB4O1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIC8qYmFja2dyb3VuZDogLW1vei1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDI0NywgMTczLCAxNDgsIDAuNjUpIDAlLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDEpIDk5JSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwKSAxMDAlKTtcbiAgICAgIGJhY2tncm91bmQ6IC13ZWJraXQtZ3JhZGllbnQocmFkaWFsLCBjZW50ZXIgY2VudGVyLCAwcHgsIGNlbnRlciBjZW50ZXIsIDEwMCUsIGNvbG9yLXN0b3AoMCUsIHJnYmEoMjQ3LCAxNzMsIDE0OCwgMC42NSkpLCBjb2xvci1zdG9wKDk5JSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAxKSksIGNvbG9yLXN0b3AoMTAwJSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwKSkpO1xuICAgICAgYmFja2dyb3VuZDogLXdlYmtpdC1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDI0NywgMTczLCAxNDgsIDAuNjUpIDAlLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDEpIDk5JSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwKSAxMDAlKTtcbiAgICAgIGJhY2tncm91bmQ6IC1vLXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMjQ3LCAxNzMsIDE0OCwgMC42NSkgMCUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wMSkgOTklLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApIDEwMCUpO1xuICAgICAgYmFja2dyb3VuZDogLW1zLXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMjQ3LCAxNzMsIDE0OCwgMC42NSkgMCUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wMSkgOTklLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApIDEwMCUpO1xuICAgICAgYmFja2dyb3VuZDogcmFkaWFsLWdyYWRpZW50KGVsbGlwc2UgYXQgY2VudGVyLCByZ2JhKDI0NywgMTczLCAxNDgsIDAuNjUpIDAlLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDEpIDk5JSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwKSAxMDAlKTsqL1xuICBmaWx0ZXI6IHByb2dpZDpEWEltYWdlVHJhbnNmb3JtLk1pY3Jvc29mdC5ncmFkaWVudChzdGFydENvbG9yc3RyPScjYTZmN2FkOTQnLCBlbmRDb2xvcnN0cj0nIzAwZmZmZmZmJyxHcmFkaWVudFR5cGU9MSApOyB9XG5cbi5lcnJvci1wYWdlIGgyIHtcbiAgbWFyZ2luOiAxNHB4IDAgMzBweCAwO1xuICBmb250LXNpemU6IDE3cHg7IH1cblxuLmVycm9yLXBhZ2UgaDI6YmVmb3JlIHtcbiAgd2lkdGg6IDEzMHB4O1xuICBoZWlnaHQ6IDFweDtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBtYXJnaW46IDAgYXV0bztcbiAgdG9wOiAzMXB4O1xuICBjb250ZW50OiAnJztcbiAgZGlzcGxheTogYmxvY2s7XG4gIGJhY2tncm91bmQ6IC1tb3otcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgxMTEsIDI1LCAyNSwgMC42NSkgMCUsIHJnYmEoNzUsIDM4LCAzOCwgMCkgNzAlLCByZ2JhKDYwLCA0NCwgNDQsIDApIDEwMCUpO1xuICBiYWNrZ3JvdW5kOiAtd2Via2l0LWdyYWRpZW50KHJhZGlhbCwgY2VudGVyIGNlbnRlciwgMHB4LCBjZW50ZXIgY2VudGVyLCAxMDAlLCBjb2xvci1zdG9wKDAlLCByZ2JhKDExMSwgMjUsIDI1LCAwLjY1KSksIGNvbG9yLXN0b3AoNzAlLCByZ2JhKDc1LCAzOCwgMzgsIDApKSwgY29sb3Itc3RvcCgxMDAlLCByZ2JhKDYwLCA0NCwgNDQsIDApKSk7XG4gIGJhY2tncm91bmQ6IC13ZWJraXQtcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgxMTEsIDI1LCAyNSwgMC42NSkgMCUsIHJnYmEoNzUsIDM4LCAzOCwgMCkgNzAlLCByZ2JhKDYwLCA0NCwgNDQsIDApIDEwMCUpO1xuICBiYWNrZ3JvdW5kOiAtby1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDExMSwgMjUsIDI1LCAwLjY1KSAwJSwgcmdiYSg3NSwgMzgsIDM4LCAwKSA3MCUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gIGJhY2tncm91bmQ6IC1tcy1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDExMSwgMjUsIDI1LCAwLjY1KSAwJSwgcmdiYSg3NSwgMzgsIDM4LCAwKSA3MCUsIHJnYmEoNjAsIDQ0LCA0NCwgMCkgMTAwJSk7XG4gIGJhY2tncm91bmQ6IHJhZGlhbC1ncmFkaWVudChlbGxpcHNlIGF0IGNlbnRlciwgcmdiYSgxMTEsIDI1LCAyNSwgMC42NSkgMCUsIHJnYmEoNzUsIDM4LCAzOCwgMCkgNzAlLCByZ2JhKDYwLCA0NCwgNDQsIDApIDEwMCUpO1xuICBmaWx0ZXI6IHByb2dpZDpEWEltYWdlVHJhbnNmb3JtLk1pY3Jvc29mdC5ncmFkaWVudChzdGFydENvbG9yc3RyPScjYTY2ZjE5MTknLCBlbmRDb2xvcnN0cj0nIzAwM2MyYzJjJyxHcmFkaWVudFR5cGU9MSApOyB9XG5cbi5lcnJvci1wYWdlIGgyOmFmdGVyIHtcbiAgd2lkdGg6IDEzMHB4O1xuICBoZWlnaHQ6IDFweDtcbiAgY29udGVudDogJyc7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBvcGFjaXR5OiAwLjI7XG4gIG1hcmdpbjogMCBhdXRvO1xuICB0b3A6IDExcHg7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgYmFja2dyb3VuZDogLW1vei1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlIGNvdmVyLCByZ2JhKDI0NywgMTczLCAxNDgsIDAuNjUpIDAlLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDEpIDk5JSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwKSAxMDAlKTtcbiAgYmFja2dyb3VuZDogLXdlYmtpdC1ncmFkaWVudChyYWRpYWwsIGNlbnRlciBjZW50ZXIsIDBweCwgY2VudGVyIGNlbnRlciwgMTAwJSwgY29sb3Itc3RvcCgwJSwgcmdiYSgyNDcsIDE3MywgMTQ4LCAwLjY1KSksIGNvbG9yLXN0b3AoOTklLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDEpKSwgY29sb3Itc3RvcCgxMDAlLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApKSk7XG4gIGJhY2tncm91bmQ6IC13ZWJraXQtcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgyNDcsIDE3MywgMTQ4LCAwLjY1KSAwJSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAxKSA5OSUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMCkgMTAwJSk7XG4gIGJhY2tncm91bmQ6IC1vLXJhZGlhbC1ncmFkaWVudChjZW50ZXIsIGVsbGlwc2UgY292ZXIsIHJnYmEoMjQ3LCAxNzMsIDE0OCwgMC42NSkgMCUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wMSkgOTklLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApIDEwMCUpO1xuICBiYWNrZ3JvdW5kOiAtbXMtcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSBjb3ZlciwgcmdiYSgyNDcsIDE3MywgMTQ4LCAwLjY1KSAwJSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAxKSA5OSUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMCkgMTAwJSk7XG4gIGJhY2tncm91bmQ6IHJhZGlhbC1ncmFkaWVudChlbGxpcHNlIGF0IGNlbnRlciwgcmdiYSgyNDcsIDE3MywgMTQ4LCAwLjY1KSAwJSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAxKSA5OSUsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMCkgMTAwJSk7XG4gIGZpbHRlcjogcHJvZ2lkOkRYSW1hZ2VUcmFuc2Zvcm0uTWljcm9zb2Z0LmdyYWRpZW50KHN0YXJ0Q29sb3JzdHI9JyNhNmY3YWQ5NCcsIGVuZENvbG9yc3RyPScjMDBmZmZmZmYnLEdyYWRpZW50VHlwZT0xICk7IH1cblxuLmVycm9yLWJhY2sge1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gIGNvbG9yOiAjNDMwNDAwO1xuICBmb250LXNpemU6IDE1cHg7IH1cblxuLmVycm9yLWJhY2s6aG92ZXIge1xuICBjb2xvcjogI0VCOTU3RDtcbiAgdGV4dC1zaGFkb3c6IDAgMCAzcHggYmxhY2s7IH1cbiJdfQ== */"
 
 /***/ }),
 
@@ -1664,29 +1791,22 @@ module.exports = ".error-page-wrap {\n  width: 310px;\n  height: 310px;\n  margi
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NotfoundComponent", function() { return NotfoundComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var NotfoundComponent = /** @class */ (function () {
     function NotfoundComponent() {
     }
     NotfoundComponent.prototype.ngOnInit = function () {
     };
-    NotfoundComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    NotfoundComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-notfound',
             template: __webpack_require__(/*! ./notfound.component.html */ "./src/app/pages/notfound/notfound.component.html"),
             styles: [__webpack_require__(/*! ./notfound.component.scss */ "./src/app/pages/notfound/notfound.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], NotfoundComponent);
     return NotfoundComponent;
 }());
@@ -1702,7 +1822,7 @@ var NotfoundComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section>\n\t<h2>Añadir página a web de onboarding</h2>\n\t<p>\n\t\tPara añadir una página a la web de onboarding, primero habrá que crear el nuevo componente que alojará el texto, las imagenes y el resto de componentes de esa página. En este ejemplo se creará una nueva página de privacidad. Para crear un nuevo componente hay que usar el temrinal. Primero hay que ir a la carpeta del proyecto, y luego hay que usar el siguiente comando:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">\nng generate component shared/privacy\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tEste comando, ha generado la carpeta privacy dentro de <i>app/shared</i>, y a su vez dentro de la carpeta <i>privacy</i> se generan 4 archivos:\n\t</p>\n\t\t<ul>\n\t\t\t<li><b>privacy.component.html:</b> aquí es donde se escribe el código html con el contenido del componente (en este caso página).</li>\n\t\t\t<li><b>privacy.component.scss:</b> aquí es donde se escribe el codigo css en formato sass especifico para este componente.</li>\n\t\t\t<li><b>privacy.component.spec.ts:</b> en este archivo se escriben los test del código.</li>\n\t\t\t<li><b>privacy.component.ts:</b> en este archivo se escriben las importaciones necesarias para el componente, el código que se iniciará al cargar la página, las variables que estarán disponibles en la página, etc.</li>\n\t\t</ul>\n\t<p>\n\t\tGrácias a este comando, también se ha agregado el componente en app.module.ts, tanto la importación como la declaración.\n\t</p>\n\t<p>\n\t\tLo siguiente es generar la ruta para esta nueva página, para ello hay que ir al archivo 'app.routing.ts', importar el componente que se ha generado y añadirle la ruta.\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-typescript\">{{\"import { PrivacyComponent } from './shared/privacy/privacy.component';\nimport { NotfoundComponent } from './pages/notfound/notfound.component';\n\nconst routes: Routes = [\n  { path: 'terms/privacy', \tcomponent: PrivacyComponent },\n  { path: '404', \t\t\tcomponent: NotfoundComponent },\n  { path: '**', \t\t\tredirectTo: '/404' }\n];\"}}</code>\n\t</pre>\n\t<p>\n\t\tEn este ejemplo se aprecia que se añade PrivacyComponent junto a la ruta de NotfoundComponent y una ruta por defecto que lleva cualquier ruta que no este declarada al componente de notfound. De esta manera queda claro como agregar rutas nuevas a las ya existentes.\n\t</p>\n\t<p>\n\t\tUna vez que ya se tiene el componente y la ruta ya se pueden crear enlaces hacia esa ruta, o incluso escribirla directamente en el navegador. Ahora ya solo queda escribir el contenido en el archivo <i>privacy.component.html</i>.\n\t</p>\n\n</section>\n<section>\n\t<h2>Añadir enlaces al menu para nuevas páginas</h2>\n\t<p>\n\t\tPara modificar los enlaces del menu sidenav hay que dirigirse al archivo <i>src/app/shared/navigation/links/links.component.html</i>, en ese archivo se encuentra un <i>mat-nav-list</i> que contiene los enlaces del menú.\n\t</p>\n\t<p>\n\t\tExisten dos niveles de enlaces, el que se ve directamente en el menú sidenav (primer nivel), y los que se ven cuando se abren estos (segundo nivel). Todos los enlaces deben llevar <i>mat-list-item</i> dentro del html tag <i>a</i>.\n\t</p>\n\t<p>\n\t\tA todos los enlaces que llevan a una página nueva hay que ponerles la función <i>setTitle( 'Título de la nueva página' )</i> cuando se dispare el evento click. Esto se hace para que el título de la pestaña cambie y cada página tenga un título. <i>setTitle</i> es una función de un servicio de angular creada para cambiar el título de las paginas. Que cada página tenga su propio título mejora el seo (Search Engine Optimization) de la web y por lo tanto su posición a la hora de aparecer en búscadores como Google.\n\t</p>\n\t<p>\n\t\tA los enlaces de primer nivel, si contienen enlaces de segundo nivel, hay que ponerles la funcion <i>openClose( 'idGrupo', 'idGrupoCaret')</i>, y dentro del contenido del html tag <i>a</i> hay que poner un icono <i>caret</i> de material con un id único que se va a asignar a cada grupo de enlaces y que es el parámetro <i>'idGrupoCaret'</i> de la función. El otro parámetro de la función es el nombre de una variable booleana que se va a utilizar para mostrar o ocultar los enlaces de segundo nivel de ese grupo. La función devuelve el valor <i>true</i> o <i>false</i> que se asigna a esa misma variable y gira el icono con el id proporcionado en el segundo parámetro.\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-markup\">\n&lt;a mat-list-item (click)=\"usersShow = openClose(usersShow, 'userCaret')\"&gt;\n    &lt;mat-icon mat-list-icon&gt;people&lt;/mat-icon&gt;\n    &lt;span&gt;Usuarios&lt;/span&gt;  // titulo enlace\n    &lt;span class=\"fill-space\"&gt;&lt;/span&gt;  // span vacio para alinear el caret a la derecha\n    &lt;mat-icon id=\"userCaret\" class=\"material-icons\"&gt;expand_more&lt;/mat-icon&gt;\n&lt;/a&gt;\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tLos enlaces de segundo nivel deben tener un <i>*ngIf=\"idGrupo\"</i>, al ser una variable booleana los enlaces se mostrarán u ocultarán según su valor. A estos enlaces de segundo nivel tambien hay que añadirles la función <i>openClose()</i> en el evento click para que se cierre el grupo una vez seleccionado uno de los enlaces. \n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-markup\">\n&lt;a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/students\" (click)=\"usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar la aplicacion como estudiante' );\"&gt;\n    &lt;mat-icon mat-list-icon fontSet=\"fa\" fontIcon=\"fa-user-graduate\"&gt;&lt;/mat-icon&gt;  // ver sección iconos\n    &lt;span&gt;Estudiantes&lt;/span&gt;  // titulo enlace\n&lt;/a&gt;\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tEn el ejemplo previo, se observa como esta realizado el enlace de primer nivel 'Usuarios', y un enlace de segundo nivel que pertenece a este llamado 'Estudiantes'.\n\t</p>\n</section>\n<section>\n\t<h2>Iconos</h2>\n\t<p>\n\t\tEn este proyecto se pueden usar los <a href=\"https://material.io/tools/icons/?style=baseline\">material icons</a> de la forma usual, que es <i>&lt;mat-icon&gt;nombreIcono&lt;/mat-icon&gt;</i>, usando como 'nombreIcono' cualquiera de los de la lista del enlace.\n\t</p>\n\t<p>\n\t\tPero también se han añadido los iconos gratuitos de <a href=\"https://fontawesome.com/icons?d=gallery\">font Awesome</a>, que ofrecen una mayor variedad de iconos inexistentes en los material icons, como por ejemplo el del logo de Github. Para poder utilizar los iconos de font awesome dentro de un tag mat-icon, como los de material, se ha instalado un modulo de Node y se ha creado un servicio.\n\t</p>\n\t<p>\n\t\tAhora para añadir un icono de font awesome solo hay que añadir al tag mat-icon un <i>fontSet</i> y un <i>fontIcon</i>. El fontSet depende del tipo de icono que se vaya a utilizar, los normales usan el fontSet <i>fa</i>, los de marcas usan el <i>fab</i>, los del grupo solid usan el <i>fas</i>,etc. En el fontIcon hay que poner el nombre del icono precedido de <i>fa-</i>. Y finalmente, al contrario que con los iconos de material, no hay que poner ningún texto dentro del tag mat-icon.\n\t</p>\n\t<p>\n\t\tSi por ejemplo se quiere usar el icono <i>addess-card</i> del grupo <i>Solid</i> hay que hacerlo de la siguiente manera:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-markup\">\n&lt;mat-icon mat-list-icon fontSet=\"fas\" fontIcon=\"fa-address-card\"&gt;&lt;/mat-icon&gt;\n\t\t</code>\n\t</pre>\n</section>\n<section>\n\t<h2>Crear un nuevo servicio</h2>\n\t<p>\n\t\tComo ejemplo se va a crear el servicio que da estilo al formato de código que hay en las páginas de desarrollo de la web de onboarding. Para ello se va a usar el modulo de prismjs.\n\n\t\tEl primer paso es, desde terminal nos situamos en la carpeta del proyecto, y para instalar el módulo de pismjs se utiliza el siguiente comando:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">\n$ npm install prismjs --save\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tAhora toca crear el nuevo servicio. Para generarlo, hay que escribir el siguiente comando del cli de angular:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">\n$ ng generate service shared/services/highlight\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tEl servicio que se ha generado, podemos encontrarlo en la ruta <i>app/shared/services/highlight.service.ts</i>, y por el momento sólo tiene código genérico. El archivo debe ser algo como esto:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-typescript\">{{\"import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class HighlightService {\n\n  constructor() { }\n}\"}}</code>\n\t</pre>\n\t<p>\n\t\tSe procede a escribir el código del servicio. En este caso, se escribe código para poder utilizar prismjs y que de formato de código, con colores para facilitar la lectura a los fragmentos de código que hay en la web de onboarding. Una vez escrito el código, el archivo de <i>highlight.services.ts</i> quedará así:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-typescript\">{{\"import { , PLATFORM_ID, Inject } from '@angular/core';\n \nimport 'clipboard';\n\nimport 'prismjs';\nimport 'prismjs/plugins/toolbar/prism-toolbar';\nimport 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard';\nimport 'prismjs/components/prism-javascript';\nimport 'prismjs/components/prism-markup';\nimport 'prismjs/components/prism-typescript';\nimport 'prismjs/components/prism-sass';\nimport 'prismjs/components/prism-scss';\n\ndeclare var Prism: any;\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class HighlightService {\n\n  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }\n\n  highlightAll() {\n    if (isPlatformBrowser(this.platformId)) {\n      Prism.highlightAll();\n    }\n  }\n}\"}}</code>\n\t</pre>\n\t<p>\n\t\tUna vez que se ha programado el servicio que se necesita, hay que utilizarlo en el componente donde se quiere insertar código formatado. Como ejemplo, se va a insertar el servicio de formatado de código en el componente de <i>onboarding</i>. En este caso concreto, además se va a utilizar <i>AfterViewChecked</i> que es un evento que se lanza cuando la vista ya se ha cargado completamente, y es cuando se iniciará el método de highlightAll(). También se ha añadido la variable booleana <i>highlighted</i> que se utiliza para evitar que el método <i>highlighted</i> se llame más de una vez. <br>\n\t\tPor lo tanto, tras importar <i>AfterViewChecked</i> de Angular/core y el servicio <i>HighlightService</i>, hay que añadir <i>private highlightService: HighlightService</i> al constructor, y por último la función que se lanza en <i>ngAfterViewChecked</i>. Una vez hecho esto el código debe ser así:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-typescript\">{{\"import { Component, OnInit, AfterViewChecked } from '@angular/core';\n\nimport { HighlightService } from '../../shared/services/highlight.service';\n\n@Component({\n  selector: 'app-onboarding',\n  templateUrl: './onboarding.component.html',\n  styleUrls: ['./onboarding.component.scss']\n})\nexport class OnboardingComponent implements OnInit, AfterViewChecked {\n\n  onboarding: OnboardingInterface;\n  highlighted: boolean = false;\n\n  constructor(private highlightService: HighlightService) { }\n\n  /**\n   * Highlight blog post when it's ready\n   */\n  ngAfterViewChecked() {\n    if (this.onboarding && !this.highlighted) {\n      this.highlightService.highlightAll();\n      this.highlighted = true;\n    }\n  }\n\n  ngOnInit() {\n  }\n\n}\"}}</code>\n\t</pre>\n\t<p>\n\t\tY en este caso, para acabar aún queda un último paso. Hay que importar las hojas de estilos de prismjs en <i>src/sass/styles.scss</i>. Que en el caso de este proyecto son las que pertenecen al tema <i>coi</i>. Y, de ser necesario después se puede añadir alguna personalización al código para que se adapte al estilo de la web. La importación y personalización de estilos es la siguiente:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-scss\">{{'@import \"~prismjs/plugins/toolbar/prism-toolbar.css\";\n@import \"~prismjs/themes/prism-coy\";\n\npre[class*=\"language-\"] {\n  background-color: transparent;\n}\n\npre[class*=\"language-\"]:before, pre[class*=\"language-\"]:after {\n  display: none;\n}'}}</code>\n\t</pre>\n\t<p>\n\t\tEl servicio ya esta añadido y funcionando. Ya se ha explicado como crear un nuevo servicio y como usarlo en los componentes. Ahora, como apunte, hay que señalar que para usar el formatado de texto del servicio de highlight, tan solo hay que añadir la clase <i>class=\"language-'lenguaje-usado'\"</i> al tag <i>code</i>, por ejemplo para código en javascript hay que añadir <i>class=\"language-typescript\"</i> al tag code.\n\t</p>\n</section>\n<section>\n\t<h2>Añadir o modificar datos en página de Profesores</h2>\n\t<p>\n\t\tLas páginas del proyecto de onboarding estan hechas con contenido estático, a excepción de la página con el tutorial de uso para profesores que tiene un archivo con el contenido que se llama y se lista desde el componente correspondiente a la página de profesores. \n\t</p>\n\t<p>\n\t\tPara este contenido se ha creado un objeto dataCard en <i>app/class/dataCard.ts</i> que se utiliza en el archivo <i>app/data/teacher_videos.ts</i>, donde se ha escrito un array de objetos dataCard.\n\t</p>\n\t<p>\n\t\tLo último que queda es importar el objeto dataCard y el array de objetos dataCard en el componente <i>app/pages/teachers/teachers.component.ts</i> y igualar el array a una variable que se pueda usar en la plantilla y utilizar para listar su contenido.\n\t</p>\n\t<p>\n\t\tHay que mencionar, que para que se puedan listar enlaces a webs provenientes de objetos, como lo son los enlaces de youtube, hay que \"sanear\" el contenido ya que si no se hace este queda bloqueado por seguridad. Para ello hay que importar <i>DomSanitizer</i> de <i>angular/platform-browser</i> e introducirlo en el constructor. Ahora que ya se pueden utilizar los métodos de <i>sanitizer</i>, alla donde se vaya a imprimir el contenido url hay que poner lo siguiente: <i>[src]='sanitizer.bypassSecurityTrustResourceUrl(url)'</i>.\n\t</p>\n\t<p>\n\t\tEl código del componente de <i>teachers.component.ts</i> es el siguiente:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code  class=\"language-typescript\">{{\"import { Component, OnInit } from '@angular/core';\nimport { DomSanitizer } from '@angular/platform-browser';\nimport {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';\nimport { DataCard } from '../../class/dataCard';\nimport { CARDS } from '../../data/teacher_videos';\n\n\n@Component({\n  selector: 'app-teachers',\n  templateUrl: './teachers.component.html',\n  styleUrls: ['./teachers.component.scss']\n})\n\nexport class TeachersComponent implements OnInit {\n\n  cards = CARDS;\n\n  constructor(public sanitizer: DomSanitizer) {}\n\n  ngOnInit() {}\n\n  drop(event: CdkDragDrop&lt;DataCard[]&gt;) {\n    moveItemInArray(this.cards, event.previousIndex, event.currentIndex);\n  }\n\n}\"}}</code>\n\t</pre>\n</section>\n<section>\n\t<h2>Insertar fragmentos de código</h2>\n\t<p>\n\t\tPara facilitar la lectura de código en los tutoriales de la web de onboarding se ha utilizado el módulo de Node <a href=\"https://prismjs.com/\">prismjs</a>, y como se ha visto en un punto anterior de este tutorial se ha creado un servicio para su uso.\n\t</p>\n\t<p>\n\t\tPara utilizar el formatado de código en un componente se hace de la siguiente manera:\n\t</p>\n\t<ul>\n\t\t<li>Se importa el servicio en el componente <i>\"import {{'{'}} HighlightService {{'}'}} from 'ruta-hasta/shared/services/highlight.service';\"</i></li>\n\t\t<li>Se añade <i>\"private highlightService: HighlightService\" al constructor de la clase.</i></li>\n\t\t<li>Se añade la variable <i>\"highlighted: boolean = false;\"</i></li>\n\t\t<li>Se añade <i>\"AfterViewChecked\"</i> después del <i>\"implements OnInit\"</i></li>\n\t\t<li>Se añade el método <i>\"ngAfterViewChecked()\"</i></li>\n\t</ul>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-typescript\">{{\"ngAfterViewChecked() {\n\tif (this.onboarding && !this.highlighted) {\n\t  this.highlightService.highlightAll();\n\t  this.highlighted = true;\n\t}\n}\"}}</code>\n\t</pre>\n\t<p>\n\t\tEn este caso, se puede seguir de ejemplo el código que hay en el anterior apartado. Donde se implementa el servicio de highlightService en el componente de <i>teachers.component.ts</i>\n\t</p>\n\t<p>\n\t\tEn el caso de utilizar <i>tabs</i>, estos utilizan lazy loading, lo que significa que van cargando contenido cuando se abre el correspondiente tab, no antes. El servicio de hightlightService esta implementado de forma que solo carga una vez cuando carga la página. De esta manera, cuando acaba de cargar la página se da formato al código, pero al cambiar el <i>tab</i>, carga el nuevo contenido y no se lanza la función de formatado, por lo que se ve el texto sin formato. Para solucionar esto, hay que utilizar el evento <i>selectedTabChange</i> para lanzar la función <i>tabSelectionChanged($event)</i> en el tag mat-tab-group.\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">&lt;mat-tab-group (selectedTabChange)=\"tabSelectionChanged($event)\"&gt;</code>\n\t</pre>\n\t<p>\n\t\tLa función <i>tabSelectionChanged(event)</i> lo que hace es volver a lanzar el servicio de highlightService para el nuevo contenido. La función es la siguiente:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-typescript\">{{\"tabSelectionChanged(event) {\n    this.highlightService.highlightAll();\n}\"}}</code>\n\t</pre>\n\t<p>\n\t\tUna vez que esta todo listo para formatar el código, solo falta añadirlo en la plantilla html del componente. Para ello se utilizan los tags <i>code</i> y <i>pre</i>.\n\t</p>\n\t<p>\n\t\tEn el tag <i>pre</i> se puede seleccionar si mostrar o no las lineas en el código. Para mostrar las lineas hay que añadir la clase <i>line-numbers</i> al tag <i>pre</i>, en el caso de ponerlas lineas del código se puede elegir en que número comenzar. Si no se pone nada, comienza por la linea numero 1, pero si se quiere comenzar por alguna linea en concreto hay que poner un <i>data-start</i> con el número de linea por el que se quiere comenzar. Si, por ejemplo, se quieren poner números y comenzar por la linea 17, el tag <i>pre</i> quedará de la siguiente manera <i>&lt;pre class=\"line-numbers\" data-start=\"17\"&gt;</i>.\n\t</p>\n\t<p>\n\t\tLo único que queda es indicar que tipo de código se va a mostrar para que le haga un formatado correcto. Para ello hay que añadir una clase al tag <i>code</i>, la clase es <i>language-'tipo-lenguaje'</i>, por lo que si se va a mostrar lenguaje typescript hay que añadir <i>class=\"language-typescript\"</i>.\n\t</p>\n\t<p>\n\t\tAhora mismo, los lenguajes que se pueden formatar son los importados en el archivo <i>highlight.services.ts</i>, y son:\n\t</p>\n\t<ul>\n\t\t<li>javascript</li>\n\t\t<li>markup (actualmente usado para mostrar html)</li>\n\t\t<li>typescript</li>\n\t\t<li>sass</li>\n\t\t<li>scss</li>\n\t</ul>\n\t<p>\n\t\tAunque se pueden añadir cualquiera de los lenguajes disponibles en la página de <a href=\"https://prismjs.com/\">prismjs</a>. Solo se han añadido esos lenguajes ya que, de momento, son los únicos utilizados en el proyecto.\n\t</p>\n\t<p>\n\t\t<b>Importante:</b> Angular compila el código que hay dentro de los pre-code, y nomalmente da error al introducir código y compilar. La forma de solucionarlo es la siguiente: \n\t</p>\n\t<ul>\n\t\t<li>Si aparece algún caracter <i>{{'{'}}</i> y <i>{{'}'}}</i> en el código hay que poner <i>{{'{'}}{{'{'}}'</i> al principio del código, y <i>'{{'}'}}{{'}'}}</i> al final.</li>\n\t\t<li>En ocasiones el código tiene comillas en varios sitios y la forma anterior no funciona. En estos casos hay que sustituir cada <i>{{'}'}}</i> por <i>{{'{'}}{{'{'}}'{{'{'}}'{{'}'}}{{'}'}}</i> y también hay que sustituir cada <i>{{'}'}}</i> por <i>{{'{'}}{{'{'}}'{{'}'}}'{{'}'}}{{'}'}}</i>.</li>\n\t\t<li>Si se quiere mostrar código html hay que sustituir los <i>&lt;</i> y los <i>&gt;</i> de los tags por <i>&amp;lt;</i> y por <i>&amp;gt;</i> de lo contrario angular da error y no carga la página.</li>\n\t</ul>\n</section>\n<section>\n\t<h2>Actualizar proyecto de onboarding</h2>\n\t<p>\n\t\tDesde angular 6 se ha introducido una forma de actualizar la aplicación y sus dependencias muy fácil y sencilla. Este proyecto se inició con Angular 6, y posteriormente se ha actualizado en diversas ocasiones hasta la versión 7 de Angular. Para actualizar basta con introducir el siguiente comando en el terminal:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">ng update</code>\n\t</pre>\n\t<p>\n\t\tIntroduciendo este comando, se obtiene un listado de las actualizaciones disponibles, si las hay, de la siguiente manera:\n\t\t<img src=\"../../../assets/img/onboarding/img1.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n\t</p>\n\t<p>\n\t\tEl paso siguiente es introducir los comando <i>ng update</i> que nos ofrece el mismo listado de actualizaciones uno a uno hasta haberlos introducido todos. El resultado es el que se ve en la siguiente imagen:<br>\n\t\t<img src=\"../../../assets/img/onboarding/img2.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n\t</p>\n\t<p>\n\t\tUna vez realizadas todas las actualizaciones, o si se ejecuta el comando <i>ng update</i> sin haber actualizaciones disponibles, el resultado de este comando es el siguiente:<br>\n\t\t<img src=\"../../../assets/img/onboarding/img3.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n\t</p>\n\t<p>\n\t\t<b>Importante:</b> en ocasiones el resultado de la actualización es un mensaje de error que avisa de que se han encontrado depdendencias incompatibles.\n\t</p>\n\t<p>\n\t\tEn la siguiente imagen se puede apreciar como al intentar actualizar <i>@angular/cdk</i> de la versión 7.0.3 a la versión 7.0.4, aparece un mensaje de error informando de que <i>@angular/material</i> en su versión 7.0.3 requiere la versión 7.0.3 de @angular/cli. La solución a este problema es tan sencilla como realizar el comando de actualización primero a <i>@angular/material</i>, y luego a las demás dependencias, si es que no se han actualizado ya. <br>\n\t\t<img src=\"../../../assets/img/onboarding/img4.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n\t</p>\n</section>\n<section>\n\t<h2>Compilar aplicación de Angular</h2>\n\t<p>\n\t\t<b>Muy importante:</b> después de actualizar o de hacer cualquier cambio en la web, y antes de commitear, no hay que olvidarse de hacer un <i>ng build</i> para que los cambios generados se suban también a la web de producción.\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">ng build</code>\n\t</pre>\n</section>"
+module.exports = "<button mat-button (click)=\"goBack()\"><mat-icon>chevron_left</mat-icon> Volver</button>\n<section>\n\t<h2>Añadir página a web de onboarding</h2>\n\t<p>\n\t\tPara añadir una página a la web de onboarding, primero habrá que crear el nuevo componente que alojará el texto, las imagenes y el resto de componentes de esa página. En este ejemplo se creará una nueva página de privacidad. Para crear un nuevo componente hay que usar el temrinal. Primero hay que ir a la carpeta del proyecto, y luego hay que usar el siguiente comando:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">\nng generate component shared/privacy\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tEste comando, ha generado la carpeta privacy dentro de <i>app/shared</i>, y a su vez dentro de la carpeta <i>privacy</i> se generan 4 archivos:\n\t</p>\n\t\t<ul>\n\t\t\t<li><b>privacy.component.html:</b> aquí es donde se escribe el código html con el contenido del componente (en este caso página).</li>\n\t\t\t<li><b>privacy.component.scss:</b> aquí es donde se escribe el codigo css en formato sass especifico para este componente.</li>\n\t\t\t<li><b>privacy.component.spec.ts:</b> en este archivo se escriben los test del código.</li>\n\t\t\t<li><b>privacy.component.ts:</b> en este archivo se escriben las importaciones necesarias para el componente, el código que se iniciará al cargar la página, las variables que estarán disponibles en la página, etc.</li>\n\t\t</ul>\n\t<p>\n\t\tGrácias a este comando, también se ha agregado el componente en app.module.ts, tanto la importación como la declaración.\n\t</p>\n\t<p>\n\t\tLo siguiente es generar la ruta para esta nueva página, para ello hay que ir al archivo 'app.routing.ts', importar el componente que se ha generado y añadirle la ruta.\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-typescript\">{{\"import { PrivacyComponent } from './shared/privacy/privacy.component';\nimport { NotfoundComponent } from './pages/notfound/notfound.component';\n\nconst routes: Routes = [\n  { path: 'terms/privacy', \tcomponent: PrivacyComponent },\n  { path: '404', \t\t\tcomponent: NotfoundComponent },\n  { path: '**', \t\t\tredirectTo: '/404' }\n];\"}}</code>\n\t</pre>\n\t<p>\n\t\tEn este ejemplo se aprecia que se añade PrivacyComponent junto a la ruta de NotfoundComponent y una ruta por defecto que lleva cualquier ruta que no este declarada al componente de notfound. De esta manera queda claro como agregar rutas nuevas a las ya existentes.\n\t</p>\n\t<p>\n\t\tUna vez que ya se tiene el componente y la ruta ya se pueden crear enlaces hacia esa ruta, o incluso escribirla directamente en el navegador. Ahora ya solo queda escribir el contenido en el archivo <i>privacy.component.html</i>.\n\t</p>\n\n</section>\n<section>\n\t<h2>Añadir enlaces al menu para nuevas páginas</h2>\n\t<p>\n\t\tPara modificar los enlaces del menu sidenav hay que dirigirse al archivo <i>src/app/shared/navigation/links/links.component.html</i>, en ese archivo se encuentra un <i>mat-nav-list</i> que contiene los enlaces del menú.\n\t</p>\n\t<p>\n\t\tExisten dos niveles de enlaces, el que se ve directamente en el menú sidenav (primer nivel), y los que se ven cuando se abren estos (segundo nivel). Todos los enlaces deben llevar <i>mat-list-item</i> dentro del html tag <i>a</i>.\n\t</p>\n\t<p>\n\t\tA todos los enlaces que llevan a una página nueva hay que ponerles la función <i>setTitle( 'Título de la nueva página' )</i> cuando se dispare el evento click. Esto se hace para que el título de la pestaña cambie y cada página tenga un título. <i>setTitle</i> es una función de un servicio de angular creada para cambiar el título de las paginas. Que cada página tenga su propio título mejora el seo (Search Engine Optimization) de la web y por lo tanto su posición a la hora de aparecer en búscadores como Google.\n\t</p>\n\t<p>\n\t\tA los enlaces de primer nivel, si contienen enlaces de segundo nivel, hay que ponerles la funcion <i>openClose( 'idGrupo', 'idGrupoCaret')</i>, y dentro del contenido del html tag <i>a</i> hay que poner un icono <i>caret</i> de material con un id único que se va a asignar a cada grupo de enlaces y que es el parámetro <i>'idGrupoCaret'</i> de la función. El otro parámetro de la función es el nombre de una variable booleana que se va a utilizar para mostrar o ocultar los enlaces de segundo nivel de ese grupo. La función devuelve el valor <i>true</i> o <i>false</i> que se asigna a esa misma variable y gira el icono con el id proporcionado en el segundo parámetro.\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-markup\">\n&lt;a mat-list-item (click)=\"usersShow = openClose(usersShow, 'userCaret')\"&gt;\n    &lt;mat-icon mat-list-icon&gt;people&lt;/mat-icon&gt;\n    &lt;span&gt;Usuarios&lt;/span&gt;  // titulo enlace\n    &lt;span class=\"fill-space\"&gt;&lt;/span&gt;  // span vacio para alinear el caret a la derecha\n    &lt;mat-icon id=\"userCaret\" class=\"material-icons\"&gt;expand_more&lt;/mat-icon&gt;\n&lt;/a&gt;\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tLos enlaces de segundo nivel deben tener un <i>*ngIf=\"idGrupo\"</i>, al ser una variable booleana los enlaces se mostrarán u ocultarán según su valor. A estos enlaces de segundo nivel tambien hay que añadirles la función <i>openClose()</i> en el evento click para que se cierre el grupo una vez seleccionado uno de los enlaces. \n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-markup\">\n&lt;a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/students\" (click)=\"usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar la aplicacion como estudiante' );\"&gt;\n    &lt;mat-icon mat-list-icon fontSet=\"fa\" fontIcon=\"fa-user-graduate\"&gt;&lt;/mat-icon&gt;  // ver sección iconos\n    &lt;span&gt;Estudiantes&lt;/span&gt;  // titulo enlace\n&lt;/a&gt;\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tEn el ejemplo previo, se observa como esta realizado el enlace de primer nivel 'Usuarios', y un enlace de segundo nivel que pertenece a este llamado 'Estudiantes'.\n\t</p>\n</section>\n<section>\n\t<h2>Iconos</h2>\n\t<p>\n\t\tEn este proyecto se pueden usar los <a href=\"https://material.io/tools/icons/?style=baseline\">material icons</a> de la forma usual, que es <i>&lt;mat-icon&gt;nombreIcono&lt;/mat-icon&gt;</i>, usando como 'nombreIcono' cualquiera de los de la lista del enlace.\n\t</p>\n\t<p>\n\t\tPero también se han añadido los iconos gratuitos de <a href=\"https://fontawesome.com/icons?d=gallery\">font Awesome</a>, que ofrecen una mayor variedad de iconos inexistentes en los material icons, como por ejemplo el del logo de Github. Para poder utilizar los iconos de font awesome dentro de un tag mat-icon, como los de material, se ha instalado un modulo de Node y se ha creado un servicio.\n\t</p>\n\t<p>\n\t\tAhora para añadir un icono de font awesome solo hay que añadir al tag mat-icon un <i>fontSet</i> y un <i>fontIcon</i>. El fontSet depende del tipo de icono que se vaya a utilizar, los normales usan el fontSet <i>fa</i>, los de marcas usan el <i>fab</i>, los del grupo solid usan el <i>fas</i>,etc. En el fontIcon hay que poner el nombre del icono precedido de <i>fa-</i>. Y finalmente, al contrario que con los iconos de material, no hay que poner ningún texto dentro del tag mat-icon.\n\t</p>\n\t<p>\n\t\tSi por ejemplo se quiere usar el icono <i>addess-card</i> del grupo <i>Solid</i> hay que hacerlo de la siguiente manera:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-markup\">\n&lt;mat-icon mat-list-icon fontSet=\"fas\" fontIcon=\"fa-address-card\"&gt;&lt;/mat-icon&gt;\n\t\t</code>\n\t</pre>\n</section>\n<section>\n\t<h2>Crear un nuevo servicio</h2>\n\t<p>\n\t\tComo ejemplo se va a crear el servicio que da estilo al formato de código que hay en las páginas de desarrollo de la web de onboarding. Para ello se va a usar el modulo de prismjs.\n\n\t\tEl primer paso es, desde terminal nos situamos en la carpeta del proyecto, y para instalar el módulo de pismjs se utiliza el siguiente comando:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">\n$ npm install prismjs --save\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tAhora toca crear el nuevo servicio. Para generarlo, hay que escribir el siguiente comando del cli de angular:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">\n$ ng generate service shared/services/highlight\n\t\t</code>\n\t</pre>\n\t<p>\n\t\tEl servicio que se ha generado, podemos encontrarlo en la ruta <i>app/shared/services/highlight.service.ts</i>, y por el momento sólo tiene código genérico. El archivo debe ser algo como esto:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-typescript\">{{\"import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class HighlightService {\n\n  constructor() { }\n}\"}}</code>\n\t</pre>\n\t<p>\n\t\tSe procede a escribir el código del servicio. En este caso, se escribe código para poder utilizar prismjs y que de formato de código, con colores para facilitar la lectura a los fragmentos de código que hay en la web de onboarding. Una vez escrito el código, el archivo de <i>highlight.services.ts</i> quedará así:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-typescript\">{{\"import { , PLATFORM_ID, Inject } from '@angular/core';\n \nimport 'clipboard';\n\nimport 'prismjs';\nimport 'prismjs/plugins/toolbar/prism-toolbar';\nimport 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard';\nimport 'prismjs/components/prism-javascript';\nimport 'prismjs/components/prism-markup';\nimport 'prismjs/components/prism-typescript';\nimport 'prismjs/components/prism-sass';\nimport 'prismjs/components/prism-scss';\n\ndeclare var Prism: any;\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class HighlightService {\n\n  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }\n\n  highlightAll() {\n    if (isPlatformBrowser(this.platformId)) {\n      Prism.highlightAll();\n    }\n  }\n}\"}}</code>\n\t</pre>\n\t<p>\n\t\tUna vez que se ha programado el servicio que se necesita, hay que utilizarlo en el componente donde se quiere insertar código formatado. Como ejemplo, se va a insertar el servicio de formatado de código en el componente de <i>onboarding</i>. En este caso concreto, además se va a utilizar <i>AfterViewChecked</i> que es un evento que se lanza cuando la vista ya se ha cargado completamente, y es cuando se iniciará el método de highlightAll(). También se ha añadido la variable booleana <i>highlighted</i> que se utiliza para evitar que el método <i>highlighted</i> se llame más de una vez. <br>\n\t\tPor lo tanto, tras importar <i>AfterViewChecked</i> de Angular/core y el servicio <i>HighlightService</i>, hay que añadir <i>private highlightService: HighlightService</i> al constructor, y por último la función que se lanza en <i>ngAfterViewChecked</i>. Una vez hecho esto el código debe ser así:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-typescript\">{{\"import { Component, OnInit, AfterViewChecked } from '@angular/core';\n\nimport { HighlightService } from '../../shared/services/highlight.service';\n\n@Component({\n  selector: 'app-onboarding',\n  templateUrl: './onboarding.component.html',\n  styleUrls: ['./onboarding.component.scss']\n})\nexport class OnboardingComponent implements OnInit, AfterViewChecked {\n\n  onboarding: OnboardingInterface;\n  highlighted: boolean = false;\n\n  constructor(private highlightService: HighlightService) { }\n\n  /**\n   * Highlight blog post when it's ready\n   */\n  ngAfterViewChecked() {\n    if (this.onboarding && !this.highlighted) {\n      this.highlightService.highlightAll();\n      this.highlighted = true;\n    }\n  }\n\n  ngOnInit() {\n  }\n\n}\"}}</code>\n\t</pre>\n\t<p>\n\t\tY en este caso, para acabar aún queda un último paso. Hay que importar las hojas de estilos de prismjs en <i>src/sass/styles.scss</i>. Que en el caso de este proyecto son las que pertenecen al tema <i>coi</i>. Y, de ser necesario después se puede añadir alguna personalización al código para que se adapte al estilo de la web. La importación y personalización de estilos es la siguiente:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-scss\">{{'@import \"~prismjs/plugins/toolbar/prism-toolbar.css\";\n@import \"~prismjs/themes/prism-coy\";\n\npre[class*=\"language-\"] {\n  background-color: transparent;\n}\n\npre[class*=\"language-\"]:before, pre[class*=\"language-\"]:after {\n  display: none;\n}'}}</code>\n\t</pre>\n\t<p>\n\t\tEl servicio ya esta añadido y funcionando. Ya se ha explicado como crear un nuevo servicio y como usarlo en los componentes. Ahora, como apunte, hay que señalar que para usar el formatado de texto del servicio de highlight, tan solo hay que añadir la clase <i>class=\"language-'lenguaje-usado'\"</i> al tag <i>code</i>, por ejemplo para código en javascript hay que añadir <i>class=\"language-typescript\"</i> al tag code.\n\t</p>\n</section>\n<section>\n\t<h2>Añadir o modificar datos en página de Profesores</h2>\n\t<p>\n\t\tLas páginas del proyecto de onboarding estan hechas con contenido estático, a excepción de la página con el tutorial de uso para profesores que tiene un archivo con el contenido que se llama y se lista desde el componente correspondiente a la página de profesores. \n\t</p>\n\t<p>\n\t\tPara este contenido se ha creado un objeto dataCard en <i>app/class/dataCard.ts</i> que se utiliza en el archivo <i>app/data/teacher_videos.ts</i>, donde se ha escrito un array de objetos dataCard.\n\t</p>\n\t<p>\n\t\tLo último que queda es importar el objeto dataCard y el array de objetos dataCard en el componente <i>app/pages/teachers/teachers.component.ts</i> y igualar el array a una variable que se pueda usar en la plantilla y utilizar para listar su contenido.\n\t</p>\n\t<p>\n\t\tHay que mencionar, que para que se puedan listar enlaces a webs provenientes de objetos, como lo son los enlaces de youtube, hay que \"sanear\" el contenido ya que si no se hace este queda bloqueado por seguridad. Para ello hay que importar <i>DomSanitizer</i> de <i>angular/platform-browser</i> e introducirlo en el constructor. Ahora que ya se pueden utilizar los métodos de <i>sanitizer</i>, alla donde se vaya a imprimir el contenido url hay que poner lo siguiente: <i>[src]='sanitizer.bypassSecurityTrustResourceUrl(url)'</i>.\n\t</p>\n\t<p>\n\t\tEl código del componente de <i>teachers.component.ts</i> es el siguiente:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code  class=\"language-typescript\">{{\"import { Component, OnInit } from '@angular/core';\nimport { DomSanitizer } from '@angular/platform-browser';\nimport {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';\nimport { DataCard } from '../../class/dataCard';\nimport { CARDS } from '../../data/teacher_videos';\n\n\n@Component({\n  selector: 'app-teachers',\n  templateUrl: './teachers.component.html',\n  styleUrls: ['./teachers.component.scss']\n})\n\nexport class TeachersComponent implements OnInit {\n\n  cards = CARDS;\n\n  constructor(public sanitizer: DomSanitizer) {}\n\n  ngOnInit() {}\n\n  drop(event: CdkDragDrop&lt;DataCard[]&gt;) {\n    moveItemInArray(this.cards, event.previousIndex, event.currentIndex);\n  }\n\n}\"}}</code>\n\t</pre>\n</section>\n<section>\n\t<h2>Insertar fragmentos de código</h2>\n\t<p>\n\t\tPara facilitar la lectura de código en los tutoriales de la web de onboarding se ha utilizado el módulo de Node <a href=\"https://prismjs.com/\">prismjs</a>, y como se ha visto en un punto anterior de este tutorial se ha creado un servicio para su uso.\n\t</p>\n\t<p>\n\t\tPara utilizar el formatado de código en un componente se hace de la siguiente manera:\n\t</p>\n\t<ul>\n\t\t<li>Se importa el servicio en el componente <i>\"import {{'{'}} HighlightService {{'}'}} from 'ruta-hasta/shared/services/highlight.service';\"</i></li>\n\t\t<li>Se añade <i>\"private highlightService: HighlightService\" al constructor de la clase.</i></li>\n\t\t<li>Se añade la variable <i>\"highlighted: boolean = false;\"</i></li>\n\t\t<li>Se añade <i>\"AfterViewChecked\"</i> después del <i>\"implements OnInit\"</i></li>\n\t\t<li>Se añade el método <i>\"ngAfterViewChecked()\"</i></li>\n\t</ul>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-typescript\">{{\"ngAfterViewChecked() {\n\tif (this.onboarding && !this.highlighted) {\n\t  this.highlightService.highlightAll();\n\t  this.highlighted = true;\n\t}\n}\"}}</code>\n\t</pre>\n\t<p>\n\t\tEn este caso, se puede seguir de ejemplo el código que hay en el anterior apartado. Donde se implementa el servicio de highlightService en el componente de <i>teachers.component.ts</i>\n\t</p>\n\t<p>\n\t\tEn el caso de utilizar <i>tabs</i>, estos utilizan lazy loading, lo que significa que van cargando contenido cuando se abre el correspondiente tab, no antes. El servicio de hightlightService esta implementado de forma que solo carga una vez cuando carga la página. De esta manera, cuando acaba de cargar la página se da formato al código, pero al cambiar el <i>tab</i>, carga el nuevo contenido y no se lanza la función de formatado, por lo que se ve el texto sin formato. Para solucionar esto, hay que utilizar el evento <i>selectedTabChange</i> para lanzar la función <i>tabSelectionChanged($event)</i> en el tag mat-tab-group.\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">&lt;mat-tab-group (selectedTabChange)=\"tabSelectionChanged($event)\"&gt;</code>\n\t</pre>\n\t<p>\n\t\tLa función <i>tabSelectionChanged(event)</i> lo que hace es volver a lanzar el servicio de highlightService para el nuevo contenido. La función es la siguiente:\n\t</p>\n\t<pre class=\"line-numbers\">\n\t\t<code class=\"language-typescript\">{{\"tabSelectionChanged(event) {\n    this.highlightService.highlightAll();\n}\"}}</code>\n\t</pre>\n\t<p>\n\t\tUna vez que esta todo listo para formatar el código, solo falta añadirlo en la plantilla html del componente. Para ello se utilizan los tags <i>code</i> y <i>pre</i>.\n\t</p>\n\t<p>\n\t\tEn el tag <i>pre</i> se puede seleccionar si mostrar o no las lineas en el código. Para mostrar las lineas hay que añadir la clase <i>line-numbers</i> al tag <i>pre</i>, en el caso de ponerlas lineas del código se puede elegir en que número comenzar. Si no se pone nada, comienza por la linea numero 1, pero si se quiere comenzar por alguna linea en concreto hay que poner un <i>data-start</i> con el número de linea por el que se quiere comenzar. Si, por ejemplo, se quieren poner números y comenzar por la linea 17, el tag <i>pre</i> quedará de la siguiente manera <i>&lt;pre class=\"line-numbers\" data-start=\"17\"&gt;</i>.\n\t</p>\n\t<p>\n\t\tLo único que queda es indicar que tipo de código se va a mostrar para que le haga un formatado correcto. Para ello hay que añadir una clase al tag <i>code</i>, la clase es <i>language-'tipo-lenguaje'</i>, por lo que si se va a mostrar lenguaje typescript hay que añadir <i>class=\"language-typescript\"</i>.\n\t</p>\n\t<p>\n\t\tAhora mismo, los lenguajes que se pueden formatar son los importados en el archivo <i>highlight.services.ts</i>, y son:\n\t</p>\n\t<ul>\n\t\t<li>javascript</li>\n\t\t<li>markup (actualmente usado para mostrar html)</li>\n\t\t<li>typescript</li>\n\t\t<li>sass</li>\n\t\t<li>scss</li>\n\t</ul>\n\t<p>\n\t\tAunque se pueden añadir cualquiera de los lenguajes disponibles en la página de <a href=\"https://prismjs.com/\">prismjs</a>. Solo se han añadido esos lenguajes ya que, de momento, son los únicos utilizados en el proyecto.\n\t</p>\n\t<p>\n\t\t<b>Importante:</b> Angular compila el código que hay dentro de los pre-code, y nomalmente da error al introducir código y compilar. La forma de solucionarlo es la siguiente: \n\t</p>\n\t<ul>\n\t\t<li>Si aparece algún caracter <i>{{'{'}}</i> y <i>{{'}'}}</i> en el código hay que poner <i>{{'{'}}{{'{'}}'</i> al principio del código, y <i>'{{'}'}}{{'}'}}</i> al final.</li>\n\t\t<li>En ocasiones el código tiene comillas en varios sitios y la forma anterior no funciona. En estos casos hay que sustituir cada <i>{{'}'}}</i> por <i>{{'{'}}{{'{'}}'{{'{'}}'{{'}'}}{{'}'}}</i> y también hay que sustituir cada <i>{{'}'}}</i> por <i>{{'{'}}{{'{'}}'{{'}'}}'{{'}'}}{{'}'}}</i>.</li>\n\t\t<li>Si se quiere mostrar código html hay que sustituir los <i>&lt;</i> y los <i>&gt;</i> de los tags por <i>&amp;lt;</i> y por <i>&amp;gt;</i> de lo contrario angular da error y no carga la página.</li>\n\t</ul>\n</section>\n<section>\n\t<h2>Actualizar proyecto de onboarding</h2>\n\t<p>\n\t\tDesde angular 6 se ha introducido una forma de actualizar la aplicación y sus dependencias muy fácil y sencilla. Este proyecto se inició con Angular 6, y posteriormente se ha actualizado en diversas ocasiones hasta la versión 7 de Angular. Para actualizar basta con introducir el siguiente comando en el terminal:\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">ng update</code>\n\t</pre>\n\t<p>\n\t\tIntroduciendo este comando, se obtiene un listado de las actualizaciones disponibles, si las hay, de la siguiente manera:\n\t\t<img src=\"../../../assets/img/onboarding/img1.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n\t</p>\n\t<p>\n\t\tEl paso siguiente es introducir los comando <i>ng update</i> que nos ofrece el mismo listado de actualizaciones uno a uno hasta haberlos introducido todos. El resultado es el que se ve en la siguiente imagen:<br>\n\t\t<img src=\"../../../assets/img/onboarding/img2.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n\t</p>\n\t<p>\n\t\tUna vez realizadas todas las actualizaciones, o si se ejecuta el comando <i>ng update</i> sin haber actualizaciones disponibles, el resultado de este comando es el siguiente:<br>\n\t\t<img src=\"../../../assets/img/onboarding/img3.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n\t</p>\n\t<p>\n\t\t<b>Importante:</b> en ocasiones el resultado de la actualización es un mensaje de error que avisa de que se han encontrado depdendencias incompatibles.\n\t</p>\n\t<p>\n\t\tEn la siguiente imagen se puede apreciar como al intentar actualizar <i>@angular/cdk</i> de la versión 7.0.3 a la versión 7.0.4, aparece un mensaje de error informando de que <i>@angular/material</i> en su versión 7.0.3 requiere la versión 7.0.3 de @angular/cli. La solución a este problema es tan sencilla como realizar el comando de actualización primero a <i>@angular/material</i>, y luego a las demás dependencias, si es que no se han actualizado ya. <br>\n\t\t<img src=\"../../../assets/img/onboarding/img4.png\" style=\"max-width:100%;margin: 15px 0 10px;\">\n\t</p>\n</section>\n<section>\n\t<h2>Compilar aplicación de Angular</h2>\n\t<p>\n\t\t<b>Muy importante:</b> después de actualizar o de hacer cualquier cambio en la web, y antes de commitear, no hay que olvidarse de hacer un <i>ng build</i> para que los cambios generados se suban también a la web de producción.\n\t</p>\n\t<pre>\n\t\t<code class=\"language-markup\">ng build</code>\n\t</pre>\n</section>"
 
 /***/ }),
 
@@ -1713,7 +1833,7 @@ module.exports = "<section>\n\t<h2>Añadir página a web de onboarding</h2>\n\t<
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "section p {\n  text-align: justify; }\n\nul li i {\n  background-color: lightcyan; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvcGFnZXMvb25ib2FyZGluZy9vbmJvYXJkaW5nLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Msb0JBQW1CLEVBQ25COztBQUNEO0VBQ0MsNEJBQTJCLEVBQzNCIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvb25ib2FyZGluZy9vbmJvYXJkaW5nLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsic2VjdGlvbiBwIHtcblx0dGV4dC1hbGlnbjoganVzdGlmeTtcbn1cbnVsIGxpIGkge1xuXHRiYWNrZ3JvdW5kLWNvbG9yOiBsaWdodGN5YW47XG59Il19 */"
+module.exports = "section p {\n  text-align: justify; }\n\nul li i {\n  background-color: lightcyan; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvcGFnZXMvb25ib2FyZGluZy9vbmJvYXJkaW5nLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0MsbUJBQW1CLEVBQUE7O0FBRXBCO0VBQ0MsMkJBQTJCLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9vbmJvYXJkaW5nL29uYm9hcmRpbmcuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJzZWN0aW9uIHAge1xuXHR0ZXh0LWFsaWduOiBqdXN0aWZ5O1xufVxudWwgbGkgaSB7XG5cdGJhY2tncm91bmQtY29sb3I6IGxpZ2h0Y3lhbjtcbn0iXX0= */"
 
 /***/ }),
 
@@ -1727,22 +1847,18 @@ module.exports = "section p {\n  text-align: justify; }\n\nul li i {\n  backgrou
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OnboardingComponent", function() { return OnboardingComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../shared/services/highlight.service */ "./src/app/shared/services/highlight.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../shared/services/highlight.service */ "./src/app/shared/services/highlight.service.ts");
+
+
 
 
 var OnboardingComponent = /** @class */ (function () {
-    function OnboardingComponent(highlightService) {
+    function OnboardingComponent(highlightService, location) {
         this.highlightService = highlightService;
+        this.location = location;
         this.highlighted = false;
     }
     OnboardingComponent.prototype.ngOnInit = function () {
@@ -1756,13 +1872,17 @@ var OnboardingComponent = /** @class */ (function () {
             this.highlighted = true;
         }
     };
-    OnboardingComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    OnboardingComponent.prototype.goBack = function () {
+        this.location.back();
+    };
+    OnboardingComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-onboarding',
             template: __webpack_require__(/*! ./onboarding.component.html */ "./src/app/pages/onboarding/onboarding.component.html"),
             styles: [__webpack_require__(/*! ./onboarding.component.scss */ "./src/app/pages/onboarding/onboarding.component.scss")]
         }),
-        __metadata("design:paramtypes", [_shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__["HighlightService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_3__["HighlightService"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"]])
     ], OnboardingComponent);
     return OnboardingComponent;
 }());
@@ -1789,7 +1909,7 @@ module.exports = "<mat-list>\n  <h2 mat-subheader>Proyectos realizados</h2>\n  <
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-list-item {\n  background-color: #fff;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }\n  mat-list-item mat-icon {\n    transition-duration: 0.3s;\n    transition-property: -webkit-transform;\n    transition-property: transform;\n    transition-property: transform, -webkit-transform;\n    transition-timing-function: ease-in-out; }\n  mat-list-item:hover {\n    background-color: #f0ffff; }\n  mat-list-item:hover mat-icon {\n      -webkit-transform: translateX(4px);\n      transform: translateX(4px); }\n  mat-list-item .project-author {\n    color: #939393; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvcGFnZXMvcHJvamVjdHMvcHJvamVjdHMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQyx1QkFBc0I7RUFDdEIsNkNBQTRDLEVBc0I1QztFQXhCRDtJQUtLLDBCQUF5QjtJQUV6Qix1Q0FBOEI7SUFBOUIsK0JBQThCO0lBQTlCLGtEQUE4QjtJQUU5Qix3Q0FBdUMsRUFDMUM7RUFWRjtJQVlFLDBCQUF5QixFQUt6QjtFQWpCRjtNQWNHLG1DQUFrQztNQUMvQiwyQkFBMEIsRUFDN0I7RUFoQkg7SUFtQkUsZUFBYyxFQUNkIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvcHJvamVjdHMvcHJvamVjdHMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtbGlzdC1pdGVtIHtcblx0YmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcblx0Ym9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIHJnYmEoMCwgMCwgMCwgMC4xMik7XG5cdG1hdC1pY29uIHtcblx0XHQtd2Via2l0LXRyYW5zaXRpb24tZHVyYXRpb246IDAuM3M7XG4gICAgXHR0cmFuc2l0aW9uLWR1cmF0aW9uOiAwLjNzO1xuICAgIFx0LXdlYmtpdC10cmFuc2l0aW9uLXByb3BlcnR5OiB0cmFuc2Zvcm07XG4gICAgXHR0cmFuc2l0aW9uLXByb3BlcnR5OiB0cmFuc2Zvcm07XG4gICAgXHQtd2Via2l0LXRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9uOiBlYXNlLWluLW91dDtcbiAgICBcdHRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9uOiBlYXNlLWluLW91dDtcblx0fVxuXHQmOmhvdmVyIHtcblx0XHRiYWNrZ3JvdW5kLWNvbG9yOiAjZjBmZmZmO1xuXHRcdG1hdC1pY29uIHtcblx0XHRcdC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGVYKDRweCk7XG4gICAgXHRcdHRyYW5zZm9ybTogdHJhbnNsYXRlWCg0cHgpO1xuXHRcdH1cblx0fVxuXHQucHJvamVjdC1hdXRob3Ige1xuXHRcdGNvbG9yOiAjOTM5MzkzO1xuXHR9XG5cdC5wcm9qZWN0LWRlc2NyaXB0aW9uIHtcblxuXHR9XG59Il19 */"
+module.exports = "mat-list-item {\n  background-color: #fff;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }\n  mat-list-item mat-icon {\n    transition-duration: 0.3s;\n    transition-property: -webkit-transform;\n    transition-property: transform;\n    transition-property: transform, -webkit-transform;\n    transition-timing-function: ease-in-out; }\n  mat-list-item:hover {\n    background-color: #f0ffff; }\n  mat-list-item:hover mat-icon {\n      -webkit-transform: translateX(4px);\n      transform: translateX(4px); }\n  mat-list-item .project-author {\n    color: #939393; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvcGFnZXMvcHJvamVjdHMvcHJvamVjdHMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQyxzQkFBc0I7RUFDdEIsNENBQTRDLEVBQUE7RUFGN0M7SUFLSyx5QkFBeUI7SUFFekIsc0NBQThCO0lBQTlCLDhCQUE4QjtJQUE5QixpREFBOEI7SUFFOUIsdUNBQXVDLEVBQUE7RUFUNUM7SUFZRSx5QkFBeUIsRUFBQTtFQVozQjtNQWNHLGtDQUFrQztNQUMvQiwwQkFBMEIsRUFBQTtFQWZoQztJQW1CRSxjQUFjLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9wcm9qZWN0cy9wcm9qZWN0cy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIm1hdC1saXN0LWl0ZW0ge1xuXHRiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmO1xuXHRib3JkZXItYm90dG9tOiAxcHggc29saWQgcmdiYSgwLCAwLCAwLCAwLjEyKTtcblx0bWF0LWljb24ge1xuXHRcdC13ZWJraXQtdHJhbnNpdGlvbi1kdXJhdGlvbjogMC4zcztcbiAgICBcdHRyYW5zaXRpb24tZHVyYXRpb246IDAuM3M7XG4gICAgXHQtd2Via2l0LXRyYW5zaXRpb24tcHJvcGVydHk6IHRyYW5zZm9ybTtcbiAgICBcdHRyYW5zaXRpb24tcHJvcGVydHk6IHRyYW5zZm9ybTtcbiAgICBcdC13ZWJraXQtdHJhbnNpdGlvbi10aW1pbmctZnVuY3Rpb246IGVhc2UtaW4tb3V0O1xuICAgIFx0dHJhbnNpdGlvbi10aW1pbmctZnVuY3Rpb246IGVhc2UtaW4tb3V0O1xuXHR9XG5cdCY6aG92ZXIge1xuXHRcdGJhY2tncm91bmQtY29sb3I6ICNmMGZmZmY7XG5cdFx0bWF0LWljb24ge1xuXHRcdFx0LXdlYmtpdC10cmFuc2Zvcm06IHRyYW5zbGF0ZVgoNHB4KTtcbiAgICBcdFx0dHJhbnNmb3JtOiB0cmFuc2xhdGVYKDRweCk7XG5cdFx0fVxuXHR9XG5cdC5wcm9qZWN0LWF1dGhvciB7XG5cdFx0Y29sb3I6ICM5MzkzOTM7XG5cdH1cblx0LnByb2plY3QtZGVzY3JpcHRpb24ge1xuXG5cdH1cbn0iXX0= */"
 
 /***/ }),
 
@@ -1803,29 +1923,22 @@ module.exports = "mat-list-item {\n  background-color: #fff;\n  border-bottom: 1
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectsComponent", function() { return ProjectsComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var ProjectsComponent = /** @class */ (function () {
     function ProjectsComponent() {
     }
     ProjectsComponent.prototype.ngOnInit = function () {
     };
-    ProjectsComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    ProjectsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-projects',
             template: __webpack_require__(/*! ./projects.component.html */ "./src/app/pages/projects/projects.component.html"),
             styles: [__webpack_require__(/*! ./projects.component.scss */ "./src/app/pages/projects/projects.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], ProjectsComponent);
     return ProjectsComponent;
 }());
@@ -1866,29 +1979,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudentsComponent", function() { return StudentsComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var StudentsComponent = /** @class */ (function () {
     function StudentsComponent() {
     }
     StudentsComponent.prototype.ngOnInit = function () {
     };
-    StudentsComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    StudentsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-students',
             template: __webpack_require__(/*! ./students.component.html */ "./src/app/pages/students/students.component.html"),
             styles: [__webpack_require__(/*! ./students.component.scss */ "./src/app/pages/students/students.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], StudentsComponent);
     return StudentsComponent;
 }());
@@ -1915,7 +2021,7 @@ module.exports = "<div cdkDropList class=\"list\" (cdkDropListDropped)=\"drop($e
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".list {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between; }\n  .list mat-card {\n    width: 100%;\n    padding-bottom: 0;\n    background-color: #4527a0;\n    color: #FFF;\n    background-image: linear-gradient(90deg, #4527a0, #3f51b5, #4527a0); }\n  .list mat-card mat-card-header {\n      min-height: 100px; }\n  @media screen and (min-width: 451px) {\n  .list mat-card {\n    width: 40%; } }\n  @media screen and (min-width: 981px) {\n  .list mat-card {\n    width: 45%; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvcGFnZXMvdGVhY2hlcnMvdGVhY2hlcnMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQyxjQUFhO0VBQ2IsZ0JBQWU7RUFDZiwrQkFBOEIsRUFXOUI7RUFkRDtJQUtFLFlBQVc7SUFDWCxrQkFBaUI7SUFDakIsMEJBQXdCO0lBQ3hCLFlBQVc7SUFDWCxvRUFBbUUsRUFJbkU7RUFiRjtNQVdHLGtCQUFpQixFQUNqQjtFQUlIO0VBQ0M7SUFDQyxXQUFVLEVBQ1YsRUFBQTtFQUdGO0VBQ0M7SUFDQyxXQUFVLEVBQ1YsRUFBQSIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3RlYWNoZXJzL3RlYWNoZXJzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmxpc3R7XG5cdGRpc3BsYXk6IGZsZXg7XG5cdGZsZXgtd3JhcDogd3JhcDtcblx0anVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuXHRtYXQtY2FyZCB7XG5cdFx0d2lkdGg6IDEwMCU7XG5cdFx0cGFkZGluZy1ib3R0b206IDA7XG5cdFx0YmFja2dyb3VuZC1jb2xvcjojNDUyN2EwO1xuXHRcdGNvbG9yOiAjRkZGO1xuXHRcdGJhY2tncm91bmQtaW1hZ2U6IGxpbmVhci1ncmFkaWVudCg5MGRlZywgIzQ1MjdhMCwgIzNmNTFiNSwgIzQ1MjdhMCk7XG5cdFx0bWF0LWNhcmQtaGVhZGVyIHtcblx0XHRcdG1pbi1oZWlnaHQ6IDEwMHB4O1xuXHRcdH1cblx0fVxufVxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA0NTFweCkge1xuXHQubGlzdCBtYXQtY2FyZCB7XG5cdFx0d2lkdGg6IDQwJTtcblx0fVxufVxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA5ODFweCkge1xuXHQubGlzdCBtYXQtY2FyZCB7XG5cdFx0d2lkdGg6IDQ1JTtcblx0fVxufSJdfQ== */"
+module.exports = ".list {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between; }\n  .list mat-card {\n    width: 100%;\n    padding-bottom: 0;\n    background-color: #4527a0;\n    color: #FFF;\n    background-image: linear-gradient(90deg, #4527a0, #3f51b5, #4527a0); }\n  .list mat-card mat-card-header {\n      min-height: 100px; }\n  @media screen and (min-width: 451px) {\n  .list mat-card {\n    width: 40%; } }\n  @media screen and (min-width: 981px) {\n  .list mat-card {\n    width: 45%; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvcGFnZXMvdGVhY2hlcnMvdGVhY2hlcnMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQyxhQUFhO0VBQ2IsZUFBZTtFQUNmLDhCQUE4QixFQUFBO0VBSC9CO0lBS0UsV0FBVztJQUNYLGlCQUFpQjtJQUNqQix5QkFBd0I7SUFDeEIsV0FBVztJQUNYLG1FQUFtRSxFQUFBO0VBVHJFO01BV0csaUJBQWlCLEVBQUE7RUFLcEI7RUFDQztJQUNDLFVBQVUsRUFBQSxFQUNWO0VBR0Y7RUFDQztJQUNDLFVBQVUsRUFBQSxFQUNWIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvdGVhY2hlcnMvdGVhY2hlcnMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubGlzdHtcblx0ZGlzcGxheTogZmxleDtcblx0ZmxleC13cmFwOiB3cmFwO1xuXHRqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG5cdG1hdC1jYXJkIHtcblx0XHR3aWR0aDogMTAwJTtcblx0XHRwYWRkaW5nLWJvdHRvbTogMDtcblx0XHRiYWNrZ3JvdW5kLWNvbG9yOiM0NTI3YTA7XG5cdFx0Y29sb3I6ICNGRkY7XG5cdFx0YmFja2dyb3VuZC1pbWFnZTogbGluZWFyLWdyYWRpZW50KDkwZGVnLCAjNDUyN2EwLCAjM2Y1MWI1LCAjNDUyN2EwKTtcblx0XHRtYXQtY2FyZC1oZWFkZXIge1xuXHRcdFx0bWluLWhlaWdodDogMTAwcHg7XG5cdFx0fVxuXHR9XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDQ1MXB4KSB7XG5cdC5saXN0IG1hdC1jYXJkIHtcblx0XHR3aWR0aDogNDAlO1xuXHR9XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDk4MXB4KSB7XG5cdC5saXN0IG1hdC1jYXJkIHtcblx0XHR3aWR0aDogNDUlO1xuXHR9XG59Il19 */"
 
 /***/ }),
 
@@ -1929,19 +2035,12 @@ module.exports = ".list {\n  display: flex;\n  flex-wrap: wrap;\n  justify-conte
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TeachersComponent", function() { return TeachersComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
-/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/cdk/drag-drop */ "./node_modules/@angular/cdk/esm5/drag-drop.es5.js");
-/* harmony import */ var _data_teacher_videos__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../data/teacher_videos */ "./src/app/data/teacher_videos.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/drag-drop */ "./node_modules/@angular/cdk/esm5/drag-drop.es5.js");
+/* harmony import */ var _data_teacher_videos__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../data/teacher_videos */ "./src/app/data/teacher_videos.ts");
+
 
 
 
@@ -1949,19 +2048,19 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var TeachersComponent = /** @class */ (function () {
     function TeachersComponent(sanitizer) {
         this.sanitizer = sanitizer;
-        this.cards = _data_teacher_videos__WEBPACK_IMPORTED_MODULE_3__["CARDS"];
+        this.cards = _data_teacher_videos__WEBPACK_IMPORTED_MODULE_4__["CARDS"];
     }
     TeachersComponent.prototype.ngOnInit = function () { };
     TeachersComponent.prototype.drop = function (event) {
-        Object(_angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_2__["moveItemInArray"])(this.cards, event.previousIndex, event.currentIndex);
+        Object(_angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_3__["moveItemInArray"])(this.cards, event.previousIndex, event.currentIndex);
     };
-    TeachersComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    TeachersComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-teachers',
             template: __webpack_require__(/*! ./teachers.component.html */ "./src/app/pages/teachers/teachers.component.html"),
             styles: [__webpack_require__(/*! ./teachers.component.scss */ "./src/app/pages/teachers/teachers.component.scss")]
         }),
-        __metadata("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["DomSanitizer"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["DomSanitizer"]])
     ], TeachersComponent);
     return TeachersComponent;
 }());
@@ -2002,29 +2101,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardComponent", function() { return DashboardComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var DashboardComponent = /** @class */ (function () {
     function DashboardComponent() {
     }
     DashboardComponent.prototype.ngOnInit = function () {
     };
-    DashboardComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-dashboard',
             template: __webpack_require__(/*! ./dashboard.component.html */ "./src/app/pages/tutorial/dashboard/dashboard.component.html"),
             styles: [__webpack_require__(/*! ./dashboard.component.scss */ "./src/app/pages/tutorial/dashboard/dashboard.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], DashboardComponent);
     return DashboardComponent;
 }());
@@ -2065,29 +2157,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IntroductionComponent", function() { return IntroductionComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var IntroductionComponent = /** @class */ (function () {
     function IntroductionComponent() {
     }
     IntroductionComponent.prototype.ngOnInit = function () {
     };
-    IntroductionComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    IntroductionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-introduction',
             template: __webpack_require__(/*! ./introduction.component.html */ "./src/app/pages/tutorial/introduction/introduction.component.html"),
             styles: [__webpack_require__(/*! ./introduction.component.scss */ "./src/app/pages/tutorial/introduction/introduction.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], IntroductionComponent);
     return IntroductionComponent;
 }());
@@ -2128,29 +2213,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MobileComponent", function() { return MobileComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var MobileComponent = /** @class */ (function () {
     function MobileComponent() {
     }
     MobileComponent.prototype.ngOnInit = function () {
     };
-    MobileComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    MobileComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-mobile',
             template: __webpack_require__(/*! ./mobile.component.html */ "./src/app/pages/tutorial/mobile/mobile.component.html"),
             styles: [__webpack_require__(/*! ./mobile.component.scss */ "./src/app/pages/tutorial/mobile/mobile.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], MobileComponent);
     return MobileComponent;
 }());
@@ -2191,29 +2269,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ServicesComponent", function() { return ServicesComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var ServicesComponent = /** @class */ (function () {
     function ServicesComponent() {
     }
     ServicesComponent.prototype.ngOnInit = function () {
     };
-    ServicesComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    ServicesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-services',
             template: __webpack_require__(/*! ./services.component.html */ "./src/app/pages/tutorial/services/services.component.html"),
             styles: [__webpack_require__(/*! ./services.component.scss */ "./src/app/pages/tutorial/services/services.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], ServicesComponent);
     return ServicesComponent;
 }());
@@ -2229,7 +2300,7 @@ var ServicesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-tab-group (selectedTabChange)=\"tabSelectionChanged($event)\">\n  <mat-tab label=\"Introduccción\">\n    <ng-template matTabContent>\n      <app-introduction></app-introduction>\n    </ng-template>\n  </mat-tab>\n  <mat-tab label=\"Services\">\n    <ng-template matTabContent>\n      <app-services></app-services>\n    </ng-template>\n  </mat-tab>\n  <mat-tab label=\"Mobile\">\n    <ng-template matTabContent>\n      <app-mobile></app-mobile>\n    </ng-template>\n  </mat-tab>\n  <mat-tab label=\"Dashboard\">\n    <ng-template matTabContent>\n      <app-dashboard></app-dashboard>\n    </ng-template>\n  </mat-tab>\n</mat-tab-group>\n\n"
+module.exports = "<button mat-button (click)=\"goBack()\"><mat-icon>chevron_left</mat-icon> Volver</button>\n<mat-tab-group (selectedTabChange)=\"tabSelectionChanged($event)\">\n  <mat-tab label=\"Introduccción\">\n    <ng-template matTabContent>\n      <app-introduction></app-introduction>\n    </ng-template>\n  </mat-tab>\n  <mat-tab label=\"Services\">\n    <ng-template matTabContent>\n      <app-services></app-services>\n    </ng-template>\n  </mat-tab>\n  <mat-tab label=\"Mobile\">\n    <ng-template matTabContent>\n      <app-mobile></app-mobile>\n    </ng-template>\n  </mat-tab>\n  <mat-tab label=\"Dashboard\">\n    <ng-template matTabContent>\n      <app-dashboard></app-dashboard>\n    </ng-template>\n  </mat-tab>\n</mat-tab-group>\n\n"
 
 /***/ }),
 
@@ -2254,22 +2325,18 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TutorialComponent", function() { return TutorialComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../shared/services/highlight.service */ "./src/app/shared/services/highlight.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../shared/services/highlight.service */ "./src/app/shared/services/highlight.service.ts");
+
+
 
 
 var TutorialComponent = /** @class */ (function () {
-    function TutorialComponent(highlightService) {
+    function TutorialComponent(highlightService, location) {
         this.highlightService = highlightService;
+        this.location = location;
         this.highlighted = false;
     }
     TutorialComponent.prototype.ngOnInit = function () {
@@ -2286,15 +2353,81 @@ var TutorialComponent = /** @class */ (function () {
     TutorialComponent.prototype.tabSelectionChanged = function (event) {
         this.highlightService.highlightAll();
     };
-    TutorialComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    TutorialComponent.prototype.goBack = function () {
+        this.location.back();
+    };
+    TutorialComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-tutorial',
             template: __webpack_require__(/*! ./tutorial.component.html */ "./src/app/pages/tutorial/tutorial.component.html"),
             styles: [__webpack_require__(/*! ./tutorial.component.scss */ "./src/app/pages/tutorial/tutorial.component.scss")]
         }),
-        __metadata("design:paramtypes", [_shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_1__["HighlightService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_shared_services_highlight_service__WEBPACK_IMPORTED_MODULE_3__["HighlightService"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"]])
     ], TutorialComponent);
     return TutorialComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/tutoriales/tutoriales.component.html":
+/*!************************************************************!*\
+  !*** ./src/app/pages/tutoriales/tutoriales.component.html ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mat-list>\n  <h2 mat-subheader>Tutoriales disponibles</h2>\n\n  <a routerLink=\"/developer/tutoriales/basicos\" (click)=\"setTitle( 'Classpip onboarding conjunto de videotutoriales de desarrollo' );\">\n  <mat-list-item >\n    <mat-icon mat-list-icon fontSet=\"fab\" fontIcon=\"fa-youtube\"></mat-icon>\n    <h4 mat-line>Videotutoriales de todas las tecnologias usadas</h4>\n    <p mat-line class=\"project-description\">Conjunto de videotutoriales que comprenden todas las tecnologías usadas en el proyecto para aprenderlas desde cero.</p>\n  </mat-list-item>\n  </a>\n\n  <a routerLink=\"/developer/tutoriales/git\" (click)=\"setTitle( 'Classpip onboarding como trabajar con git en el proyecto' );\">\n  <mat-list-item >\n    <mat-icon mat-list-icon fontSet=\"fab\" fontIcon=\"fa-github\"></mat-icon>\n    <h4 mat-line>Pautas git</h4>\n    <p mat-line class=\"project-description\">Aprende la metodología a utilizar para trabajar con git en este proyecto </p>\n  </mat-list-item>\n  </a>\n\n  <a routerLink=\"/developer/tutoriales/mesa\" (click)=\"setTitle( 'Classpip onboarding aprende a desarrollar un módulo para la aplicación' );\">\n  <mat-list-item>\n    <mat-icon mat-list-icon>link</mat-icon>\n    <h4 mat-line>Tutorial módulo mesa</h4>\n    <p mat-line class=\"project-description\">desarrolla un pequeño módulo para aprender a realizar nuevos desarrollos en el proyecto</p>\n  </mat-list-item>\n  </a>\n\n  <a routerLink=\"/developer/tutoriales/onboarding\" (click)=\"setTitle( 'Classpip onboarding aprende a desarrollar y mantener la web de onboarding' );\">\n  <mat-list-item>\n    <mat-icon mat-list-icon>web</mat-icon>\n    <h4 mat-line>Desarrollo para la web de Onboarding</h4>\n    <p mat-line class=\"project-description\">Tutorial para aprender a hacer cambios en la web de onboarding</p>\n  </mat-list-item>\n  </a>\n\n</mat-list>"
+
+/***/ }),
+
+/***/ "./src/app/pages/tutoriales/tutoriales.component.scss":
+/*!************************************************************!*\
+  !*** ./src/app/pages/tutoriales/tutoriales.component.scss ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "mat-list-item {\n  background-color: #fff;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }\n  mat-list-item mat-icon {\n    transition-duration: 0.3s;\n    transition-property: -webkit-transform;\n    transition-property: transform;\n    transition-property: transform, -webkit-transform;\n    transition-timing-function: ease-in-out; }\n  mat-list-item:hover {\n    background-color: #f0ffff; }\n  mat-list-item:hover mat-icon {\n      -webkit-transform: translateX(4px);\n      transform: translateX(4px); }\n  mat-list-item .project-author {\n    color: #939393; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvcGFnZXMvdHV0b3JpYWxlcy90dXRvcmlhbGVzLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Msc0JBQXNCO0VBQ3RCLDRDQUE0QyxFQUFBO0VBRjdDO0lBS0sseUJBQXlCO0lBRXpCLHNDQUE4QjtJQUE5Qiw4QkFBOEI7SUFBOUIsaURBQThCO0lBRTlCLHVDQUF1QyxFQUFBO0VBVDVDO0lBWUUseUJBQXlCLEVBQUE7RUFaM0I7TUFjRyxrQ0FBa0M7TUFDL0IsMEJBQTBCLEVBQUE7RUFmaEM7SUFtQkUsY0FBYyxFQUFBIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvdHV0b3JpYWxlcy90dXRvcmlhbGVzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWF0LWxpc3QtaXRlbSB7XG5cdGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG5cdGJvcmRlci1ib3R0b206IDFweCBzb2xpZCByZ2JhKDAsIDAsIDAsIDAuMTIpO1xuXHRtYXQtaWNvbiB7XG5cdFx0LXdlYmtpdC10cmFuc2l0aW9uLWR1cmF0aW9uOiAwLjNzO1xuICAgIFx0dHJhbnNpdGlvbi1kdXJhdGlvbjogMC4zcztcbiAgICBcdC13ZWJraXQtdHJhbnNpdGlvbi1wcm9wZXJ0eTogdHJhbnNmb3JtO1xuICAgIFx0dHJhbnNpdGlvbi1wcm9wZXJ0eTogdHJhbnNmb3JtO1xuICAgIFx0LXdlYmtpdC10cmFuc2l0aW9uLXRpbWluZy1mdW5jdGlvbjogZWFzZS1pbi1vdXQ7XG4gICAgXHR0cmFuc2l0aW9uLXRpbWluZy1mdW5jdGlvbjogZWFzZS1pbi1vdXQ7XG5cdH1cblx0Jjpob3ZlciB7XG5cdFx0YmFja2dyb3VuZC1jb2xvcjogI2YwZmZmZjtcblx0XHRtYXQtaWNvbiB7XG5cdFx0XHQtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRlWCg0cHgpO1xuICAgIFx0XHR0cmFuc2Zvcm06IHRyYW5zbGF0ZVgoNHB4KTtcblx0XHR9XG5cdH1cblx0LnByb2plY3QtYXV0aG9yIHtcblx0XHRjb2xvcjogIzkzOTM5Mztcblx0fVxuXHQucHJvamVjdC1kZXNjcmlwdGlvbiB7XG5cblx0fVxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/pages/tutoriales/tutoriales.component.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/pages/tutoriales/tutoriales.component.ts ***!
+  \**********************************************************/
+/*! exports provided: TutorialesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TutorialesComponent", function() { return TutorialesComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+
+
+
+var TutorialesComponent = /** @class */ (function () {
+    function TutorialesComponent(titleService) {
+        this.titleService = titleService;
+    }
+    TutorialesComponent.prototype.ngOnInit = function () {
+    };
+    TutorialesComponent.prototype.setTitle = function (newTitle) {
+        this.titleService.setTitle(newTitle);
+    };
+    TutorialesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-tutoriales',
+            template: __webpack_require__(/*! ./tutoriales.component.html */ "./src/app/pages/tutoriales/tutoriales.component.html"),
+            styles: [__webpack_require__(/*! ./tutoriales.component.scss */ "./src/app/pages/tutoriales/tutoriales.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["Title"]])
+    ], TutorialesComponent);
+    return TutorialesComponent;
 }());
 
 
@@ -2319,7 +2452,7 @@ module.exports = "<footer class=\"docs-footer\">\n  <div class=\"docs-footer-lis
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".docs-footer {\n  padding: 12px;\n  font-size: 12px; }\n\n.docs-footer-list {\n  align-items: center;\n  display: flex;\n  flex-flow: row wrap;\n  padding: 8px; }\n\n.docs-footer-copyright {\n  display: flex;\n  flex: 1;\n  justify-content: flex-end; }\n\n.docs-footer-links ul {\n  list-style: none;\n  margin: 0 0px 0 10px;\n  padding: 0; }\n\n.docs-footer-links ul li {\n    float: left;\n    padding-right: 16px; }\n\n.docs-footer-links ul li a {\n      font-size: 14px;\n      text-decoration: none; }\n\n.docs-footer-links ul li a:hover {\n        text-decoration: underline; }\n\n@media screen and (max-width: 884px) {\n  .docs-footer-list {\n    flex-direction: column; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvc2hhcmVkL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFhO0VBQ2IsZ0JBQWUsRUFDaEI7O0FBRUQ7RUFDRSxvQkFBbUI7RUFDbkIsY0FBYTtFQUNiLG9CQUFtQjtFQUNuQixhQUFZLEVBQ2I7O0FBRUQ7RUFDRSxjQUFhO0VBQ2IsUUFBTztFQUNQLDBCQUF5QixFQUMxQjs7QUFFRDtFQUNFLGlCQUFnQjtFQUNoQixxQkFBb0I7RUFDcEIsV0FBVSxFQVlYOztBQWZEO0lBS0ksWUFBVztJQUNYLG9CQUFtQixFQVFwQjs7QUFkSDtNQVFNLGdCQUFlO01BQ2Ysc0JBQXFCLEVBSXRCOztBQWJMO1FBV1EsMkJBQTBCLEVBQzNCOztBQUtQO0VBQ0U7SUFDRSx1QkFBc0IsRUFDdkIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9mb290ZXIvZm9vdGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmRvY3MtZm9vdGVyIHtcbiAgcGFkZGluZzogMTJweDtcbiAgZm9udC1zaXplOiAxMnB4O1xufVxuXG4uZG9jcy1mb290ZXItbGlzdCB7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZmxvdzogcm93IHdyYXA7XG4gIHBhZGRpbmc6IDhweDtcbn1cblxuLmRvY3MtZm9vdGVyLWNvcHlyaWdodCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXg6IDE7XG4gIGp1c3RpZnktY29udGVudDogZmxleC1lbmQ7XG59XG5cbi5kb2NzLWZvb3Rlci1saW5rcyB1bCB7XG4gIGxpc3Qtc3R5bGU6IG5vbmU7XG4gIG1hcmdpbjogMCAwcHggMCAxMHB4O1xuICBwYWRkaW5nOiAwO1xuICBsaSB7XG4gICAgZmxvYXQ6IGxlZnQ7XG4gICAgcGFkZGluZy1yaWdodDogMTZweDtcbiAgICBhIHtcbiAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICAgICY6aG92ZXIge1xuICAgICAgICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogODg0cHgpIHtcbiAgLmRvY3MtZm9vdGVyLWxpc3Qge1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIH1cbn0iXX0= */"
+module.exports = ".docs-footer {\n  padding: 12px;\n  font-size: 12px; }\n\n.docs-footer-list {\n  align-items: center;\n  display: flex;\n  flex-flow: row wrap;\n  padding: 8px; }\n\n.docs-footer-copyright {\n  display: flex;\n  flex: 1;\n  justify-content: flex-end; }\n\n.docs-footer-links ul {\n  list-style: none;\n  margin: 0 0px 0 10px;\n  padding: 0; }\n\n.docs-footer-links ul li {\n    float: left;\n    padding-right: 16px; }\n\n.docs-footer-links ul li a {\n      font-size: 14px;\n      text-decoration: none; }\n\n.docs-footer-links ul li a:hover {\n        text-decoration: underline; }\n\n@media screen and (max-width: 884px) {\n  .docs-footer-list {\n    flex-direction: column; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvc2hhcmVkL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFhO0VBQ2IsZUFBZSxFQUFBOztBQUdqQjtFQUNFLG1CQUFtQjtFQUNuQixhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLFlBQVksRUFBQTs7QUFHZDtFQUNFLGFBQWE7RUFDYixPQUFPO0VBQ1AseUJBQXlCLEVBQUE7O0FBRzNCO0VBQ0UsZ0JBQWdCO0VBQ2hCLG9CQUFvQjtFQUNwQixVQUFVLEVBQUE7O0FBSFo7SUFLSSxXQUFXO0lBQ1gsbUJBQW1CLEVBQUE7O0FBTnZCO01BUU0sZUFBZTtNQUNmLHFCQUFxQixFQUFBOztBQVQzQjtRQVdRLDBCQUEwQixFQUFBOztBQU1sQztFQUNFO0lBQ0Usc0JBQXNCLEVBQUEsRUFDdkIiLCJmaWxlIjoic3JjL2FwcC9zaGFyZWQvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5kb2NzLWZvb3RlciB7XG4gIHBhZGRpbmc6IDEycHg7XG4gIGZvbnQtc2l6ZTogMTJweDtcbn1cblxuLmRvY3MtZm9vdGVyLWxpc3Qge1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWZsb3c6IHJvdyB3cmFwO1xuICBwYWRkaW5nOiA4cHg7XG59XG5cbi5kb2NzLWZvb3Rlci1jb3B5cmlnaHQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4OiAxO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtZW5kO1xufVxuXG4uZG9jcy1mb290ZXItbGlua3MgdWwge1xuICBsaXN0LXN0eWxlOiBub25lO1xuICBtYXJnaW46IDAgMHB4IDAgMTBweDtcbiAgcGFkZGluZzogMDtcbiAgbGkge1xuICAgIGZsb2F0OiBsZWZ0O1xuICAgIHBhZGRpbmctcmlnaHQ6IDE2cHg7XG4gICAgYSB7XG4gICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgICAmOmhvdmVyIHtcbiAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XG4gICAgICB9XG4gICAgfVxuICB9XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDg4NHB4KSB7XG4gIC5kb2NzLWZvb3Rlci1saXN0IHtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICB9XG59Il19 */"
 
 /***/ }),
 
@@ -2333,16 +2466,9 @@ module.exports = ".docs-footer {\n  padding: 12px;\n  font-size: 12px; }\n\n.doc
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterComponent", function() { return FooterComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var FooterComponent = /** @class */ (function () {
     function FooterComponent() {
@@ -2350,13 +2476,13 @@ var FooterComponent = /** @class */ (function () {
     }
     FooterComponent.prototype.ngOnInit = function () {
     };
-    FooterComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    FooterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-footer',
             template: __webpack_require__(/*! ./footer.component.html */ "./src/app/shared/footer/footer.component.html"),
             styles: [__webpack_require__(/*! ./footer.component.scss */ "./src/app/shared/footer/footer.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], FooterComponent);
     return FooterComponent;
 }());
@@ -2397,29 +2523,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LegalwarningComponent", function() { return LegalwarningComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var LegalwarningComponent = /** @class */ (function () {
     function LegalwarningComponent() {
     }
     LegalwarningComponent.prototype.ngOnInit = function () {
     };
-    LegalwarningComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    LegalwarningComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-legalwarning',
             template: __webpack_require__(/*! ./legalwarning.component.html */ "./src/app/shared/legalwarning/legalwarning.component.html"),
             styles: [__webpack_require__(/*! ./legalwarning.component.scss */ "./src/app/shared/legalwarning/legalwarning.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], LegalwarningComponent);
     return LegalwarningComponent;
 }());
@@ -2460,17 +2579,10 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoadingComponent", function() { return LoadingComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _services_loading_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/loading.service */ "./src/app/shared/services/loading.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_loading_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/loading.service */ "./src/app/shared/services/loading.service.ts");
+
 
 
 var LoadingComponent = /** @class */ (function () {
@@ -2484,13 +2596,13 @@ var LoadingComponent = /** @class */ (function () {
             _this.loading = enable;
         }));
     };
-    LoadingComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    LoadingComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-loading',
             template: __webpack_require__(/*! ./loading.component.html */ "./src/app/shared/loading/loading.component.html"),
             styles: [__webpack_require__(/*! ./loading.component.scss */ "./src/app/shared/loading/loading.component.scss")]
         }),
-        __metadata("design:paramtypes", [_services_loading_service__WEBPACK_IMPORTED_MODULE_1__["LoadingService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_loading_service__WEBPACK_IMPORTED_MODULE_2__["LoadingService"]])
     ], LoadingComponent);
     return LoadingComponent;
 }());
@@ -2506,7 +2618,7 @@ var LoadingComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-nav-list>\n    <a mat-list-item routerLink=\"/home\" (click)=\"setTitle( 'Classpip onboarding para la aplicación de gamificación' )\">\n        <mat-icon mat-list-icon>home</mat-icon>\n        <span>Home</span>\n    </a>      \n    <a mat-list-item (click)=\"usersShow = openClose(usersShow, 'userCaret')\">\n        <mat-icon mat-list-icon>people</mat-icon>\n        <span>Usuarios</span>\n        <span class=\"fill-space\"></span>\n        <mat-icon id=\"userCaret\" class=\"material-icons\">expand_more</mat-icon>\n    </a>\n    <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/students\" (click)=\"usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar la aplicacion como estudiante' );\">\n        <mat-icon mat-list-icon fontSet=\"fa\" fontIcon=\"fa-user-graduate\"></mat-icon>\n        <span>Estudiantes</span>\n    </a>\n    <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/teachers\" (click)=\"usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar las funciones de profesor' );\">\n        <mat-icon mat-list-icon fontSet=\"fa\" fontIcon=\"fa-chalkboard-teacher\"></mat-icon>\n        <span>Profesores</span>\n    </a>\n    <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/administrator\" (click)=\"usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar las funciones de administrador' );\">\n        <mat-icon mat-list-icon fontSet=\"fa\" fontIcon=\"fa-user-tie\"></mat-icon>\n        <span>Administradores</span>\n    </a>\n    <a mat-list-item (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>developer_mode</mat-icon>\n        <span>Desarrolladores</span>\n    \t<span class=\"fill-space\"></span>\n        <mat-icon id=\"devCaret\" class=\"material-icons\">expand_more</mat-icon>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"developer/install\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding instala tu entorno de desarrollo' );\">\n        <mat-icon mat-list-icon fontSet=\"far\" fontIcon=\"fa-save\"></mat-icon>\n        <span>Instalación del entorno</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"developer/firstrun\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding primeros pasos para poner en marcha el proyecto' );\">\n        <mat-icon mat-list-icon fontSet=\"fas\" fontIcon=\"fa-shoe-prints\"></mat-icon>\n        <span>Puesta en marcha</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/git\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding como trabajar con git en el proyecto' );\">\n        <mat-icon mat-list-icon fontSet=\"fab\" fontIcon=\"fa-github\"></mat-icon>\n        <span>Pautas git</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/tutorial\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding aprende a desarrollar un módulo para la aplicación' );\">\n        <mat-icon mat-list-icon>computer</mat-icon>\n        <span>Tutorial</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/onboarding\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding aprende a desarrollar y mantener la web de onboarding' );\">\n        <mat-icon mat-list-icon>web</mat-icon>\n        <span>Desarrollo web de Onboarding</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/faq\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding resuleve tus dudas y problemas' );\">\n        <mat-icon mat-list-icon>report</mat-icon>\n        <span>Errores conocidos</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/projects\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding links a los proyectos realizados previamente' );\">\n        <mat-icon mat-list-icon fontSet=\"fas\" fontIcon=\"fa-book\"></mat-icon>\n        <span>Proyectos realizados</span>\n    </a>\n</mat-nav-list>"
+module.exports = "<mat-nav-list>\n    <a mat-list-item routerLink=\"/home\" (click)=\"setTitle( 'Classpip onboarding para la aplicación de gamificación' )\">\n        <mat-icon mat-list-icon>home</mat-icon>\n        <span>Home</span>\n    </a>      \n    <a mat-list-item (click)=\"usersShow = openClose(usersShow, 'userCaret')\">\n        <mat-icon mat-list-icon>people</mat-icon>\n        <span>Usuarios</span>\n        <span class=\"fill-space\"></span>\n        <mat-icon id=\"userCaret\" class=\"material-icons\">expand_more</mat-icon>\n    </a>\n    <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/students\" (click)=\"usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar la aplicacion como estudiante' );\">\n        <mat-icon mat-list-icon fontSet=\"fa\" fontIcon=\"fa-user-graduate\"></mat-icon>\n        <span>Estudiantes</span>\n    </a>\n    <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/teachers\" (click)=\"usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar las funciones de profesor' );\">\n        <mat-icon mat-list-icon fontSet=\"fa\" fontIcon=\"fa-chalkboard-teacher\"></mat-icon>\n        <span>Profesores</span>\n    </a>\n    <a *ngIf=\"usersShow\" class=\"second-level\" mat-list-item routerLink=\"/user/administrator\" (click)=\"usersShow = openClose(usersShow, 'userCaret'); setTitle( 'Classpip onboarding aprende a usar las funciones de administrador' );\">\n        <mat-icon mat-list-icon fontSet=\"fa\" fontIcon=\"fa-user-tie\"></mat-icon>\n        <span>Administradores</span>\n    </a>\n    <a mat-list-item (click)=\"devShow = openClose(devShow, 'devCaret')\">\n        <mat-icon mat-list-icon>developer_mode</mat-icon>\n        <span>Desarrolladores</span>\n    \t<span class=\"fill-space\"></span>\n        <mat-icon id=\"devCaret\" class=\"material-icons\">expand_more</mat-icon>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"developer/install\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding instala tu entorno de desarrollo' );\">\n        <mat-icon mat-list-icon fontSet=\"far\" fontIcon=\"fa-save\"></mat-icon>\n        <span>Instalación del entorno</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"developer/firstrun\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding primeros pasos para poner en marcha el proyecto' );\">\n        <mat-icon mat-list-icon fontSet=\"fas\" fontIcon=\"fa-shoe-prints\"></mat-icon>\n        <span>Puesta en marcha</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/tutoriales\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding listado de tutoriales disponibles' );\">\n        <mat-icon mat-list-icon>computer</mat-icon>\n        <span>Tutoriales</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/faq\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding resuleve tus dudas y problemas' );\">\n        <mat-icon mat-list-icon>report</mat-icon>\n        <span>Errores conocidos</span>\n    </a>\n    <a *ngIf=\"devShow\" class=\"second-level\" mat-list-item routerLink=\"/developer/projects\" (click)=\"devShow = openClose(devShow, 'devCaret'); setTitle( 'Classpip onboarding links a los proyectos realizados previamente' );\">\n        <mat-icon mat-list-icon fontSet=\"fas\" fontIcon=\"fa-book\"></mat-icon>\n        <span>Proyectos realizados</span>\n    </a>\n</mat-nav-list>"
 
 /***/ }),
 
@@ -2517,7 +2629,7 @@ module.exports = "<mat-nav-list>\n    <a mat-list-item routerLink=\"/home\" (cli
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".fa-chalkboard-teacher,\n.fa-shoe-prints {\n  padding-left: 0;\n  margin-right: 9px;\n  margin-left: -4px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvc2hhcmVkL25hdmlnYXRpb24vbGlua3MvbGlua3MuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0VBRUMsZ0JBQWU7RUFDWixrQkFBaUI7RUFDakIsa0JBQWlCLEVBQ3BCIiwiZmlsZSI6InNyYy9hcHAvc2hhcmVkL25hdmlnYXRpb24vbGlua3MvbGlua3MuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZmEtY2hhbGtib2FyZC10ZWFjaGVyLFxuLmZhLXNob2UtcHJpbnRzIHtcblx0cGFkZGluZy1sZWZ0OiAwO1xuICAgIG1hcmdpbi1yaWdodDogOXB4O1xuICAgIG1hcmdpbi1sZWZ0OiAtNHB4O1xufSJdfQ== */"
+module.exports = ".fa-chalkboard-teacher,\n.fa-shoe-prints {\n  padding-left: 0;\n  margin-right: 9px;\n  margin-left: -4px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvc2hhcmVkL25hdmlnYXRpb24vbGlua3MvbGlua3MuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0VBRUMsZUFBZTtFQUNaLGlCQUFpQjtFQUNqQixpQkFBaUIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9uYXZpZ2F0aW9uL2xpbmtzL2xpbmtzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZhLWNoYWxrYm9hcmQtdGVhY2hlcixcbi5mYS1zaG9lLXByaW50cyB7XG5cdHBhZGRpbmctbGVmdDogMDtcbiAgICBtYXJnaW4tcmlnaHQ6IDlweDtcbiAgICBtYXJnaW4tbGVmdDogLTRweDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -2531,17 +2643,10 @@ module.exports = ".fa-chalkboard-teacher,\n.fa-shoe-prints {\n  padding-left: 0;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinksComponent", function() { return LinksComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+
 
 
 var LinksComponent = /** @class */ (function () {
@@ -2564,13 +2669,13 @@ var LinksComponent = /** @class */ (function () {
     LinksComponent.prototype.setTitle = function (newTitle) {
         this.titleService.setTitle(newTitle);
     };
-    LinksComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    LinksComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-links',
             template: __webpack_require__(/*! ./links.component.html */ "./src/app/shared/navigation/links/links.component.html"),
             styles: [__webpack_require__(/*! ./links.component.scss */ "./src/app/shared/navigation/links/links.component.scss")]
         }),
-        __metadata("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["Title"]])
     ], LinksComponent);
     return LinksComponent;
 }());
@@ -2597,7 +2702,7 @@ module.exports = "<mat-sidenav-container class=\"sidenav-container\">\n  <mat-si
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".sidenav-container {\n  height: 100%; }\n\n.sidenav {\n  width: 220px; }\n\n.mat-toolbar.mat-primary {\n  position: -webkit-sticky;\n  position: sticky;\n  top: 0;\n  z-index: 2; }\n\n.docs-button {\n  font-size: 18px; }\n\n.docs-classpip-logo {\n  height: 40px;\n  margin: 0 4px 3px 0; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvc2hhcmVkL25hdmlnYXRpb24vbmF2aWdhdGlvbi5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQVksRUFDYjs7QUFFRDtFQUNFLGFBQVksRUFDYjs7QUFFRDtFQUNFLHlCQUFnQjtFQUFoQixpQkFBZ0I7RUFDaEIsT0FBTTtFQUNOLFdBQVUsRUFDWDs7QUFFRDtFQUNFLGdCQUFlLEVBQ2hCOztBQUVEO0VBQ0UsYUFBWTtFQUNaLG9CQUFtQixFQUNwQiIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9uYXZpZ2F0aW9uL25hdmlnYXRpb24uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2lkZW5hdi1jb250YWluZXIge1xuICBoZWlnaHQ6IDEwMCU7XG59XG5cbi5zaWRlbmF2IHtcbiAgd2lkdGg6IDIyMHB4O1xufVxuXG4ubWF0LXRvb2xiYXIubWF0LXByaW1hcnkge1xuICBwb3NpdGlvbjogc3RpY2t5O1xuICB0b3A6IDA7XG4gIHotaW5kZXg6IDI7XG59XG5cbi5kb2NzLWJ1dHRvbiB7XG4gIGZvbnQtc2l6ZTogMThweDtcbn1cblxuLmRvY3MtY2xhc3NwaXAtbG9nbyB7XG4gIGhlaWdodDogNDBweDtcbiAgbWFyZ2luOiAwIDRweCAzcHggMDtcbn0iXX0= */"
+module.exports = ".sidenav-container {\n  height: 100%; }\n\n.sidenav {\n  width: 220px; }\n\n.mat-toolbar.mat-primary {\n  position: -webkit-sticky;\n  position: sticky;\n  top: 0;\n  z-index: 2; }\n\n.docs-button {\n  font-size: 18px; }\n\n.docs-classpip-logo {\n  height: 40px;\n  margin: 0 4px 3px 0; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbGV4L0Rlc2t0b3AvY2xhc3NwaXAtY29kZS9jbGFzc3BpcC1vbmJvYXJkaW5nL3NyYy9hcHAvc2hhcmVkL25hdmlnYXRpb24vbmF2aWdhdGlvbi5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFlBQVksRUFBQTs7QUFHZDtFQUNFLFlBQVksRUFBQTs7QUFHZDtFQUNFLHdCQUFnQjtFQUFoQixnQkFBZ0I7RUFDaEIsTUFBTTtFQUNOLFVBQVUsRUFBQTs7QUFHWjtFQUNFLGVBQWUsRUFBQTs7QUFHakI7RUFDRSxZQUFZO0VBQ1osbUJBQW1CLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9zaGFyZWQvbmF2aWdhdGlvbi9uYXZpZ2F0aW9uLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNpZGVuYXYtY29udGFpbmVyIHtcbiAgaGVpZ2h0OiAxMDAlO1xufVxuXG4uc2lkZW5hdiB7XG4gIHdpZHRoOiAyMjBweDtcbn1cblxuLm1hdC10b29sYmFyLm1hdC1wcmltYXJ5IHtcbiAgcG9zaXRpb246IHN0aWNreTtcbiAgdG9wOiAwO1xuICB6LWluZGV4OiAyO1xufVxuXG4uZG9jcy1idXR0b24ge1xuICBmb250LXNpemU6IDE4cHg7XG59XG5cbi5kb2NzLWNsYXNzcGlwLWxvZ28ge1xuICBoZWlnaHQ6IDQwcHg7XG4gIG1hcmdpbjogMCA0cHggM3B4IDA7XG59Il19 */"
 
 /***/ }),
 
@@ -2611,31 +2716,41 @@ module.exports = ".sidenav-container {\n  height: 100%; }\n\n.sidenav {\n  width
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavigationComponent", function() { return NavigationComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
-/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/cdk/layout */ "./node_modules/@angular/cdk/esm5/layout.es5.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/layout */ "./node_modules/@angular/cdk/esm5/layout.es5.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
 
 
 
 
 var NavigationComponent = /** @class */ (function () {
-    function NavigationComponent(titleService, breakpointObserver) {
+    function NavigationComponent(titleService, breakpointObserver, router) {
         this.titleService = titleService;
         this.breakpointObserver = breakpointObserver;
+        this.router = router;
         this.usersShow = false;
         this.isHandset$ = this.breakpointObserver.observe('(max-width: 768px)')
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (result) { return result.matches; }));
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (result) { return result.matches; }));
+        this.loading = true;
     }
+    NavigationComponent.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        this.router.events
+            .subscribe(function (event) {
+            if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_5__["NavigationStart"]) {
+                _this.loading = true;
+            }
+            else if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_5__["NavigationEnd"] ||
+                event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_5__["NavigationCancel"]) {
+                _this.loading = false;
+            }
+        });
+    };
     NavigationComponent.prototype.openClose = function (identifier, caretId) {
         identifier = !identifier;
         var icon = document.getElementById(caretId);
@@ -2650,14 +2765,15 @@ var NavigationComponent = /** @class */ (function () {
     NavigationComponent.prototype.setTitle = function (newTitle) {
         this.titleService.setTitle(newTitle);
     };
-    NavigationComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    NavigationComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-navigation',
             template: __webpack_require__(/*! ./navigation.component.html */ "./src/app/shared/navigation/navigation.component.html"),
-            styles: [__webpack_require__(/*! ./navigation.component.scss */ "./src/app/shared/navigation/navigation.component.scss")],
+            styles: [__webpack_require__(/*! ./navigation.component.scss */ "./src/app/shared/navigation/navigation.component.scss")]
         }),
-        __metadata("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"],
-            _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_2__["BreakpointObserver"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["Title"],
+            _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_3__["BreakpointObserver"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]])
     ], NavigationComponent);
     return NavigationComponent;
 }());
@@ -2698,29 +2814,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PrivacyComponent", function() { return PrivacyComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var PrivacyComponent = /** @class */ (function () {
     function PrivacyComponent() {
     }
     PrivacyComponent.prototype.ngOnInit = function () {
     };
-    PrivacyComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    PrivacyComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-privacy',
             template: __webpack_require__(/*! ./privacy.component.html */ "./src/app/shared/privacy/privacy.component.html"),
             styles: [__webpack_require__(/*! ./privacy.component.scss */ "./src/app/shared/privacy/privacy.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], PrivacyComponent);
     return PrivacyComponent;
 }());
@@ -2739,44 +2848,34 @@ var PrivacyComponent = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HighlightService", function() { return HighlightService; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var clipboard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! clipboard */ "./node_modules/clipboard/dist/clipboard.js");
-/* harmony import */ var clipboard__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(clipboard__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prismjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prismjs */ "./node_modules/prismjs/prism.js");
-/* harmony import */ var prismjs__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prismjs__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var prismjs_plugins_toolbar_prism_toolbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prismjs/plugins/toolbar/prism-toolbar */ "./node_modules/prismjs/plugins/toolbar/prism-toolbar.js");
-/* harmony import */ var prismjs_plugins_toolbar_prism_toolbar__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prismjs_plugins_toolbar_prism_toolbar__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var prismjs_plugins_copy_to_clipboard_prism_copy_to_clipboard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard */ "./node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.js");
-/* harmony import */ var prismjs_plugins_copy_to_clipboard_prism_copy_to_clipboard__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(prismjs_plugins_copy_to_clipboard_prism_copy_to_clipboard__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var prismjs_plugins_line_numbers_prism_line_numbers__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prismjs/plugins/line-numbers/prism-line-numbers */ "./node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js");
-/* harmony import */ var prismjs_plugins_line_numbers_prism_line_numbers__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prismjs_plugins_line_numbers_prism_line_numbers__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var prismjs_components_prism_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prismjs/components/prism-css */ "./node_modules/prismjs/components/prism-css.js");
-/* harmony import */ var prismjs_components_prism_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_css__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var prismjs_components_prism_javascript__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prismjs/components/prism-javascript */ "./node_modules/prismjs/components/prism-javascript.js");
-/* harmony import */ var prismjs_components_prism_javascript__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_javascript__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var prismjs_components_prism_markup__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prismjs/components/prism-markup */ "./node_modules/prismjs/components/prism-markup.js");
-/* harmony import */ var prismjs_components_prism_markup__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_markup__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var prismjs_components_prism_typescript__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prismjs/components/prism-typescript */ "./node_modules/prismjs/components/prism-typescript.js");
-/* harmony import */ var prismjs_components_prism_typescript__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_typescript__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var prismjs_components_prism_json__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! prismjs/components/prism-json */ "./node_modules/prismjs/components/prism-json.js");
-/* harmony import */ var prismjs_components_prism_json__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_json__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var prismjs_components_prism_sass__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! prismjs/components/prism-sass */ "./node_modules/prismjs/components/prism-sass.js");
-/* harmony import */ var prismjs_components_prism_sass__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_sass__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var prismjs_components_prism_scss__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! prismjs/components/prism-scss */ "./node_modules/prismjs/components/prism-scss.js");
-/* harmony import */ var prismjs_components_prism_scss__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_scss__WEBPACK_IMPORTED_MODULE_13__);
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (undefined && undefined.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var clipboard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clipboard */ "./node_modules/clipboard/dist/clipboard.js");
+/* harmony import */ var clipboard__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(clipboard__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var prismjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prismjs */ "./node_modules/prismjs/prism.js");
+/* harmony import */ var prismjs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prismjs__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var prismjs_plugins_toolbar_prism_toolbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! prismjs/plugins/toolbar/prism-toolbar */ "./node_modules/prismjs/plugins/toolbar/prism-toolbar.js");
+/* harmony import */ var prismjs_plugins_toolbar_prism_toolbar__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(prismjs_plugins_toolbar_prism_toolbar__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var prismjs_plugins_copy_to_clipboard_prism_copy_to_clipboard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard */ "./node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.js");
+/* harmony import */ var prismjs_plugins_copy_to_clipboard_prism_copy_to_clipboard__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prismjs_plugins_copy_to_clipboard_prism_copy_to_clipboard__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var prismjs_plugins_line_numbers_prism_line_numbers__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prismjs/plugins/line-numbers/prism-line-numbers */ "./node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js");
+/* harmony import */ var prismjs_plugins_line_numbers_prism_line_numbers__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prismjs_plugins_line_numbers_prism_line_numbers__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var prismjs_components_prism_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prismjs/components/prism-css */ "./node_modules/prismjs/components/prism-css.js");
+/* harmony import */ var prismjs_components_prism_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var prismjs_components_prism_javascript__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prismjs/components/prism-javascript */ "./node_modules/prismjs/components/prism-javascript.js");
+/* harmony import */ var prismjs_components_prism_javascript__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_javascript__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var prismjs_components_prism_markup__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prismjs/components/prism-markup */ "./node_modules/prismjs/components/prism-markup.js");
+/* harmony import */ var prismjs_components_prism_markup__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_markup__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var prismjs_components_prism_typescript__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! prismjs/components/prism-typescript */ "./node_modules/prismjs/components/prism-typescript.js");
+/* harmony import */ var prismjs_components_prism_typescript__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_typescript__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var prismjs_components_prism_json__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! prismjs/components/prism-json */ "./node_modules/prismjs/components/prism-json.js");
+/* harmony import */ var prismjs_components_prism_json__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_json__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var prismjs_components_prism_sass__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! prismjs/components/prism-sass */ "./node_modules/prismjs/components/prism-sass.js");
+/* harmony import */ var prismjs_components_prism_sass__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_sass__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var prismjs_components_prism_scss__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! prismjs/components/prism-scss */ "./node_modules/prismjs/components/prism-scss.js");
+/* harmony import */ var prismjs_components_prism_scss__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(prismjs_components_prism_scss__WEBPACK_IMPORTED_MODULE_14__);
+
 
 
 
@@ -2796,16 +2895,16 @@ var HighlightService = /** @class */ (function () {
         this.platformId = platformId;
     }
     HighlightService.prototype.highlightAll = function () {
-        if (Object(_angular_common__WEBPACK_IMPORTED_MODULE_1__["isPlatformBrowser"])(this.platformId)) {
+        if (Object(_angular_common__WEBPACK_IMPORTED_MODULE_2__["isPlatformBrowser"])(this.platformId)) {
             Prism.highlightAll();
         }
     };
-    HighlightService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+    HighlightService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
             providedIn: 'root'
         }),
-        __param(0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])(_angular_core__WEBPACK_IMPORTED_MODULE_0__["PLATFORM_ID"])),
-        __metadata("design:paramtypes", [Object])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_core__WEBPACK_IMPORTED_MODULE_1__["PLATFORM_ID"])),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [Object])
     ], HighlightService);
     return HighlightService;
 }());
@@ -2824,18 +2923,11 @@ var HighlightService = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoadingService", function() { return LoadingService; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+
 
 
 
@@ -2843,11 +2935,11 @@ var LoadingService = /** @class */ (function () {
     function LoadingService(router) {
         var _this = this;
         this.router = router;
-        this.subject = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
+        this.subject = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
         // Subscripbe to the router events in order to clear the
         // loading or not dpending on keepAfterNavigationChange
         router.events.subscribe(function (event) {
-            if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_1__["NavigationStart"]) {
+            if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["NavigationStart"]) {
                 if (_this.keepAfterNavigationChange) {
                     _this.keepAfterNavigationChange = false;
                 }
@@ -2868,11 +2960,11 @@ var LoadingService = /** @class */ (function () {
     LoadingService.prototype.getLoading = function () {
         return this.subject.asObservable();
     };
-    LoadingService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+    LoadingService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
             providedIn: 'root'
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
     ], LoadingService);
     return LoadingService;
 }());

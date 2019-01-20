@@ -1,0 +1,12 @@
+<button mat-button (click)="goBack()"><mat-icon>chevron_left</mat-icon> Volver</button>
+<h2>Tutoriales en video de todas las tecnologías usadas</h2>
+<div cdkDropList class="list" (cdkDropListDropped)="drop($event)">
+  <mat-card *ngFor="let card of cards" class="box" cdkDrag>
+  	<mat-card-header>
+  	  <mat-card-title>{{card.title}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+	  <iframe mat-card-image width="560" height="315" [src]='sanitizer.bypassSecurityTrustResourceUrl(card.videoLink)' frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </mat-card-content>
+  </mat-card>
+</div>

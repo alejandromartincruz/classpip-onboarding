@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Location } from '@angular/common';
 import { HighlightService } from '../../shared/services/highlight.service';
 
 @Component({
@@ -11,7 +11,10 @@ export class TutorialComponent implements OnInit {
 
   highlighted: boolean = false;
 
-  constructor(private highlightService: HighlightService) { }
+  constructor(
+    private highlightService: HighlightService,
+    public location: Location
+  ) { }
 
   ngOnInit() {
   }
@@ -28,6 +31,10 @@ export class TutorialComponent implements OnInit {
 
   tabSelectionChanged(event) {
     this.highlightService.highlightAll();
+  }
+
+  goBack() {
+    this.location.back();
   }
 
 }

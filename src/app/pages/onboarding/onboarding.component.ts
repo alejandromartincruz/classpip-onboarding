@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewChecked } from '@angular/core';
-
+import { Location } from '@angular/common';
 import { HighlightService } from '../../shared/services/highlight.service';
 
 @Component({
@@ -11,7 +11,10 @@ export class OnboardingComponent implements OnInit, AfterViewChecked {
 
   highlighted: boolean = false;
 
-  constructor(private highlightService: HighlightService) { }
+  constructor(
+    private highlightService: HighlightService,
+    public location: Location
+  ) { }
 
   ngOnInit() {
   }
@@ -24,6 +27,10 @@ export class OnboardingComponent implements OnInit, AfterViewChecked {
       this.highlightService.highlightAll();
       this.highlighted = true;
     }
+  }
+
+  goBack() {
+    this.location.back();
   }
 
 }

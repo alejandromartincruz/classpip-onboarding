@@ -1,0 +1,27 @@
+.list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	mat-card {
+		width: 100%;
+		padding-bottom: 0;
+		background-color:#4527a0;
+		color: #FFF;
+		background-image: linear-gradient(90deg, #4527a0, #3f51b5, #4527a0);
+		mat-card-header {
+			min-height: 100px;
+		}
+	}
+}
+
+@media screen and (min-width: 451px) {
+	.list mat-card {
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 981px) {
+	.list mat-card {
+		width: 30%;
+	}
+}
